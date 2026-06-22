@@ -1,4 +1,29 @@
 User-agent: *
 Allow: /
 
+# Aggressive SEO/scraping crawlers — commonly used to harvest content for
+# spam-backlink networks and negative-SEO link farms. Most legitimate
+# malicious scrapers ignore robots.txt, but this stops the well-behaved
+# commercial crawlers that feed those networks.
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
 Sitemap: https://allyonoupdate.com/sitemap.xml
