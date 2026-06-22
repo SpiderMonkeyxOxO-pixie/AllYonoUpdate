@@ -9,6 +9,7 @@ interface Props {
   rawTitle?: boolean;
   ogTitle?: string;
   ogDescription?: string;
+  ogImage?: string;
   robots?: string;
   keywords?: string[];
   canonical?: boolean;
@@ -20,11 +21,13 @@ const {
   rawTitle = false,
   ogTitle,
   ogDescription,
+  ogImage = '/logo.webp',
   robots = 'index, follow',
   keywords,
   canonical = true,
 } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
 const pageTitle = rawTitle ? title : `${title} | All Yono Update`;
 ---
 
@@ -47,10 +50,12 @@ const pageTitle = rawTitle ? title : `${title} | All Yono Update`;
     <meta property="og:title" content={ogTitle ?? pageTitle} />
     <meta property="og:description" content={ogDescription ?? description} />
     <meta property="og:site_name" content="All Yono Update" />
+    <meta property="og:image" content={ogImageUrl} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={ogTitle ?? pageTitle} />
     <meta name="twitter:description" content={ogDescription ?? description} />
+    <meta name="twitter:image" content={ogImageUrl} />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1CMJVK9YF"></script>
