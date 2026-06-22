@@ -1,0 +1,26 @@
+---
+interface Props {
+  name: 'chevron-right' | 'arrow-up-right' | 'star';
+  class?: string;
+}
+
+const { name, class: className = 'h-3.5 w-3.5' } = Astro.props;
+---
+
+{name === 'chevron-right' && (
+  <svg class={className} viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M7.5 4.5l5 5.5-5 5.5" />
+  </svg>
+)}
+
+{name === 'arrow-up-right' && (
+  <svg class={className} viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M6 14L14 6M14 6H8M14 6v6" />
+  </svg>
+)}
+
+{name === 'star' && (
+  <svg class={className} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77-4.19-4.08 5.79-.84L10 1.5z" />
+  </svg>
+)}

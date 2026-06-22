@@ -1,0 +1,325 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const LEGAL_EMAIL = 'contact@allyonoupdate.com';
+const lastUpdated = 'June 21, 2026';
+
+const infoDetails = [
+  { detail: 'Publication Date', why: 'Shows when the update was first recorded' },
+  { detail: 'Last Reviewed Date', why: 'Shows when the information was most recently checked' },
+  { detail: 'Status Label', why: 'Shows whether the notice is confirmed, under review, active, ended, or archived' },
+  { detail: 'Related Update', why: 'May contain a newer notice that replaces an earlier record' },
+];
+
+const notProvided = [
+  'Account login help',
+  'Password recovery',
+  'OTP assistance',
+  'Payment support',
+  'Identity verification help',
+  'Private account troubleshooting',
+  'Installation files',
+  'Personal account review',
+];
+
+const acceptableUseRules = [
+  'Attempt to disrupt, damage, overload, or interfere with the website or its security',
+  'Use automated tools to scrape or extract content without permission',
+  'Submit misleading, unlawful, abusive, or harmful material through the contact form',
+  'Impersonate another person or organisation',
+  'Submit private account details through website forms',
+  'Use the website for unlawful, fraudulent, or unauthorised purposes',
+  'Attempt to gain unauthorised access to website systems, forms, or data',
+];
+---
+
+<Layout
+  title="All Yono Update Terms of Use & Website Rules"
+  description="Read the AllYonoUpdate.com Terms of Use, including website access rules, information limits, external links, intellectual property, and contact boundaries."
+  rawTitle
+  ogTitle="All Yono Update Terms of Use and Website Rules"
+  ogDescription="Read the website rules, information limits, external-link notice, and acceptable-use terms for AllYonoUpdate.com."
+  robots="index, follow"
+  keywords={[
+    'all yono update terms of use',
+    'all yono update website terms',
+    'all yono information site rules',
+    'all yono update content terms',
+    'all yono update user terms',
+  ]}
+>
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Terms of Use</h1>
+    <p class="mt-2 text-sm font-medium text-gray-400">Last Updated: {lastUpdated}</p>
+
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">Welcome to AllYonoUpdate.com.</p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      These Terms of Use explain the rules for using this website. By accessing or using AllYonoUpdate.com, you
+      agree to use the site in line with these Terms, the Privacy Policy, the Disclaimer, and applicable law.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      If you do not agree with these Terms, please do not use this website.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        Back to Home
+      </a>
+      <a href="/disclaimer/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Read Disclaimer
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">About This Website</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com is an independent informational website that records date-stamped updates related to
+      All Yono game listings, promo-code status, event notices, application changes, feature updates, and
+      article revisions.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The website is not an operator, representative, customer-support channel, or account service for any All
+      Yono application, game platform, event, or third-party service.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The content is published for general information and reference only.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Use of Website Content</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      You may view, read, and share links to publicly available content on AllYonoUpdate.com for personal and
+      non-commercial reference.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      You must not copy, republish, sell, scrape, reproduce, alter, or distribute substantial portions of this
+      website's original content without prior written permission, except where permitted by applicable law.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When sharing a public article or update, link back to the original source on AllYonoUpdate.com where
+      practical.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Information May Change</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">Updates published on this website may change after publication.</p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Game listings, app layouts, event timing, promo-code status, features, menu paths, and temporary notices
+      can change by date, application version, device, release timing, or later platform updates.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">Before relying on any notice, review:</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Detail</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Why It Matters</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {infoDetails.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.detail}</td>
+              <td class="px-4 py-3 text-gray-300">{row.why}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      Older notices remain available for context, but they should not be treated as current without reviewing
+      the latest dated update.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">No Guarantee of Availability</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com aims to keep update records clear and organised. However, the website does not guarantee
+      that any game listing, event notice, feature, promo-code status, application layout, or third-party
+      information will remain available, accurate, current, or applicable to every user.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Information may vary based on timing, device, application version, location, account conditions, or later
+      platform changes.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Use your own judgment and verify time-sensitive information through appropriate official or verified
+      sources where available.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">No Account or Private Support</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">AllYonoUpdate.com does not provide:</p>
+      <ul class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+        {notProvided.map((item) => (
+          <li class="rounded-md border border-amber-500/30 bg-brand-surface px-4 py-2 text-sm text-gray-200">{item}</li>
+        ))}
+      </ul>
+      <p class="mt-4 text-sm font-medium leading-6 text-gray-200">
+        Never share passwords, OTPs, payment details, identity documents, account numbers, or private
+        screenshots through unofficial contact routes.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        The Contact section is only for public correction requests, editorial feedback, and general website
+        questions.
+      </p>
+      <a href="/contact/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        Contact All Yono Update
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Acceptable Use</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">When using this website, you agree not to:</p>
+
+    <ul class="mt-3 list-disc space-y-1 pl-5 text-base leading-7 text-gray-300">
+      {acceptableUseRules.map((rule) => (
+        <li>{rule}</li>
+      ))}
+    </ul>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      We may restrict or block access where activity appears to threaten website security, misuse public
+      content, or violate these Terms.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">External Links and Third-Party References</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com may link to external guides, public sources, websites, or services when they are
+      relevant to an update.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      External websites operate independently. We do not control their content, availability, security,
+      policies, future updates, or user experience.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      A link or mention does not mean that AllYonoUpdate.com endorses, operates, sponsors, or guarantees a
+      third-party website, application, platform, or service.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Review the terms and privacy policy of any external website before using it or submitting information
+      there.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Intellectual Property</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Unless otherwise stated, the original website layout, written content, update summaries, editorial
+      structure, branding elements, and original graphics on AllYonoUpdate.com belong to the website owner or
+      are used with permission.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Third-party names, titles, marks, and references remain the property of their respective owners. They are
+      used only where necessary to identify the subject of an informational update.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Nothing on this website grants a licence to use third-party names, logos, materials, or intellectual
+      property beyond what is permitted by applicable law.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">User Feedback and Correction Requests</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When you send feedback or a correction request, you confirm that the information you submit is accurate
+      to the best of your knowledge and safe to share publicly.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      You should only submit public details related to a published update, article, game listing, event notice,
+      or visible app change.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      We may review, use, edit, or decline feedback where necessary to maintain content accuracy, prevent
+      misuse, or protect the website's editorial process.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Submitting feedback does not guarantee that a post will be changed or that you will receive a direct
+      reply.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Privacy</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">Your use of this website is also governed by the Privacy Policy.</p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The Privacy Policy explains what limited information may be collected through contact forms, cookies,
+      hosting tools, or security systems.
+    </p>
+    <a href="/privacy-policy/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Read Privacy Policy
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Disclaimer</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">The Disclaimer forms part of these Terms of Use.</p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      It explains that AllYonoUpdate.com is an independent information tracker and that published information
+      may change after posting.
+    </p>
+    <a href="/disclaimer/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Read Disclaimer
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Changes to These Terms</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      These Terms of Use may be updated when the website structure, editorial process, contact features, or
+      applicable requirements change.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The latest version will remain available on this page with a visible last-updated date.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Your continued use of the website after revised Terms are published means you accept the updated version.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Governing Law</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      These Terms should be interpreted under the laws applicable in India, without limiting any rights that may
+      apply under mandatory local law.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Any dispute connected with these Terms or website use should be subject to the courts of India, in the
+      jurisdiction applicable to the website operator's registered location.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">For questions about these Terms, website use, or a published update record, contact:</p>
+    <p class="mt-3 text-base font-semibold text-brand-primary">Email: {LEGAL_EMAIL}</p>
+    <p class="text-base text-gray-300">
+      Contact Page: <a href="/contact/" class="font-medium text-brand-accent-strong hover:underline">https://allyonoupdate.com/contact/</a>
+    </p>
+    <p class="mt-4 text-base font-medium leading-7 text-gray-300">
+      Do not send passwords, OTPs, payment details, identity documents, or private account information.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Reminder</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com is an independent informational update tracker. Review the status label, publication
+        date, and last-reviewed date before relying on any game listing, event notice, promo-code status post,
+        app update, or archived record.
+      </p>
+    </div>
+  </section>
+</Layout>

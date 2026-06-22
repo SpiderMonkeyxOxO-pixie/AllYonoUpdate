@@ -1,0 +1,298 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+
+const CONTACT_EMAIL = 'contact@allyonoupdate.com';
+
+const contactTopics = [
+  { topic: 'Correction Request', include: 'Update title or URL, the detail that may be inaccurate, and a short explanation' },
+  { topic: 'Outdated Information', include: 'Article or notice URL, the date shown, and the newer public information you found' },
+  { topic: 'Game Listing Feedback', include: 'Game name, category, visible change, and the date you noticed it' },
+  { topic: 'Event or Notice Feedback', include: 'Event title, timing detail, and the relevant update record' },
+  { topic: 'App Change Feedback', include: 'Visible feature, menu path, layout change, or setting affected' },
+  { topic: 'Website Feedback', include: 'The section you were using and a clear suggestion or issue' },
+];
+
+const topicOptions = [
+  'Correction Request',
+  'Outdated Information',
+  'Game Listing Feedback',
+  'Event or Notice Feedback',
+  'App Change Feedback',
+  'Article Feedback',
+  'General Website Feedback',
+];
+
+const faqs = [
+  {
+    question: 'Can I request a correction to an older update?',
+    answer: 'Yes. Include the update title or URL, explain what may be incorrect or outdated, and provide the relevant public context.',
+  },
+  {
+    question: 'Will every message receive a reply?',
+    answer: 'Not every message may receive a direct reply. Correction requests and editorial feedback should still be reviewed when they include enough information to identify the relevant published record.',
+  },
+  {
+    question: 'Can I ask for account help through this form?',
+    answer: 'No. AllYonoUpdate.com does not provide account, login, OTP, password, payment, identity, or private user support.',
+  },
+  {
+    question: 'Can I submit information about a new game or app change?',
+    answer: 'You may share public information about a visible game listing, app change, or event notice. It should remain marked as under review until it can be verified.',
+  },
+  {
+    question: 'Where can I read the latest published notices?',
+    answer: 'Use the Latest Updates section for the newest recorded game, event, promo-code, app, and article changes.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="Contact All Yono Update: Corrections & Feedback"
+  description="Contact AllYonoUpdate.com for public correction requests, editorial feedback, and website questions about published updates, guides, and records today."
+  rawTitle
+  ogTitle="Contact All Yono Update: Corrections and Editorial Feedback"
+  ogDescription="Send a public correction request, editorial feedback, or website question about an All Yono update, article, game listing, or notice."
+  robots="index, follow"
+  keywords={[
+    'contact all yono update',
+    'all yono update correction request',
+    'all yono update feedback',
+    'all yono editorial contact',
+    'all yono report outdated information',
+    'all yono update website contact',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Contact All Yono Update</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      Use this contact section to report information that may need review, request a correction, share
+      editorial feedback, or ask a general question about content published on AllYonoUpdate.com.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      This website is an independent information tracker. Messages are only reviewed when they relate to public
+      update records, game listings, event notices, app changes, promo-code status posts, or published articles.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/promo-code-updates/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Latest Promo Codes
+      </a>
+      <a href="/editorial-policy/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Read Editorial Policy
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What You Can Contact Us About</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      You may use this form to report a possible error in an update, flag outdated information, suggest a
+      public correction, ask a question about a published article, or share feedback about the website
+      structure.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When reporting an issue, include the title or URL of the relevant update. This makes it easier to identify
+      the correct record and review the information in context.
+    </p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Contact Topic</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">What to Include</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {contactTopics.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.topic}</td>
+              <td class="px-4 py-3 text-gray-300">{row.include}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">What This Website Cannot Help With</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com does not provide private account support or platform assistance.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        Please do not use this form for login concerns, password recovery, OTP issues, payment questions,
+        identity checks, account verification, personal complaints, installation requests, or private account
+        troubleshooting.
+      </p>
+      <p class="mt-3 text-sm font-medium leading-6 text-gray-200">
+        The website does not ask for passwords, OTPs, payment details, identity documents, or private
+        screenshots.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact Form</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Submitting this form opens your email app with the details prefilled, addressed to {CONTACT_EMAIL}.
+    </p>
+
+    <form id="contact-form" class="mt-6 max-w-2xl space-y-5">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-200">Your Name</label>
+        <input id="name" name="name" type="text" required class="mt-1.5 w-full rounded-md border border-gray-700 bg-brand-bg px-3.5 py-2.5 text-sm text-brand-primary focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent" />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-200">Your Email Address</label>
+        <input id="email" name="email" type="email" required class="mt-1.5 w-full rounded-md border border-gray-700 bg-brand-bg px-3.5 py-2.5 text-sm text-brand-primary focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent" />
+      </div>
+
+      <div>
+        <label for="topic" class="block text-sm font-medium text-gray-200">Select a Topic</label>
+        <select id="topic" name="topic" required class="mt-1.5 w-full rounded-md border border-gray-700 bg-brand-bg px-3.5 py-2.5 text-sm text-brand-primary focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent">
+          <option value="" disabled selected>Select a topic</option>
+          {topicOptions.map((option) => (
+            <option value={option}>{option}</option>
+          ))}
+        </select>
+      </div>
+
+      <div>
+        <label for="related" class="block text-sm font-medium text-gray-200">Related Update or Article <span class="font-normal text-gray-500">(optional)</span></label>
+        <input id="related" name="related" type="text" placeholder="Paste the update URL or write the exact title." class="mt-1.5 w-full rounded-md border border-gray-700 bg-brand-bg px-3.5 py-2.5 text-sm text-brand-primary placeholder:text-gray-500 focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent" />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-200">Explain the Information You Want Reviewed</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows={5}
+          placeholder="Explain what needs review. Include public details, dates, and the specific part of the information that may need updating."
+          class="mt-1.5 w-full rounded-md border border-gray-700 bg-brand-bg px-3.5 py-2.5 text-sm text-brand-primary placeholder:text-gray-500 focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="w-full rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20 sm:w-auto">
+        Send Feedback
+      </button>
+    </form>
+  </section>
+
+  <script define:vars={{ CONTACT_EMAIL }}>
+    const form = document.getElementById('contact-form');
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const topic = data.get('topic') || 'General Website Feedback';
+      const subject = `AllYonoUpdate Contact: ${topic}`;
+      const body = [
+        `Name: ${data.get('name') ?? ''}`,
+        `Email: ${data.get('email') ?? ''}`,
+        `Contact Topic: ${topic}`,
+        `Related Update or Article: ${data.get('related') ?? ''}`,
+        '',
+        'Message:',
+        data.get('message') ?? '',
+      ].join('\n');
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Before You Send a Correction Request</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      A useful correction request is clear, specific, and tied to a published record.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Include the title or link of the affected update, explain the detail that may be outdated or unclear, and
+      share any relevant public information that supports your request. Avoid sending broad messages without a
+      reference because they are harder to review accurately.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Where a correction is needed, the relevant update may be revised with a visible note, corrected through a
+      new dated notice, or archived when the older information no longer reflects the latest status.
+    </p>
+    <a href="/editorial-policy/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Read How Updates Are Reviewed
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What Happens After You Send Feedback</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Editorial feedback and correction requests should be reviewed against the relevant public record.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When a meaningful change is needed, the update may receive a revised last-reviewed date, a correction
+      note, or a newer related notice. Not every message will lead to a change, especially when the information
+      cannot be verified or does not relate to a public update record.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The original publication date should remain visible whenever a published notice is revised.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Privacy Reminder</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">Only submit information that is safe to share publicly.</p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        Do not include passwords, OTPs, account numbers, payment details, identity documents, private
+        screenshots, or any other personal account information. Messages containing private account details
+        should not be used as a basis for public update posts.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        For more information about how the site handles website use, read the Privacy Policy and Terms of Use.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="/privacy-policy/" class="rounded-md border border-gray-700 bg-brand-surface px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+          Read Privacy Policy
+        </a>
+        <a href="/terms-of-use/" class="rounded-md border border-gray-700 bg-brand-surface px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+          Read Terms of Use
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+
+    <a href="/" class="mt-6 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      Back to Home
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com is an independent informational update tracker. Contact submissions are reviewed only
+        for public content accuracy, update records, and general editorial feedback. Do not submit private
+        account information through this website.
+      </p>
+    </div>
+  </section>
+</Layout>

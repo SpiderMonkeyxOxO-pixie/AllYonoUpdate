@@ -1,0 +1,334 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+
+const reviewAreas = [
+  { area: 'Promo Code Status', examples: 'Morning, afternoon, or evening release-status changes and expiry notices' },
+  { area: 'All Yono Game List', examples: 'New listings, renamed titles, category changes, or availability notices' },
+  { area: 'Blog Updates', examples: 'New guides, revised information, corrections, and archived articles' },
+];
+
+const recordDetails = [
+  { detail: 'Publication Date', why: 'Shows when the update was first recorded' },
+  { detail: 'Last Reviewed Date', why: 'Shows when the information was most recently checked' },
+  { detail: 'Status Label', why: 'Explains whether the notice is confirmed, under review, or no longer active' },
+  { detail: 'Category', why: 'Helps readers understand the kind of change being reported' },
+  { detail: 'Update Summary', why: 'Explains what changed and where users may notice it' },
+];
+
+const statusLabels = [
+  { label: 'Confirmed', body: 'A notice is marked Confirmed when the change has been clearly documented through a reliable published source or a consistent direct observation inside the application.' },
+  { label: 'Being Reviewed', body: 'A notice is marked Being Reviewed when information has been reported or observed but still needs more confirmation. These updates should not be presented as final or permanent.' },
+  { label: 'Active', body: 'A notice is marked Active when it is currently relevant based on the latest available information.' },
+  { label: 'Ended', body: 'A notice is marked Ended when a temporary event, release period, platform notice, or change is no longer current.' },
+  { label: 'Archived', body: 'A notice is marked Archived when it remains available as a dated reference but should not be treated as the latest information.' },
+];
+
+const correctionFields = [
+  { detail: 'Affected Notice', info: '[Title of the update or article]' },
+  { detail: 'Original Publication Date', info: '[Date]' },
+  { detail: 'Correction Date', info: '[Date]' },
+  { detail: 'What Changed', info: '[Brief factual explanation]' },
+  { detail: 'Current Status', info: 'Corrected / Revised / Archived' },
+];
+
+const faqs = [
+  {
+    question: 'Does every reported update become a confirmed notice?',
+    answer: 'No. Information that still needs verification should remain labelled Being Reviewed until there is enough evidence to publish it as confirmed.',
+  },
+  {
+    question: 'Can a confirmed update change later?',
+    answer: 'Yes. A confirmed update reflects the information available at the time it was reviewed. A later platform change, new app version, or revised notice may require an update or correction.',
+  },
+  {
+    question: 'Why are older notices still visible?',
+    answer: 'Older notices provide useful history. They help readers understand when a game listing, event schedule, app feature, or release status changed over time.',
+  },
+  {
+    question: 'How can I tell whether an update is current?',
+    answer: 'Check the status label, publication date, and last-reviewed date. The newest confirmed update should take priority over an older record.',
+  },
+  {
+    question: 'Does this site provide platform support?',
+    answer: 'No. AllYonoUpdate.com is an independent information tracker and does not handle private account, password, OTP, payment, or access requests.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="How All Yono Updates Are Reviewed and Published"
+  description="Learn how AllYonoUpdate.com reviews game, event, promo-code, app, and article updates before publishing, revising, correcting, or archiving notices."
+  rawTitle
+  ogTitle="How All Yono Updates Are Reviewed and Published"
+  ogDescription="See how AllYonoUpdate.com labels, reviews, corrects, revises, and archives information about games, events, promo-code status, and app changes."
+  robots="index, follow"
+  keywords={[
+    'all yono update editorial policy',
+    'all yono update review process',
+    'all yono update verification',
+    'all yono source policy',
+    'all yono correction policy',
+    'all yono update status labels',
+    'all yono information policy',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">How All Yono Updates Are Reviewed</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      AllYonoUpdate.com publishes date-stamped information about game listings, events, promo-code status,
+      application changes, and related article updates.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      The goal is to keep each notice clear about what changed, when it was recorded, and how confident the site
+      is in the available information. Not every reported change is immediately treated as confirmed. Some
+      updates need more checking before they are published as a verified record.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      This policy explains how notices are reviewed, labelled, revised, corrected, and moved into the archive.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/promo-code-updates/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Latest Promo Codes
+      </a>
+      <a href="/contact/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Contact All Yono Update
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Our Role as an Information Tracker</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com is an independent information tracker. It does not claim to operate, represent, or
+      provide support for any All Yono application or game platform.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The site does not handle account access, password recovery, OTP concerns, payments, identity checks, or
+      private user requests. Its role is limited to publishing organised update records for general reference.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What We Review</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">The site may review and record updates related to the following areas:</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Update Area</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Examples of What May Be Recorded</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {reviewAreas.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.area}</td>
+              <td class="px-4 py-3 text-gray-300">{row.examples}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      A notice is only useful when it explains the actual change. Vague claims or unclear reports should not be
+      treated as confirmed updates.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Information Is Checked</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Before publishing an update, the available information should be reviewed for clarity, timing, and
+      relevance.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Where possible, a notice should be based on a clearly visible platform change, a published notice, a
+      documented update source, or repeated observations that support the same conclusion. When the available
+      information is incomplete, conflicting, or still developing, the notice should be labelled accordingly.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">Each published record should include:</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Detail</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Why It Matters</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {recordDetails.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.detail}</td>
+              <td class="px-4 py-3 text-gray-300">{row.why}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Update Status Labels</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">Status labels help readers understand the current state of a notice.</p>
+
+    <dl class="mt-6 space-y-4">
+      {statusLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-gray-300">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Revisions Are Handled</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Information can change after a notice is published. A game may move into another category. A feature may
+      appear differently after a new app version. An event date may be revised. A promo-code status may be
+      replaced by a newer release-period update.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When this happens, the original notice should not be silently rewritten in a way that hides the history of
+      the change. Instead, the record should show a visible revision note, an updated last-reviewed date, or a
+      newer related update.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      A meaningful revision should explain what changed and why the earlier information is no longer current.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Corrections Policy</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Corrections are used when published information needs to be adjusted, clarified, or removed.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      A correction notice should be clear and direct. It should identify the affected article or update, show
+      the correction date, and briefly explain what changed.
+    </p>
+
+    <p class="mt-4 text-sm text-gray-400">Example format used for a correction notice:</p>
+    <div class="mt-3 overflow-x-auto rounded-lg border border-dashed border-gray-700 bg-brand-surface/50">
+      <table class="w-full text-left text-sm italic text-gray-500">
+        <thead>
+          <tr class="border-b border-dashed border-gray-700">
+            <th class="px-4 py-3 font-semibold not-italic text-gray-400">Correction Detail</th>
+            <th class="px-4 py-3 font-semibold not-italic text-gray-400">Information to Show</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-dashed divide-gray-700">
+          {correctionFields.map((row) => (
+            <tr>
+              <td class="px-4 py-3 not-italic">{row.detail}</td>
+              <td class="px-4 py-3">{row.info}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      Corrections should improve clarity. They should not be hidden inside unrelated text.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Older Updates Are Archived</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Older notices remain valuable when they explain the history behind a changed game listing, revised event
+      schedule, earlier app layout, or former promo-code status.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      However, older posts should never look like current information. Once a notice is no longer active, it
+      should be marked Ended or Archived and moved into the relevant archive section.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When a newer update replaces an earlier one, both posts should link to each other where practical. That
+      gives readers a clearer timeline of what changed.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Independence and Clear Labelling</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com should clearly distinguish between confirmed information, reported information, and
+      older historical records.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The site should not use misleading wording, imply guaranteed availability, or suggest that a temporary
+      update applies to every user. Application layouts, listings, features, and notices may vary by version,
+      timing, or rollout stage.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Readers should always be able to see the date and status label before relying on a notice.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Privacy and Account Safety</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com does not ask users to provide passwords, OTPs, payment details, identity documents, or
+        private account screenshots.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        Correction requests and general feedback should only concern publicly visible information, article
+        accuracy, or a dated update record. Private account matters should not be submitted through this
+        website.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Requesting a Correction</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      If you notice an update that appears incomplete, outdated, or inaccurate, use the contact section to share
+      the relevant public details.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      A correction request should include the update title or URL, the information that may need review, and a
+      brief explanation of why it appears outdated or unclear. The site should review the request before
+      changing the published record.
+    </p>
+    <a href="/contact/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      Contact All Yono Update
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com publishes updates for general information purposes. Dates, status labels, and revision
+        notes are included to help readers understand the condition of a notice when it was recorded. Always
+        review the latest available update before relying on earlier information.
+      </p>
+    </div>
+  </section>
+</Layout>

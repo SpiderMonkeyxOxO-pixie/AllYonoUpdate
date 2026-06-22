@@ -1,0 +1,283 @@
+# AllYonoUpdate.com — Daily Promo Code Sheet
+#
+# Edit the value after each colon and save. Leave it blank if no code
+# has been released yet for that release period.
+#
+# Format (do not change the structure, only the values after the colons):
+#
+# Platform Name:
+# Code AM: CODE
+# Code P.M: CODE
+# Code Eve: CODE
+#
+# Keep one blank line between platforms.
+
+101Z:
+Code AM:
+Code P.M:
+Code Eve:
+
+567 Slots:
+Code AM: HelloWorld!
+Code P.M: 
+Code Eve: 
+
+777 Game:
+Code AM: KevinBurat!
+Code P.M: SubomoBuratkoKevin!
+Code Eve: 
+
+789 Jackpot:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+ABC Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Bet 213:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Bingo 101:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Boss Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Club INR:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Game Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Gogo Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Hi Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Hindi 777:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Ind Club:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Ind Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Ind Slots:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+INR Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Jahio 777:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Jaiho Arcade:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Jaiho Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Jaiho Slot:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Jaiho Spin:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Jaiho Win:
+Code AM:
+Code P.M:
+Code Eve:
+
+Jaiho 777 VIP:
+Code AM:
+Code P.M:
+Code Eve:
+
+Jaiho91:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Joy Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Love Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Maha Games:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+MBM Bet:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Neta Vip:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+OK Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Rumble Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Rummy 91:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Rummy Ludo:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Rummy77:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Rummy888:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Saga Slots:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Share Slots:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Slot Spin:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Slots Winner:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Spin 101:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Spin 777:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Spin Crush:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Spin Gold:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Spin Winner:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Top Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yes Spin:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yn 777:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yono 777:
+Code AM:
+Code P.M:
+Code Eve:
+
+Yono Arcade:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yono Games:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yono Rummy:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yono Slots:
+Code AM: 
+Code P.M: 
+Code Eve: 
+
+Yono Vip:
+Code AM: 
+Code P.M: 
+Code Eve: 

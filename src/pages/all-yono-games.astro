@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { gameLogos } from '../data/gameLogos';
+import { downloadUrls } from '../data/downloadUrls';
+
+const downloadUrlByPlatform = new Map(downloadUrls.map((d) => [d.platform, d.url]));
+
+const relatedCategories = [
+  { label: 'Latest Promo Code', body: 'Records date-stamped release-period updates by platform.', href: '/promo-code-updates/' },
+  { label: 'Blog Updates', body: 'Read newly published and revised All Yono articles.', href: '/blog-updates/' },
+];
+
+const faqs = [
+  {
+    question: 'How often is the All Yono game list updated?',
+    answer: 'The list is reviewed whenever a new title is added, removed, or renamed so the directory reflects the current game lineup.',
+  },
+  {
+    question: 'Does AllYonoUpdate.com host the APK files?',
+    answer: 'No. AllYonoUpdate.com does not host or operate any APK files. Each Download button leads directly to the platform\'s own website.',
+  },
+  {
+    question: 'Has AllYonoUpdate.com verified the bonus or referral terms on each platform?',
+    answer: 'No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on third-party platform websites.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="All Yono Game List: Current, New & Upcoming Games"
+  description="Explore the current All Yono game list, including new and upcoming titles, category changes, newly recorded entries, and dated availability notes for users."
+  rawTitle
+  ogTitle="All Yono Game List: Current, New and Upcoming Titles"
+  ogDescription="Browse the current recorded All Yono game list, including new titles, category updates, upcoming entries, and availability notes."
+  robots="index, follow"
+  keywords={[
+    'all yono game list',
+    'all yono games',
+    'all yono new games',
+    'all yono upcoming games',
+    'all yono game categories',
+    'all yono updated game list',
+    'all yono latest games',
+    'all yono game availability',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono Game List</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      Browse the current recorded All Yono game list, with a direct download link for each title where one has
+      been recorded.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#game-directory" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Game List
+      </a>
+      <a href="/promo-code-updates/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        View Latest Promo Codes
+      </a>
+    </div>
+  </section>
+
+  <section id="game-directory" class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">All Yono Games APK</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Recorded titles currently in the All Yono directory, with a direct download link where one has been
+      recorded. AllYonoUpdate.com does not host or operate these APK files — each Download button leads to the
+      platform's own website.
+    </p>
+
+    <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      {gameLogos.map((game) => (
+        <div class="flex flex-col items-center rounded-lg border border-brand-secondary bg-brand-surface px-3 py-4 text-center">
+          <img
+            src={game.src}
+            alt={`${game.name} logo`}
+            width="96"
+            height="96"
+            loading="lazy"
+            class="h-16 w-16 rounded-md object-contain sm:h-20 sm:w-20"
+          />
+          <p class="mt-3 text-sm font-medium text-gray-200">{game.name}</p>
+          {downloadUrlByPlatform.get(game.name) && (
+            <a
+              href={downloadUrlByPlatform.get(game.name)}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              class="mt-3 w-full rounded-md bg-emerald-600 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-emerald-700"
+            >
+              Download
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <p class="mt-4 text-sm leading-6 text-gray-400">
+      Download links lead to each platform's own website. AllYonoUpdate.com has not independently verified the
+      bonus, code, or referral terms shown there.
+    </p>
+
+    <a href="/promo-code-updates/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      View Latest Promo Codes
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Find Related Information</h2>
+
+    <ul class="mt-6 space-y-3">
+      {relatedCategories.map((item) => (
+        <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
+          <a href={item.href} class="text-base font-semibold text-brand-accent-strong hover:underline">{item.label}</a>
+          <span class="text-base leading-7 text-gray-300">{item.body}</span>
+        </li>
+      ))}
+    </ul>
+
+    <a href="/" class="mt-6 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Back to Home
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com records the All Yono game list for general information purposes. Game names,
+        categories, placement, and availability can change after an update is published. Review the status label
+        and last-reviewed date before relying on any listing.
+      </p>
+    </div>
+  </section>
+</Layout>

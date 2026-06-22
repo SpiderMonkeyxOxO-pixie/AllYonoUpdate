@@ -1,0 +1,236 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+
+const trackedAreas = [
+  { area: 'Promo Code Status', covers: 'Date-stamped morning, afternoon, and evening status updates by platform' },
+  { area: 'All Yono Game List', covers: 'The current recorded game directory, including newly listed and renamed titles' },
+  { area: 'Blog Updates', covers: 'New guides, revised articles, corrections, and archived information posts' },
+];
+
+const notProvided = [
+  'Account login assistance',
+  'Password recovery',
+  'OTP support',
+  'Payment support',
+  'Identity verification help',
+  'Private account troubleshooting',
+  'Installation files',
+  'Personal account review',
+];
+
+const faqs = [
+  {
+    question: 'Is AllYonoUpdate.com an official platform website?',
+    answer: 'No. AllYonoUpdate.com is an independent informational update tracker. It does not operate or represent any All Yono platform.',
+  },
+  {
+    question: 'What type of information does the site publish?',
+    answer: 'The site records game updates, promo-code status, events, temporary notices, app changes, new features, and editorial revisions.',
+  },
+  {
+    question: 'Why are dates shown on updates?',
+    answer: 'Dates help readers understand when a notice was recorded and whether the information may have changed since publication.',
+  },
+  {
+    question: 'Are all notices confirmed immediately?',
+    answer: 'No. Some notices may be labelled Being Reviewed until there is enough information to confirm them.',
+  },
+  {
+    question: 'Where can I find longer guides?',
+    answer: 'Long-form information should be linked from relevant update notices and hosted separately from the live update feed.',
+  },
+  {
+    question: 'Does the website provide account support?',
+    answer: 'No. The site does not handle login, OTP, password, payment, identity, or private account concerns.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="About All Yono Update: Our Update Tracking Role"
+  description="Learn what AllYonoUpdate.com tracks, how dated notices are reviewed and updated, and how this independent tracker keeps updates separate from evergreen guides."
+  rawTitle
+  ogTitle="About All Yono Update: Update Tracking and Information Records"
+  ogDescription="Learn how AllYonoUpdate.com tracks dated game, event, promo-code, app, and article updates as an independent information website."
+  robots="index, follow"
+  keywords={[
+    'about all yono update',
+    'all yono update tracker',
+    'all yono update website',
+    'all yono update information',
+    'all yono game update tracker',
+    'all yono notice tracker',
+    'all yono independent information site',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">About All Yono Update</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      AllYonoUpdate.com is an independent information website that records date-stamped changes across the All
+      Yono game ecosystem.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      The site focuses on updates that may change over time, such as new game listings, event notices,
+      promo-code status, app interface changes, feature updates, and revised articles.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      The goal is to make those changes easier to follow. Instead of mixing old and new information together,
+      each notice should show what changed, when it was published, when it was last reviewed, and whether it is
+      confirmed, still being reviewed, active, ended, or archived.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/promo-code-updates/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Latest Promo Codes
+      </a>
+      <a href="/all-yono-games/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Browse All Yono Game List
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What AllYonoUpdate.com Tracks</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">The website records updates across several areas.</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Update Area</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">What It Covers</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {trackedAreas.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.area}</td>
+              <td class="px-4 py-3 text-gray-300">{row.covers}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      The website should only publish a notice when there is a clear reason to record the change. A vague
+      update is not useful. Readers should be able to understand what happened without guessing.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Why This Site Exists</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      All Yono information can change quickly. A game may appear under a new category. A feature may move into
+      another menu. An event date may change. A promo-code update may only apply for a certain release period.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Older posts can remain useful, but they should not be mistaken for current information.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com is built to keep those changes organised through dated notices, visible status labels,
+      and a searchable archive. The purpose is not to overload users with updates. It is to make the information
+      easier to trace.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How This Site Differs From AllYonoOfficial.com</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">AllYonoUpdate.com focuses on timely changes and update records.</p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoOfficial.com remains focused on longer evergreen guides, general explanations, and broader reference
+      information, so the two sites stay useful without repeating the same content.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Our Independent Role</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">AllYonoUpdate.com is an independent information tracker.</p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      It does not claim to operate, represent, manage, or provide customer support for any All Yono application,
+      game platform, event, or related service.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">The website does not provide:</p>
+
+    <ul class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+      {notProvided.map((item) => (
+        <li class="rounded-md border border-gray-800 bg-brand-surface px-4 py-2 text-sm text-gray-300">{item}</li>
+      ))}
+    </ul>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      The site only publishes general update records and information notices.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Keeping Records Clear</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      An update should not be silently changed in a way that hides what was originally recorded.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      When information changes, the site should add a visible revision note, update the last-reviewed date, or
+      publish a new related notice. Where practical, newer notices should link back to earlier records, and
+      older notices should point readers toward the most current update.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      This creates a clearer timeline for game changes, events, feature updates, and promo-code status notices.
+    </p>
+
+    <a href="/editorial-policy/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      Read How Updates Are Reviewed
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Privacy and Account Safety</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com does not ask for passwords, OTPs, payment details, identity documents, or private
+        account screenshots.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        Anyone submitting a correction request should only share public information related to a specific
+        article, update notice, game listing, or visible app change.
+      </p>
+      <p class="mt-3 text-sm font-medium leading-6 text-gray-200">
+        Private account concerns should not be sent through this website.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com publishes update records for general information purposes. Game listings, event
+        notices, app features, interface layouts, and promo-code status may change after a post is published.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        Always review the latest status label, publication date, and last-reviewed date before relying on an
+        update.
+      </p>
+    </div>
+  </section>
+</Layout>

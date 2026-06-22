@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const topics = [
+  { section: 'Latest Promo Code', covers: 'Current morning, afternoon, and evening release-status records by platform', cta: 'View Promo Code Status', href: '/promo-code-updates/' },
+  { section: 'Latest Games', covers: 'The current recorded All Yono game directory', cta: 'Browse Game List', href: '/all-yono-games/' },
+  { section: 'Blogs', covers: 'New and revised All Yono articles and guides', cta: 'Read Blog Updates', href: '/blog-updates/' },
+];
+---
+
+<Layout
+  title="Page Not Found"
+  description="The update or section you requested could not be found. Browse the latest All Yono updates, game list, events, and app changes."
+  rawTitle
+  robots="noindex, follow"
+  canonical={false}
+>
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Page Not Found</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      The link you opened may be outdated, moved, or no longer available.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      AllYonoUpdate.com keeps older records for reference, but some links may change when an update is revised,
+      archived, or replaced by a newer notice.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Find the Latest Information</h2>
+
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        Back to Home
+      </a>
+      <a href="/all-yono-games/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Browse All Yono Game List
+      </a>
+    </div>
+
+    <p class="mt-8 text-base leading-7 text-gray-300">You can also explore current notices by topic.</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Section</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">What You Will Find</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {topics.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.section}</td>
+              <td class="px-4 py-3 text-gray-300">{row.covers}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-6 flex flex-wrap gap-3">
+      {topics.map((row) => (
+        <a href={row.href} class="rounded-md border border-gray-700 px-4 py-2 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+          {row.cta}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Still Can't Find It?</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      If you believe a link should still work, let us know through the contact section.
+    </p>
+    <a href="/contact/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      Contact All Yono Update
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com is an independent information tracker. Review the latest dated notice and status label
+        before relying on older game, event, promo-code, or application update records.
+      </p>
+    </div>
+  </section>
+</Layout>

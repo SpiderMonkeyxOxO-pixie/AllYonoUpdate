@@ -1,0 +1,325 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const PRIVACY_EMAIL = 'contact@allyonoupdate.com';
+const lastUpdated = 'June 21, 2026';
+
+const infoCollected = [
+  { type: 'Contact Information', examples: 'Name, email address', when: 'When you send feedback or a correction request' },
+  { type: 'Message Information', examples: 'Update URL, article title, correction details, feedback', when: 'When you use the contact form' },
+  { type: 'Technical Information', examples: 'IP address, browser type, device type, pages visited, referral source, date and time', when: 'Through hosting and security tools' },
+  { type: 'Cookie Information', examples: 'Cookie preferences, basic session data', when: 'Only if cookies are introduced in the future' },
+];
+
+const cookieTypes = [
+  { type: 'Essential Cookies', purpose: 'Help the website function securely and remember basic settings, where used' },
+  { type: 'Preference Cookies', purpose: 'Remember choices such as cookie preferences, where available' },
+  { type: 'Analytics Cookies', purpose: 'Not currently used. This category will only apply if an analytics tool is added in the future.' },
+];
+
+const retentionPeriods = [
+  { type: 'Contact Form Messages', period: "Not stored on our servers. Messages are sent directly to our inbox through your own email client, so retention follows our email account's own practices." },
+  { type: 'Correction Requests', period: 'Not stored on our servers, for the same reason as above. Retained only within our email account until resolved.' },
+  { type: 'Security and Server Logs', period: 'Typically retained for 30–90 days by our hosting provider' },
+  { type: 'Cookie Preference Records', period: 'Not applicable — no cookie preference tool is currently active' },
+  { type: 'Analytics Data', period: 'Not applicable — no analytics service is currently used' },
+];
+
+const privacyChoices = [
+  'Request access to personal information held about you',
+  'Correct incomplete or inaccurate contact information',
+  'Request deletion of information that is no longer needed',
+  'Withdraw consent for optional cookies or analytics',
+  'Raise a concern about how your information has been handled',
+];
+---
+
+<Layout
+  title="All Yono Update Privacy Policy & Data Practices"
+  description="Learn how AllYonoUpdate.com collects, uses, stores, and protects limited website and feedback information, including cookies and correction requests securely."
+  rawTitle
+  ogTitle="All Yono Update Privacy Policy and Data Practices"
+  ogDescription="Learn how AllYonoUpdate.com handles website information, feedback submissions, cookies, and privacy-related requests."
+  robots="index, follow"
+  keywords={[
+    'all yono update privacy policy',
+    'all yono update data privacy',
+    'all yono website privacy policy',
+    'all yono update cookies',
+    'all yono feedback data policy',
+    'all yono information privacy',
+  ]}
+>
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Privacy Policy</h1>
+    <p class="mt-2 text-sm font-medium text-gray-400">Last Updated: {lastUpdated}</p>
+
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      AllYonoUpdate.com is an independent informational website that records date-stamped updates about All
+      Yono game listings, event notices, promo-code status, application changes, feature updates, and article
+      revisions.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      This Privacy Policy explains what limited information may be collected when you use this website, why it
+      may be used, how it may be stored, and the choices available to you.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      This policy applies only to AllYonoUpdate.com and does not apply to third-party websites, applications, or
+      services that may be linked from this website.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        Back to Home
+      </a>
+      <a href="/contact/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Contact All Yono Update
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Information We May Collect</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com does not require account registration to read public updates.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      However, limited information may be collected when you choose to contact the website, submit feedback,
+      request a correction, or use website features that rely on cookies or similar technology.
+    </p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Information Type</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Examples</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">When It May Be Collected</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {infoCollected.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.type}</td>
+              <td class="px-4 py-3 text-gray-300">{row.examples}</td>
+              <td class="px-4 py-3 text-gray-300">{row.when}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-sm font-medium leading-6 text-gray-300">
+      Please do not submit passwords, OTPs, payment details, identity documents, account numbers, or private
+      account screenshots through this website.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How We Use Information</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      We may use the limited information collected through this website to operate and improve the site.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      This may include responding to correction requests, reviewing public feedback, maintaining website
+      security, preventing spam or misuse, understanding how visitors use public content, and improving the
+      structure or clarity of published updates.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Where optional cookies or similar tools are used in the future, they will only be activated in line with
+      the visitor's cookie preferences where required.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact Form Information</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The contact form on this website opens your own email application with a prefilled message addressed to
+      {PRIVACY_EMAIL}. Your name, email address, selected topic, related update URL, and message are sent
+      directly through your own email account and are not stored on AllYonoUpdate.com servers.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      We use this information only to review editorial feedback, investigate a possible correction, respond
+      when appropriate, or improve a published update record.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Contact submissions should concern public website content only. This website does not provide login
+      support, password recovery, payment support, identity verification, or private account assistance.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Cookies and Similar Technologies</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Cookies are small files placed on your device by a website. They can help a website remember preferences,
+      maintain security, or understand how visitors use public content.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com does not currently use optional or analytics cookies. The categories below describe what
+      may be used if that changes in the future.
+    </p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Cookie Type</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Purpose</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {cookieTypes.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.type}</td>
+              <td class="px-4 py-3 text-gray-300">{row.purpose}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      You can manage cookies through your browser settings. No cookie preference tool is currently active on
+      this website because no optional or analytics cookies are in use. This section will be updated with a
+      cookie settings link if that changes.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Information May Be Shared</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">We do not sell or rent personal information.</p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Limited information may be processed by trusted service providers that help operate the website, such as
+      hosting providers, email providers, or security services.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Information may also be disclosed when required by applicable law, needed to protect the website from
+      misuse, or necessary to respond to a valid legal request.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Any provider handling information for the website should only use it for the service being provided and
+      under appropriate privacy and security terms.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Data Retention</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      We keep personal information only for as long as reasonably needed for the purpose for which it was
+      collected, including editorial review, security, record keeping, and legal obligations.
+    </p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-brand-surface/50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Information Type</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Retention</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-800">
+          {retentionPeriods.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-gray-200">{row.type}</td>
+              <td class="px-4 py-3 text-gray-300">{row.period}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      Information may be kept longer where necessary to maintain an editorial correction history, meet legal
+      obligations, or resolve a dispute.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Security</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      We take reasonable steps to protect the limited information handled through this website.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      These steps may include secure hosting, access controls, spam protection, HTTPS encryption, and regular
+      review of website tools.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      No website or transmission method can be guaranteed completely secure. Please avoid sending any private,
+      sensitive, or account-related information through the contact form.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Your Privacy Choices and Requests</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">Depending on applicable law and the information involved, you may ask to:</p>
+
+    <ul class="mt-3 list-disc space-y-1 pl-5 text-base leading-7 text-gray-300">
+      {privacyChoices.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">To make a privacy request, contact:</p>
+    <p class="mt-2 text-base font-semibold text-brand-primary">Privacy Contact: {PRIVACY_EMAIL}</p>
+    <p class="text-base text-gray-300">Subject Line: Privacy Request</p>
+
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      Please include enough information for us to understand the request and identify the related submission.
+      We may need to verify that the request comes from the relevant person before acting on it.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Children's Privacy</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      AllYonoUpdate.com is not designed to collect personal information from children.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      If you believe a child has submitted personal information through the website, contact us using the
+      privacy email above so the information can be reviewed and removed where appropriate.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">External Links</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      This website may link to external guides, websites, applications, or public sources when they are
+      relevant to a published update.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Those websites operate independently and have their own privacy practices. AllYonoUpdate.com is not
+      responsible for the privacy policies, content, security, or future availability of external websites.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Review the privacy policy of any third-party site before submitting information there.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Changes to This Privacy Policy</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      This Privacy Policy may be updated when website tools, contact features, cookies, hosting arrangements, or
+      editorial processes change.
+    </p>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The latest version will remain available on this page with a visible last-updated date. Continued use of
+      the website after an update means you are using the site under the revised policy.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Contact Us</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        For privacy questions, correction requests, or concerns about a published record, contact:
+      </p>
+      <p class="mt-3 text-sm font-semibold text-brand-primary">Email: {PRIVACY_EMAIL}</p>
+      <p class="text-sm text-gray-200">
+        Contact Page: <a href="/contact/" class="font-medium text-brand-accent-strong hover:underline">https://allyonoupdate.com/contact/</a>
+      </p>
+      <p class="mt-3 text-sm font-medium leading-6 text-gray-200">
+        Do not send passwords, OTPs, payment details, identity documents, or private account information.
+      </p>
+    </div>
+  </section>
+</Layout>

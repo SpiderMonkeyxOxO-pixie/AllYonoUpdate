@@ -1,0 +1,322 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import { notices } from '../data/notices';
+
+const gameNotices = notices.filter((notice) => notice.category === 'Game Updates');
+
+const coverageItems = [
+  'Current game-directory entries',
+  'Recently added or renamed titles',
+  'Category placement and category changes',
+  'Previously listed games',
+  'Availability notices and under-review entries',
+  'Links to newer records when an older listing has changed',
+];
+
+const directoryDetails = [
+  { detail: 'Game Name', tells: 'The latest recorded name of the title' },
+  { detail: 'Category', tells: 'The current recorded section where it appears' },
+  { detail: 'Status', tells: 'Confirmed, Being Reviewed, or Previously Listed' },
+  { detail: 'Last Reviewed', tells: 'The most recent date the listing was checked' },
+  { detail: 'Update Note', tells: 'Whether the title is new, renamed, moved, or changed' },
+];
+
+const gameGroups = [
+  {
+    heading: 'Newly Recorded Games',
+    body: [
+      'A newly recorded game is a title that has recently appeared in the available directory or has been clearly announced as a new addition.',
+      'A game should only be marked Confirmed when there is enough public information or a clear visible record to support it. Until then, it should remain marked Being Reviewed.',
+    ],
+    cta: 'View Newly Recorded Game Updates',
+    href: '/game-updates/#latest-game-updates',
+  },
+  {
+    heading: 'Renamed or Moved Titles',
+    body: [
+      'Some game titles may appear with a revised name or in a different category after an app change. When that happens, the related update should show the earlier recorded name or location where known.',
+      'This helps readers understand that a title may have changed position rather than disappeared entirely.',
+    ],
+    cta: 'View Renamed and Moved Game Updates',
+    href: '/game-updates/#latest-game-updates',
+  },
+  {
+    heading: 'Previously Listed Games',
+    body: [
+      'A title marked Previously Listed appeared in an earlier recorded directory but may not be visible in the latest layout.',
+      'This label does not always mean the game has been permanently removed. It simply means the title is not currently confirmed in the newest recorded list.',
+    ],
+    cta: 'Browse Earlier Game Records',
+    href: '/update-archive/',
+  },
+];
+
+const readingChecks = [
+  {
+    label: 'The status label',
+    body: 'Confirmed means the entry has been clearly documented. Being Reviewed means more verification is needed. Previously Listed means the title appeared in an earlier record but may not be visible in the latest directory.',
+  },
+  {
+    label: 'The last-reviewed date',
+    body: 'A game list can change after a category update, renamed entry, or application refresh. The newest review date gives context for the recorded listing.',
+  },
+  {
+    label: 'The related update notice',
+    body: 'Where a title has moved, changed names, or become unavailable, a related Game Updates post should explain the change in more detail.',
+  },
+];
+
+const relatedInfo = [
+  { label: 'All Yono Game List', body: 'Provides the current recorded directory.', href: '/all-yono-games/' },
+  { label: 'Game Updates', body: 'Records newly added titles, renamed entries, category changes, and availability notices.', href: '/game-updates/' },
+  { label: 'App Changes', body: 'Records menu and interface updates that may affect how game categories appear.', href: '/app-updates/' },
+  { label: 'Update Archive', body: 'Keeps earlier records available for historical reference.', href: '/update-archive/' },
+];
+
+const faqs = [
+  {
+    question: 'Is this the full All Yono game list?',
+    answer: 'This is a quick reference. Use the All Yono Game List for the latest recorded directory and Game Updates for the history behind a listing change.',
+  },
+  {
+    question: 'Why is a game shown under a different category?',
+    answer: 'A category may change after a directory refresh, menu update, or application change. Open the related game update for the date and recorded details.',
+  },
+  {
+    question: 'What does "Being Reviewed" mean?',
+    answer: 'It means the title has been reported or observed but does not yet have enough confirmation to be treated as part of the current recorded directory.',
+  },
+  {
+    question: 'Does "Previously Listed" mean the game is permanently removed?',
+    answer: 'Not necessarily. It means the title appeared in an earlier record but is not currently confirmed in the latest directory.',
+  },
+  {
+    question: 'Where can I find the newest game changes?',
+    answer: 'Use the Game Updates section for the latest dated notices about new listings, renamed titles, category changes, and availability records.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="All Yono Game Information: List, Categories & Status"
+  description="Reference how the All Yono game directory is organised, including categories, status labels, renamed titles, and where to find the latest game updates."
+  rawTitle
+  ogTitle="All Yono Game Information: List, Categories and Status"
+  ogDescription="A quick reference for the All Yono game directory, with links to category changes, renamed titles, and the latest recorded game updates."
+  robots="index, follow"
+  keywords={[
+    'all yono game information',
+    'all yono game list',
+    'all yono game categories',
+    'all yono game status',
+    'all yono game directory',
+    'all yono game reference',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono Game Information</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      All Yono game information can change as titles are added, moved into another category, renamed, or
+      temporarily unavailable. This quick reference helps readers understand how the recorded game directory is
+      organised and where to find the latest updates behind a listing.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      AllYonoUpdate.com focuses on dated records. Use this section to orient yourself, then open the related
+      Game Updates notice when you need the latest context for a specific title or category.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/all-yono-games/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+        Browse All Yono Game List
+      </a>
+      <a href="/game-updates/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+        View Latest Game Updates
+      </a>
+    </div>
+
+    <p class="mt-6 max-w-3xl text-sm italic text-slate-500">
+      AllYonoUpdate.com is an independent information tracker. It records public game-list changes and does not
+      provide account, payment, password, or private user support.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What You Can Find Here</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      This section is a starting point for readers looking for current recorded information about All Yono
+      games. It can help you find:
+    </p>
+
+    <ul class="mt-3 list-disc space-y-1 pl-5 text-base leading-7 text-slate-600">
+      {coverageItems.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+
+    <p class="mt-4 text-base leading-7 text-slate-600">
+      For the full current directory, use the All Yono Game List. For the history behind a listing, use Game
+      Updates.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Current Game Directory</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      The All Yono game directory should show the latest recorded titles by category. Each entry should include
+      a clear status label and last-reviewed date so readers can tell whether the information is current, still
+      being reviewed, or part of an earlier record.
+    </p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-slate-200">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-slate-50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Directory Detail</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">What It Shows</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          {directoryDetails.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-700">{row.detail}</td>
+              <td class="px-4 py-3 text-slate-600">{row.tells}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <a href="/all-yono-games/" class="mt-4 inline-block rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+      Open the Full All Yono Game List
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Understanding Game Categories</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Game categories can change after an application update or directory refresh. A title that appeared in one
+      section earlier may later move, be renamed, or display under a different category.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      The category shown in the current directory reflects the latest recorded placement. When an earlier
+      placement matters, the related update should explain what changed and when it was first noticed.
+    </p>
+    <a href="/game-updates/#latest-game-updates" class="mt-4 inline-block rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+      Browse Category Change Updates
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">New, Changed and Previously Listed Games</h2>
+    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {gameGroups.map((group) => (
+        <div class="flex flex-col rounded-lg border border-slate-200 bg-white px-5 py-6">
+          <h3 class="text-base font-semibold text-brand-primary">{group.heading}</h3>
+          {group.body.map((paragraph) => (
+            <p class="mt-2 text-sm leading-6 text-slate-600">{paragraph}</p>
+          ))}
+          <a href={group.href} class="mt-4 text-sm font-semibold text-brand-accent-strong hover:underline">{group.cta} →</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Recently Recorded Game Changes</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      The newest confirmed game-list changes appear here, each showing its status, headline, summary,
+      publication date, and last-reviewed date.
+    </p>
+
+    {gameNotices.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {gameNotices.map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-6 py-10 text-center">
+        <p class="text-sm leading-6 text-slate-500">
+          No new confirmed game-list changes have been recorded at this time. Browse the current directory or
+          review earlier records in the update archive.
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <a href="/all-yono-games/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+            Browse All Yono Game List
+          </a>
+          <a href="/update-archive/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+            Open Game Update Archive
+          </a>
+        </div>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How to Read a Game Record</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Before relying on a game listing, check these details first.</p>
+
+    <dl class="mt-6 space-y-4">
+      {readingChecks.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-slate-600">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Related Information</h2>
+
+    <ul class="mt-6 space-y-3">
+      {relatedInfo.map((item) => (
+        <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
+          <a href={item.href} class="text-base font-semibold text-brand-accent-strong hover:underline">{item.label}</a>
+          <span class="text-base leading-7 text-slate-600">{item.body}</span>
+        </li>
+      ))}
+    </ul>
+
+    <a href="/latest-updates/" class="mt-6 inline-block rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+      View Latest Updates
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <div class="mt-6 space-y-6">
+      {faqs.map((faq) => (
+        <div>
+          <h3 class="text-base font-semibold text-brand-primary">{faq.question}</h3>
+          <p class="mt-2 text-base leading-7 text-slate-600">{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        AllYonoUpdate.com records game information for general reference. Game names, category placement, and
+        availability can change after a post is published. Review the latest status label and last-reviewed
+        date before relying on any listing.
+      </p>
+    </div>
+  </section>
+</Layout>

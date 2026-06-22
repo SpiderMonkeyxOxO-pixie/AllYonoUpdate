@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  {
+    question: 'What Is AllYonoUpdate.com?',
+    answers: [
+      'AllYonoUpdate.com is an independent information website that records date-stamped changes across the All Yono game ecosystem.',
+      'The site may publish updates about game listings, category changes, promo-code release status, event notices, application menus, visible features, and revised articles. It does not operate or represent any application, game platform, or third-party service mentioned in its content.',
+    ],
+  },
+  {
+    question: 'How Often Is the Website Updated?',
+    answers: [
+      'Updates are added when there is a meaningful change that can be recorded clearly.',
+      'Some periods may have several notices, especially when there are new game listings, event timing changes, or app updates. At other times, there may be no new confirmed records. The site should not publish empty updates just to make the feed look active.',
+      'For the newest available records, start with the Latest Updates section.',
+    ],
+    cta: { label: 'Browse Latest Updates', href: '/latest-updates/' },
+  },
+  {
+    question: 'What Does "Confirmed" Mean?',
+    answers: [
+      'A notice marked Confirmed means the information has been clearly documented through a reliable public source or direct visible observation inside the application.',
+      'Confirmed does not mean the information will remain unchanged forever. A game listing, feature, event, or menu path can still change later. Always review the publication date and last-reviewed date.',
+    ],
+  },
+  {
+    question: 'What Does "Being Reviewed" Mean?',
+    answers: [
+      'A notice marked Being Reviewed means the information has been reported or observed but needs more verification before it is treated as confirmed.',
+      'This label is used to keep the update feed clear. It tells readers that the information may be useful to watch, but it should not yet be treated as a final record.',
+    ],
+  },
+  {
+    question: 'What Do "Active," "Ended," and "Archived" Mean?',
+    answers: [
+      'Active means a notice is currently relevant based on the latest recorded information.',
+      'Ended means a temporary event, release window, status update, or platform notice is no longer current.',
+      'Archived means the post remains available as a historical reference. It may explain an earlier game list, event period, app layout, or promo-code status, but it should not be treated as the newest information.',
+    ],
+  },
+  {
+    question: 'Where Can I Find the Current All Yono Game List?',
+    answers: [
+      'Use the All Yono Game List for the latest recorded directory of titles and categories.',
+      'Use Game Updates when you want to understand what changed behind a listing, such as a newly added title, renamed game, category move, or availability notice.',
+    ],
+    ctas: [
+      { label: 'Open All Yono Game List', href: '/all-yono-games/' },
+      { label: 'View Game Updates', href: '/game-updates/' },
+    ],
+  },
+  {
+    question: 'Why Does a Game Appear Under a Different Category?',
+    answers: [
+      'Game categories can change after a directory refresh, menu update, renamed section, or application change.',
+      'A title may move into another category without being removed entirely. Where possible, the related Game Updates notice should explain the earlier recorded placement and the latest known category.',
+    ],
+  },
+  {
+    question: 'Are Promo Code Status Updates Permanent?',
+    answers: [
+      'No. Promo-code status can change by release period, date, app version, or later platform notice.',
+      'Morning, afternoon, and evening notices should always show their publication time and last-reviewed time. An older promo-code post should not be treated as current when a newer status notice is available.',
+    ],
+    cta: { label: 'View Promo Code Status', href: '/promo-code-updates/' },
+  },
+  {
+    question: 'What Does "Waiting to Release" Mean?',
+    answers: [
+      '"Waiting to Release" means no confirmed promo-code update has been recorded for that specific release period yet.',
+      'It does not mean that a code is guaranteed to appear later. It only reflects the current recorded status at the time the notice was reviewed.',
+    ],
+  },
+  {
+    question: 'Where Can I Find Event and Maintenance Notices?',
+    answers: [
+      'Use Events & Notices for recorded event timing, maintenance information, temporary platform changes, schedule revisions, and other time-sensitive notices.',
+      'Every event-related post should include a visible status label and date so readers can see whether the notice is upcoming, active, ended, or still under review.',
+    ],
+    cta: { label: 'View Events & Notices', href: '/events-notices/' },
+  },
+  {
+    question: 'Why Does the App Layout Look Different From an Older Update?',
+    answers: [
+      'The application may have received a menu adjustment, UI refresh, feature rollout, category update, or version change.',
+      'Check the newest App Changes notice first. Older posts can still be useful for history, but the latest reviewed update should take priority.',
+    ],
+    cta: { label: 'Browse App Changes', href: '/app-updates/' },
+  },
+  {
+    question: 'Does Every App Change Affect Every User?',
+    answers: [
+      'Not always. Some visible changes may appear gradually, vary by application version, or affect only certain sections.',
+      'When the scope is known, the related update should explain it. If it is not yet clear, the post should remain marked Being Reviewed.',
+    ],
+  },
+  {
+    question: 'Can I Request a Correction?',
+    answers: [
+      'Yes. You can use the Contact section to report public information that may be inaccurate, outdated, incomplete, or unclear.',
+      'Include the update title or URL, the specific detail that may need review, and a short explanation. Correction requests should only concern public content on this website.',
+    ],
+    cta: { label: 'Send a Correction Request', href: '/contact/' },
+  },
+  {
+    question: 'Will Every Correction Request Change a Post?',
+    answers: [
+      'Not always. A request is reviewed against the relevant published record and available public information.',
+      'Where a correction is needed, the post may receive a revision note, corrected detail, updated status label, archive notice, or a newer related update. When the information cannot be verified, the original record may remain unchanged.',
+    ],
+  },
+  {
+    question: 'Does AllYonoUpdate.com Provide Account Support?',
+    answers: [
+      'No. AllYonoUpdate.com does not provide login support, password recovery, OTP assistance, payment support, account verification, installation files, or private account troubleshooting.',
+      'Never submit passwords, OTPs, payment details, identity documents, account numbers, or private screenshots through the website.',
+    ],
+  },
+  {
+    question: 'Where Can I Find Longer All Yono Guides?',
+    answers: [
+      'This website focuses on dated update records. Longer reference guides should remain separate from the live update feed.',
+      'Relevant update posts may link to a fuller guide when a topic needs more explanation, such as app navigation, game information, or broader reference material.',
+    ],
+  },
+];
+
+const readingDetails = [
+  { detail: 'Status Label', why: 'Shows whether the record is confirmed, under review, active, ended, or archived' },
+  { detail: 'Publication Date', why: 'Shows when the update was first recorded' },
+  { detail: 'Last Reviewed Date', why: 'Shows when the information was most recently checked' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answers.join(' '),
+    },
+  })),
+};
+---
+
+<Layout
+  title="Common Questions About All Yono Updates"
+  description="Find answers to common questions about how AllYonoUpdate.com records game updates, promo-code status, event notices, app changes, and corrections."
+  rawTitle
+  ogTitle="Common Questions About All Yono Updates"
+  ogDescription="Answers to common questions about status labels, game updates, promo-code status, event notices, app changes, and how corrections are handled."
+  robots="index, follow"
+  keywords={[
+    'all yono common questions',
+    'all yono faq',
+    'all yono update status meaning',
+    'all yono confirmed being reviewed',
+    'all yono correction request',
+    'all yono update help',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Common Questions About All Yono Updates</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      This section answers common questions about how AllYonoUpdate.com records game updates, promo-code
+      status, event notices, app changes, and article revisions.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      AllYonoUpdate.com is built as an independent update tracker. Its role is to organise dated information so
+      readers can understand what changed, when it was recorded, and whether the notice is confirmed, still
+      being reviewed, ended, or archived.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/latest-updates/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+        View Latest Updates
+      </a>
+      <a href="/editorial-policy/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+        Read How Updates Are Reviewed
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="space-y-10">
+      {faqs.map((faq) => (
+        <div>
+          <h2 class="text-xl font-bold tracking-tight text-brand-primary">{faq.question}</h2>
+          {faq.answers.map((paragraph) => (
+            <p class="mt-3 text-base leading-7 text-slate-600">{paragraph}</p>
+          ))}
+          {faq.cta && (
+            <a href={faq.cta.href} class="mt-3 inline-block text-sm font-semibold text-brand-accent-strong hover:underline">
+              {faq.cta.label} →
+            </a>
+          )}
+          {faq.ctas && (
+            <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1">
+              {faq.ctas.map((cta) => (
+                <a href={cta.href} class="text-sm font-semibold text-brand-accent-strong hover:underline">{cta.label} →</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Can I Tell Whether an Update Is Current?</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Check these three details before relying on any notice:</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-slate-200">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-slate-50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Detail</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Why It Matters</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          {readingDetails.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-700">{row.detail}</td>
+              <td class="px-4 py-3 text-slate-600">{row.why}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-base leading-7 text-slate-600">When a newer related notice exists, use that record first.</p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        AllYonoUpdate.com records information for general reference. Game listings, events, app features,
+        category placement, and promo-code status can change after a post is published. Review the status
+        label, publication date, and last-reviewed date before relying on any update.
+      </p>
+    </div>
+  </section>
+</Layout>

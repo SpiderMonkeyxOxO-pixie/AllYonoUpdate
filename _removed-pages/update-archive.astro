@@ -1,0 +1,331 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const exampleMonths = [
+  { month: 'June 2026', topics: 'Game updates, promo-code notices, app changes' },
+  { month: 'May 2026', topics: 'Events, game-list changes, article revisions' },
+  { month: 'April 2026', topics: 'App features, notices, archived updates' },
+  { month: 'March 2026', topics: 'Game listings, platform notices, revisions' },
+];
+
+const categoryArchives = [
+  {
+    heading: 'Game Update Archive',
+    body: 'Review older notices about newly listed games, renamed titles, category changes, moved entries, and previously recorded game availability.',
+    cta: 'Browse Past Game Updates',
+    href: '/game-updates/#latest-game-updates',
+  },
+  {
+    heading: 'Promo Code Status Archive',
+    body: 'Review earlier morning, afternoon, and evening promo-code status posts. These records are for historical reference and should not be treated as current availability.',
+    cta: 'Browse Past Promo Code Updates',
+    href: '/promo-code-updates/#latest-promo-code-updates',
+  },
+  {
+    heading: 'Events and Notices Archive',
+    body: 'Find earlier event notices, maintenance information, schedule changes, and temporary platform updates.',
+    cta: 'Browse Past Events and Notices',
+    href: '/events-notices/#current-events-notices',
+  },
+  {
+    heading: 'App Changes Archive',
+    body: 'Review previous UI updates, feature notices, menu changes, navigation adjustments, settings updates, and performance-related records.',
+    cta: 'Browse Past App Changes',
+    href: '/app-updates/#latest-app-changes',
+  },
+  {
+    heading: 'Blog Update Archive',
+    body: 'Find older records of newly published articles, revised guides, corrections, and archived information posts.',
+    cta: 'Browse Past Blog Updates',
+    href: '/blog-updates/#latest-blog-updates',
+  },
+];
+
+const statusLabels = [
+  { label: 'Confirmed', body: 'The update was verified when it was published.' },
+  { label: 'Being Reviewed', body: 'The information was still awaiting further confirmation at the time of the notice.' },
+  { label: 'Ended', body: 'The event, release period, temporary change, or notice is no longer current.' },
+  { label: 'Archived', body: 'The post remains available as a dated reference but should not be treated as the latest information.' },
+];
+
+const searchFilters = ['All Categories', 'Game Updates', 'Promo Code Status', 'Events & Notices', 'App Changes', 'Blog Updates'];
+const statusFilters = ['Confirmed', 'Being Reviewed', 'Ended', 'Archived'];
+
+const relatedCategories = [
+  { label: 'Latest Updates', body: 'Shows the newest recorded notices first.', href: '/latest-updates/' },
+  { label: 'Game Updates', body: 'Explains newly listed, renamed, moved, or changed game entries.', href: '/game-updates/' },
+  { label: 'Promo Code Status', body: 'Records current release-period notices.', href: '/promo-code-updates/' },
+  { label: 'Events & Notices', body: 'Covers active and upcoming platform notices.', href: '/events-notices/' },
+  { label: 'App Changes', body: 'Records current UI, menu, navigation, setting, and feature changes.', href: '/app-updates/' },
+];
+
+const faqs = [
+  {
+    question: 'Are archived updates still current?',
+    answer: 'No. Archived updates are kept for reference. Always use the newest dated notice when you need current information.',
+  },
+  {
+    question: 'Why is an older post still visible?',
+    answer: 'Older posts help document changes over time, such as a renamed game, revised event schedule, moved menu, or previous app layout.',
+  },
+  {
+    question: 'Can an archived update be revised?',
+    answer: 'Yes. A correction note can be added when older information needs clarification. The original publication date should remain visible, alongside the correction date.',
+  },
+  {
+    question: 'Where can I find current promo-code status?',
+    answer: 'Use the Promo Code Status section, not the archive. Historical promo-code posts should not be treated as active.',
+  },
+  {
+    question: 'What should happen when a new update replaces an older one?',
+    answer: 'The newer post should link back to the earlier notice where relevant, and the archived post should include a link to the latest available update.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="All Yono Update Archive: Past Games, Events & Changes"
+  description="Browse dated All Yono updates by month, including past game listings, event notices, promo-code status, app changes, and article revisions with status labels."
+  rawTitle
+  ogTitle="All Yono Update Archive: Past Games, Events and App Changes"
+  ogDescription="Explore older All Yono updates by month, including game changes, event notices, promo-code status, app updates, and revised articles."
+  robots="index, follow"
+  keywords={[
+    'all yono update archive',
+    'all yono past updates',
+    'all yono previous game updates',
+    'all yono event archive',
+    'all yono app update history',
+    'all yono promo code archive',
+    'all yono old updates',
+    'all yono update history',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono Update Archive</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      This archive keeps earlier All Yono updates organised by month, so readers can review past game changes,
+      event notices, promo-code status records, application updates, and revised article notices without mixing
+      them into the latest feed.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      The newest information should always appear in the Latest Updates section. This archive is for reference,
+      context, and change history.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      Every archived post should retain its original publication date, status label, category, and last-reviewed
+      date. Older information should never appear current without a visible date.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/latest-updates/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+        View Latest Updates
+      </a>
+      <a href="/all-yono-games/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+        Browse All Yono Game List
+      </a>
+    </div>
+
+    <p class="mt-6 max-w-3xl text-sm italic text-slate-500">
+      Archived notices may describe an earlier app layout, event period, game list, or promo-code release
+      status. Always review the date before relying on an older record.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse Updates by Month</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Use the monthly archive to explore earlier recorded updates.</p>
+    <p class="mt-3 text-sm text-slate-500">Example layout — populated once monthly archives are published.</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-dashed border-slate-300 bg-slate-50">
+      <table class="w-full text-left text-sm italic text-slate-400">
+        <thead>
+          <tr class="border-b border-dashed border-slate-300">
+            <th class="px-4 py-3 font-semibold not-italic text-slate-500">Month</th>
+            <th class="px-4 py-3 font-semibold not-italic text-slate-500">Recorded Updates</th>
+            <th class="px-4 py-3 font-semibold not-italic text-slate-500">Main Topics</th>
+            <th class="px-4 py-3 font-semibold not-italic text-slate-500">View Archive</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-dashed divide-slate-300">
+          {exampleMonths.map((row) => (
+            <tr>
+              <td class="px-4 py-3 not-italic">{row.month}</td>
+              <td class="px-4 py-3">[Number]</td>
+              <td class="px-4 py-3">{row.topics}</td>
+              <td class="px-4 py-3">Not yet available</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 text-sm leading-6 text-slate-500">
+      As more updates are published, older months will remain available through a clear archive list or
+      pagination.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse Updates by Category</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Readers may also want to find a specific type of earlier update.</p>
+
+    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      {categoryArchives.map((category) => (
+        <div class="flex flex-col rounded-lg border border-slate-200 bg-white px-5 py-6">
+          <h3 class="text-base font-semibold text-brand-primary">{category.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">{category.body}</p>
+          <a href={category.href} class="mt-4 text-sm font-semibold text-brand-accent-strong hover:underline">{category.cta} →</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Archive Update Cards</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Each archived update card includes the same core details used in the latest feed: status, category,
+      headline, summary, publication date, and last-reviewed date.
+    </p>
+
+    <div class="mt-6 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-6 py-10 text-center">
+      <p class="text-sm leading-6 text-slate-500">
+        No archived updates have been published yet. Once notices move out of the latest feed, they will appear
+        here with full archive details.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Archived Status Works</h2>
+
+    <dl class="mt-6 space-y-4">
+      {statusLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-slate-600">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+
+    <p class="mt-4 text-base leading-7 text-slate-600">
+      A status label should remain visible even after a post moves into the archive. This helps readers
+      understand the condition of the update at the time it was recorded.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Why Older Updates Matter</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        Older notices can provide useful context. A game may have changed names, moved categories, disappeared
+        temporarily, or returned later. An app menu may have looked different in an earlier version. An event
+        schedule may have been revised more than once.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        The archive gives readers a way to trace those changes without confusing older information with today's
+        status.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        Where a newer update replaces an earlier one, the archived post should link to the latest related notice
+        whenever possible.
+      </p>
+      <a href="/latest-updates/" class="mt-4 inline-block rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+        View Latest Updates
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Search the Archive</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Look for a game name, event title, app feature, category, or month.
+    </p>
+
+    <div class="mt-5">
+      <label for="archive-search" class="sr-only">Search past updates</label>
+      <input
+        id="archive-search"
+        type="search"
+        disabled
+        placeholder="Search past updates by game, feature, event, or month"
+        class="w-full rounded-md border border-slate-300 bg-slate-50 px-4 py-2.5 text-sm text-slate-500 placeholder:text-slate-400"
+      />
+      <p class="mt-2 text-xs text-slate-400">Search will activate once archived updates are published.</p>
+    </div>
+
+    <p class="mt-5 text-sm font-medium text-slate-700">Useful filters:</p>
+    <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+      {searchFilters.map((filter, index) => (
+        <span
+          class:list={[
+            'rounded-full px-4 py-1.5 text-sm font-medium',
+            index === 0 ? 'bg-brand-accent text-brand-primary' : 'border border-slate-300 text-slate-700',
+          ]}
+        >
+          {filter}
+        </span>
+      ))}
+    </div>
+    <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter by status">
+      {statusFilters.map((filter) => (
+        <span class="rounded-full border border-slate-300 px-4 py-1.5 text-sm font-medium text-slate-700">{filter}</span>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Related Sections</h2>
+
+    <ul class="mt-6 space-y-3">
+      {relatedCategories.map((item) => (
+        <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
+          <a href={item.href} class="text-base font-semibold text-brand-accent-strong hover:underline">{item.label}</a>
+          <span class="text-base leading-7 text-slate-600">{item.body}</span>
+        </li>
+      ))}
+    </ul>
+
+    <a href="/latest-updates/" class="mt-6 inline-block rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+      View Latest Updates
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <div class="mt-6 space-y-6">
+      {faqs.map((faq) => (
+        <div>
+          <h3 class="text-base font-semibold text-brand-primary">{faq.question}</h3>
+          <p class="mt-2 text-base leading-7 text-slate-600">{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        AllYonoUpdate.com keeps archived notices for general reference. Game listings, app features, event
+        schedules, and promo-code status may have changed after an earlier post was published. Review the
+        latest update, status label, and last-reviewed date before relying on any archived information.
+      </p>
+    </div>
+  </section>
+</Layout>

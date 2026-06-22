@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import { notices } from '../data/notices';
+import { externalGuideUrl } from '../data/nav';
+
+const appNotices = notices.filter((notice) => notice.category === 'App Changes');
+
+const coverageItems = [
+  'Home-screen and menu changes',
+  'Game-category placement',
+  'New or changed features',
+  'Navigation-path updates',
+  'Settings-area adjustments',
+  'Loading and visible performance notices',
+];
+
+const changeDetails = [
+  { detail: 'Status', tells: 'Whether the update is Confirmed, Being Reviewed, Ended, or Archived' },
+  { detail: 'Update Type', tells: 'UI change, feature update, menu change, navigation update, or settings change' },
+  { detail: 'Published Date', tells: 'When the change was first recorded' },
+  { detail: 'Last Reviewed', tells: 'When the information was most recently checked' },
+];
+
+const findYourWay = [
+  {
+    heading: 'Menu and Navigation Updates',
+    body: 'A menu may move, a tab may be renamed, or a section may appear in a different place after an update. When a navigation change is recorded, the related notice should explain the previous location and the latest recorded location where possible.',
+    cta: 'View Menu and Navigation Updates',
+    href: '/app-updates/#latest-app-changes',
+  },
+  {
+    heading: 'UI and Layout Updates',
+    body: 'Interface updates can include redesigned sections, changed icons, new category displays, or a different home-screen arrangement. These records focus on practical changes readers may notice rather than general design commentary.',
+    cta: 'View UI Updates',
+    href: '/app-updates/#latest-app-changes',
+  },
+  {
+    heading: 'Features and Settings',
+    body: 'A feature update may involve a newly visible option, revised tool, changed setting, or updated profile area. Check the latest dated notice before relying on an older app reference, especially when a feature appears differently after a new version or rollout.',
+    cta: 'View Feature and Settings Updates',
+    href: '/app-updates/#latest-app-changes',
+  },
+];
+
+const readingChecks = [
+  { label: 'The date', body: 'A layout, feature, or menu path may have changed since the update was published.' },
+  { label: 'The status label', body: 'Confirmed updates have been documented clearly. Updates marked Being Reviewed still need more verification.' },
+  { label: 'The related newer record', body: 'A later notice may replace or revise an older update. Where available, use the newest related record first.' },
+];
+
+const faqs = [
+  {
+    question: 'Is this a full All Yono app walkthrough?',
+    answer: 'No. This is a short reference for finding current app-change records. Longer evergreen explanations should remain on the related All Yono guide resource.',
+  },
+  {
+    question: 'Why does the app layout look different from an earlier update?',
+    answer: 'The application may have received a menu adjustment, interface change, feature rollout, or version update. Check the newest App Changes notice first.',
+  },
+  {
+    question: 'Are all app changes confirmed immediately?',
+    answer: 'No. Some records may be marked Being Reviewed until there is enough information to treat the update as confirmed.',
+  },
+  {
+    question: 'Does this website provide account support?',
+    answer: 'No. AllYonoUpdate.com does not provide password recovery, OTP support, payment help, login assistance, or private account troubleshooting.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="All Yono App Guide: Quick Reference & Recent Changes"
+  description="Get a quick reference for using the All Yono app, plus links to recently recorded menu, feature, and navigation changes tracked on AllYonoUpdate.com."
+  rawTitle
+  ogTitle="All Yono App Guide: Quick Reference and Recent Changes"
+  ogDescription="A quick reference for using the All Yono app, with links to recently recorded interface and feature changes."
+  robots="index, follow"
+  keywords={[
+    'all yono app guide',
+    'all yono app help',
+    'all yono app navigation',
+    'all yono app reference',
+    'all yono app menu guide',
+    'all yono app features',
+    'all yono quick guide',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono App Guide</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      This quick reference helps readers understand how All Yono app information is organised and where to find
+      recently recorded changes.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      AllYonoUpdate.com focuses on updates that can change over time, such as menu adjustments, new features,
+      changed navigation paths, settings updates, and visible interface changes. For longer evergreen
+      walkthroughs, use the related All Yono reference guides linked below.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/app-updates/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+        View Recent App Changes
+      </a>
+      <a href="/latest-updates/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+        Browse Latest Updates
+      </a>
+    </div>
+
+    <p class="mt-6 max-w-3xl text-sm italic text-slate-500">
+      AllYonoUpdate.com is an independent information tracker. It does not provide login, password, OTP,
+      payment, or private account support.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What This App Guide Covers</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Use this section as a starting point when you want to understand the current recorded app layout. It
+      points readers toward updates involving:
+    </p>
+
+    <ul class="mt-3 list-disc space-y-1 pl-5 text-base leading-7 text-slate-600">
+      {coverageItems.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+
+    <p class="mt-4 text-base leading-7 text-slate-600">
+      Because layouts and features can change after an application update, always check the date and status
+      label on the related notice.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Start With the Latest App Changes</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      The most useful place to begin is the App Changes section. It records changes that users may notice
+      inside the application, including moved menus, renamed tabs, new tools, updated categories, and feature
+      adjustments.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">Each update should show:</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-slate-200">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-slate-50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Detail</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">What It Tells You</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          {changeDetails.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-700">{row.detail}</td>
+              <td class="px-4 py-3 text-slate-600">{row.tells}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <a href="/app-updates/" class="mt-4 inline-block rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+      Open App Changes
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Finding Your Way Around Recorded Changes</h2>
+    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {findYourWay.map((item) => (
+        <div class="flex flex-col rounded-lg border border-slate-200 bg-white px-5 py-6">
+          <h3 class="text-base font-semibold text-brand-primary">{item.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">{item.body}</p>
+          <a href={item.href} class="mt-4 text-sm font-semibold text-brand-accent-strong hover:underline">{item.cta} →</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Recently Recorded App Changes</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      The newest confirmed records appear here, each showing its status, headline, summary, publication date,
+      and last-reviewed date.
+    </p>
+
+    {appNotices.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {appNotices.map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-6 py-10 text-center">
+        <p class="text-sm leading-6 text-slate-500">
+          No new confirmed application changes have been recorded at this time. Browse the latest update feed or
+          review earlier records in the archive.
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <a href="/latest-updates/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+            View Latest Updates
+          </a>
+          <a href="/update-archive/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+            Browse App Change Archive
+          </a>
+        </div>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Longer All Yono References</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      This page is designed as a quick orientation and update route. It does not replace longer evergreen
+      explanations about broader app use, game information, or general account topics.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">For a fuller reference, use the related guide resource.</p>
+    <a
+      href={externalGuideUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-4 inline-block rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+    >
+      Read All Yono Reference Guides ↗
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How to Read an App Update</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Before relying on an app-change notice, check three things:</p>
+
+    <dl class="mt-6 space-y-4">
+      {readingChecks.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-slate-600">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <div class="mt-6 space-y-6">
+      {faqs.map((faq) => (
+        <div>
+          <h3 class="text-base font-semibold text-brand-primary">{faq.question}</h3>
+          <p class="mt-2 text-base leading-7 text-slate-600">{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        AllYonoUpdate.com records visible application changes for general reference. Menus, features, settings,
+        and navigation paths can change after a post is published. Review the latest status label, publication
+        date, and last-reviewed date before relying on any update.
+      </p>
+    </div>
+  </section>
+</Layout>

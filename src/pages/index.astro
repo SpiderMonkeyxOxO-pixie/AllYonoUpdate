@@ -1,0 +1,395 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import Icon from '../components/Icon.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { notices } from '../data/notices';
+import { gameLogos } from '../data/gameLogos';
+import { getPromoCodes } from '../lib/promoCodes';
+import { downloadUrls } from '../data/downloadUrls';
+import { externalGuideUrl, externalIndiaUrl, telegramUrl } from '../data/nav';
+
+const topics = [
+  {
+    heading: 'Latest Promo Code',
+    body: 'Review date-stamped promo-code availability by platform, released up to three times a day — morning, afternoon, and evening.',
+    cta: 'View Promo Code Status',
+    href: '/promo-code-updates/',
+  },
+  {
+    heading: 'Latest Games',
+    body: 'Browse the current recorded All Yono game directory, including newly listed titles, renamed games, and category placement.',
+    cta: 'View Game List',
+    href: '/all-yono-games/',
+  },
+  {
+    heading: 'Blogs',
+    body: 'See which All Yono guides, game explainers, and information articles have recently been added or revised.',
+    cta: 'View Blog Updates',
+    href: '/blog-updates/',
+  },
+];
+
+const logoByName = new Map(gameLogos.map((g) => [g.name, g.src]));
+const promoCodes = getPromoCodes();
+const promoByPlatform = new Map(promoCodes.map((entry) => [entry.platform, entry]));
+const downloadUrlByPlatform = new Map(downloadUrls.map((d) => [d.platform, d.url]));
+
+const featuredApps = [
+  { rank: 1, name: 'Yono Games', blurb: 'The top-rated All Yono platform, tracked first for new promo codes and listing changes.' },
+  { rank: 2, name: 'Yono Rummy', blurb: 'A standout rummy title in the current All Yono game directory.' },
+  { rank: 3, name: 'Yono Arcade', blurb: 'A consistently popular arcade choice among All Yono users.' },
+  { rank: 4, name: 'Yono 777', blurb: 'A long-running favorite, tracked for daily code releases.' },
+  { rank: 5, name: 'Jaiho91', blurb: 'A widely followed platform in the current All Yono lineup.' },
+];
+
+const featuredAppsDisplay = featuredApps;
+
+const faqs = [
+  {
+    question: 'How often is AllYonoUpdate.com updated?',
+    answer: 'The site is updated whenever a meaningful change can be documented. Every post should show its publication date and last-reviewed date.',
+  },
+  {
+    question: 'Are promo-code updates permanent?',
+    answer: 'No. Promo-code information can change by date, release period, application version, or availability. Review the latest dated update first.',
+  },
+  {
+    question: 'Are all upcoming game listings confirmed?',
+    answer: 'No. Only listings marked Confirmed should be treated as available information. Items labelled Being Reviewed still require verification.',
+  },
+  {
+    question: 'Does this website provide account support?',
+    answer: 'No. AllYonoUpdate.com is an informational update tracker. It does not handle passwords, OTPs, payment concerns, account recovery, or private user details.',
+  },
+  {
+    question: 'Where can I find longer All Yono guides?',
+    answer: 'Relevant blog posts may link to longer informational references when a topic needs more explanation.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="All Yono Update: Promo Codes, Game List & Blog"
+  description="Track date-stamped All Yono promo code status, the current game list, and revised blog articles in one organised hub for users."
+  rawTitle
+  ogTitle="All Yono Update: Promo Codes, Game List and Blog"
+  ogDescription="Follow date-stamped All Yono promo-code status, the current game directory, and revised blog articles."
+  robots="index, follow"
+  keywords={[
+    'all yono updates',
+    'all yono promo code updates',
+    'all yono new games',
+    'all yono game list',
+    'all yono blog updates',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-8 pb-3 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">
+      All Yono Update: Promo Codes, Game List and Blog
+    </h1>
+    <p class="mt-2 max-w-3xl text-base leading-7 text-gray-300">
+      Find the top All Yono promo codes, the current game list, and the latest blog updates — all date-stamped
+      and reviewed in one place.
+    </p>
+    <a
+      href={telegramUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-4 inline-flex items-center gap-1.5 rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20"
+    >
+      Join the Telegram Channel <Icon name="arrow-up-right" class="h-3.5 w-3.5" />
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-8 lg:px-8">
+    <div class="rounded-3xl bg-gradient-to-b from-brand-secondary/40 to-transparent px-4 py-6 sm:px-6">
+      <div class="flex items-center gap-2">
+        <span class="h-6 w-1.5 rounded-full bg-brand-accent"></span>
+        <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Top 5 Best Choices</h2>
+      </div>
+      <p class="mt-2 max-w-2xl text-base leading-7 text-gray-300">
+        The top All Yono apps with the most active promo codes, ranked for quick access to today's codes.
+      </p>
+
+      <div class="mt-4 overflow-x-auto rounded-2xl border border-gray-800 bg-brand-surface shadow-sm">
+        <div class="flex snap-x snap-mandatory flex-row divide-x divide-gray-800">
+          {featuredAppsDisplay.map((app) => {
+            const medalColor =
+              app.rank === 1 ? 'text-brand-accent' : app.rank === 2 ? 'text-gray-300' : app.rank === 3 ? 'text-gray-500' : '';
+            return (
+              <div
+                class:list={[
+                  'relative flex w-[7.5rem] shrink-0 snap-start flex-col items-center px-2 py-3 text-center sm:w-auto sm:flex-1 sm:px-4 sm:py-4',
+                  app.rank === 1 && 'bg-brand-accent/10',
+                ]}
+              >
+                {app.rank === 1 && (
+                  <span class="absolute top-1.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand-accent px-2 py-0.5 text-[8px] font-bold uppercase tracking-wide text-brand-bg shadow sm:top-2 sm:px-3 sm:text-[10px]">
+                    Most Popular
+                  </span>
+                )}
+
+                <span class="mt-3 inline-flex items-center gap-1 rounded-full bg-brand-secondary px-2 py-1 text-[10px] font-mono font-semibold text-gray-400 sm:px-3 sm:text-xs">
+                  {app.rank <= 3 && <Icon name="star" class:list={['h-2.5 w-2.5', medalColor]} />}
+                  <span class="hidden sm:inline">Rank #{app.rank}</span><span class="sm:hidden">#{app.rank}</span>
+                </span>
+
+                {logoByName.get(app.name) && (
+                  <img
+                    src={logoByName.get(app.name)}
+                    alt={`${app.name} logo`}
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                    class="mt-2 h-10 w-10 rounded-xl object-contain shadow-sm ring-1 ring-gray-800 sm:h-14 sm:w-14"
+                  />
+                )}
+
+                <h3 class="mt-2 max-w-full truncate text-xs font-bold leading-snug text-brand-primary sm:text-base">{app.name}</h3>
+
+                <div class="mt-2 flex w-full flex-col gap-1.5">
+                  <a
+                    href="#featured-promo-codes"
+                    class:list={[
+                      'w-full rounded-lg px-2 py-1.5 text-[11px] font-semibold transition sm:px-3 sm:py-2 sm:text-sm',
+                      app.rank === 1
+                        ? 'bg-brand-accent/10 text-brand-accent border border-brand-accent/50 hover:bg-brand-accent/20'
+                        : 'border border-gray-700 text-gray-300 hover:border-gray-500 hover:text-gray-100',
+                    ]}
+                  >
+                    View Code
+                  </a>
+
+                  {downloadUrlByPlatform.get(app.name) && (
+                    <a
+                      href={downloadUrlByPlatform.get(app.name)}
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      class="w-full rounded-lg bg-emerald-600 px-2 py-1.5 text-[11px] font-semibold text-white transition hover:bg-emerald-700 sm:px-3 sm:py-2 sm:text-sm"
+                    >
+                      Download
+                    </a>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div class="mt-4 grid grid-cols-2 gap-2">
+        <a href="/promo-code-updates/" class="rounded-md bg-brand-accent/10 px-3 py-2 text-center text-xs font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20 sm:text-sm">
+          View Latest Promo Codes
+        </a>
+        <a href="/all-yono-games/" class="rounded-md border border-gray-700 px-3 py-2 text-center text-xs font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100 sm:text-sm">
+          Browse All Yono Game List
+        </a>
+      </div>
+
+      <p class="mt-4 max-w-3xl text-sm italic text-gray-400">
+        Independent information tracker. This website does not provide account login, password recovery, payment
+        support, or private account assistance.
+      </p>
+    </div>
+  </section>
+
+  <section id="featured-promo-codes" class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Featured Promo Codes</h2>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      A partial preview of the daily promo-code list, led by Yono Games. Tap Copy to copy a code to your clipboard.
+    </p>
+
+    <div class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-4">
+      {featuredApps.map((app) => {
+        const entry = promoByPlatform.get(app.name);
+        return (
+          <div class="rounded-lg border border-brand-secondary bg-brand-surface p-2 sm:p-3" data-tab-group>
+            <div class="flex flex-col items-center gap-1 text-center sm:flex-row sm:gap-2 sm:text-left">
+              {logoByName.get(app.name) && (
+                <img
+                  src={logoByName.get(app.name)}
+                  alt={`${app.name} logo`}
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  class="h-7 w-7 shrink-0 rounded-md object-contain sm:h-8 sm:w-8"
+                />
+              )}
+              <h3 class="max-w-full truncate text-[11px] font-semibold text-brand-primary sm:text-sm">{app.name}</h3>
+            </div>
+
+            <div class="mt-2 flex gap-1 rounded-md bg-brand-secondary p-0.5">
+              {[
+                { key: 'morning', label: 'AM', full: 'Morning' },
+                { key: 'afternoon', label: 'PM', full: 'Afternoon' },
+                { key: 'evening', label: 'Eve', full: 'Evening' },
+              ].map((tab, i) => (
+                <button
+                  type="button"
+                  data-tab-btn={tab.key}
+                  title={tab.full}
+                  class:list={[
+                    'tab-btn min-w-0 flex-1 rounded-md py-1 text-center text-[10px] font-semibold transition sm:text-xs',
+                    i === 0
+                      ? 'bg-brand-accent/10 text-brand-accent border border-brand-accent/40'
+                      : 'text-gray-500 hover:text-gray-300',
+                  ]}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            <div class="mt-1.5 sm:mt-2">
+              {[
+                { key: 'morning', label: 'Morning', code: entry?.morning ?? '' },
+                { key: 'afternoon', label: 'Afternoon', code: entry?.afternoon ?? '' },
+                { key: 'evening', label: 'Evening', code: entry?.evening ?? '' },
+              ].map((row, i) => (
+                <div data-tab-panel={row.key} class:list={['rounded-md bg-brand-secondary/40 px-1.5 py-1 sm:px-2.5 sm:py-1.5', i !== 0 && 'hidden']}>
+                  <p class="text-[8px] font-medium text-gray-400 sm:text-[10px]">{row.label}</p>
+                  <p class="truncate font-mono text-[10px] font-semibold text-brand-accent sm:text-sm">{row.code || 'Not released yet'}</p>
+                  {row.code && (
+                    <button
+                      type="button"
+                      data-copy-code={row.code}
+                      class="copy-btn mt-1 w-full rounded-md bg-brand-accent/10 px-2 py-1 text-[10px] font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20 sm:py-1.5 sm:text-xs"
+                    >
+                      Copy
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <a href="/promo-code-updates/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      View All Platforms
+    </a>
+  </section>
+
+  <script>
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const tabButton = target.closest('[data-tab-btn]');
+      if (tabButton) {
+        const group = tabButton.closest('[data-tab-group]');
+        if (!group) return;
+        const key = tabButton.getAttribute('data-tab-btn');
+        group.querySelectorAll('[data-tab-btn]').forEach((btn) => {
+          const active = btn === tabButton;
+          btn.classList.toggle('bg-brand-accent/10', active);
+          btn.classList.toggle('text-brand-accent', active);
+          btn.classList.toggle('border', active);
+          btn.classList.toggle('border-brand-accent/40', active);
+          btn.classList.toggle('text-gray-500', !active);
+          btn.classList.toggle('hover:text-gray-300', !active);
+        });
+        group.querySelectorAll('[data-tab-panel]').forEach((panel) => {
+          panel.classList.toggle('hidden', panel.getAttribute('data-tab-panel') !== key);
+        });
+        return;
+      }
+
+      const button = target.closest('[data-copy-code]');
+      if (!button) return;
+      const code = button.getAttribute('data-copy-code');
+      if (!code) return;
+
+      navigator.clipboard.writeText(code).then(() => {
+        const original = button.textContent;
+        button.textContent = 'Copied!';
+        setTimeout(() => {
+          button.textContent = original;
+        }, 1500);
+      });
+    });
+  </script>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Latest Notices</h2>
+    <p class="mt-2 text-base leading-7 text-gray-300">The newest recorded changes appear here first.</p>
+
+    {notices.length > 0 ? (
+      <div class="mt-4 space-y-4">
+        {notices.slice(0, 3).map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-4 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-6 text-center">
+        <p class="text-base font-semibold text-gray-200">No New Confirmed Changes Today</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">
+          No new confirmed All Yono changes have been recorded today. Check back soon for the next update.
+        </p>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Explore by Topic</h2>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {topics.map((topic) => (
+        <div class="flex flex-col rounded-lg border border-gray-800 bg-brand-surface px-4 py-5">
+          <h3 class="text-base font-semibold text-brand-primary">{topic.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-gray-300">{topic.body}</p>
+          <a href={topic.href} class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-accent-strong hover:underline">{topic.cta} <Icon name="chevron-right" class="h-3.5 w-3.5" /></a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Recently Updated Articles</h2>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      Some changes need more context than a short notice can provide. This section highlights recently revised
+      guides and explainer articles related to All Yono games, promo-code status, and user information.
+    </p>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      For longer evergreen guides, readers may also visit the related references published on
+      <a href={externalGuideUrl} target="_blank" rel="noopener noreferrer" class="font-medium text-brand-accent-strong hover:underline">AllYonoOfficial.com</a> and
+      <a href={externalIndiaUrl} target="_blank" rel="noopener noreferrer" class="font-medium text-brand-accent-strong hover:underline">AllYonoIndia.com</a>.
+    </p>
+    <a href="/blog-updates/" class="mt-3 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Read Recently Updated Articles
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-5">
+      <h2 class="text-lg font-bold text-brand-primary">Important Notice</h2>
+      <p class="mt-2 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com is an independent informational update tracker for All Yono promo-code status, game
+        listing, and blog changes.
+      </p>
+      <p class="mt-2 text-sm font-medium leading-6 text-gray-200">
+        Never share passwords, OTPs, identity documents, payment details, or private account screenshots through
+        unofficial contact routes.
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,254 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const COOKIE_EMAIL = 'contact@allyonoupdate.com';
+const lastUpdated = 'June 21, 2026';
+
+const cookieCategories = [
+  { category: 'Essential Cookies', purpose: 'Help the website function, protect forms, maintain security, and remember basic session settings, if introduced', required: 'Not currently used' },
+  { category: 'Preference Cookies', purpose: 'Remember choices such as cookie selections, if a cookie tool is added', required: 'Not currently used' },
+  { category: 'Analytics Cookies', purpose: 'Would help understand general visitor activity, if an analytics tool is added', required: 'Not currently used' },
+  { category: 'Marketing Cookies', purpose: 'Used for advertising or remarketing, only if enabled in the future', required: 'Not currently used' },
+];
+
+const retentionPeriods = [
+  { type: 'Session Cookies', period: 'Deleted when the browser session ends, if any are introduced' },
+  { type: 'Preference Cookies', period: 'Not applicable — not currently used' },
+  { type: 'Analytics Cookies', period: 'Not applicable — not currently used' },
+  { type: 'Marketing Cookies', period: 'Not applicable — not currently used' },
+];
+---
+
+<Layout
+  title="All Yono Update Cookie Policy & Cookie Settings"
+  description="Learn how AllYonoUpdate.com uses essential, preference, and analytics cookies, plus how visitors can manage or change cookie choices anytime."
+  rawTitle
+  ogTitle="All Yono Update Cookie Policy and Cookie Settings"
+  ogDescription="Learn how AllYonoUpdate.com uses essential, preference, and analytics cookies, and how to manage cookie choices."
+  robots="index, follow"
+  keywords={[
+    'all yono update cookie policy',
+    'all yono update cookies',
+    'all yono website cookie settings',
+    'all yono analytics cookies',
+    'all yono cookie preferences',
+    'all yono update privacy settings',
+  ]}
+>
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Cookie Policy</h1>
+    <p class="mt-2 text-sm font-medium text-slate-500">Last Updated: {lastUpdated}</p>
+
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      This Cookie Policy explains how AllYonoUpdate.com uses cookies and similar technologies when you visit
+      the website.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      Cookies may help the site function properly, remember your preferences, protect forms from misuse, and
+      understand general website activity. This policy should be read together with the Privacy Policy.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/privacy-policy/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+        Read Privacy Policy
+      </a>
+      <a href="/latest-updates/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+        View Latest Updates
+      </a>
+    </div>
+
+    <p class="mt-6 max-w-3xl text-sm italic text-slate-500">
+      AllYonoUpdate.com does not currently set any cookies. This policy describes the categories that may apply
+      if cookie-based tools are added to the website in the future.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What Are Cookies?</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Cookies are small text files stored on your device when you visit a website.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      They can help a website remember basic choices, maintain security, measure general traffic, and improve
+      how public information is displayed.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      AllYonoUpdate.com does not use cookies to request passwords, OTPs, payment details, identity documents, or
+      private account information.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How We Use Cookies</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Cookies and similar technologies may be used for limited website purposes if introduced in the future.
+    </p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-slate-200">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-slate-50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Cookie Category</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Purpose</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Currently Used?</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          {cookieCategories.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-700">{row.category}</td>
+              <td class="px-4 py-3 text-slate-600">{row.purpose}</td>
+              <td class="px-4 py-3 text-slate-500">{row.required}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Essential Cookies</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Essential cookies are needed for basic website operation.</p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      They may help with security, spam prevention, form protection, load balancing, or remembering a cookie
+      preference after you make a choice, if such tools are introduced.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Because these cookies support core website functions, they may remain active when you use the site once
+      introduced.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Preference Cookies</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Preference cookies help remember choices you make while using the website.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      For example, they may remember whether you accepted, rejected, or customised cookie settings. They may
+      also help retain basic display preferences where that feature is available.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      If preference cookies are disabled, some optional settings may not be remembered during future visits.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Your Cookie Choices</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Where optional cookies are used in the future, visitors should be able to choose whether to allow them.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">You may be able to:</p>
+
+    <ul class="mt-3 list-disc space-y-1 pl-5 text-base leading-7 text-slate-600">
+      <li>Accept all cookies</li>
+      <li>Reject optional cookies</li>
+      <li>Allow only selected cookie categories</li>
+      <li>Change your choice later through the cookie settings tool</li>
+      <li>Manage cookies through your browser settings</li>
+    </ul>
+
+    <p class="mt-4 text-base leading-7 text-slate-600">
+      No cookie settings tool is currently active on this website because no optional cookies are in use. This
+      section will be updated with a cookie settings link if that changes.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Rejecting optional cookies should not prevent you from reading public updates, articles, game-list
+      records, event notices, or archived information.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Managing Cookies Through Your Browser</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Most browsers allow you to review, block, delete, or limit cookies through browser settings.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      You can usually find these controls in your browser's privacy, security, or settings section. The exact
+      steps may vary by browser and device.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Blocking all cookies may affect certain website functions, such as saved preferences or protected
+      contact-form features, if those features are introduced.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Third-Party Cookies</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Some website tools may place cookies through trusted third-party services, such as hosting providers,
+      analytics platforms, security tools, consent-management services, embedded content providers, or
+      social-media platforms.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      These providers operate under their own privacy and cookie policies. AllYonoUpdate.com does not control
+      the future practices, availability, or policy changes of third-party providers.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Before enabling a third-party tool, review its cookie and privacy documentation.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Cookie Retention</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Different cookies may remain on a device for different periods.</p>
+
+    <div class="mt-6 overflow-x-auto rounded-lg border border-slate-200">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-slate-50">
+          <tr>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Cookie Type</th>
+            <th class="px-4 py-3 font-semibold text-brand-primary">Typical Retention</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          {retentionPeriods.map((row) => (
+            <tr>
+              <td class="px-4 py-3 font-medium text-slate-700">{row.type}</td>
+              <td class="px-4 py-3 text-slate-600">{row.period}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Changes to This Cookie Policy</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      This Cookie Policy may be updated when the website adds, removes, or changes cookies, analytics tools,
+      consent tools, embedded services, or other website features.
+    </p>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      The newest version will remain available on this page with a visible last-updated date.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Contact</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">For questions about cookies, privacy settings, or a related request, contact:</p>
+      <p class="mt-3 text-sm font-semibold text-brand-primary">Email: {COOKIE_EMAIL}</p>
+      <p class="text-sm text-slate-700">
+        Contact Page: <a href="/contact/" class="font-medium text-brand-accent-strong hover:underline">https://allyonoupdate.com/contact/</a>
+      </p>
+      <p class="mt-3 text-sm font-medium leading-6 text-slate-700">
+        Do not send passwords, OTPs, payment details, identity documents, or private account information.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        AllYonoUpdate.com uses cookies only for website operation, preference management, security, and approved
+        measurement tools where applicable.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        Review the Privacy Policy and cookie settings tool for the latest information about your available
+        choices.
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import { notices } from '../data/notices';
+
+const typeFilters = ['All Updates', 'Game Updates', 'Promo Code Status', 'Events & Notices', 'App Changes', 'New Games', 'Blog Revisions'];
+const statusFilters = ['Confirmed', 'Being Reviewed', 'Ended'];
+
+const topics = [
+  {
+    heading: 'Game Updates',
+    body: 'Game updates record changes to the All Yono game list. This may include newly listed titles, renamed games, removed listings, category changes, or updated game information.',
+    cta: 'Browse Game Updates',
+    href: '/game-updates/',
+  },
+  {
+    heading: 'Promo Code Status',
+    body: 'Promo-code notices record changes by release period, including morning, afternoon, and evening status updates. Always review the date and time shown on the latest notice because availability can change.',
+    cta: 'View Promo Code Status',
+    href: '/promo-code-updates/',
+  },
+  {
+    heading: 'Events and Notices',
+    body: 'This category covers scheduled events, maintenance notices, temporary changes, platform announcements, and other time-sensitive updates.',
+    cta: 'View Events and Notices',
+    href: '/events-notices/',
+  },
+  {
+    heading: 'App Changes',
+    body: 'App-change notices cover visible adjustments inside the application. These may include menu changes, updated layouts, navigation changes, settings updates, new tools, or removed features.',
+    cta: 'Browse App Changes',
+    href: '/app-updates/',
+  },
+  {
+    heading: 'New and Upcoming Games',
+    body: 'This category records newly observed, announced, or upcoming additions to the All Yono game list.',
+    cta: 'See New and Upcoming Games',
+    href: '/all-yono-games/',
+  },
+  {
+    heading: 'Blog Revisions',
+    body: 'Blog revision notices highlight newly published or substantially updated informational articles that need a clear dated record.',
+    cta: 'View Blog Updates',
+    href: '/blog-updates/',
+  },
+];
+
+const statusLabels = [
+  { label: 'Confirmed', body: 'The change has been documented through a reliable published source or clear observation inside the application.' },
+  { label: 'Being Reviewed', body: 'The information has been reported or noticed but needs further verification before it is treated as confirmed.' },
+  { label: 'Ended', body: 'An event, temporary notice, promo-code release period, or feature update is no longer current.' },
+];
+
+const faqs = [
+  {
+    question: 'How are updates ordered?',
+    answer: 'The newest published or revised notices should appear first. Each post must show both its publication date and last-reviewed date.',
+  },
+  {
+    question: 'Are all notices immediately confirmed?',
+    answer: 'No. Notices marked Being Reviewed are still awaiting confirmation. Only posts marked Confirmed should be treated as verified information.',
+  },
+  {
+    question: 'Can an update change after it is published?',
+    answer: 'Yes. App layouts, listings, event schedules, and promo-code status may change. When that happens, the post should be updated with a visible revision date or followed by a new dated notice.',
+  },
+  {
+    question: 'Where can I find longer guides?',
+    answer: 'Use the related guide links shown inside relevant updates. Long-form explanations should remain separate from this live update feed.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<Layout
+  title="Latest All Yono Updates: Games, Events & App Changes"
+  description="Read date-stamped All Yono updates covering game changes, promo code status, events, new listings, app features, and recently revised guides in one place."
+  rawTitle
+  ogTitle="Latest All Yono Updates: Games, Events and App Changes"
+  ogDescription="Browse the latest dated notices for All Yono games, promo-code status, events, new listings, app changes, and revised information guides."
+  robots="index, follow"
+  keywords={[
+    'latest all yono updates',
+    'all yono game updates',
+    'all yono promo code updates',
+    'all yono event updates',
+    'all yono app changes',
+    'all yono new game updates',
+    'all yono feature updates',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Latest All Yono Updates</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      Follow the newest recorded changes across All Yono games and the application. This feed brings together
+      recent game-list updates, promo-code status notices, events, new additions, interface changes, feature
+      updates, and revised guides.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+      Every notice should show when it was published, when it was last reviewed, and whether the information is
+      confirmed, still being reviewed, or no longer current.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Find Updates by Type</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">Use the filter options to narrow the update feed.</p>
+
+    <div class="mt-5 flex flex-wrap gap-2" role="group" aria-label="Filter by update type">
+      {typeFilters.map((filter, index) => (
+        <span
+          class:list={[
+            'rounded-full px-4 py-1.5 text-sm font-medium',
+            index === 0 ? 'bg-brand-accent text-brand-primary' : 'border border-slate-300 text-slate-700',
+          ]}
+        >
+          {filter}
+        </span>
+      ))}
+    </div>
+
+    <p class="mt-5 text-sm font-medium text-slate-700">You may also filter updates by status:</p>
+    <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter by update status">
+      {statusFilters.map((filter) => (
+        <span class="rounded-full border border-slate-300 px-4 py-1.5 text-sm font-medium text-slate-700">{filter}</span>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Latest Recorded Notices</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      This section automatically displays the newest update cards first, each showing its status, category,
+      headline, summary, publication date, and last-reviewed date.
+    </p>
+
+    {notices.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {notices.map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-6 py-10 text-center">
+        <p class="text-base font-semibold text-slate-700">No Updates Found</p>
+        <p class="mt-2 text-sm leading-6 text-slate-500">
+          There are no recorded updates in this category at the moment. Browse all latest notices or review the
+          monthly archive for earlier updates.
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <a href="/latest-updates/" class="rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+            View All Updates
+          </a>
+          <a href="/update-archive/" class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+            Open Update Archive
+          </a>
+        </div>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">What You Will Find Here</h2>
+    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {topics.map((topic) => (
+        <div class="flex flex-col rounded-lg border border-slate-200 bg-white px-5 py-6">
+          <h3 class="text-base font-semibold text-brand-primary">{topic.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">{topic.body}</p>
+          <a href={topic.href} class="mt-4 text-sm font-semibold text-brand-accent-strong hover:underline">{topic.cta} →</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Update Status Labels Work</h2>
+
+    <dl class="mt-6 space-y-4">
+      {statusLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-slate-600">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+
+    <p class="mt-4 text-base leading-7 text-slate-600">
+      A post should never lose its original date. If information changes later, publish a new update or add a
+      clearly marked revision note.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse Earlier Updates</h2>
+    <p class="mt-3 text-base leading-7 text-slate-600">
+      Older updates remain available for reference through the monthly archive. This helps users review earlier
+      game listings, feature changes, event notices, promo-code status posts, and revised articles without
+      mixing older information into the latest feed.
+    </p>
+    <a href="/update-archive/" class="mt-4 inline-block rounded-md bg-brand-accent px-5 py-2.5 text-sm font-semibold text-brand-primary transition hover:bg-brand-accent-hover">
+      Open Update Archive
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <div class="mt-6 space-y-6">
+      {faqs.map((faq) => (
+        <div>
+          <h3 class="text-base font-semibold text-brand-primary">{faq.question}</h3>
+          <p class="mt-2 text-base leading-7 text-slate-600">{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-200 bg-amber-50 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-slate-700">
+        AllYonoUpdate.com records information for general reference. Review the update status, publication date,
+        and last-reviewed date before relying on any listed event, feature, game availability, or promo-code
+        notice.
+      </p>
+    </div>
+  </section>
+</Layout>

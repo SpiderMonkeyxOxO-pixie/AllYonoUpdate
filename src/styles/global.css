@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* NULLTRACE-inspired terminal palette */
+  --color-brand-bg: #0d1117; /* page / header / footer background */
+  --color-brand-surface: #161b22; /* solid card / panel background */
+  --color-brand-primary: #e6edf3; /* headings + default light text */
+  --color-brand-secondary: #1f2937; /* borders + translucent panel fills */
+  --color-brand-accent: #00ff00; /* neon green accent */
+  --color-brand-accent-hover: #00cc00; /* hover state for solid green elements */
+  --color-brand-accent-strong: #00ff00; /* green link / code text */
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@keyframes cursor-blink {
+  0%, 45% {
+    opacity: 1;
+  }
+  46%, 100% {
+    opacity: 0;
+  }
+}
+
+@utility animate-cursor-blink {
+  animation: cursor-blink 1s steps(2, end) infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-brand-bg text-brand-primary font-sans selection:bg-brand-accent/30 selection:text-brand-accent antialiased;
+  background-image:
+    linear-gradient(rgba(0, 255, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+  background-position: -1px -1px;
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-mono font-normal;
+}
+
+a, button, input, textarea, select {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2 focus-visible:ring-offset-brand-bg;
+}
+
+.corner-frame {
+  position: relative;
+}
+
+.corner-frame::before,
+.corner-frame::after,
+.corner-frame > .corner-tr,
+.corner-frame > .corner-bl {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  pointer-events: none;
+}
+
+.corner-frame::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--color-brand-accent);
+  border-left: 1px solid var(--color-brand-accent);
+}
+
+.corner-frame::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid var(--color-brand-accent);
+  border-right: 1px solid var(--color-brand-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

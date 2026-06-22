@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  rawTitle?: boolean;
+  ogTitle?: string;
+  ogDescription?: string;
+  robots?: string;
+  keywords?: string[];
+  canonical?: boolean;
+}
+
+const {
+  title,
+  description,
+  rawTitle = false,
+  ogTitle,
+  ogDescription,
+  robots = 'index, follow',
+  keywords,
+  canonical = true,
+} = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const pageTitle = rawTitle ? title : `${title} | All Yono Update`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <link rel="apple-touch-icon" href="/logo.webp" />
+    {canonical && <link rel="canonical" href={canonicalUrl} />}
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    {keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:type" content="website" />
+    {canonical && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:title" content={ogTitle ?? pageTitle} />
+    <meta property="og:description" content={ogDescription ?? description} />
+    <meta property="og:site_name" content="All Yono Update" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle ?? pageTitle} />
+    <meta name="twitter:description" content={ogDescription ?? description} />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1CMJVK9YF"></script>
+    <script>
+      const w = window as typeof window & { dataLayer: unknown[] };
+      w.dataLayer = w.dataLayer || [];
+      function gtag(...args: unknown[]) { w.dataLayer.push(args); }
+      gtag('js', new Date());
+      gtag('config', 'G-D1CMJVK9YF');
+    </script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-brand-bg text-brand-primary">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
