@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ProtectedEmail from '../components/ProtectedEmail.astro';
 
-const PRIVACY_EMAIL = 'contact@allyonoupdate.com';
+const PRIVACY_EMAIL_USER = 'contact';
+const PRIVACY_EMAIL_DOMAIN = 'allyonoupdate.com';
 const lastUpdated = 'June 21, 2026';
 
 const infoCollected = [
@@ -135,7 +137,7 @@ const privacyChoices = [
     <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact Form Information</h2>
     <p class="mt-3 text-base leading-7 text-gray-300">
       The contact form on this website opens your own email application with a prefilled message addressed to
-      {PRIVACY_EMAIL}. Your name, email address, selected topic, related update URL, and message are sent
+      <ProtectedEmail user={PRIVACY_EMAIL_USER} domain={PRIVACY_EMAIL_DOMAIN} />. Your name, email address, selected topic, related update URL, and message are sent
       directly through your own email account and are not stored on AllYonoUpdate.com servers.
     </p>
     <p class="mt-3 text-base leading-7 text-gray-300">
@@ -260,7 +262,7 @@ const privacyChoices = [
     </ul>
 
     <p class="mt-4 text-base leading-7 text-gray-300">To make a privacy request, contact:</p>
-    <p class="mt-2 text-base font-semibold text-brand-primary">Privacy Contact: {PRIVACY_EMAIL}</p>
+    <p class="mt-2 text-base font-semibold text-brand-primary">Privacy Contact: <ProtectedEmail user={PRIVACY_EMAIL_USER} domain={PRIVACY_EMAIL_DOMAIN} /></p>
     <p class="text-base text-gray-300">Subject Line: Privacy Request</p>
 
     <p class="mt-4 text-base leading-7 text-gray-300">
@@ -313,7 +315,7 @@ const privacyChoices = [
       <p class="mt-3 text-sm leading-6 text-gray-200">
         For privacy questions, correction requests, or concerns about a published record, contact:
       </p>
-      <p class="mt-3 text-sm font-semibold text-brand-primary">Email: {PRIVACY_EMAIL}</p>
+      <p class="mt-3 text-sm font-semibold text-brand-primary">Email: <ProtectedEmail user={PRIVACY_EMAIL_USER} domain={PRIVACY_EMAIL_DOMAIN} /></p>
       <p class="text-sm text-gray-200">
         Contact Page: <a href="/contact/" class="font-medium text-brand-accent-strong hover:underline">https://allyonoupdate.com/contact/</a>
       </p>

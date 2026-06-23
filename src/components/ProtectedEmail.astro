@@ -1,0 +1,21 @@
+---
+interface Props {
+  user: string;
+  domain: string;
+  class?: string;
+}
+
+const { user, domain, class: className } = Astro.props;
+---
+
+<span class={className} data-protected-email data-u={user} data-d={domain}></span>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-protected-email]').forEach((el) => {
+    const u = el.dataset.u;
+    const d = el.dataset.d;
+    if (u && d) {
+      el.textContent = `${u}@${d}`;
+    }
+  });
+</script>

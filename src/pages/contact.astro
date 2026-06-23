@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
+import ProtectedEmail from '../components/ProtectedEmail.astro';
 
 const CONTACT_EMAIL = 'contact@allyonoupdate.com';
+const CONTACT_EMAIL_USER = 'contact';
+const CONTACT_EMAIL_DOMAIN = 'allyonoupdate.com';
 
 const contactTopics = [
   { topic: 'Correction Request', include: 'Update title or URL, the detail that may be inaccurate, and a short explanation' },
@@ -152,7 +155,7 @@ const faqSchema = {
   <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
     <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact Form</h2>
     <p class="mt-3 text-base leading-7 text-gray-300">
-      Submitting this form opens your email app with the details prefilled, addressed to {CONTACT_EMAIL}.
+      Submitting this form opens your email app with the details prefilled, addressed to <ProtectedEmail user={CONTACT_EMAIL_USER} domain={CONTACT_EMAIL_DOMAIN} />.
     </p>
 
     <form id="contact-form" class="mt-6 max-w-2xl space-y-5">
