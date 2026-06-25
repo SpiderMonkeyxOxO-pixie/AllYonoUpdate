@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 export interface PlatformPromoCodes {
@@ -11,7 +11,9 @@ export interface PlatformPromoCodes {
 const PERIOD_PATTERN = /^Code\s*(AM|P\.?M\.?|Eve(?:ning)?):\s*(.*)$/i;
 
 export function getPromoCodes(): PlatformPromoCodes[] {
-  const filePath = path.join(process.cwd(), 'promo-code.txt');
+  const liveFilePath = path.join(process.cwd(), 'promo-code.txt');
+  const examplePath = path.join(process.cwd(), 'promo-code.example.txt');
+  const filePath = existsSync(liveFilePath) ? liveFilePath : examplePath;
   const raw = readFileSync(filePath, 'utf8');
 
   const blocks = raw

@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# promo codes are edited directly on the server, not via git
+promo-code.txt
