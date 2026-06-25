@@ -1,15 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import NoticeCard from '../components/NoticeCard.astro';
+import AppCard from '../components/AppCard.astro';
 import Icon from '../components/Icon.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
 import { notices } from '../data/notices';
-import { gameLogos } from '../data/gameLogos';
 import { getPromoCodes } from '../lib/promoCodes';
-import { downloadUrls } from '../data/downloadUrls';
 import { externalGuideUrl, externalIndiaUrl, telegramUrl } from '../data/nav';
 import { categories } from '../data/categories';
 import { hubs } from '../data/hubs';
+import { apps, getFeaturedApps } from '../lib/apps';
+import { buildCollectionPageSchema } from '../lib/schema';
 
 const topics = [
   {
@@ -32,20 +33,19 @@ const topics = [
   },
 ];
 
-const logoByName = new Map(gameLogos.map((g) => [g.name, g.src]));
 const promoCodes = getPromoCodes();
 const promoByPlatform = new Map(promoCodes.map((entry) => [entry.platform, entry]));
-const downloadUrlByPlatform = new Map(downloadUrls.map((d) => [d.platform, d.url]));
 
-const featuredApps = [
-  { rank: 1, name: 'Yono Games', blurb: 'The top-rated All Yono platform, tracked first for new promo codes and listing changes.' },
-  { rank: 2, name: 'Yono Rummy', blurb: 'A standout rummy title in the current All Yono game directory.' },
-  { rank: 3, name: 'Yono Arcade', blurb: 'A consistently popular arcade choice among All Yono users.' },
-  { rank: 4, name: 'Yono 777', blurb: 'A long-running favorite, tracked for daily code releases.' },
-  { rank: 5, name: 'Jaiho91', blurb: 'A widely followed platform in the current All Yono lineup.' },
-];
+const featuredApps = getFeaturedApps();
+const featuredAppsDisplay = featuredApps.map((app, index) => ({ ...app, rank: index + 1 }));
 
-const featuredAppsDisplay = featuredApps;
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+const collectionSchema = buildCollectionPageSchema(
+  'All Yono Update: Promo Codes, Game List and Blog',
+  'Follow date-stamped All Yono promo-code status, the current game directory, and revised blog articles.',
+  apps,
+  baseUrl,
+);
 
 const faqs = [
   {
@@ -100,6 +100,7 @@ const faqSchema = {
   ]}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
 
   <section class="mx-auto max-w-5xl px-4 pt-8 pb-3 lg:px-8">
     <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">
@@ -152,16 +153,14 @@ const faqSchema = {
                   <span class="hidden sm:inline">Rank #{app.rank}</span><span class="sm:hidden">#{app.rank}</span>
                 </span>
 
-                {logoByName.get(app.name) && (
-                  <img
-                    src={logoByName.get(app.name)}
-                    alt={`${app.name} logo`}
-                    width="56"
-                    height="56"
-                    loading="lazy"
-                    class="mt-2 h-10 w-10 rounded-xl object-contain shadow-sm ring-1 ring-gray-800 sm:h-14 sm:w-14"
-                  />
-                )}
+                <img
+                  src={app.icon}
+                  alt={`${app.name} logo`}
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  class="mt-2 h-10 w-10 rounded-xl object-contain shadow-sm ring-1 ring-gray-800 sm:h-14 sm:w-14"
+                />
 
                 <h3 class="mt-2 max-w-full truncate text-xs font-bold leading-snug text-brand-primary sm:text-base">{app.name}</h3>
 
@@ -178,9 +177,9 @@ const faqSchema = {
                     View Code
                   </a>
 
-                  {downloadUrlByPlatform.get(app.name) && (
+                  {app.apkUrl && (
                     <a
-                      href={downloadUrlByPlatform.get(app.name)}
+                      href={app.apkUrl}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                       class="w-full rounded-lg bg-emerald-600 px-2 py-1.5 text-[11px] font-semibold text-white transition hover:bg-emerald-700 sm:px-3 sm:py-2 sm:text-sm"
@@ -223,16 +222,14 @@ const faqSchema = {
         return (
           <div class="rounded-lg border border-brand-secondary bg-brand-surface p-2 sm:p-3" data-tab-group>
             <div class="flex flex-col items-center gap-1 text-center sm:flex-row sm:gap-2 sm:text-left">
-              {logoByName.get(app.name) && (
-                <img
-                  src={logoByName.get(app.name)}
-                  alt={`${app.name} logo`}
-                  width="32"
-                  height="32"
-                  loading="lazy"
-                  class="h-7 w-7 shrink-0 rounded-md object-contain sm:h-8 sm:w-8"
-                />
-              )}
+              <img
+                src={app.icon}
+                alt={`${app.name} logo`}
+                width="32"
+                height="32"
+                loading="lazy"
+                class="h-7 w-7 shrink-0 rounded-md object-contain sm:h-8 sm:w-8"
+              />
               <h3 class="max-w-full truncate text-[11px] font-semibold text-brand-primary sm:text-sm">{app.name}</h3>
             </div>
 
@@ -365,6 +362,17 @@ const faqSchema = {
           {hub.h1}
         </a>
       ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">All Yono App Directory</h2>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      Every app currently recorded across the All Yono directory, with a direct download link where one has been
+      recorded.
+    </p>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {apps.map((app) => <AppCard app={app} />)}
     </div>
   </section>
 

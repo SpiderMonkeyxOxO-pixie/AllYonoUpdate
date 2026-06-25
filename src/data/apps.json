@@ -1,55 +1,1718 @@
-[
-  { "slug": "101z", "name": "101Z", "category": "misc", "logo": "/images/games/101z.webp", "downloadUrl": "https://101zvip2.com/?code=398LS183AB2&t=1761655152", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "567-slots", "name": "567 Slots", "category": "slots", "logo": "/images/games/567-slots.webp", "downloadUrl": "https://567slots22.com/?code=9UX4YQ28P28&t=1761655076", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "777game", "name": "777 Game", "category": "777", "logo": "/images/games/777game.webp", "downloadUrl": "https://www.777game0.com/?code=H53SKREANMZ&t=1761878931", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "789-jackpot", "name": "789 Jackpot", "category": "slots", "logo": "/images/games/789-jackpot.webp", "downloadUrl": "https://789jackpots789.com/?code=VJJGANTLPWB&t=1761713206", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "abc-rummy", "name": "ABC Rummy", "category": "rummy", "logo": "/images/games/abc-rummy.webp", "downloadUrl": "https://www.11abcrummy.com/?code=6X44DU7CVLN&t=1761713732", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "bet-213", "name": "Bet 213", "category": "misc", "logo": "/images/games/bet-213.webp", "downloadUrl": "https://www.bet213.cc/?code=2QT8E6SY5R3&t=1761713801", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "bingo-101", "name": "Bingo 101", "category": "arcade", "logo": "/images/games/bingo-101.webp", "downloadUrl": "https://bingo101n.com/?code=3WFSBEZLPYL&t=1761713889", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "boss-rummy", "name": "Boss Rummy", "category": "rummy", "logo": "/images/games/boss-rummy.webp", "downloadUrl": "https://www.bossrummyr.com/?code=9HFJ28QUSPR&t=1766372532", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "club-inr", "name": "Club INR", "category": "misc", "logo": "/images/games/club-inr.webp", "downloadUrl": "http://clubinr5.xyz/?code=WZJMGMZ4U1K&t=1761722924", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "game-rummy", "name": "Game Rummy", "category": "rummy", "logo": "/images/games/game-rummy.webp", "downloadUrl": "https://gamesrummy.club/?code=GAFDVUWWYBV&t=1761713955", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "gogo-rummy", "name": "Gogo Rummy", "category": "rummy", "logo": "/images/games/gogo-rummy.webp", "downloadUrl": "https://www.gogorummy16.com/?code=V4U6SUHF9FZ&t=1761714176", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "hi-rummy", "name": "Hi Rummy", "category": "rummy", "logo": "/images/games/hi-rummy.webp", "downloadUrl": "https://www.hirummyagent.info/?code=RX33WPMEYAX&t=1761714324", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "hindi777", "name": "Hindi 777", "category": "777", "logo": "/images/games/hindi777.webp", "downloadUrl": "https://www.hindi777agent.com/?code=7LF62XGS8GT&t=1761724743", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "ind-club", "name": "Ind Club", "category": "misc", "logo": "/images/games/ind-club.webp", "downloadUrl": "https://indclub9.com/?code=W23E2SHD7PY&t=1761725038", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "ind-rummy", "name": "Ind Rummy", "category": "rummy", "logo": "/images/games/ind-rummy.webp", "downloadUrl": "https://indrummybet3.com/?code=R9ADC3HL1U6&t=1761714429", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "ind-slots", "name": "Ind Slots", "category": "slots", "logo": "/images/games/ind-slots.webp", "downloadUrl": "https://indslotse.com/?code=T2QSBUR7LT4&t=1761714641", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "inr-rummy", "name": "INR Rummy", "category": "rummy", "logo": "/images/games/inr-rummy.webp", "downloadUrl": "https://inrrummy.club/?code=JMQ6RYF5BT6&t=1767499039", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jahio-777", "name": "Jahio 777", "category": "777", "logo": "/images/games/jahio-777.webp", "downloadUrl": "https://www.jaiho77772.com/?code=98XX54KBP3V&t=1761715128", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jaiho-arcade", "name": "Jaiho Arcade", "category": "arcade", "logo": "/images/games/jaiho-arcade.webp", "downloadUrl": "https://www.jaihoarcade18.com/?code=74S26KHLRJD&t=1761715167", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jaiho-rummy", "name": "Jaiho Rummy", "category": "rummy", "logo": "/images/games/jaiho-rummy.webp", "downloadUrl": "https://jaihorummy1.com/?code=3NPSEJRCPZW&t=1761715375", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jaiho-slot", "name": "Jaiho Slot", "category": "slots", "logo": "/images/games/jaiho-slot.webp", "downloadUrl": "https://www.jaihoslots23.com/?code=QJSJQQDZDDM&t=1761715427", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jaiho-spin", "name": "Jaiho Spin", "category": "spin", "logo": "/images/games/jaiho-spin.webp", "downloadUrl": "https://jaihospin11.com/?code=416GL765W3A&t=1761715472", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jaiho-win", "name": "Jaiho Win", "category": "misc", "logo": "/images/games/jaiho-win.webp", "downloadUrl": "https://www.jaihowin11.com/?code=XZDTYJ1RY1Z&t=1761715686", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "jaiho91", "name": "Jaiho91", "category": "misc", "logo": "/images/games/jaiho91.webp", "downloadUrl": "https://91jaihoapp.com/?code=C4238P5H5G8&t=1781940814", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "joy-rummy", "name": "Joy Rummy", "category": "rummy", "logo": "/images/games/joy-rummy.webp", "downloadUrl": "https://www.joyrummy.me/?code=J5KYGYLKSDD&t=1768444774", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "love-rummy", "name": "Love Rummy", "category": "rummy", "logo": "/images/games/love-rummy.webp", "downloadUrl": "https://www.loverummy7.com/?code=R6KUXVMQEB1&t=1761715802", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "maha-games", "name": "Maha Games", "category": "misc", "logo": "/images/games/maha-games.webp", "downloadUrl": "https://mahagames.store/?code=J245RQFLS2L&t=1761715886", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "mbm-bet", "name": "MBM Bet", "category": "misc", "logo": "/images/games/mbm-bet.webp", "downloadUrl": "https://www.mbmbet14.com/?code=UPHMK55JNJ6&t=1761716008", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "neta-vip", "name": "Neta Vip", "category": "vip", "logo": "/images/games/neta-vip.webp", "downloadUrl": "https://www.neta1.vip/?code=DR0D36UVVZX&t=1761716155", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "okrummy-e1760950706977-1", "name": "OK Rummy", "category": "rummy", "logo": "/images/games/okrummy-e1760950706977-1.webp", "downloadUrl": "https://www.okrummy42.com/?code=H2G24LRWC8L&t=1761728136", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "rumble-rummy", "name": "Rumble Rummy", "category": "rummy", "logo": "/images/games/rumble-rummy.webp", "downloadUrl": "https://www.rumblerummy1.club/?code=82M21AWEVEV&t=1761716441", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "rummy-91", "name": "Rummy 91", "category": "rummy", "logo": "/images/games/rummy-91.webp", "downloadUrl": "https://rummy91g.com/?code=UXT3ZZWQHX8&t=1761716826", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "rummy-ludo-logo", "name": "Rummy Ludo", "category": "rummy", "logo": "/images/games/rummy-ludo-logo.webp", "downloadUrl": "https://rummyludo.help/?code=UWPKN64A3KD&t=1762838300", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "rummy77", "name": "Rummy77", "category": "rummy", "logo": "/images/games/rummy77.webp", "downloadUrl": "https://rummy77a.com/?code=F3VZY2CL5KV&t=1763712864", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "rummy888", "name": "Rummy888", "category": "rummy", "logo": "/images/games/rummy888.webp", "downloadUrl": "https://rummy888vip15.com/?code=TPUK4VF51V9&t=1765113963", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "saga-slots", "name": "Saga Slots", "category": "slots", "logo": "/images/games/saga-slots.webp", "downloadUrl": "https://www.sagaslotsww.com/?code=0QH9UVHARQU&t=1761716899", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "share-slots", "name": "Share Slots", "category": "slots", "logo": "/images/games/share-slots.webp", "downloadUrl": "https://share977.com/?code=YAZRMEX5W98&t=1761717153", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "slot-spin", "name": "Slot Spin", "category": "spin", "logo": "/images/games/slot-spin.webp", "downloadUrl": "https://www.slotsspinj.com/?code=C1A5F6PQW4M&t=1761717254", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "slots-winner", "name": "Slots Winner", "category": "slots", "logo": "/images/games/slots-winner.webp", "downloadUrl": "https://slotswinneragents.com/?code=PGVWTWRNB6F&t=1761717380", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "spin-101", "name": "Spin 101", "category": "spin", "logo": "/images/games/spin-101.webp", "downloadUrl": "https://spin101-e.org/?code=Z9BR1AXYMH3&t=1761717487", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "spin-777", "name": "Spin 777", "category": "spin", "logo": "/images/games/spin-777.webp", "downloadUrl": "https://spin777-t.com/?code=YLWAEF9UZ9W&t=1761717548", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "spin-crush", "name": "Spin Crush", "category": "spin", "logo": "/images/games/spin-crush.webp", "downloadUrl": "https://spincrush46.com/?code=ADE7MLL2KQZ&t=1761717840", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "spin-gold", "name": "Spin Gold", "category": "spin", "logo": "/images/games/spin-gold.webp", "downloadUrl": "https://spingoldvipagent.net/?code=S9VFE5T8JDS&t=1761717892", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "spin-winner", "name": "Spin Winner", "category": "spin", "logo": "/images/games/spin-winner.webp", "downloadUrl": "https://spinwinner28.com/?code=QVT2P3HKTUZ&t=1761717941", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "top-rummy", "name": "Top Rummy", "category": "rummy", "logo": "/images/games/top-rummy.webp", "downloadUrl": "https://www.toprummy.cc/?code=M4G2WX7PAUF&t=1761718015", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yes-spin", "name": "Yes Spin", "category": "spin", "logo": "/images/games/yes-spin.webp", "downloadUrl": "https://www.yesspin77.com/?code=47TMD53C9SA&t=1761718099", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yn-777", "name": "Yn 777", "category": "777", "logo": "/images/games/yn-777.webp", "downloadUrl": "https://www.y754.com/?code=4SWBALCES8G&t=1761718190", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yono-777", "name": "Yono 777", "category": "777", "logo": "/images/games/yono-777.webp", "downloadUrl": "https://yono777agentrefer.net/?code=ZMRZ6SUQQZ2&t=1761718243", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yono-arcade", "name": "Yono Arcade", "category": "arcade", "logo": "/images/games/yono-arcade.webp", "downloadUrl": "https://uonoarcadeagents2.com/?code=96LUT957MWS&t=1761718992", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yono-games", "name": "Yono Games", "category": "misc", "logo": "/images/games/yono-games.webp", "downloadUrl": "https://uonogames3.com/?code=GK1EVT15SS7&t=1761719127", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yono-rummy", "name": "Yono Rummy", "category": "rummy", "logo": "/images/games/yono-rummy.webp", "downloadUrl": "https://yonorummymm.com/?code=VIP3Z76MJCF&t=1761719297", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yono-slots", "name": "Yono Slots", "category": "slots", "logo": "/images/games/yono-slots.webp", "downloadUrl": "https://www.yonoslotsr.com/?code=59YBLQ1756L&t=1761719575", "catalogReviewedDate": "2026-06-25" },
-  { "slug": "yono-vip", "name": "Yono Vip", "category": "vip", "logo": "/images/games/yono-vip.webp", "downloadUrl": "https://uonovip0.com/?code=9U8WLAJJSM5&t=1761719729", "catalogReviewedDate": "2026-06-25" }
-]
+{
+  "_meta": {
+    "siteName": "All Yono Update",
+    "baseUrl": "https://allyonoupdate.com",
+    "compliance": {
+      "ageNotice": "This page is intended for users aged 18 and older.",
+      "restrictedStates": "Some apps listed here are not available in certain Indian states, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This page does not state that any specific app is legal or illegal in your location, so check your state's current regulations before downloading or using any app listed here.",
+      "disclaimer": "AllYonoUpdate.com does not host, develop, or operate any of the apps listed in this directory. Every Download button leads directly to the platform's own website, and AllYonoUpdate.com has not independently verified any bonus, code, referral, or reward claim shown on third-party platforms. This directory never uses winning, earning, or real-money promotional language. AllYonoUpdate.com and the apps listed in this directory are not affiliated with SBI YONO or the State Bank of India — \"Yono\" here refers to the gaming apps listed in this directory, not the SBI banking application."
+    }
+  },
+  "apps": [
+    {
+      "id": "101z",
+      "name": "101Z",
+      "slug": "101z",
+      "category": "arcade",
+      "featured": false,
+      "description": "101Z is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the 101Z APK file.",
+      "targetKeyword": "101z apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/101z.webp",
+      "apkUrl": "https://101zvip2.com/?code=398LS183AB2&t=1761655152",
+      "url": "/app/101z/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the 101Z APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to 101Z's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified 101Z's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on 101Z's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "567-slots",
+      "name": "567 Slots",
+      "slug": "567-slots",
+      "category": "slots",
+      "featured": false,
+      "description": "567 Slots is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the 567 Slots APK file.",
+      "targetKeyword": "567 slots apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/567-slots.webp",
+      "apkUrl": "https://567slots22.com/?code=9UX4YQ28P28&t=1761655076",
+      "url": "/app/567-slots/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the 567 Slots APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to 567 Slots's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified 567 Slots's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on 567 Slots's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "777game",
+      "name": "777 Game",
+      "slug": "777game",
+      "category": "sevens",
+      "featured": false,
+      "description": "777 Game is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the 777 Game APK file.",
+      "targetKeyword": "777 game apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/777game.webp",
+      "apkUrl": "https://www.777game0.com/?code=H53SKREANMZ&t=1761878931",
+      "url": "/app/777game/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the 777 Game APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to 777 Game's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified 777 Game's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on 777 Game's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "789-jackpot",
+      "name": "789 Jackpot",
+      "slug": "789-jackpot",
+      "category": "slots",
+      "featured": false,
+      "description": "789 Jackpot is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the 789 Jackpot APK file.",
+      "targetKeyword": "789 jackpot apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/789-jackpot.webp",
+      "apkUrl": "https://789jackpots789.com/?code=VJJGANTLPWB&t=1761713206",
+      "url": "/app/789-jackpot/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the 789 Jackpot APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to 789 Jackpot's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified 789 Jackpot's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on 789 Jackpot's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "abc-rummy",
+      "name": "ABC Rummy",
+      "slug": "abc-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "ABC Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the ABC Rummy APK file.",
+      "targetKeyword": "abc rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/abc-rummy.webp",
+      "apkUrl": "https://www.11abcrummy.com/?code=6X44DU7CVLN&t=1761713732",
+      "url": "/app/abc-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the ABC Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to ABC Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified ABC Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on ABC Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "bet-213",
+      "name": "Bet 213",
+      "slug": "bet-213",
+      "category": "rummy",
+      "featured": false,
+      "description": "Bet 213 is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Bet 213 APK file.",
+      "targetKeyword": "bet 213 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/bet-213.webp",
+      "apkUrl": "https://www.bet213.cc/?code=2QT8E6SY5R3&t=1761713801",
+      "url": "/app/bet-213/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Bet 213 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Bet 213's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Bet 213's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Bet 213's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "bingo-101",
+      "name": "Bingo 101",
+      "slug": "bingo-101",
+      "category": "bingo",
+      "featured": false,
+      "description": "Bingo 101 is a bingo-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Bingo 101 APK file.",
+      "targetKeyword": "bingo 101 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/bingo-101.webp",
+      "apkUrl": "https://bingo101n.com/?code=3WFSBEZLPYL&t=1761713889",
+      "url": "/app/bingo-101/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Bingo 101 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Bingo 101's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Bingo 101's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Bingo 101's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "boss-rummy",
+      "name": "Boss Rummy",
+      "slug": "boss-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Boss Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Boss Rummy APK file.",
+      "targetKeyword": "boss rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/boss-rummy.webp",
+      "apkUrl": "https://www.bossrummyr.com/?code=9HFJ28QUSPR&t=1766372532",
+      "url": "/app/boss-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Boss Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Boss Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Boss Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Boss Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "club-inr",
+      "name": "Club INR",
+      "slug": "club-inr",
+      "category": "vip",
+      "featured": false,
+      "description": "Club INR is a VIP-tier app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Club INR APK file.",
+      "targetKeyword": "club inr apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/club-inr.webp",
+      "apkUrl": "http://clubinr5.xyz/?code=WZJMGMZ4U1K&t=1761722924",
+      "url": "/app/club-inr/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Club INR APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Club INR's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Club INR's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Club INR's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "game-rummy",
+      "name": "Game Rummy",
+      "slug": "game-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Game Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Game Rummy APK file.",
+      "targetKeyword": "game rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/game-rummy.webp",
+      "apkUrl": "https://gamesrummy.club/?code=GAFDVUWWYBV&t=1761713955",
+      "url": "/app/game-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Game Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Game Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Game Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Game Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "gogo-rummy",
+      "name": "Gogo Rummy",
+      "slug": "gogo-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Gogo Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Gogo Rummy APK file.",
+      "targetKeyword": "gogo rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/gogo-rummy.webp",
+      "apkUrl": "https://www.gogorummy16.com/?code=V4U6SUHF9FZ&t=1761714176",
+      "url": "/app/gogo-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Gogo Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Gogo Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Gogo Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Gogo Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "hi-rummy",
+      "name": "Hi Rummy",
+      "slug": "hi-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Hi Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Hi Rummy APK file.",
+      "targetKeyword": "hi rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/hi-rummy.webp",
+      "apkUrl": "https://www.hirummyagent.info/?code=RX33WPMEYAX&t=1761714324",
+      "url": "/app/hi-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Hi Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Hi Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Hi Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Hi Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "hindi777",
+      "name": "Hindi 777",
+      "slug": "hindi777",
+      "category": "sevens",
+      "featured": false,
+      "description": "Hindi 777 is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Hindi 777 APK file.",
+      "targetKeyword": "hindi 777 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/hindi777.webp",
+      "apkUrl": "https://www.hindi777agent.com/?code=7LF62XGS8GT&t=1761724743",
+      "url": "/app/hindi777/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Hindi 777 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Hindi 777's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Hindi 777's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Hindi 777's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "inr-rummy",
+      "name": "INR Rummy",
+      "slug": "inr-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "INR Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the INR Rummy APK file.",
+      "targetKeyword": "inr rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/inr-rummy.webp",
+      "apkUrl": "https://inrrummy.club/?code=JMQ6RYF5BT6&t=1767499039",
+      "url": "/app/inr-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the INR Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to INR Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified INR Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on INR Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "ind-bingo",
+      "name": "Ind Bingo",
+      "slug": "ind-bingo",
+      "category": "bingo",
+      "featured": false,
+      "description": "Ind Bingo is a bingo-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Ind Bingo APK file.",
+      "targetKeyword": "ind bingo apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/ind-bingo.webp",
+      "apkUrl": null,
+      "url": "/app/ind-bingo/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Ind Bingo APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Ind Bingo's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Ind Bingo's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Ind Bingo's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "ind-club",
+      "name": "Ind Club",
+      "slug": "ind-club",
+      "category": "vip",
+      "featured": false,
+      "description": "Ind Club is a VIP-tier app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Ind Club APK file.",
+      "targetKeyword": "ind club apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/ind-club.webp",
+      "apkUrl": "https://indclub9.com/?code=W23E2SHD7PY&t=1761725038",
+      "url": "/app/ind-club/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Ind Club APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Ind Club's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Ind Club's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Ind Club's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "ind-rummy",
+      "name": "Ind Rummy",
+      "slug": "ind-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Ind Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Ind Rummy APK file.",
+      "targetKeyword": "ind rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/ind-rummy.webp",
+      "apkUrl": "https://indrummybet3.com/?code=R9ADC3HL1U6&t=1761714429",
+      "url": "/app/ind-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Ind Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Ind Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Ind Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Ind Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "ind-slots",
+      "name": "Ind Slots",
+      "slug": "ind-slots",
+      "category": "slots",
+      "featured": false,
+      "description": "Ind Slots is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Ind Slots APK file.",
+      "targetKeyword": "ind slots apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/ind-slots.webp",
+      "apkUrl": "https://indslotse.com/?code=T2QSBUR7LT4&t=1761714641",
+      "url": "/app/ind-slots/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Ind Slots APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Ind Slots's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Ind Slots's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Ind Slots's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jahio-777",
+      "name": "Jahio 777",
+      "slug": "jahio-777",
+      "category": "sevens",
+      "featured": false,
+      "description": "Jahio 777 is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jahio 777 APK file.",
+      "targetKeyword": "jahio 777 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jahio-777.webp",
+      "apkUrl": "https://www.jaiho77772.com/?code=98XX54KBP3V&t=1761715128",
+      "url": "/app/jahio-777/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jahio 777 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jahio 777's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jahio 777's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jahio 777's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jaiho-arcade",
+      "name": "Jaiho Arcade",
+      "slug": "jaiho-arcade",
+      "category": "arcade",
+      "featured": false,
+      "description": "Jaiho Arcade is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jaiho Arcade APK file.",
+      "targetKeyword": "jaiho arcade apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jaiho-arcade.webp",
+      "apkUrl": "https://www.jaihoarcade18.com/?code=74S26KHLRJD&t=1761715167",
+      "url": "/app/jaiho-arcade/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jaiho Arcade APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho Arcade's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jaiho Arcade's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jaiho Arcade's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jaiho-rummy",
+      "name": "Jaiho Rummy",
+      "slug": "jaiho-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Jaiho Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jaiho Rummy APK file.",
+      "targetKeyword": "jaiho rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jaiho-rummy.webp",
+      "apkUrl": "https://jaihorummy1.com/?code=3NPSEJRCPZW&t=1761715375",
+      "url": "/app/jaiho-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jaiho Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jaiho Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jaiho Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jaiho-slot",
+      "name": "Jaiho Slot",
+      "slug": "jaiho-slot",
+      "category": "slots",
+      "featured": false,
+      "description": "Jaiho Slot is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jaiho Slot APK file.",
+      "targetKeyword": "jaiho slot apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jaiho-slot.webp",
+      "apkUrl": "https://www.jaihoslots23.com/?code=QJSJQQDZDDM&t=1761715427",
+      "url": "/app/jaiho-slot/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jaiho Slot APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho Slot's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jaiho Slot's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jaiho Slot's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jaiho-spin",
+      "name": "Jaiho Spin",
+      "slug": "jaiho-spin",
+      "category": "spin",
+      "featured": false,
+      "description": "Jaiho Spin is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jaiho Spin APK file.",
+      "targetKeyword": "jaiho spin apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jaiho-spin.webp",
+      "apkUrl": "https://jaihospin11.com/?code=416GL765W3A&t=1761715472",
+      "url": "/app/jaiho-spin/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jaiho Spin APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho Spin's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jaiho Spin's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jaiho Spin's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jaiho-win",
+      "name": "Jaiho Win",
+      "slug": "jaiho-win",
+      "category": "spin",
+      "featured": false,
+      "description": "Jaiho Win is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jaiho Win APK file.",
+      "targetKeyword": "jaiho win apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jaiho-win.webp",
+      "apkUrl": "https://www.jaihowin11.com/?code=XZDTYJ1RY1Z&t=1761715686",
+      "url": "/app/jaiho-win/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jaiho Win APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho Win's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jaiho Win's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jaiho Win's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "jaiho91",
+      "name": "Jaiho91",
+      "slug": "jaiho91",
+      "category": "rummy",
+      "featured": true,
+      "description": "Jaiho91 is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Jaiho91 APK file.",
+      "targetKeyword": "jaiho91 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/jaiho91.webp",
+      "apkUrl": "https://91jaihoapp.com/?code=C4238P5H5G8&t=1781940814",
+      "url": "/app/jaiho91/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Jaiho91 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho91's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Jaiho91's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Jaiho91's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "joy-rummy",
+      "name": "Joy Rummy",
+      "slug": "joy-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Joy Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Joy Rummy APK file.",
+      "targetKeyword": "joy rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/joy-rummy.webp",
+      "apkUrl": "https://www.joyrummy.me/?code=J5KYGYLKSDD&t=1768444774",
+      "url": "/app/joy-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Joy Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Joy Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Joy Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Joy Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "love-rummy",
+      "name": "Love Rummy",
+      "slug": "love-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Love Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Love Rummy APK file.",
+      "targetKeyword": "love rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/love-rummy.webp",
+      "apkUrl": "https://www.loverummy7.com/?code=R6KUXVMQEB1&t=1761715802",
+      "url": "/app/love-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Love Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Love Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Love Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Love Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "mbm-bet",
+      "name": "MBM Bet",
+      "slug": "mbm-bet",
+      "category": "rummy",
+      "featured": false,
+      "description": "MBM Bet is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the MBM Bet APK file.",
+      "targetKeyword": "mbm bet apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/mbm-bet.webp",
+      "apkUrl": "https://www.mbmbet14.com/?code=UPHMK55JNJ6&t=1761716008",
+      "url": "/app/mbm-bet/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the MBM Bet APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to MBM Bet's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified MBM Bet's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on MBM Bet's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "maha-games",
+      "name": "Maha Games",
+      "slug": "maha-games",
+      "category": "arcade",
+      "featured": false,
+      "description": "Maha Games is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Maha Games APK file.",
+      "targetKeyword": "maha games apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/maha-games.webp",
+      "apkUrl": "https://mahagames.store/?code=J245RQFLS2L&t=1761715886",
+      "url": "/app/maha-games/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Maha Games APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Maha Games's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Maha Games's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Maha Games's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "neta-vip",
+      "name": "Neta Vip",
+      "slug": "neta-vip",
+      "category": "vip",
+      "featured": false,
+      "description": "Neta Vip is a VIP-tier app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Neta Vip APK file.",
+      "targetKeyword": "neta vip apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/neta-vip.webp",
+      "apkUrl": "https://www.neta1.vip/?code=DR0D36UVVZX&t=1761716155",
+      "url": "/app/neta-vip/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Neta Vip APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Neta Vip's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Neta Vip's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Neta Vip's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "okrummy-e1760950706977-1",
+      "name": "OK Rummy",
+      "slug": "okrummy-e1760950706977-1",
+      "category": "rummy",
+      "featured": false,
+      "description": "OK Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the OK Rummy APK file.",
+      "targetKeyword": "ok rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/okrummy-e1760950706977-1.webp",
+      "apkUrl": "https://www.okrummy42.com/?code=H2G24LRWC8L&t=1761728136",
+      "url": "/app/okrummy-e1760950706977-1/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the OK Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to OK Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified OK Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on OK Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "rumble-rummy",
+      "name": "Rumble Rummy",
+      "slug": "rumble-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Rumble Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Rumble Rummy APK file.",
+      "targetKeyword": "rumble rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/rumble-rummy.webp",
+      "apkUrl": "https://www.rumblerummy1.club/?code=82M21AWEVEV&t=1761716441",
+      "url": "/app/rumble-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Rumble Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Rumble Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Rumble Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Rumble Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "rummy-91",
+      "name": "Rummy 91",
+      "slug": "rummy-91",
+      "category": "rummy",
+      "featured": false,
+      "description": "Rummy 91 is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Rummy 91 APK file.",
+      "targetKeyword": "rummy 91 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/rummy-91.webp",
+      "apkUrl": "https://rummy91g.com/?code=UXT3ZZWQHX8&t=1761716826",
+      "url": "/app/rummy-91/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Rummy 91 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Rummy 91's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Rummy 91's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Rummy 91's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "rummy-ludo-logo",
+      "name": "Rummy Ludo",
+      "slug": "rummy-ludo-logo",
+      "category": "rummy",
+      "featured": false,
+      "description": "Rummy Ludo is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Rummy Ludo APK file.",
+      "targetKeyword": "rummy ludo apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/rummy-ludo-logo.webp",
+      "apkUrl": "https://rummyludo.help/?code=UWPKN64A3KD&t=1762838300",
+      "url": "/app/rummy-ludo-logo/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Rummy Ludo APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Rummy Ludo's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Rummy Ludo's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Rummy Ludo's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "rummy77",
+      "name": "Rummy77",
+      "slug": "rummy77",
+      "category": "rummy",
+      "featured": false,
+      "description": "Rummy77 is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Rummy77 APK file.",
+      "targetKeyword": "rummy77 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/rummy77.webp",
+      "apkUrl": "https://rummy77a.com/?code=F3VZY2CL5KV&t=1763712864",
+      "url": "/app/rummy77/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Rummy77 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Rummy77's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Rummy77's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Rummy77's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "rummy888",
+      "name": "Rummy888",
+      "slug": "rummy888",
+      "category": "rummy",
+      "featured": false,
+      "description": "Rummy888 is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Rummy888 APK file.",
+      "targetKeyword": "rummy888 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/rummy888.webp",
+      "apkUrl": "https://rummy888vip15.com/?code=TPUK4VF51V9&t=1765113963",
+      "url": "/app/rummy888/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Rummy888 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Rummy888's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Rummy888's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Rummy888's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "saga-slots",
+      "name": "Saga Slots",
+      "slug": "saga-slots",
+      "category": "slots",
+      "featured": false,
+      "description": "Saga Slots is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Saga Slots APK file.",
+      "targetKeyword": "saga slots apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/saga-slots.webp",
+      "apkUrl": "https://www.sagaslotsww.com/?code=0QH9UVHARQU&t=1761716899",
+      "url": "/app/saga-slots/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Saga Slots APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Saga Slots's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Saga Slots's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Saga Slots's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "share-slots",
+      "name": "Share Slots",
+      "slug": "share-slots",
+      "category": "slots",
+      "featured": false,
+      "description": "Share Slots is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Share Slots APK file.",
+      "targetKeyword": "share slots apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/share-slots.webp",
+      "apkUrl": "https://share977.com/?code=YAZRMEX5W98&t=1761717153",
+      "url": "/app/share-slots/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Share Slots APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Share Slots's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Share Slots's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Share Slots's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "slot-spin",
+      "name": "Slot Spin",
+      "slug": "slot-spin",
+      "category": "spin",
+      "featured": false,
+      "description": "Slot Spin is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Slot Spin APK file.",
+      "targetKeyword": "slot spin apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/slot-spin.webp",
+      "apkUrl": "https://www.slotsspinj.com/?code=C1A5F6PQW4M&t=1761717254",
+      "url": "/app/slot-spin/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Slot Spin APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Slot Spin's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Slot Spin's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Slot Spin's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "slots-winner",
+      "name": "Slots Winner",
+      "slug": "slots-winner",
+      "category": "slots",
+      "featured": false,
+      "description": "Slots Winner is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Slots Winner APK file.",
+      "targetKeyword": "slots winner apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/slots-winner.webp",
+      "apkUrl": "https://slotswinneragents.com/?code=PGVWTWRNB6F&t=1761717380",
+      "url": "/app/slots-winner/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Slots Winner APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Slots Winner's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Slots Winner's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Slots Winner's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "spin-101",
+      "name": "Spin 101",
+      "slug": "spin-101",
+      "category": "spin",
+      "featured": false,
+      "description": "Spin 101 is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Spin 101 APK file.",
+      "targetKeyword": "spin 101 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/spin-101.webp",
+      "apkUrl": "https://spin101-e.org/?code=Z9BR1AXYMH3&t=1761717487",
+      "url": "/app/spin-101/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Spin 101 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Spin 101's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin 101's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Spin 101's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "spin-777",
+      "name": "Spin 777",
+      "slug": "spin-777",
+      "category": "spin",
+      "featured": false,
+      "description": "Spin 777 is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Spin 777 APK file.",
+      "targetKeyword": "spin 777 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/spin-777.webp",
+      "apkUrl": "https://spin777-t.com/?code=YLWAEF9UZ9W&t=1761717548",
+      "url": "/app/spin-777/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Spin 777 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Spin 777's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin 777's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Spin 777's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "spin-crush",
+      "name": "Spin Crush",
+      "slug": "spin-crush",
+      "category": "spin",
+      "featured": false,
+      "description": "Spin Crush is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Spin Crush APK file.",
+      "targetKeyword": "spin crush apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/spin-crush.webp",
+      "apkUrl": "https://spincrush46.com/?code=ADE7MLL2KQZ&t=1761717840",
+      "url": "/app/spin-crush/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Spin Crush APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Spin Crush's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin Crush's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Spin Crush's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "spin-gold",
+      "name": "Spin Gold",
+      "slug": "spin-gold",
+      "category": "spin",
+      "featured": false,
+      "description": "Spin Gold is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Spin Gold APK file.",
+      "targetKeyword": "spin gold apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/spin-gold.webp",
+      "apkUrl": "https://spingoldvipagent.net/?code=S9VFE5T8JDS&t=1761717892",
+      "url": "/app/spin-gold/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Spin Gold APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Spin Gold's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin Gold's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Spin Gold's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "spin-lucky",
+      "name": "Spin Lucky",
+      "slug": "spin-lucky",
+      "category": "spin",
+      "featured": false,
+      "description": "Spin Lucky is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Spin Lucky APK file.",
+      "targetKeyword": "spin lucky apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/spin-lucky.webp",
+      "apkUrl": null,
+      "url": "/app/spin-lucky/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Spin Lucky APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Spin Lucky's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin Lucky's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Spin Lucky's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "spin-winner",
+      "name": "Spin Winner",
+      "slug": "spin-winner",
+      "category": "spin",
+      "featured": false,
+      "description": "Spin Winner is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Spin Winner APK file.",
+      "targetKeyword": "spin winner apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/spin-winner.webp",
+      "apkUrl": "https://spinwinner28.com/?code=QVT2P3HKTUZ&t=1761717941",
+      "url": "/app/spin-winner/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Spin Winner APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Spin Winner's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin Winner's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Spin Winner's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "top-rummy",
+      "name": "Top Rummy",
+      "slug": "top-rummy",
+      "category": "rummy",
+      "featured": false,
+      "description": "Top Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Top Rummy APK file.",
+      "targetKeyword": "top rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/top-rummy.webp",
+      "apkUrl": "https://www.toprummy.cc/?code=M4G2WX7PAUF&t=1761718015",
+      "url": "/app/top-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Top Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Top Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Top Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Top Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yes-spin",
+      "name": "Yes Spin",
+      "slug": "yes-spin",
+      "category": "spin",
+      "featured": false,
+      "description": "Yes Spin is a spin-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yes Spin APK file.",
+      "targetKeyword": "yes spin apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yes-spin.webp",
+      "apkUrl": "https://www.yesspin77.com/?code=47TMD53C9SA&t=1761718099",
+      "url": "/app/yes-spin/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yes Spin APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yes Spin's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yes Spin's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yes Spin's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yn-777",
+      "name": "Yn 777",
+      "slug": "yn-777",
+      "category": "sevens",
+      "featured": false,
+      "description": "Yn 777 is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yn 777 APK file.",
+      "targetKeyword": "yn 777 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yn-777.webp",
+      "apkUrl": "https://www.y754.com/?code=4SWBALCES8G&t=1761718190",
+      "url": "/app/yn-777/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yn 777 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yn 777's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yn 777's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yn 777's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-777",
+      "name": "Yono 777",
+      "slug": "yono-777",
+      "category": "sevens",
+      "featured": true,
+      "description": "Yono 777 is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono 777 APK file.",
+      "targetKeyword": "yono 777 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-777.webp",
+      "apkUrl": "https://yono777agentrefer.net/?code=ZMRZ6SUQQZ2&t=1761718243",
+      "url": "/app/yono-777/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono 777 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono 777's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono 777's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono 777's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-arcade",
+      "name": "Yono Arcade",
+      "slug": "yono-arcade",
+      "category": "arcade",
+      "featured": true,
+      "description": "Yono Arcade is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Arcade APK file.",
+      "targetKeyword": "yono arcade apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-arcade.webp",
+      "apkUrl": "https://uonoarcadeagents2.com/?code=96LUT957MWS&t=1761718992",
+      "url": "/app/yono-arcade/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Arcade APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Arcade's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Arcade's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Arcade's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-games",
+      "name": "Yono Games",
+      "slug": "yono-games",
+      "category": "arcade",
+      "featured": true,
+      "description": "Yono Games is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Games APK file.",
+      "targetKeyword": "yono games apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-games.webp",
+      "apkUrl": "https://uonogames3.com/?code=GK1EVT15SS7&t=1761719127",
+      "url": "/app/yono-games/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Games APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Games's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Games's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Games's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-rummy",
+      "name": "Yono Rummy",
+      "slug": "yono-rummy",
+      "category": "rummy",
+      "featured": true,
+      "description": "Yono Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Rummy APK file.",
+      "targetKeyword": "yono rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-rummy.webp",
+      "apkUrl": "https://yonorummymm.com/?code=VIP3Z76MJCF&t=1761719297",
+      "url": "/app/yono-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-slots",
+      "name": "Yono Slots",
+      "slug": "yono-slots",
+      "category": "slots",
+      "featured": false,
+      "description": "Yono Slots is a slot-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Slots APK file.",
+      "targetKeyword": "yono slots apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-slots.webp",
+      "apkUrl": "https://www.yonoslotsr.com/?code=59YBLQ1756L&t=1761719575",
+      "url": "/app/yono-slots/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Slots APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Slots's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Slots's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Slots's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-vip",
+      "name": "Yono Vip",
+      "slug": "yono-vip",
+      "category": "vip",
+      "featured": false,
+      "description": "Yono Vip is a VIP-tier app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Vip APK file.",
+      "targetKeyword": "yono vip apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-vip.webp",
+      "apkUrl": "https://uonovip0.com/?code=9U8WLAJJSM5&t=1761719729",
+      "url": "/app/yono-vip/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Vip APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Vip's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Vip's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Vip's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    }
+  ]
+}

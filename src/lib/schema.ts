@@ -26,10 +26,33 @@ export function buildCollectionPageSchema(name: string, description: string, ite
       itemListElement: items.map((app, index) => ({
         '@type': 'ListItem',
         position: index + 1,
-        url: `${baseUrl}/app/${app.slug}/`,
+        url: `${baseUrl}${app.url}`,
         name: app.name,
       })),
     },
+  };
+}
+
+export function buildItemListSchema(items: AppEntry[], baseUrl: string) {
+  return {
+    '@type': 'ItemList',
+    itemListElement: items.map((app, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: app.name,
+      url: `${baseUrl}${app.url}`,
+    })),
+  };
+}
+
+export function buildArticleSchema(options: { headline: string; description: string; datePublished: string; dateModified: string; url: string }) {
+  return {
+    '@type': 'Article',
+    headline: options.headline,
+    description: options.description,
+    datePublished: options.datePublished,
+    dateModified: options.dateModified,
+    mainEntityOfPage: options.url,
   };
 }
 
@@ -38,12 +61,12 @@ export function buildSoftwareApplicationSchema(app: AppEntry, baseUrl: string) {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: app.name,
-    url: `${baseUrl}/app/${app.slug}/`,
+    description: app.description,
+    url: `${baseUrl}${app.url}`,
     operatingSystem: 'Android',
     applicationCategory: 'GameApplication',
-    dateModified: app.catalogReviewedDate,
   };
-  if (app.version) schema.softwareVersion = app.version;
-  if (app.fileSize) schema.fileSize = app.fileSize;
+  if (app.softwareVersion !== null) schema.softwareVersion = app.softwareVersion;
+  if (app.fileSize !== null) schema.fileSize = app.fileSize;
   return schema;
 }

@@ -3,6 +3,27 @@ import Layout from '../layouts/Layout.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
 import Icon from '../components/Icon.astro';
 import { externalGuideUrl } from '../data/nav';
+import { blogPosts } from '../data/blogPosts';
+import { frontmatter as gamesListFrontmatter } from '../../content/blog/all-yono-games-list-2026.md';
+
+const posts = [
+  ...blogPosts.map((p) => ({
+    title: p.title,
+    summary: p.metaDescription,
+    href: `/blog/${p.slug}/`,
+    publishedDate: p.publishedDate,
+    lastReviewedDate: p.lastReviewedDate,
+  })),
+  {
+    title: gamesListFrontmatter.title,
+    summary: gamesListFrontmatter.meta_description,
+    href: `/blog/${gamesListFrontmatter.slug}/`,
+    publishedDate: gamesListFrontmatter.date_published,
+    lastReviewedDate: gamesListFrontmatter.date_modified,
+  },
+];
+
+const blogRobots = posts.length > 0 ? 'index, follow' : 'noindex, follow';
 
 const relatedCategories = [
   { label: 'Latest Promo Code', body: 'Tracks date-stamped release-period notices by platform.', href: '/promo-code-updates/' },
@@ -41,7 +62,7 @@ const faqSchema = {
   rawTitle
   ogTitle="All Yono Blog Updates: New Guides and Revised Articles"
   ogDescription="Browse newly published All Yono guides, revised articles, corrections, and refreshed information with visible update dates."
-  robots="index, follow"
+  robots={blogRobots}
   keywords={[
     'all yono blog updates',
     'all yono new articles',
@@ -83,21 +104,36 @@ const faqSchema = {
       last-reviewed date.
     </p>
 
-    <div class="mt-6 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
-      <p class="text-base font-semibold text-gray-200">No New Blog Updates</p>
-      <p class="mt-2 text-sm leading-6 text-gray-400">
-        No new article has been published yet. Check back soon, or browse the latest game list and promo codes
-        below.
-      </p>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/all-yono-games/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
-          Browse Game List
-        </a>
-        <a href="/promo-code-updates/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
-          View Latest Promo Codes
-        </a>
+    {posts.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {posts.map((post) => (
+          <a href={post.href} class="block rounded-lg border border-gray-800 bg-brand-surface/30 px-5 py-4 transition hover:border-gray-600">
+            <h3 class="text-lg font-semibold text-brand-primary">{post.title}</h3>
+            <p class="mt-1.5 text-sm leading-6 text-gray-300">{post.summary}</p>
+            <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400">
+              <span>Published: {post.publishedDate}</span>
+              <span>Last Reviewed: {post.lastReviewedDate}</span>
+            </p>
+          </a>
+        ))}
       </div>
-    </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
+        <p class="text-base font-semibold text-gray-200">No New Blog Updates</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">
+          No new article has been published yet. Check back soon, or browse the latest game list and promo codes
+          below.
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <a href="/all-yono-games/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+            Browse Game List
+          </a>
+          <a href="/promo-code-updates/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+            View Latest Promo Codes
+          </a>
+        </div>
+      </div>
+    )}
   </section>
 
   <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">

@@ -1,0 +1,123 @@
+---
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import ComplianceNotice from '../../components/ComplianceNotice.astro';
+import { buildItemListSchema, buildArticleSchema } from '../../lib/schema';
+import { categories } from '../../data/categories';
+import { apps, getAppsByCategory, type AppCategory } from '../../lib/apps';
+import { frontmatter } from '../../../content/blog/all-yono-games-list-2026.md';
+
+const CATEGORY_ORDER: AppCategory[] = ['rummy', 'arcade', 'sevens', 'slots', 'spin', 'vip', 'bingo'];
+
+const sections = CATEGORY_ORDER.map((key) => ({
+  meta: categories.find((c) => c.key === key)!,
+  apps: getAppsByCategory(key),
+}));
+
+// FAQ is parsed directly from the markdown source file's "## Frequently asked
+// questions" section, so editing that section in the .md updates this page
+// without touching this file.
+const rawMarkdown = readFileSync(
+  path.join(process.cwd(), 'content/blog/all-yono-games-list-2026.md'),
+  'utf8',
+);
+const faqSectionMatch = rawMarkdown.match(/## Frequently asked questions\n\n([\s\S]*?)\n\n---/);
+const faqSectionText = faqSectionMatch ? faqSectionMatch[1] : '';
+const faqs = [...faqSectionText.matchAll(/\*\*(.+?)\*\*\n\n(.+?)(?=\n\n\*\*|\n*$)/gs)].map((m) => ({
+  question: m[1].trim(),
+  answer: m[2].trim(),
+}));
+
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+const canonicalUrl = `${baseUrl}/blog/${frontmatter.slug}/`;
+
+const articleSchema = buildArticleSchema({
+  headline: frontmatter.title,
+  description: frontmatter.meta_description,
+  datePublished: frontmatter.date_published,
+  dateModified: frontmatter.date_modified,
+  url: canonicalUrl,
+});
+const itemListSchema = buildItemListSchema(apps, baseUrl);
+const faqSchema = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+const graphSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [articleSchema, itemListSchema, faqSchema],
+};
+---
+
+<Layout
+  title={frontmatter.title}
+  description={frontmatter.meta_description}
+  rawTitle
+  ogTitle={frontmatter.title}
+  ogDescription={frontmatter.meta_description}
+  robots={frontmatter.robots}
+  keywords={[frontmatter.target_keyword]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-6 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">{frontmatter.title.split('–')[0].trim()}</h1>
+    <p class="mt-3 text-sm font-medium text-gray-400">Last reviewed: {frontmatter.date_modified} · {apps.length} apps listed</p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">{frontmatter.meta_description}</p>
+    <a href="/new-yono-games/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Looking for the newest releases? See New Yono Games
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-8 lg:px-8">
+    <h2 class="text-lg font-bold text-brand-primary">Browse by Category</h2>
+    <div class="mt-3 flex flex-wrap gap-x-1 gap-y-2 text-sm">
+      {sections.map((section, i) => (
+        <>
+          <a href={`#${section.meta.key}`} class="font-medium text-brand-accent-strong hover:underline">{section.meta.h1.split(':')[0]}</a>
+          {i < sections.length - 1 && <span class="text-gray-500">·</span>}
+        </>
+      ))}
+    </div>
+  </section>
+
+  {sections.map((section) => (
+    <section id={section.meta.key} class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 class="text-2xl font-bold tracking-tight text-brand-primary">{section.meta.h1.split(':')[0]}</h2>
+        <a href={section.meta.path} class="text-sm font-semibold text-brand-accent-strong hover:underline">
+          View Full {section.meta.h1.split(':')[0]} Category
+        </a>
+      </div>
+
+      <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {section.apps.map((app) => (
+          <div class="flex items-start gap-3 rounded-lg border border-brand-secondary bg-brand-surface p-3">
+            <img src={app.icon} alt={`${app.name} logo`} width="40" height="40" loading="lazy" class="h-10 w-10 shrink-0 rounded-md object-contain" />
+            <div class="min-w-0">
+              <a href={app.url} class="text-sm font-semibold text-brand-accent-strong hover:underline">
+                {app.name}{app.featured && <span class="ml-1 text-brand-accent" title="Featured">★</span>}
+              </a>
+              <p class="mt-1 text-xs leading-5 text-gray-400">{app.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+    <ComplianceNotice />
+  </section>
+</Layout>
