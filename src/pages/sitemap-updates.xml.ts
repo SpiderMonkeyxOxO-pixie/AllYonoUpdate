@@ -1,10 +1,14 @@
 import type { APIRoute } from 'astro';
 import { FALLBACK_BASE_URL } from '../lib/sitemap';
+import { blogPosts } from '../data/blogPosts';
 
-// No individual update posts exist yet. Once a content collection backs the
-// /updates/[slug]/ post template (see project_content_taxonomy memory), populate
-// this list from indexable, substantial posts only.
-const updatePosts: { path: string; lastmod: string }[] = [];
+// Covers /blog/[slug]/ informational posts. Once a content collection backs
+// the separate /updates/[slug]/ post template (see project_content_taxonomy
+// memory), add those entries here too.
+const updatePosts: { path: string; lastmod: string }[] = blogPosts.map((post) => ({
+  path: `/blog/${post.slug}/`,
+  lastmod: post.lastReviewedDate,
+}));
 
 export const GET: APIRoute = ({ site }) => {
   const baseUrl = (site?.toString() ?? FALLBACK_BASE_URL).replace(/\/$/, '');

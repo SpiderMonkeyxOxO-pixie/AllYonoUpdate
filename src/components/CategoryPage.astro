@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AppCard from './AppCard.astro';
+import FaqAccordion from './FaqAccordion.astro';
+import { buildCollectionPageSchema, buildFaqSchema } from '../lib/schema';
+import { stateBanDisclaimer, categories, type CategoryMeta } from '../data/categories';
+import type { AppEntry } from '../lib/apps';
+
+interface Props {
+  meta: CategoryMeta;
+  apps: AppEntry[];
+  faqs: { question: string; answer: string }[];
+}
+
+const { meta, apps, faqs } = Astro.props;
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+
+const collectionSchema = buildCollectionPageSchema(meta.title, meta.description, apps, baseUrl);
+const faqSchema = buildFaqSchema(faqs);
+
+const otherCategories = categories.filter((c) => c.key !== meta.key);
+---
+
+<Layout
+  title={meta.title}
+  description={meta.description}
+  rawTitle
+  ogTitle={meta.ogTitle}
+  ogDescription={meta.ogDescription}
+  robots="index, follow"
+  keywords={meta.keywords}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-6 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">{meta.h1}</h1>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <a href={meta.updateHubHref} class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        See Latest Version Updates
+      </a>
+      <a href="/yono-games-apk/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Browse Full Directory
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-10 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {apps.map((app) => <AppCard app={app} />)}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+    {meta.intro.split('\n\n').map((paragraph) => (
+      <p class="mt-3 text-base leading-7 text-gray-300">{paragraph}</p>
+    ))}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse Other Categories</h2>
+    <ul class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+      {otherCategories.map((category) => (
+        <li>
+          <a href={category.path} class="block rounded-md border border-gray-800 bg-brand-surface px-3 py-2.5 text-sm font-medium text-brand-accent-strong hover:underline">
+            {category.h1.split(':')[0]}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-8 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">State Availability Notice</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">{stateBanDisclaimer}</p>
+    </div>
+  </section>
+</Layout>

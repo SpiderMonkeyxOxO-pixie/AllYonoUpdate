@@ -1,0 +1,25 @@
+---
+import UpdateHub from '../components/UpdateHub.astro';
+import { hubs } from '../data/hubs';
+import { getAppsByCategory } from '../lib/apps';
+
+const meta = hubs.find((h) => h.key === 'new-yono-rummy')!;
+const rummyApps = getAppsByCategory('rummy');
+
+const faqs = [
+  {
+    question: 'Does AllYonoUpdate.com host any rummy APK files?',
+    answer: 'No. AllYonoUpdate.com does not host or operate any APK files. Each Download button leads directly to the platform\'s own website.',
+  },
+  {
+    question: 'How often is this rummy update hub refreshed?',
+    answer: 'Entries are reviewed whenever a rummy-category app is added, recategorized, or a meaningful change can be recorded, so the "Last updated" date reflects the most recent catalog check.',
+  },
+  {
+    question: 'Is there an update hub covering every category, not just rummy?',
+    answer: 'Yes. The New Yono Games update hub tracks every category, linked below.',
+  },
+];
+---
+
+<UpdateHub meta={meta} apps={rummyApps} faqs={faqs} />

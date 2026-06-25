@@ -1,0 +1,25 @@
+---
+import CategoryPage from '../components/CategoryPage.astro';
+import { getCategoryMeta } from '../data/categories';
+import { getAppsByCategory } from '../lib/apps';
+
+const meta = getCategoryMeta('777');
+const categoryApps = getAppsByCategory('777');
+
+const faqs = [
+  {
+    question: 'Does AllYonoUpdate.com host any 777-category APK files?',
+    answer: 'No. AllYonoUpdate.com does not host or operate any APK files. Each Download button leads directly to the platform\'s own website.',
+  },
+  {
+    question: 'Is Yono 777 the same app as other 777-named platforms?',
+    answer: 'No. Yono 777, 777 Game, Hindi 777, and Yn 777 are recorded as separate platforms, even though their names share the "777" naming pattern.',
+  },
+  {
+    question: 'How often is this 777-category app list reviewed?',
+    answer: 'The list is reviewed whenever a title is added, removed, renamed, or recategorized, so it reflects what was last recorded rather than a live feed.',
+  },
+];
+---
+
+<CategoryPage meta={meta} apps={categoryApps} faqs={faqs} />

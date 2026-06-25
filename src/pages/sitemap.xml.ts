@@ -18,6 +18,14 @@ export const GET: APIRoute = ({ site }) => {
     <lastmod>${pagesLastmod}</lastmod>
   </sitemap>
   <sitemap>
+    <loc>${baseUrl}/sitemap-categories.xml</loc>
+    <lastmod>${updatesLastmod}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${baseUrl}/sitemap-apps.xml</loc>
+    <lastmod>${updatesLastmod}</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>${baseUrl}/sitemap-updates.xml</loc>
     <lastmod>${updatesLastmod}</lastmod>
   </sitemap>

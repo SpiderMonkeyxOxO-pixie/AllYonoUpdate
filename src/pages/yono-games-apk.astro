@@ -1,0 +1,24 @@
+---
+import CategoryPage from '../components/CategoryPage.astro';
+import { getCategoryMeta } from '../data/categories';
+import { apps } from '../lib/apps';
+
+const meta = getCategoryMeta('all');
+
+const faqs = [
+  {
+    question: 'Does AllYonoUpdate.com host any of these APK files?',
+    answer: 'No. AllYonoUpdate.com does not host or operate any APK files. Each Download button leads directly to the platform\'s own website.',
+  },
+  {
+    question: 'How is this full directory different from the category pages?',
+    answer: 'This page lists every recorded app across all categories in one place. Use a category page for a narrower list focused on one app type, such as rummy or arcade.',
+  },
+  {
+    question: 'How often is this full directory reviewed?',
+    answer: 'The list is reviewed whenever a title is added, removed, renamed, or recategorized, so it reflects what was last recorded rather than a live feed.',
+  },
+];
+---
+
+<CategoryPage meta={meta} apps={apps} faqs={faqs} />

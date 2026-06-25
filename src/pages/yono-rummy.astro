@@ -1,0 +1,25 @@
+---
+import CategoryPage from '../components/CategoryPage.astro';
+import { getCategoryMeta } from '../data/categories';
+import { getAppsByCategory } from '../lib/apps';
+
+const meta = getCategoryMeta('rummy');
+const categoryApps = getAppsByCategory('rummy');
+
+const faqs = [
+  {
+    question: 'Does AllYonoUpdate.com host the Yono Rummy APK file?',
+    answer: 'No. AllYonoUpdate.com does not host or operate any APK files. Each Download button leads directly to the platform\'s own website.',
+  },
+  {
+    question: 'Is Yono Rummy legal to download in my state?',
+    answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app listed on this page.',
+  },
+  {
+    question: 'How often is this rummy app list reviewed?',
+    answer: 'The list is reviewed whenever a title is added, removed, renamed, or recategorized, so it reflects what was last recorded rather than a live feed.',
+  },
+];
+---
+
+<CategoryPage meta={meta} apps={categoryApps} faqs={faqs} />
