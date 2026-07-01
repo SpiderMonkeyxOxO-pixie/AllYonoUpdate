@@ -3,6 +3,16 @@ export interface NavItem {
   href: string;
 }
 
+export const categoryNav: NavItem[] = [
+  { label: 'All Games APK', href: '/yono-games-apk/' },
+  { label: 'Rummy', href: '/yono-rummy/' },
+  { label: 'VIP', href: '/yono-vip/' },
+  { label: '777', href: '/yono-777/' },
+  { label: 'Arcade', href: '/yono-arcade/' },
+  { label: 'Slots', href: '/yono-slots/' },
+  { label: 'Bingo', href: '/yono-bingo/' },
+];
+
 export const primaryNav: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Latest Promo Code', href: '/promo-code-updates/' },
@@ -10,7 +20,7 @@ export const primaryNav: NavItem[] = [
   { label: 'Blogs', href: '/blog-updates/' },
 ];
 
-export const mobileNav: NavItem[] = primaryNav;
+export const mobileNav: NavItem[] = [...primaryNav.slice(0, 1), ...categoryNav, ...primaryNav.slice(1)];
 
 export interface FooterColumn {
   heading: string;

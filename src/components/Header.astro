@@ -1,5 +1,5 @@
 ---
-import { primaryNav, mobileNav } from '../data/nav';
+import { primaryNav, mobileNav, categoryNav } from '../data/nav';
 
 const currentPath = Astro.url.pathname;
 const isActive = (href: string) => currentPath === href;
@@ -13,7 +13,39 @@ const isActive = (href: string) => currentPath === href;
     </a>
 
     <nav class="hidden items-center gap-1 font-mono text-sm lg:flex" aria-label="Primary">
-      {primaryNav.map((item) => (
+      <a
+        href={primaryNav[0].href}
+        class:list={[
+          'rounded-md px-3 py-2 text-gray-300 transition hover:text-brand-accent',
+          { 'text-brand-accent': isActive(primaryNav[0].href) },
+        ]}
+      >
+        <span class="text-gray-600" aria-hidden="true">~/</span>{primaryNav[0].label}
+      </a>
+
+      <details class="group relative">
+        <summary class="flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-2 text-gray-300 transition hover:text-brand-accent">
+          <span class="text-gray-600" aria-hidden="true">~/</span>Categories
+          <svg class="h-3 w-3 transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="absolute left-0 top-full z-50 mt-1 flex min-w-[10rem] flex-col gap-1 border border-gray-800 bg-brand-bg p-2 shadow-lg">
+          {categoryNav.map((item) => (
+            <a
+              href={item.href}
+              class:list={[
+                'rounded-md px-3 py-2 text-gray-300 transition hover:text-brand-accent',
+                { 'text-brand-accent': isActive(item.href) },
+              ]}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </details>
+
+      {primaryNav.slice(1).map((item) => (
         <a
           href={item.href}
           class:list={[
@@ -71,5 +103,12 @@ const isActive = (href: string) => currentPath === href;
     menuButton.setAttribute('aria-expanded', String(!isHidden));
     iconOpen?.classList.toggle('hidden');
     iconClose?.classList.toggle('hidden');
+  });
+
+  const categoryDropdown = document.querySelector('nav[aria-label="Primary"] details');
+  document.addEventListener('click', (event) => {
+    if (categoryDropdown?.hasAttribute('open') && !categoryDropdown.contains(event.target as Node)) {
+      categoryDropdown.removeAttribute('open');
+    }
   });
 </script>
