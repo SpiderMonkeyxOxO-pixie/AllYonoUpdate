@@ -12,6 +12,7 @@ export interface CategoryMeta {
   keywords: string[];
   intro: string;
   updateHubHref: string;
+  articleHref?: string;
 }
 
 export const categories: CategoryMeta[] = [
@@ -28,6 +29,7 @@ export const categories: CategoryMeta[] = [
     intro:
       "Yono Rummy is one of the most searched rummy-style apps in the wider All Yono lineup, alongside related platforms such as ABC Rummy, Boss Rummy, Joy Rummy, and Rummy888. This page lists every rummy-category app currently recorded in the All Yono directory, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads to the platform's own website, not to a file stored here.\n\nThese apps are generally presented by their publishers as skill-based card games. Listing order, app version, and download links can change without notice, so the information shown reflects what was last recorded, not a live guarantee. Always confirm current details on the platform's own website before downloading.",
     updateHubHref: '/new-yono-rummy/',
+    articleHref: '/blog/yono-rummy-apk-guide/',
   },
   {
     key: 'arcade',
@@ -42,6 +44,7 @@ export const categories: CategoryMeta[] = [
     intro:
       'Yono Arcade is the most searched arcade-style title in the All Yono lineup, listed here alongside related arcade apps such as Jaiho Arcade, Maha Games, and Yono Games. This page records the arcade-category apps currently tracked in the All Yono directory, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads directly to the platform\'s own website.\n\nArcade-style apps in this category typically combine simple casual gameplay with in-app rewards systems defined by each individual publisher. Listing order, recorded version, and download links can change without notice, so always confirm current details on the platform\'s own website before downloading anything.',
     updateHubHref: '/new-yono-games/',
+    articleHref: '/blog/yono-arcade-apk-guide/',
   },
   {
     key: 'vip',
@@ -56,6 +59,7 @@ export const categories: CategoryMeta[] = [
     intro:
       'Yono Vip is the primary VIP-tier app tracked in the All Yono directory, listed here alongside related platforms such as Neta Vip, Club INR, and Ind Club. VIP-tier apps are generally presented by their publishers as offering tiered membership features compared to standard listings. This page records the VIP-category apps currently tracked, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads to the platform\'s own website.\n\nMembership tiers, recorded version numbers, and download links can change without notice, so the information shown reflects what was last recorded, not a live guarantee. Confirm current membership terms directly on the platform\'s own website.',
     updateHubHref: '/new-yono-games/',
+    articleHref: '/blog/yono-vip-apk-guide/',
   },
   {
     key: 'slots',
@@ -70,6 +74,7 @@ export const categories: CategoryMeta[] = [
     intro:
       'Yono Slots is the lead slot-style title in the All Yono lineup, recorded here alongside related platforms such as 567 Slots, Saga Slots, Share Slots, and Slots Winner. This page lists the slot-category apps currently tracked in the All Yono directory, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads directly to the platform\'s own website.\n\nSlot-style apps typically use randomized in-app outcomes defined by each publisher\'s own systems. Listing order, recorded version, and download links can change without notice, so always confirm current details directly on the platform\'s own website before downloading.',
     updateHubHref: '/new-yono-games/',
+    articleHref: '/blog/yono-slots-apk-guide/',
   },
   {
     key: 'spin',
@@ -98,6 +103,7 @@ export const categories: CategoryMeta[] = [
     intro:
       'Yono 777 is the lead title in the 777-category cluster of the All Yono directory, recorded here alongside related platforms such as 777 Game, Hindi 777, and Yn 777. This page lists the 777-category apps currently tracked, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads directly to the platform\'s own website.\n\nApps in this category are generally presented by their publishers as casino-style games. Listing order, recorded version, and download links can change without notice, so always confirm current details directly on the platform\'s own website before downloading anything.',
     updateHubHref: '/new-yono-games/',
+    articleHref: '/blog/yono-777-apk-guide/',
   },
   {
     key: 'bingo',

@@ -43,6 +43,19 @@ const faqSchema = buildFaqSchema(post.faqs);
     <a href={post.relatedCategoryPath} class="mt-6 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
       View Related Apps
     </a>
+
+    {post.relatedArticles && post.relatedArticles.length > 0 && (
+      <div class="mt-8">
+        <h2 class="text-lg font-bold text-brand-primary">Related Reading</h2>
+        <ul class="mt-3 space-y-2">
+          {post.relatedArticles.map((related) => (
+            <li>
+              <a href={related.href} class="text-sm font-semibold text-brand-accent-strong hover:underline">{related.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
   </section>
 
   <section class="mx-auto max-w-3xl px-4 py-8 lg:px-8">

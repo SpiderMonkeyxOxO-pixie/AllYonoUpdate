@@ -9,6 +9,7 @@ export interface BlogPost {
   body: string[];
   relatedCategoryPath: string;
   faqs: { question: string; answer: string }[];
+  relatedArticles?: { label: string; href: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -41,6 +42,199 @@ export const blogPosts: BlogPost[] = [
         question: 'Should I enter my password on a third-party site to "unlock" a download?',
         answer: 'No. Treat any page asking for your account password, OTP, or payment details before granting a download as a warning sign, and only download apps directly from the platform\'s own official website.',
       },
+    ],
+    relatedArticles: [
+      { label: 'Yono 777 APK: Download Guide & What "777" Apps Are', href: '/blog/yono-777-apk-guide/' },
+    ],
+  },
+  {
+    slug: 'yono-rummy-apk-guide',
+    title: 'Yono Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Yono Rummy APK — what it is, how the download link works, state-legality notes, and answers to common safety questions. AllYonoUpdate.com does not host the file.',
+    h1: 'Yono Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['yono rummy apk', 'yono rummy', 'yono rummy apk download'],
+    publishedDate: '2026-07-01',
+    lastReviewedDate: '2026-07-01',
+    relatedCategoryPath: '/yono-rummy/',
+    body: [
+      'Yono Rummy is the most-searched rummy-style app in the wider All Yono lineup, tracked in the All Yono directory alongside related titles such as ABC Rummy, Boss Rummy, Joy Rummy, and Rummy888. This guide covers what the Yono Rummy APK actually is and what to check before downloading it — for the current app list and the download link itself, see the Yono Rummy category page linked below.',
+      'Rummy-style apps in this category are generally presented by their publishers as skill-based card games. AllYonoUpdate.com does not develop, host, or operate any of these applications: the APK file itself is never stored on this website, and every Download button on the category page leads directly to the platform\'s own website.',
+      'Real-money rummy apps are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Yono Rummy or any related app is legal or illegal in your location — check your state\'s current regulations before downloading or using any rummy app.',
+      'A common point of confusion is the difference between a referral or promo code and an account password. A referral code is a shareable code entered during sign-up, while your account password is created privately inside the app or on the platform\'s own website. The linked Yono 777 Password guide covers this confusion in more detail, since the same pattern shows up across multiple All Yono apps, not just Yono Rummy.',
+      'The current Yono Rummy app list, recorded version, and download link are kept on the Yono Rummy category page, reviewed whenever a title is added, removed, renamed, or recategorized.',
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Yono Rummy APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Yono Rummy category page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Yono Rummy legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'yono-vip-apk-guide',
+    title: 'Yono VIP APK: Membership Tiers Explained & Download FAQ',
+    metaDescription: 'What "VIP tier" means across Yono apps, how membership levels typically work, and safety notes before downloading Yono VIP. AllYonoUpdate.com does not host the file.',
+    h1: 'Yono VIP APK: Membership Tiers Explained & Download FAQ',
+    keywords: ['yono vip apk', 'yono vip', 'yono vip game'],
+    publishedDate: '2026-07-01',
+    lastReviewedDate: '2026-07-01',
+    relatedCategoryPath: '/yono-vip/',
+    body: [
+      'Yono Vip is the primary VIP-tier app tracked in the All Yono directory, listed alongside related platforms such as Neta Vip, Club INR, and Ind Club. This guide covers what a "VIP tier" generally means in this app category and what to check before downloading — for the current app list and download link, see the Yono VIP category page linked below.',
+      'VIP-tier apps are generally presented by their publishers as offering tiered membership features compared to standard listings. AllYonoUpdate.com does not develop, host, or operate any of these applications: the APK file itself is never stored on this website, and every Download button on the category page leads directly to the platform\'s own website.',
+      'Membership terms, tier requirements, and any bonus or reward structure are set entirely by each app\'s own publisher and can change without notice. This guide does not verify or endorse any specific bonus, reward, or membership claim made on a platform\'s own website.',
+      'A common point of confusion is the difference between a referral or promo code and an account password. A referral code is a shareable code entered during sign-up, while your account password is created privately inside the app or on the platform\'s own website. The linked Yono 777 Password guide covers this confusion in more detail, since the same pattern shows up across multiple All Yono apps, not just Yono VIP.',
+      'The current Yono VIP app list, recorded version, and download link are kept on the Yono VIP category page, reviewed whenever a title is added, removed, renamed, or recategorized.',
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Yono VIP APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Yono VIP category page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'What does "VIP tier" actually mean for these apps?',
+        answer: 'It generally refers to publisher-defined membership levels with different features than standard access. AllYonoUpdate.com has not independently verified any specific tier\'s terms or rewards.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'yono-777-apk-guide',
+    title: 'Yono 777 APK: Download Guide & What "777" Apps Are',
+    metaDescription: 'What Yono 777 and similar "777"-style apps are, how the download link works, and safety notes — including the password/referral-code confusion covered separately.',
+    h1: 'Yono 777 APK: Download Guide & What "777" Apps Are',
+    keywords: ['yono 777 apk', 'yono 777', 'yono 777 online'],
+    publishedDate: '2026-07-01',
+    lastReviewedDate: '2026-07-01',
+    relatedCategoryPath: '/yono-777/',
+    body: [
+      'Yono 777 is the lead title in the 777-category cluster of the All Yono directory, recorded alongside related platforms such as 777 Game, Hindi 777, and Yn 777. This guide covers what Yono 777 and similar "777"-style apps are and what to check before downloading — for the current app list and download link, see the Yono 777 category page linked below.',
+      'Apps in this category are generally presented by their publishers as casino-style games. AllYonoUpdate.com does not develop, host, or operate any of these applications: the APK file itself is never stored on this website, and every Download button on the category page leads directly to the platform\'s own website.',
+      'Real-money casino-style apps are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Yono 777 or any related app is legal or illegal in your location — check your state\'s current regulations before downloading or using any app in this category.',
+      'This guide is a companion to the separate Yono 777 Password guide, which breaks down the three different things people usually mean by "Yono 777 password" — an account login password, a referral or promo code, or a phishing attempt asking for one. Read that guide before entering any password, OTP, or payment detail anywhere related to Yono 777.',
+      'The current Yono 777 app list, recorded version, and download link are kept on the Yono 777 category page, reviewed whenever a title is added, removed, renamed, or recategorized.',
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Yono 777 APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Yono 777 category page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Yono 777 legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money casino-style apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'What does "Yono 777 password" actually mean?',
+        answer: 'It usually means one of three things — an account login password, a referral/promo code, or a phishing attempt asking for one. See the linked Yono 777 Password guide for the full breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'yono-arcade-apk-guide',
+    title: 'Yono Arcade APK: Download Guide & FAQ',
+    metaDescription: 'What Yono Arcade and similar arcade-style apps are, how the download link works, and answers to common safety questions. AllYonoUpdate.com does not host the file.',
+    h1: 'Yono Arcade APK: Download Guide & FAQ',
+    keywords: ['yono arcade apk', 'yono arcade', 'yono arcade games'],
+    publishedDate: '2026-07-01',
+    lastReviewedDate: '2026-07-01',
+    relatedCategoryPath: '/yono-arcade/',
+    body: [
+      'Yono Arcade is the most-searched arcade-style title in the All Yono lineup, listed alongside related arcade apps such as Jaiho Arcade, Maha Games, and Yono Games. This guide covers what Yono Arcade and similar arcade-style apps are and what to check before downloading — for the current app list and download link, see the Yono Arcade category page linked below.',
+      'Arcade-style apps in this category typically combine simple casual gameplay with in-app rewards systems defined by each individual publisher. AllYonoUpdate.com does not develop, host, or operate any of these applications: the APK file itself is never stored on this website, and every Download button on the category page leads directly to the platform\'s own website.',
+      'Any bonus, reward, or in-app rewards claim shown on a platform\'s own website is set entirely by that app\'s publisher. This guide does not independently verify those terms, and listing order, recorded version, and download links can change without notice.',
+      'A common point of confusion is the difference between a referral or promo code and an account password. A referral code is a shareable code entered during sign-up, while your account password is created privately inside the app or on the platform\'s own website. The linked Yono 777 Password guide covers this confusion in more detail, since the same pattern shows up across multiple All Yono apps, not just Yono Arcade.',
+      'The current Yono Arcade app list, recorded version, and download link are kept on the Yono Arcade category page, reviewed whenever a title is added, removed, renamed, or recategorized.',
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Yono Arcade APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Yono Arcade category page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified Yono Arcade\'s bonus or reward terms?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any bonus, reward, or in-app rewards claim shown on a platform\'s own website.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'yono-slots-apk-guide',
+    title: 'Yono Slots APK: Download Guide & FAQ',
+    metaDescription: 'What Yono Slots and similar slot-style apps are, how randomized in-app outcomes work, and safety notes before downloading. AllYonoUpdate.com does not host the file.',
+    h1: 'Yono Slots APK: Download Guide & FAQ',
+    keywords: ['yono slots apk', 'yono slots', 'yono slot game'],
+    publishedDate: '2026-07-01',
+    lastReviewedDate: '2026-07-01',
+    relatedCategoryPath: '/yono-slots/',
+    body: [
+      'Yono Slots is the lead slot-style title in the All Yono lineup, recorded alongside related platforms such as 567 Slots, Saga Slots, Share Slots, and Slots Winner. This guide covers what Yono Slots and similar slot-style apps are and what to check before downloading — for the current app list and download link, see the Yono Slots category page linked below.',
+      'Slot-style apps typically use randomized in-app outcomes defined by each publisher\'s own systems. AllYonoUpdate.com does not develop, host, or operate any of these applications: the APK file itself is never stored on this website, and every Download button on the category page leads directly to the platform\'s own website.',
+      'Any bonus, reward, or "winning" claim shown on a platform\'s own website is set entirely by that app\'s publisher. This guide does not independently verify those terms and never uses winning, earning, or real-money promotional language of its own.',
+      'A common point of confusion is the difference between a referral or promo code and an account password. A referral code is a shareable code entered during sign-up, while your account password is created privately inside the app or on the platform\'s own website. The linked Yono 777 Password guide covers this confusion in more detail, since the same pattern shows up across multiple All Yono apps, not just Yono Slots.',
+      'The current Yono Slots app list, recorded version, and download link are kept on the Yono Slots category page, reviewed whenever a title is added, removed, renamed, or recategorized.',
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Yono Slots APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Yono Slots category page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified any winning or bonus claims for Yono Slots?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any bonus, reward, or winning claim shown on a platform\'s own website, and does not use this type of promotional language itself.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
     ],
   },
 ];
