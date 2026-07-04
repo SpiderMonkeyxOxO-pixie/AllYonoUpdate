@@ -25,7 +25,7 @@ export const categories: CategoryMeta[] = [
     description: 'Browse Yono Rummy and related rummy-category apps in the All Yono directory, with a direct download link, recorded version, and last-checked date for each title.',
     ogTitle: 'Yono Rummy APK Download — Latest Versions and Updates',
     ogDescription: 'Browse Yono Rummy and related rummy-category apps in the All Yono directory, with a direct download link for each title.',
-    keywords: ['yono rummy apk', 'rummy yono', 'yono rummy download', 'yono rummy app', 'yono rummy app download'],
+    keywords: ['yono rummy apk', 'yono rummy', 'rummy yono', 'yono rummy new', 'yono rummy download', 'yono rummy app', 'yono rummy app download'],
     intro:
       "Yono Rummy is one of the most searched rummy-style apps in the wider All Yono lineup, alongside related platforms such as ABC Rummy, Boss Rummy, Joy Rummy, and Rummy888. This page lists every rummy-category app currently recorded in the All Yono directory, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads to the platform's own website, not to a file stored here.\n\nThese apps are generally presented by their publishers as skill-based card games. Listing order, app version, and download links can change without notice, so the information shown reflects what was last recorded, not a live guarantee. Always confirm current details on the platform's own website before downloading.",
     updateHubHref: '/new-yono-rummy/',
@@ -99,7 +99,7 @@ export const categories: CategoryMeta[] = [
     description: 'Browse Yono 777 and related 777-category apps in the All Yono directory, with a direct download link, recorded version, and last-checked date for each title.',
     ogTitle: 'Yono 777 APK Download — Latest Versions and Updates',
     ogDescription: 'Browse Yono 777 and related 777-category apps in the All Yono directory, with a direct download link for each title.',
-    keywords: ['yono 777 online'],
+    keywords: ['yono 777 online', 'yono 777', 'yono777', 'yono 777 game'],
     intro:
       'Yono 777 is the lead title in the 777-category cluster of the All Yono directory, recorded here alongside related platforms such as 777 Game, Hindi 777, and Yn 777. This page lists the 777-category apps currently tracked, with a direct download link for each title where one has been recorded. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads directly to the platform\'s own website.\n\nApps in this category are generally presented by their publishers as casino-style games. Listing order, recorded version, and download links can change without notice, so always confirm current details directly on the platform\'s own website before downloading anything.',
     updateHubHref: '/new-yono-games/',
@@ -128,9 +128,9 @@ export const categories: CategoryMeta[] = [
     description: 'Browse the full All Yono APK directory across rummy, slots, spin, 777, arcade, VIP, and bingo-category apps, with a direct download link and last-checked date for each title.',
     ogTitle: 'Yono Games APK — Full Directory and Latest Versions',
     ogDescription: 'Browse the full All Yono APK directory across every recorded category, with a direct download link for each title.',
-    keywords: ['yono games apk', 'all yono games', 'all yono app'],
+    keywords: ['yono games apk', 'yono games', 'all yono games', 'yono all games', 'yono all game', 'all yono store', 'all yono app'],
     intro:
-      'This page is the full All Yono APK directory, listing every app currently recorded across the rummy, slots, spin, 777, arcade, VIP, and bingo categories, with a direct download link for each title where one has been recorded. Use the category pages linked from this directory for a narrower list focused on one type of app. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads directly to the platform\'s own website, not to a file hosted here.\n\nThis directory is reviewed when a title is added, removed, renamed, or recategorized, so the list reflects what was last recorded rather than a live, real-time feed. Always confirm current download links and version details directly on each platform\'s own website.',
+      'This page is the full All Yono APK directory — sometimes searched for as the All Yono Store — listing every app currently recorded across the rummy, slots, spin, 777, arcade, VIP, and bingo categories, with a direct download link for each title where one has been recorded. Use the category pages linked from this directory for a narrower list focused on one type of app. AllYonoUpdate.com does not develop, host, or operate any of these applications — every Download button leads directly to the platform\'s own website, not to a file hosted here.\n\nThis directory is reviewed when a title is added, removed, renamed, or recategorized, so the list reflects what was last recorded rather than a live, real-time feed. Always confirm current download links and version details directly on each platform\'s own website.',
     updateHubHref: '/new-yono-games/',
   },
 ];
