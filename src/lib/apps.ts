@@ -13,6 +13,7 @@ export interface AppEntry {
   slug: string;
   category: AppCategory;
   featured: boolean;
+  tag?: string;
   description: string;
   targetKeyword: string;
   softwareVersion: string | null;

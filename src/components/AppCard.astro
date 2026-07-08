@@ -20,7 +20,14 @@ const hasSpecs = app.softwareVersion !== null || app.fileSize !== null || app.mi
       class="h-12 w-12 shrink-0 rounded-md object-contain"
     />
     <div class="min-w-0">
-      <h3 class="truncate text-sm font-semibold text-brand-primary">{app.name}</h3>
+      <h3 class="truncate text-sm font-semibold text-brand-primary">
+        {app.name}
+        {app.tag && (
+          <span class="ml-1.5 inline-block rounded bg-brand-accent px-1.5 py-0.5 align-middle text-[10px] font-bold uppercase text-black">
+            {app.tag}
+          </span>
+        )}
+      </h3>
       {app.rating !== null && <p class="text-xs text-gray-400">Rating: {app.rating.toFixed(1)}</p>}
     </div>
   </div>
