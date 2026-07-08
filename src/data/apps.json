@@ -10,6 +10,38 @@
   },
   "apps": [
     {
+      "id": "max-rummy",
+      "name": "Max Rummy",
+      "slug": "max-rummy",
+      "category": "rummy",
+      "featured": false,
+      "tag": "NEW",
+      "description": "Max Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Max Rummy APK file.",
+      "targetKeyword": "max rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-07-08",
+      "icon": "/images/games/max-rummy.webp",
+      "apkUrl": null,
+      "url": "/app/max-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Max Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Max Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Max Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Max Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
       "id": "101z",
       "name": "101Z",
       "slug": "101z",
@@ -901,38 +933,6 @@
         {
           "q": "Has AllYonoUpdate.com verified Maha Games's bonus or referral terms?",
           "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Maha Games's own website."
-        },
-        {
-          "q": "How often is this app record reviewed?",
-          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
-      "id": "max-rummy",
-      "name": "Max Rummy",
-      "slug": "max-rummy",
-      "category": "rummy",
-      "featured": false,
-      "tag": "NEW",
-      "description": "Max Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Max Rummy APK file.",
-      "targetKeyword": "max rummy apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-07-08",
-      "icon": "/images/games/max-rummy.webp",
-      "apkUrl": null,
-      "url": "/app/max-rummy/",
-      "faq": [
-        {
-          "q": "Does AllYonoUpdate.com host the Max Rummy APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Max Rummy's own website, not to a file stored here."
-        },
-        {
-          "q": "Has AllYonoUpdate.com verified Max Rummy's bonus or referral terms?",
-          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Max Rummy's own website."
         },
         {
           "q": "How often is this app record reviewed?",
