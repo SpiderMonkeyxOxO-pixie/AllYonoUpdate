@@ -83,6 +83,51 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedArticles: [
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+      { label: 'Max Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/max-rummy-apk-guide/' },
+    ],
+  },
+  {
+    slug: 'max-rummy-apk-guide',
+    title: 'Max Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Max Rummy APK — what it is, how the download link works, state-legality notes, and answers to common safety questions. AllYonoUpdate.com does not host the file.',
+    h1: 'Max Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['max rummy apk', 'max rummy', 'max rummy download'],
+    publishedDate: '2026-07-09',
+    lastReviewedDate: '2026-07-09',
+    relatedCategoryPath: '/yono-rummy/',
+    body: [
+      'Max Rummy is the newest rummy-style app added to the All Yono directory, listed alongside established titles such as ABC Rummy, Boss Rummy, Joy Rummy, and Rummy888. This guide covers what the Max Rummy APK is and what to check before downloading it — for the direct download link and the current record for this app, see the Max Rummy app page linked below.',
+      'As a newly listed title, Max Rummy does not yet have a recorded software version, file size, or minimum Android requirement in this directory — those fields are filled in once they can be confirmed, rather than being estimated. AllYonoUpdate.com does not develop, host, or operate Max Rummy: the APK file itself is never stored on this website, and the Download button on its app page leads directly to the platform\'s own website.',
+      'Real-money rummy apps are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Max Rummy is legal or illegal in your location — check your state\'s current regulations before downloading or using it.',
+      'A common point of confusion is the difference between a referral or promo code and an account password. A referral code is a shareable code entered during sign-up, while your account password is created privately inside the app or on the platform\'s own website. The linked Yono 777 Password guide covers this confusion in more detail, since the same pattern shows up across multiple All Yono apps, not just Max Rummy.',
+      'The current Max Rummy record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed.',
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Max Rummy APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Max Rummy app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Max Rummy legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Why doesn\'t Max Rummy have a recorded version or file size yet?',
+        answer: 'It was only recently added to the directory. Those fields are filled in once they can be confirmed, rather than being estimated.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Max Rummy: App Page & Download Link', href: '/app/max-rummy/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
     ],
   },
   {
