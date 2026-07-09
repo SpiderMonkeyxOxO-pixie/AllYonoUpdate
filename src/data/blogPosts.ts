@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['yono 777 password', 'yono 777 password meaning', 'yono 777 login password', 'yono 777 code'],
     publishedDate: '2026-06-25',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/yono-777.webp', alt: 'Yono 777 app icon' },
+    image: { src: '/images/blog/yono-777-password.webp', alt: 'Yono 777 Password: What It Actually Means — featured guide graphic' },
     relatedCategoryPath: '/yono-777/',
     sections: [
       {
@@ -115,7 +115,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['yono rummy apk', 'yono rummy', 'yono rummy apk download', 'yono rummy new'],
     publishedDate: '2026-07-01',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/yono-rummy.webp', alt: 'Yono Rummy app icon' },
+    image: { src: '/images/blog/yono-rummy-apk-guide.webp', alt: 'Yono Rummy APK: Download Guide, Safety Check & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
       {
@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['max rummy apk', 'max rummy', 'max rummy download', 'max rummy new'],
     publishedDate: '2026-07-09',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/max-rummy.webp', alt: 'Max Rummy app icon' },
+    image: { src: '/images/blog/max-rummy-apk-guide.webp', alt: 'Max Rummy APK: Download Guide, Safety Check & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
       {
@@ -306,7 +306,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['yono vip apk', 'yono vip', 'yono vip game', 'yono vip download'],
     publishedDate: '2026-07-01',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/yono-vip.webp', alt: 'Yono Vip app icon' },
+    image: { src: '/images/blog/yono-vip-apk-guide.webp', alt: 'Yono VIP APK: Membership Tiers Explained & Download FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-vip/',
     sections: [
       {
@@ -406,7 +406,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['yono 777 apk', 'yono 777', 'yono 777 online', 'yono 777 download'],
     publishedDate: '2026-07-01',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/yono-777.webp', alt: 'Yono 777 app icon' },
+    image: { src: '/images/blog/yono-777-apk-guide.webp', alt: 'Yono 777 APK: Download Guide & What "777" Apps Are — featured guide graphic' },
     relatedCategoryPath: '/yono-777/',
     sections: [
       {
@@ -510,7 +510,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['yono arcade apk', 'yono arcade', 'yono arcade games', 'yono arcade download'],
     publishedDate: '2026-07-01',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/yono-arcade.webp', alt: 'Yono Arcade app icon' },
+    image: { src: '/images/blog/yono-arcade-apk-guide.webp', alt: 'Yono Arcade APK: Download Guide & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-arcade/',
     sections: [
       {
@@ -614,7 +614,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['yono slots apk', 'yono slots', 'yono slot game', 'yono slots download'],
     publishedDate: '2026-07-01',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/yono-slots.webp', alt: 'Yono Slots app icon' },
+    image: { src: '/images/blog/yono-slots-apk-guide.webp', alt: 'Yono Slots APK: Download Guide & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-slots/',
     sections: [
       {
