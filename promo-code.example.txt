@@ -148,9 +148,14 @@ Code P.M:
 Code Eve: 
 
 Maha Games:
-Code AM: 
-Code P.M: 
-Code Eve: 
+Code AM:
+Code P.M:
+Code Eve:
+
+Max Rummy:
+Code AM:
+Code P.M:
+Code Eve:
 
 MBM Bet:
 Code AM: 
