@@ -22,25 +22,43 @@ const faqSchema = buildFaqSchema(post.faqs);
   rawTitle
   ogTitle={post.title}
   ogDescription={post.metaDescription}
+  ogImage={post.image.src}
   robots="index, follow"
   keywords={post.keywords}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <section class="mx-auto max-w-3xl px-4 pt-16 pb-6 lg:px-8">
-    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">{post.h1}</h1>
-    <p class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400">
-      <span>Published: {post.publishedDate}</span>
-      <span>Last Reviewed: {post.lastReviewedDate}</span>
-    </p>
+    <div class="flex items-center gap-4">
+      <img
+        src={post.image.src}
+        alt={post.image.alt}
+        width="72"
+        height="72"
+        loading="eager"
+        class="h-16 w-16 shrink-0 rounded-lg object-contain"
+      />
+      <div>
+        <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">{post.h1}</h1>
+        <p class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400">
+          <span>Published: {post.publishedDate}</span>
+          <span>Last Reviewed: {post.lastReviewedDate}</span>
+        </p>
+      </div>
+    </div>
   </section>
 
   <section class="mx-auto max-w-3xl px-4 pb-8 lg:px-8">
-    {post.body.map((paragraph) => (
-      <p class="mt-4 text-base leading-7 text-gray-300">{paragraph}</p>
+    {post.sections.map((section) => (
+      <div class="mt-6 first:mt-0">
+        <h2 class="text-xl font-bold tracking-tight text-brand-primary">{section.heading}</h2>
+        {section.paragraphs.map((paragraph) => (
+          <p class="mt-3 text-base leading-7 text-gray-300">{paragraph}</p>
+        ))}
+      </div>
     ))}
 
-    <a href={post.relatedCategoryPath} class="mt-6 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+    <a href={post.relatedCategoryPath} class="mt-8 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
       View Related Apps
     </a>
 
