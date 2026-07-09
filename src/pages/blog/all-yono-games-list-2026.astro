@@ -61,13 +61,22 @@ const graphSchema = {
   rawTitle
   ogTitle={frontmatter.title}
   ogDescription={frontmatter.meta_description}
+  ogImage="/images/blog/all-yono-games-list-2026.webp"
   robots={frontmatter.robots}
   keywords={[frontmatter.target_keyword]}
 >
   <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
 
   <section class="mx-auto max-w-5xl px-4 pt-16 pb-6 lg:px-8">
-    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">{frontmatter.title.split('–')[0].trim()}</h1>
+    <img
+      src="/images/blog/all-yono-games-list-2026.webp"
+      alt="All Yono Games List 2026: Full Directory of Apps & APKs — featured guide graphic"
+      width="1200"
+      height="675"
+      loading="eager"
+      class="aspect-[16/9] w-full rounded-xl object-cover"
+    />
+    <h1 class="mt-6 text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">{frontmatter.title.split('–')[0].trim()}</h1>
     <p class="mt-3 text-sm font-medium text-gray-400">Last reviewed: {frontmatter.date_modified} · {apps.length} apps listed</p>
     <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">{frontmatter.meta_description}</p>
     <div class="mt-4 flex flex-wrap gap-3">
