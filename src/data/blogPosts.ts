@@ -307,7 +307,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['max rummy mystery bonus', 'max rummy bonus', 'max rummy daily reward', 'max rummy promo code'],
     publishedDate: '2026-07-09',
     lastReviewedDate: '2026-07-09',
-    image: { src: '/images/games/max-rummy.webp', alt: 'Max Rummy app icon' },
+    image: { src: '/images/blog/max-rummy-mystery-bonus.webp', alt: 'Max Rummy Mystery Bonus: What It Is & How It Works — featured guide graphic' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
       {
