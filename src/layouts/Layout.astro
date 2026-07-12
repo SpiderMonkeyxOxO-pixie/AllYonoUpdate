@@ -59,10 +59,9 @@ const pageTitle = rawTitle ? title : `${title} | All Yono Update`;
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1CMJVK9YF"></script>
-    <script>
-      const w = window as typeof window & { dataLayer: unknown[] };
-      w.dataLayer = w.dataLayer || [];
-      function gtag(...args: unknown[]) { w.dataLayer.push(args); }
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-D1CMJVK9YF');
     </script>
