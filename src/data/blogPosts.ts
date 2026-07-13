@@ -200,6 +200,7 @@ export const blogPosts: BlogPost[] = [
     relatedArticles: [
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
       { label: 'Max Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/max-rummy-apk-guide/' },
+      { label: 'ABC Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/abc-rummy-apk-guide/' },
     ],
   },
   {
@@ -296,6 +297,7 @@ export const blogPosts: BlogPost[] = [
       { label: 'Max Rummy: App Page & Download Link', href: '/app/max-rummy/' },
       { label: 'Max Rummy Mystery Bonus: What It Is & How It Works', href: '/blog/max-rummy-mystery-bonus/' },
       { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'ABC Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/abc-rummy-apk-guide/' },
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
     ],
   },
@@ -395,6 +397,112 @@ export const blogPosts: BlogPost[] = [
       { label: 'Max Rummy: App Page & Download Link', href: '/app/max-rummy/' },
       { label: 'Max Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/max-rummy-apk-guide/' },
       { label: 'Latest Promo Code Status', href: '/promo-code-updates/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'abc-rummy-apk-guide',
+    title: 'ABC Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the ABC Rummy APK — what it is, how the download and referral-code system works, similar apps, and safety notes before downloading.',
+    h1: 'ABC Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['abc rummy apk', 'abc rummy', 'abc rummy download', 'abc rummy new version'],
+    publishedDate: '2026-07-13',
+    lastReviewedDate: '2026-07-13',
+    image: { src: '/images/games/abc-rummy.webp', alt: 'ABC Rummy app icon' },
+    relatedCategoryPath: '/yono-rummy/',
+    sections: [
+      {
+        heading: 'What Is ABC Rummy',
+        paragraphs: [
+          'ABC Rummy is a rummy-style app tracked in the All Yono directory, presented by its publisher as a skill-based card game built around standard rummy rules — forming valid sequences and sets from a dealt hand. It is one of the apps this site\'s own Yono Rummy guide names as a related title in this category.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate ABC Rummy or any other app listed here. The APK file itself is never stored on this website, and the Download button on the ABC Rummy app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where ABC Rummy Fits Among Other Rummy-Style Apps',
+        paragraphs: [
+          'ABC Rummy sits inside a large cluster of rummy-style titles tracked in this directory — 22 at last count, spanning long-established names like Yono Rummy and Rummy888 alongside newer additions like Max Rummy. Each has its own separate publisher, its own download link, and its own recorded version; they are grouped together here by category, not by ownership.',
+          'Because this is a crowded category with many similarly named apps, it is worth double-checking that you are downloading the specific listing you intended rather than a similarly named alternative, especially if you followed a search result or a shared link rather than navigating from this site\'s own app page.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Like other apps in this category, ABC Rummy typically distributes its APK directly from the publisher\'s own website rather than a conventional app store, often alongside a referral or promo code field shown during sign-up. That code is separate from any account password — it is a shareable string, not a private credential — and it can change on the publisher\'s own schedule.',
+          'AllYonoUpdate.com records the current download link and last-checked date for the ABC Rummy listing, but does not generate, issue, or guarantee any referral code, bonus, or reward tied to it.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money rummy apps are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that ABC Rummy is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Before installing an APK from outside an app store, confirm a few basics: that the download link came from the platform\'s own official website rather than a forwarded message or unfamiliar link shortener, that no page is asking for your existing account password to "unlock" the file, and that you are comfortable with the permissions the APK requests during installation. None of these steps are unique to ABC Rummy — they apply to any APK downloaded outside a conventional app store.',
+        ],
+      },
+      {
+        heading: 'Similar Rummy Apps You Might Like',
+        paragraphs: [
+          'If you are comparing ABC Rummy against other options in this directory, these are the closest related listings by category:',
+          '• Max Rummy — the newest rummy-style app in this directory, still building its recorded version history.',
+          '• Boss Rummy — another sequence-format rummy app tracked alongside ABC Rummy.',
+          '• Joy Rummy — a casual-focused rummy app in the same category cluster.',
+          '• Rummy888 — one of the longer-tracked rummy listings in this directory.',
+          '• Yono Rummy — the lead title in this category, covered in its own dedicated guide linked below.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'A common point of confusion across this entire category is the difference between a referral or promo code and an account password. A referral code is a shareable string entered during sign-up; an account password is created privately and is never meant to be shared. The linked Yono 777 Password guide breaks this distinction down in more detail, since the same confusion shows up across multiple All Yono apps, not just ABC Rummy.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The current ABC Rummy record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the ABC Rummy APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the ABC Rummy app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is ABC Rummy legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Is ABC Rummy the same company as Boss Rummy, Joy Rummy, or Rummy888?',
+        answer: 'No. Each rummy-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other rummy apps are similar to ABC Rummy?',
+        answer: 'Max Rummy, Boss Rummy, Joy Rummy, Rummy888, and Yono Rummy are the closest related listings in this directory — see the Similar Rummy Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is ABC Rummy available on the Google Play Store?',
+        answer: 'AllYonoUpdate.com tracks the direct APK download link recorded on ABC Rummy\'s own website. Play Store availability is set entirely by the app\'s own publisher and can change independently of the link recorded here.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'ABC Rummy: App Page & Download Link', href: '/app/abc-rummy/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'Max Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/max-rummy-apk-guide/' },
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
     ],
   },
