@@ -604,6 +604,116 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedArticles: [
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+      { label: 'Ind Club APK: Download Guide, Safety Check & FAQ', href: '/blog/ind-club-apk-guide/' },
+    ],
+  },
+  {
+    slug: 'ind-club-apk-guide',
+    title: 'Ind Club APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Ind Club APK — what it is, how VIP-tier membership and the download system typically work, similar apps, and safety notes.',
+    h1: 'Ind Club APK: Download Guide, Safety Check & FAQ',
+    keywords: ['ind club apk', 'ind club', 'ind club download', 'ind club vip'],
+    publishedDate: '2026-07-13',
+    lastReviewedDate: '2026-07-13',
+    image: { src: '/images/games/ind-club.webp', alt: 'Ind Club app icon' },
+    relatedCategoryPath: '/yono-vip/',
+    sections: [
+      {
+        heading: 'What Is Ind Club',
+        paragraphs: [
+          'Ind Club is a VIP-tier app tracked in the All Yono directory, presented by its publisher as offering tiered membership features — meaning different account tiers may unlock different in-app features or presentation — compared to a standard, single-tier app. It is one of only four VIP-tier apps currently tracked in this directory.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Ind Club or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Ind Club app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Ind Club Fits Among Other VIP-Tier Apps',
+        paragraphs: [
+          'Ind Club is tracked alongside three other VIP-tier apps in this directory: Club INR, Neta Vip, and Yono Vip. Each has its own separate publisher, download link, and recorded version — the shared "VIP" framing describes how each app markets itself, not a shared ownership or a ranking of which is better.',
+          'Compared to the rummy and 777 clusters tracked elsewhere in this directory, the VIP category is small — only four listings in total — which makes it easier to compare them directly rather than sorting through dozens of similarly named apps.',
+        ],
+      },
+      {
+        heading: 'How VIP-Tier Membership Typically Works',
+        paragraphs: [
+          'Membership terms, tier requirements, and any bonus or reward structure are set entirely by Ind Club\'s own publisher and can change without notice. Common patterns across this category include a free or basic tier available to all users, and one or more higher tiers reached through in-app activity, referrals, or direct purchase — but the specific mechanics differ by publisher.',
+          'This guide does not verify or endorse any specific bonus, reward, or membership claim made on Ind Club\'s own website. Any figure, tier name, or benefit described by the publisher should be checked directly on their own app or website rather than assumed from this summary.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral Process Works',
+        paragraphs: [
+          'Like other VIP-tier apps in this directory, Ind Club is typically distributed as a direct APK download from the publisher\'s own website, often paired with a referral or promo code field during sign-up. That code is a separate, shareable string — not an account password — and AllYonoUpdate.com does not generate, issue, or guarantee any code, bonus, or membership benefit tied to this listing.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money apps in this category are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Ind Club is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Before installing a VIP-tier APK, confirm the download link came from the platform\'s own official website rather than a forwarded message, that no page is asking for your existing account password to "unlock" a membership tier, and that any tier-upgrade claim is something you can verify directly on the publisher\'s own site rather than through a third party.',
+        ],
+      },
+      {
+        heading: 'Similar VIP-Tier Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Ind Club against other options in this directory, these are the only other VIP-tier listings tracked here:',
+          '• Club INR — another VIP-tier app in this same category cluster.',
+          '• Neta Vip — a separate VIP-tier listing tracked alongside Ind Club.',
+          '• Yono Vip — the lead title in this category, covered in its own dedicated guide linked below.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'A common point of confusion across this entire category is the difference between a referral or promo code and an account password. A referral code is a shareable string entered during sign-up; an account password is created privately and is never meant to be shared. The linked Yono 777 Password guide breaks this distinction down in more detail, since the same confusion shows up across multiple All Yono apps, not just Ind Club.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The current Ind Club record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Ind Club APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Ind Club app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Ind Club legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money VIP-tier apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'What does "VIP tier" actually mean for Ind Club?',
+        answer: 'It generally refers to publisher-defined membership levels with different features than standard access. AllYonoUpdate.com has not independently verified any specific tier\'s terms or rewards.',
+      },
+      {
+        question: 'Is Ind Club the same company as Club INR, Neta Vip, or Yono Vip?',
+        answer: 'No. Each VIP-tier app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other VIP-tier apps are similar to Ind Club?',
+        answer: 'Club INR, Neta Vip, and Yono Vip are the only other VIP-tier listings in this directory — see the Similar VIP-Tier Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Ind Club: App Page & Download Link', href: '/app/ind-club/' },
+      { label: 'Yono VIP APK: Membership Tiers Explained & Download FAQ', href: '/blog/yono-vip-apk-guide/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
     ],
   },
   {
