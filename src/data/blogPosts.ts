@@ -410,7 +410,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['abc rummy apk', 'abc rummy', 'abc rummy download', 'abc rummy new version'],
     publishedDate: '2026-07-13',
     lastReviewedDate: '2026-07-13',
-    image: { src: '/images/games/abc-rummy.webp', alt: 'ABC Rummy app icon' },
+    image: { src: '/images/blog/abc-rummy-apk-guide.webp', alt: 'ABC Rummy APK: Download Guide, Safety Check & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
       {
@@ -517,7 +517,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['gogo rummy apk', 'gogo rummy', 'gogo rummy download', 'gogo rummy new version'],
     publishedDate: '2026-07-13',
     lastReviewedDate: '2026-07-13',
-    image: { src: '/images/games/gogo-rummy.webp', alt: 'Gogo Rummy app icon' },
+    image: { src: '/images/blog/gogo-rummy-apk-guide.webp', alt: 'Gogo Rummy APK: Download Guide, Safety Check & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
       {
@@ -1253,7 +1253,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['spin 101 apk', 'spin 101', 'spin 101 download', 'spin 101 new version'],
     publishedDate: '2026-07-13',
     lastReviewedDate: '2026-07-13',
-    image: { src: '/images/games/spin-101.webp', alt: 'Spin 101 app icon' },
+    image: { src: '/images/blog/spin-101-apk-guide.webp', alt: 'Spin 101 APK: Download Guide, Safety Check & FAQ — featured guide graphic' },
     relatedCategoryPath: '/yono-spin/',
     sections: [
       {
