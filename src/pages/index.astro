@@ -4,6 +4,7 @@ import NoticeCard from '../components/NoticeCard.astro';
 import AppCard from '../components/AppCard.astro';
 import Icon from '../components/Icon.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
+import ComingSoonHighlight from '../components/ComingSoonHighlight.astro';
 import { notices } from '../data/notices';
 import { getPromoCodes } from '../lib/promoCodes';
 import { externalGuideUrl, externalIndiaUrl, telegramUrl } from '../data/nav';
@@ -118,6 +119,21 @@ const faqSchema = {
     >
       Join the Telegram Channel <Icon name="arrow-up-right" class="h-3.5 w-3.5" />
     </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pb-6 lg:px-8">
+    <ComingSoonHighlight
+      name="DhanGame"
+      image="/images/games/dhan-game.webp"
+      releaseIso="2026-07-23T08:00:00+05:30"
+      releaseDateLabel="July 23, 2026"
+      releaseWindowLabel="8:00–9:00 AM IST"
+      heading="DhanGame is joining the All Yono directory"
+      description="Expected to launch between 8:00–9:00 AM IST on July 23, 2026. We'll add category, promo-code, and download details once the app is available and can be independently reviewed."
+      ctaLabel="Join Telegram for Launch Updates"
+      ctaHref={telegramUrl}
+      detailsHref="/app/dhan-game/"
+    />
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-8 lg:px-8">

@@ -1745,6 +1745,38 @@
           "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
         }
       ]
+    },
+    {
+      "id": "dhan-game",
+      "name": "DhanGame",
+      "slug": "dhan-game",
+      "category": "slots",
+      "featured": false,
+      "tag": "COMING SOON",
+      "description": "DhanGame is an upcoming slots-style app expected to join the All Yono directory. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "dhan game apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-07-18",
+      "icon": "/images/games/dhan-game.webp",
+      "apkUrl": null,
+      "url": "/app/dhan-game/",
+      "faq": [
+        {
+          "q": "Is DhanGame available to download yet?",
+          "a": "No. DhanGame is expected to launch between 8:00–9:00 AM IST on July 23, 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the DhanGame APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to DhanGame's own website, not to a file stored here."
+        },
+        {
+          "q": "How can I find out when DhanGame launches?",
+          "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
+        }
+      ]
     }
   ]
 }
