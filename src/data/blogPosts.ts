@@ -1353,4 +1353,122 @@ export const blogPosts: BlogPost[] = [
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
     ],
   },
+  {
+    slug: 'dhan-game-launch-guide',
+    title: 'DhanGame: Release Date, Welcome Bonus & Promo Code — What to Expect',
+    metaDescription: 'DhanGame is an upcoming slots-style app joining the All Yono directory on July 23, 2026. See the release window, expected welcome bonus, and promo-code details recorded so far.',
+    h1: 'DhanGame: Release Date, Welcome Bonus & Promo Code — What to Expect',
+    keywords: ['dhan game apk', 'dhan game release date', 'dhan game welcome bonus', 'dhan game promo code', 'dhan game first deposit bonus'],
+    publishedDate: '2026-07-18',
+    lastReviewedDate: '2026-07-18',
+    image: { src: '/images/blog/dhan-game-launch-guide.webp', alt: 'DhanGame: Release Date, Welcome Bonus and Promo Code — featured guide graphic' },
+    relatedCategoryPath: '/yono-slots/',
+    sections: [
+      {
+        heading: 'What Is DhanGame',
+        paragraphs: [
+          'DhanGame is an upcoming slots-style app scheduled to join the All Yono directory, tracked here ahead of its public release rather than after the fact. Its icon uses a reel-and-lever design similar to other slot-format apps already listed in this directory, which is why it is filed under the Slots category.',
+          'AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate DhanGame, and none of the information in this guide has been supplied directly by DhanGame\'s publisher. Everything below reflects what has been recorded ahead of launch and will be revised once the app is live and can be independently reviewed.',
+        ],
+      },
+      {
+        heading: 'When Does DhanGame Launch',
+        paragraphs: [
+          'DhanGame is scheduled to launch between 8:00–9:00 AM IST on July 23, 2026. A live countdown to this window is shown on the AllYonoUpdate.com homepage and on DhanGame\'s dedicated app page, linked at the end of this guide.',
+          'Release windows for apps in this category can shift without notice, so treat this date as the currently scheduled target rather than a guaranteed go-live time. This guide will be updated if the date changes.',
+        ],
+      },
+      {
+        heading: "What Is DhanGame's Official Domain",
+        paragraphs: [
+          'DhanGame\'s official website has not been confirmed or published yet, so AllYonoUpdate.com is not linking to a domain for this app at this time. Once an official website is confirmed and can be independently reviewed, it will be added to DhanGame\'s app page and this guide will be updated to match.',
+          'Because pre-launch attention can attract lookalike or scam pages before an app is officially live, treat any site claiming to be "the official DhanGame website" with caution until AllYonoUpdate.com or another reliable source confirms it — especially if that page asks for a password, OTP, or payment details before showing any real information.',
+        ],
+      },
+      {
+        heading: 'Expected Welcome Bonus',
+        paragraphs: [
+          'DhanGame is expected to offer a welcome bonus in the ₹100–₹500 range for new sign-ups. This figure has been recorded ahead of the app\'s public launch and has not been independently verified against DhanGame\'s own terms, since those terms are not yet published.',
+          'As with every bonus figure tracked across this directory, treat the ₹100–₹500 range as an expected figure rather than a guaranteed amount. The publisher\'s own in-app terms, once available, will be the authoritative source.',
+        ],
+      },
+      {
+        heading: 'How the Promo Code Is Expected to Work',
+        paragraphs: [
+          'DhanGame\'s promo code is expected to be released inside the app itself, alongside a separate voucher code, rather than published in advance. This matches the pattern used by most other apps in this directory, where a referral or promo code field appears during sign-up rather than being fixed ahead of time.',
+          'A promo or voucher code is not the same as an account password — it is a shareable string entered during sign-up, not a private credential. AllYonoUpdate.com does not generate, issue, or guarantee any promo or voucher code for DhanGame, and will record the current code here only once it can be confirmed after launch.',
+        ],
+      },
+      {
+        heading: 'First Deposit Bonus: Up To +200%',
+        paragraphs: [
+          'DhanGame is expected to offer a first-deposit bonus of up to +200%. "Up to" is the operative phrase here — publishers in this category typically apply tiered or conditional terms to headline deposit-bonus figures, so the maximum percentage is unlikely to apply uniformly to every deposit amount.',
+          'This figure has not been independently verified, since DhanGame\'s own deposit terms are not yet published. Confirm the exact terms directly inside the app once it is available, before making any deposit.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money apps in this category are regulated differently across Indian states, and several apps already listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that DhanGame is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it, once it becomes available.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before DhanGame Launches',
+        paragraphs: [
+          'Because DhanGame is not live yet, the biggest safety risk in this window is not the app itself but pages that pretend to offer early access to it. Before DhanGame launches, do not pay any fee for "early access," do not enter an account password or OTP on a page claiming to unlock a pre-release download, and do not trust a domain simply because it uses DhanGame\'s name or logo.',
+          'Once DhanGame is officially available, the same safety basics that apply across this directory apply here too: confirm the download link came from the platform\'s own official website, and be comfortable with the permissions the APK requests during installation.',
+        ],
+      },
+      {
+        heading: 'How to Get Notified at Launch',
+        paragraphs: [
+          'The fastest way to know when DhanGame goes live is the AllYonoUpdate.com Telegram channel, which is used to share launch updates as soon as they can be confirmed. A live countdown to the scheduled 8:00–9:00 AM IST window on July 23, 2026 is also shown on the homepage and on DhanGame\'s dedicated app page.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'DhanGame\'s record, including its domain, download link, version, and confirmed bonus terms, will be added to its dedicated app page once the app is available and can be independently reviewed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is DhanGame available to download yet?',
+        answer: 'No. DhanGame is scheduled to launch between 8:00–9:00 AM IST on July 23, 2026. This guide will be updated with a direct download link once the app is available.',
+      },
+      {
+        question: "What is DhanGame's official website?",
+        answer: 'Not confirmed yet. AllYonoUpdate.com has not published a domain for DhanGame because no official website has been confirmed ahead of launch. Treat any page claiming to be the official DhanGame site with caution until this guide is updated.',
+      },
+      {
+        question: 'How much is the DhanGame welcome bonus?',
+        answer: 'DhanGame is expected to offer a welcome bonus in the ₹100–₹500 range, based on information recorded ahead of launch. This has not been independently verified and may change once the app\'s own terms are published.',
+      },
+      {
+        question: 'How does the DhanGame promo code work?',
+        answer: 'The promo code is expected to be released inside the app itself, alongside a separate voucher code, rather than published in advance. It is a shareable sign-up code, not an account password.',
+      },
+      {
+        question: 'Is the DhanGame first-deposit bonus really up to 200%?',
+        answer: 'That is the figure recorded ahead of launch, but "up to" typically means tiered or conditional terms apply. Confirm the exact terms inside the app once DhanGame is available, before depositing.',
+      },
+      {
+        question: 'Is DhanGame legal in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How can I find out when DhanGame launches?',
+        answer: "Join the AllYonoUpdate.com Telegram channel for launch updates, or check the live countdown shown on the homepage and on DhanGame's app page.",
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'DhanGame: App Page & Launch Countdown', href: '/app/dhan-game/' },
+      { label: 'Yono Slots APK: Download Guide & What "Slots" Apps Are', href: '/blog/yono-slots-apk-guide/' },
+    ],
+  },
 ];
