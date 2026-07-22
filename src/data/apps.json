@@ -10,6 +10,38 @@
   },
   "apps": [
     {
+      "id": "dhan-game",
+      "name": "DhanGame",
+      "slug": "dhan-game",
+      "category": "slots",
+      "featured": true,
+      "tag": "COMING SOON",
+      "description": "DhanGame is an upcoming slots-style app expected to join the All Yono directory. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "dhan game apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-07-18",
+      "icon": "/images/games/dhan-game.webp",
+      "apkUrl": null,
+      "url": "/app/dhan-game/",
+      "faq": [
+        {
+          "q": "Is DhanGame available to download yet?",
+          "a": "No. DhanGame is expected to launch between 8:00–9:00 AM IST on July 23, 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the DhanGame APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to DhanGame's own website, not to a file stored here."
+        },
+        {
+          "q": "How can I find out when DhanGame launches?",
+          "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
+        }
+      ]
+    },
+    {
       "id": "max-rummy",
       "name": "Max Rummy",
       "slug": "max-rummy",
@@ -34,6 +66,130 @@
         {
           "q": "Has AllYonoUpdate.com verified Max Rummy's bonus or referral terms?",
           "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Max Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-rummy",
+      "name": "Yono Rummy",
+      "slug": "yono-rummy",
+      "category": "rummy",
+      "featured": true,
+      "description": "Yono Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Rummy APK file.",
+      "targetKeyword": "yono rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-rummy.webp",
+      "apkUrl": "https://yonorummymm.com/?code=VIP3Z76MJCF&t=1761719297",
+      "url": "/app/yono-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Rummy's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-games",
+      "name": "Yono Games",
+      "slug": "yono-games",
+      "category": "arcade",
+      "featured": true,
+      "description": "Yono Games is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Games APK file.",
+      "targetKeyword": "yono games apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-games.webp",
+      "apkUrl": "https://uonogames3.com/?code=GK1EVT15SS7&t=1761719127",
+      "url": "/app/yono-games/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Games APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Games's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Games's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Games's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-777",
+      "name": "Yono 777",
+      "slug": "yono-777",
+      "category": "sevens",
+      "featured": true,
+      "description": "Yono 777 is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono 777 APK file.",
+      "targetKeyword": "yono 777 apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-777.webp",
+      "apkUrl": "https://yono777agentrefer.net/?code=ZMRZ6SUQQZ2&t=1761718243",
+      "url": "/app/yono-777/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono 777 APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono 777's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono 777's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono 777's own website."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ]
+    },
+    {
+      "id": "yono-arcade",
+      "name": "Yono Arcade",
+      "slug": "yono-arcade",
+      "category": "arcade",
+      "featured": true,
+      "description": "Yono Arcade is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Arcade APK file.",
+      "targetKeyword": "yono arcade apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-06-25",
+      "icon": "/images/games/yono-arcade.webp",
+      "apkUrl": "https://uonoarcadeagents2.com/?code=96LUT957MWS&t=1761718992",
+      "url": "/app/yono-arcade/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Yono Arcade APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Arcade's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Yono Arcade's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Arcade's own website."
         },
         {
           "q": "How often is this app record reviewed?",
@@ -1561,130 +1717,6 @@
       ]
     },
     {
-      "id": "yono-777",
-      "name": "Yono 777",
-      "slug": "yono-777",
-      "category": "sevens",
-      "featured": true,
-      "description": "Yono 777 is a 777-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono 777 APK file.",
-      "targetKeyword": "yono 777 apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-06-25",
-      "icon": "/images/games/yono-777.webp",
-      "apkUrl": "https://yono777agentrefer.net/?code=ZMRZ6SUQQZ2&t=1761718243",
-      "url": "/app/yono-777/",
-      "faq": [
-        {
-          "q": "Does AllYonoUpdate.com host the Yono 777 APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono 777's own website, not to a file stored here."
-        },
-        {
-          "q": "Has AllYonoUpdate.com verified Yono 777's bonus or referral terms?",
-          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono 777's own website."
-        },
-        {
-          "q": "How often is this app record reviewed?",
-          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
-      "id": "yono-arcade",
-      "name": "Yono Arcade",
-      "slug": "yono-arcade",
-      "category": "arcade",
-      "featured": true,
-      "description": "Yono Arcade is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Arcade APK file.",
-      "targetKeyword": "yono arcade apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-06-25",
-      "icon": "/images/games/yono-arcade.webp",
-      "apkUrl": "https://uonoarcadeagents2.com/?code=96LUT957MWS&t=1761718992",
-      "url": "/app/yono-arcade/",
-      "faq": [
-        {
-          "q": "Does AllYonoUpdate.com host the Yono Arcade APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Arcade's own website, not to a file stored here."
-        },
-        {
-          "q": "Has AllYonoUpdate.com verified Yono Arcade's bonus or referral terms?",
-          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Arcade's own website."
-        },
-        {
-          "q": "How often is this app record reviewed?",
-          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
-      "id": "yono-games",
-      "name": "Yono Games",
-      "slug": "yono-games",
-      "category": "arcade",
-      "featured": true,
-      "description": "Yono Games is an arcade-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Games APK file.",
-      "targetKeyword": "yono games apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-06-25",
-      "icon": "/images/games/yono-games.webp",
-      "apkUrl": "https://uonogames3.com/?code=GK1EVT15SS7&t=1761719127",
-      "url": "/app/yono-games/",
-      "faq": [
-        {
-          "q": "Does AllYonoUpdate.com host the Yono Games APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Games's own website, not to a file stored here."
-        },
-        {
-          "q": "Has AllYonoUpdate.com verified Yono Games's bonus or referral terms?",
-          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Games's own website."
-        },
-        {
-          "q": "How often is this app record reviewed?",
-          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
-      "id": "yono-rummy",
-      "name": "Yono Rummy",
-      "slug": "yono-rummy",
-      "category": "rummy",
-      "featured": true,
-      "description": "Yono Rummy is a rummy-style app tracked in the All Yono directory. AllYonoUpdate.com records its current download link and catalog details for reference; this page does not host the Yono Rummy APK file.",
-      "targetKeyword": "yono rummy apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-06-25",
-      "icon": "/images/games/yono-rummy.webp",
-      "apkUrl": "https://yonorummymm.com/?code=VIP3Z76MJCF&t=1761719297",
-      "url": "/app/yono-rummy/",
-      "faq": [
-        {
-          "q": "Does AllYonoUpdate.com host the Yono Rummy APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Yono Rummy's own website, not to a file stored here."
-        },
-        {
-          "q": "Has AllYonoUpdate.com verified Yono Rummy's bonus or referral terms?",
-          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Yono Rummy's own website."
-        },
-        {
-          "q": "How often is this app record reviewed?",
-          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
       "id": "yono-slots",
       "name": "Yono Slots",
       "slug": "yono-slots",
@@ -1743,38 +1775,6 @@
         {
           "q": "How often is this app record reviewed?",
           "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
-      "id": "dhan-game",
-      "name": "DhanGame",
-      "slug": "dhan-game",
-      "category": "slots",
-      "featured": false,
-      "tag": "COMING SOON",
-      "description": "DhanGame is an upcoming slots-style app expected to join the All Yono directory. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
-      "targetKeyword": "dhan game apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-07-18",
-      "icon": "/images/games/dhan-game.webp",
-      "apkUrl": null,
-      "url": "/app/dhan-game/",
-      "faq": [
-        {
-          "q": "Is DhanGame available to download yet?",
-          "a": "No. DhanGame is expected to launch between 8:00–9:00 AM IST on July 23, 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
-        },
-        {
-          "q": "Will AllYonoUpdate.com host the DhanGame APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to DhanGame's own website, not to a file stored here."
-        },
-        {
-          "q": "How can I find out when DhanGame launches?",
-          "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
         }
       ]
     }
