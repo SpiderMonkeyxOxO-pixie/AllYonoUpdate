@@ -1,30 +1,720 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ProtectedEmail from '../components/ProtectedEmail.astro';
 
-const changeDetails = [
-  { detail: 'Publication Date', why: 'Shows when the notice was first recorded' },
-  { detail: 'Last Reviewed Date', why: 'Shows when the information was most recently checked' },
-  { detail: 'Status Label', why: 'Shows whether the update is confirmed, under review, active, ended, or archived' },
-  { detail: 'Related Updates', why: 'May show a newer notice that replaces an earlier record' },
+const DISCLAIMER_EMAIL_USER = 'Allyonoupdatenewsupport';
+const DISCLAIMER_EMAIL_DOMAIN = 'gmail.com';
+
+const lastUpdated = 'July 22, 2026';
+
+type Block = { type: 'p'; text: string } | { type: 'ul'; items: string[] };
+interface Section {
+  heading: string;
+  blocks: Block[];
+  highlight?: boolean;
+}
+
+const p = (text: string): Block => ({ type: 'p', text });
+const ul = (items: string[]): Block => ({ type: 'ul', items });
+
+const sectionsPart1: Section[] = [
+  {
+    heading: 'Welcome to AllYonoUpdate',
+    blocks: [
+      p('This Disclaimer applies to all visitors and users of the AllYonoUpdate website, including its dated update records, application listings, promo-code notices, event information, feature-change reports, blog articles, archived posts, images, status labels, links and other published materials.'),
+      p('AllYonoUpdate is an independent informational website that records and publishes publicly visible changes relating to third-party gaming applications.'),
+      p('By accessing or using this website, you acknowledge that you have read and understood this Disclaimer. If you do not agree with any part of it, please discontinue using the website.'),
+    ],
+  },
+  {
+    heading: 'Purpose of AllYonoUpdate',
+    blocks: [
+      p('AllYonoUpdate is designed to help readers follow changes in third-party gaming applications over time.'),
+      p('Our content may include:'),
+      ul([
+        'New application listings',
+        'Application version notices',
+        'Feature and interface changes',
+        'Event announcements',
+        'Promo-code status updates',
+        'Reward-related claims',
+        'Operator or domain changes',
+        'Availability notices',
+        'Corrections to earlier articles',
+        'Archived updates',
+        'General informational articles',
+      ]),
+      p('The website functions as an independent update tracker and editorial reference resource.'),
+      p('It is not an application operator, official support channel, payment service, gaming provider or account-management service.'),
+    ],
+  },
+  {
+    heading: 'Independent Informational Website',
+    blocks: [
+      p('AllYonoUpdate does not own, develop, operate, manage or control any third-party gaming application discussed or listed on this website unless expressly stated otherwise.'),
+      p('We do not control:'),
+      ul([
+        'Application development',
+        'Platform operations',
+        'Account registration',
+        'Identity verification',
+        'Game rules or results',
+        'Deposits or purchases',
+        'Withdrawals or refunds',
+        'Promotional campaigns',
+        'Rewards or bonuses',
+        'Account balances',
+        'Customer support',
+        'Privacy practices',
+        'Security systems',
+        'Account suspension',
+        'Continued application availability',
+      ]),
+      p('Every third-party application remains under the ownership, operation and responsibility of its respective developer or operator.'),
+    ],
+  },
+  {
+    heading: 'No Affiliation With SBI or YONO SBI',
+    highlight: true,
+    blocks: [
+      p('AllYonoUpdate is not affiliated with, sponsored by, endorsed by, authorised by or officially connected to the State Bank of India, SBI, YONO SBI or any related bank.'),
+      p('The words "Yono," "YONO" and "All Yono" may appear on this website because they form part of names or descriptions used by certain independent third-party gaming applications.'),
+      p('Nothing published on AllYonoUpdate should be interpreted as suggesting that SBI or YONO SBI:'),
+      ul([
+        'Owns this website',
+        'Operates any listed game',
+        'Endorses this website',
+        'Supports any featured application',
+        'Guarantees any platform',
+        'Is responsible for any content published here',
+      ]),
+      p('All related trademarks, logos and brand names remain the property of their respective owners.'),
+    ],
+  },
+  {
+    heading: 'No Affiliation With Listed Applications',
+    blocks: [
+      p('Unless a relationship is expressly disclosed, AllYonoUpdate is not affiliated with, sponsored by, endorsed by or officially connected to any application, developer or operator mentioned on this website.'),
+      p('The publication of an app name, logo, screenshot, update, promo code, event notice or external link does not mean that AllYonoUpdate:'),
+      ul([
+        'Owns or operates the platform',
+        'Has an official partnership with its operator',
+        'Has verified every operator statement',
+        'Guarantees its legality',
+        'Certifies its security',
+        'Guarantees its payments',
+        'Approves its business practices',
+        'Recommends participation',
+      ]),
+      p('References are published for identification, reporting, commentary and informational purposes only.'),
+    ],
+  },
+  {
+    heading: 'Affiliate and Referral Disclosure',
+    blocks: [
+      p('Some links, buttons, promotional codes or platform references on AllYonoUpdate may be affiliate or referral links.'),
+      p('If a visitor follows one of these links or completes a qualifying action on a third-party platform, AllYonoUpdate may receive a referral fee or commission. This generally does not create an additional charge for the visitor.'),
+      p('An affiliate relationship does not mean that AllYonoUpdate owns, operates, controls, verifies or guarantees the relevant platform.'),
+      p("Affiliate compensation does not remove the user's responsibility to independently check:"),
+      ul([
+        'The platform operator',
+        'The official website',
+        "The application's terms",
+        'Its privacy practices',
+        'Download authenticity',
+        'Age and location restrictions',
+        'Promotional conditions',
+        'Payment terms',
+        'Applicable law',
+      ]),
+      p('Where appropriate, a shorter disclosure may also appear near a referral link or button.'),
+    ],
+  },
+  {
+    heading: 'Date-Stamped Update Records',
+    blocks: [
+      p('AllYonoUpdate may display several dates or labels on a published record.'),
+      p('These may include:'),
+      ul([
+        'Publication Date: when the update was first published',
+        'Event Date: when the reported change or event was said to occur',
+        'Last Reviewed Date: when the information was most recently checked',
+        'Last Updated Date: when the page itself was edited',
+        'Status Label: the editorial condition assigned at the time of review',
+        'Archived Date: when a notice was marked as no longer current',
+      ]),
+      p('Readers should distinguish between these dates.'),
+      p('A page updated recently may still describe an older event, and an older page may remain online for historical context.'),
+      p('The presence of an old update in the archive does not mean that the information remains active or currently applicable.'),
+    ],
+  },
+  {
+    heading: 'Information Changes Over Time',
+    blocks: [
+      p('Third-party gaming applications may change quickly and without notifying AllYonoUpdate.'),
+      p('Changes may affect:'),
+      ul([
+        'Application names',
+        'Operators or developers',
+        'Official domains',
+        'Download links',
+        'App versions',
+        'User-interface layouts',
+        'Menu paths',
+        'Login procedures',
+        'Game listings',
+        'Event schedules',
+        'Promo codes',
+        'Reward amounts',
+        'Eligibility requirements',
+        'Payment methods',
+        'Withdrawal rules',
+        'Regional availability',
+        'Support details',
+        'Terms and Conditions',
+        'Privacy Policies',
+      ]),
+      p('An update was accurate only to the extent supported by the information available when it was recorded.'),
+      p('Readers should not assume that an older notice remains current.'),
+    ],
+  },
+  {
+    heading: 'Editorial Status Labels',
+    blocks: [
+      p('AllYonoUpdate may use status labels such as:'),
+      ul([
+        'Confirmed',
+        'Recently Checked',
+        'Active',
+        'Scheduled',
+        'Under Review',
+        'Unverified',
+        'Changed',
+        'Ended',
+        'Expired',
+        'Replaced',
+        'Corrected',
+        'Archived',
+        'Platform-Specific',
+        'Official Source Not Confirmed',
+      ]),
+      p('These labels represent an editorial assessment at a particular time.'),
+      p('They do not constitute an official certification, legal classification or permanent guarantee.'),
+      p('A status label does not guarantee that:'),
+      ul([
+        'An event will occur',
+        'A code will remain active',
+        'A platform will remain available',
+        'An operator will not make further changes',
+        'Every user will see the same feature',
+        'An app is legally approved',
+        'A reward will be credited',
+        'A third-party statement is accurate',
+      ]),
+      p('Readers should review the relevant date, source notes and any newer related updates before relying on a label.'),
+    ],
+  },
+  {
+    heading: 'Related, Replaced and Archived Updates',
+    blocks: [
+      p('A newer update may replace, correct or clarify an earlier notice.'),
+      p('Where available, readers should review:'),
+      ul([
+        'Related updates',
+        'Correction notices',
+        'Newer publication dates',
+        'Replacement records',
+        'Archive labels',
+        'Current platform information',
+      ]),
+      p('Archived records may remain publicly accessible for historical, editorial or transparency purposes.'),
+      p('Archived content should not be treated as current unless a newer review confirms that it remains applicable.'),
+    ],
+  },
+  {
+    heading: 'No Guarantee of Accuracy or Availability',
+    blocks: [
+      p('AllYonoUpdate makes reasonable efforts to publish clear and organised information.'),
+      p('However, we do not guarantee that every app listing, feature description, event notice, promo-code update, reward claim, date, menu path, application version, download reference, operator detail, or external link will remain accurate, complete, available or applicable after publication.'),
+      p('Information may vary depending on:'),
+      ul([
+        'Application version',
+        'Device type',
+        'Operating system',
+        'Release timing',
+        'User location',
+        'Account eligibility',
+        'Operator-side testing',
+        'Phased rollouts',
+        'Later platform changes',
+        'Technical issues',
+      ]),
+      p('Readers should confirm important or time-sensitive details through an appropriate official or authoritative source where available.'),
+    ],
+  },
+  {
+    heading: 'Promo-Code Information',
+    blocks: [
+      p('AllYonoUpdate may publish status updates relating to publicly advertised promo codes.'),
+      p('Promo codes may be subject to:'),
+      ul([
+        'Expiry dates',
+        'Account eligibility',
+        'New-user restrictions',
+        'Regional availability',
+        'Usage limits',
+        'Account verification',
+        'Platform-specific conditions',
+        'Payment conditions',
+        'Operator-side changes',
+      ]),
+      p('AllYonoUpdate does not guarantee that:'),
+      ul([
+        'A code will work',
+        'A code is still active',
+        'Every user will qualify',
+        'An advertised value is accurate',
+        'A benefit will be credited',
+        'A code applies to every region',
+        'An operator will honour an outdated notice',
+      ]),
+      p('Unless expressly stated otherwise, AllYonoUpdate does not create, issue, sell, activate, redeem, administer or process third-party promo codes.'),
+    ],
+  },
+  {
+    heading: 'Event and Feature Notices',
+    blocks: [
+      p('AllYonoUpdate may publish notices about events, temporary promotions, platform features, interface changes or scheduled releases.'),
+      p('An event or feature notice may:'),
+      ul([
+        'Be postponed',
+        'Be cancelled',
+        'End earlier than expected',
+        'Begin later than announced',
+        'Be limited to certain users',
+        'Vary by application version',
+        'Be restricted by location',
+        'Be removed without notice',
+        'Differ from publicly advertised details',
+      ]),
+      p('Publication of an event date does not guarantee that the event will occur or remain available for the full stated period.'),
+      p('Readers should confirm current information directly with the relevant operator.'),
+    ],
+  },
+  {
+    heading: 'Rewards, Bonuses and Promotional Claims',
+    blocks: [
+      p('AllYonoUpdate may report publicly advertised rewards, bonuses, cashback, vouchers, referral benefits, spins, contests or similar incentives.'),
+      p('Such information is published for general reference only.'),
+      p('AllYonoUpdate does not guarantee:'),
+      ul([
+        'Eligibility',
+        'Reward approval',
+        'Successful redemption',
+        'Crediting of a bonus',
+        'Withdrawal of a benefit',
+        'Continued availability',
+        'Accuracy of an advertised amount',
+        'Compliance by a third-party operator',
+      ]),
+      p('Displayed promotional values should not be treated as guaranteed cash, income, earnings or funds already belonging to a user.'),
+    ],
+  },
+  {
+    heading: 'No Account or Private Support',
+    highlight: true,
+    blocks: [
+      p('AllYonoUpdate does not create, access, operate, recover or modify accounts held with third-party applications.'),
+      p('We do not provide:'),
+      ul([
+        'Account registration support',
+        'Login assistance',
+        'Password recovery',
+        'OTP assistance',
+        'Identity-verification support',
+        'Payment assistance',
+        'Withdrawal support',
+        'Account-balance review',
+        'Private account troubleshooting',
+        'Account suspension appeals',
+        'Transaction investigation',
+        'Personal account mediation',
+      ]),
+      p('All account and support issues must be addressed directly with the relevant third-party operator through verified official channels.'),
+      p('The AllYonoUpdate contact page is intended only for:'),
+      ul([
+        'Public correction requests',
+        'Editorial feedback',
+        'Website questions',
+        'Legal notices',
+        'Intellectual-property concerns',
+      ]),
+      p('It should not be used to submit private account information.'),
+    ],
+  },
+  {
+    heading: 'Protection of Sensitive Information',
+    highlight: true,
+    blocks: [
+      p('Users should never send AllYonoUpdate or anyone claiming to represent it:'),
+      ul([
+        'Passwords',
+        'One-time passwords',
+        'Payment PINs',
+        'Banking credentials',
+        'Card information',
+        'Account numbers',
+        'Identity documents',
+        'Private screenshots',
+        'Wallet balances',
+        'Transaction details',
+        'Third-party login credentials',
+      ]),
+      p('AllYonoUpdate will not ask users to provide such information in order to resolve a third-party account, payment or withdrawal issue.'),
+    ],
+  },
+  {
+    heading: 'Downloads and APK Files',
+    blocks: [
+      p('AllYonoUpdate may publish informational updates about application releases, APK versions or installation availability.'),
+      p('Unless expressly stated otherwise, AllYonoUpdate does not:'),
+      ul([
+        'Develop APK files',
+        'Own APK files',
+        'Host installation files',
+        'Modify application packages',
+        'Scan third-party files',
+        'Certify download safety',
+        'Distribute official software',
+        'Guarantee file authenticity',
+      ]),
+      p('Installing software from an unknown or unauthorised source may expose a device or personal information to malware, altered software, excessive permissions or data theft.'),
+      p('Before downloading an application, users should independently verify:'),
+      ul([
+        'The official operator',
+        'The authorised download source',
+        'The developer or publisher',
+        'The application version',
+        'The permissions requested',
+        'Available security information',
+        'The Privacy Policy',
+        'The authenticity of the file',
+      ]),
+      p('References to an application release or APK version do not constitute a safety guarantee.'),
+    ],
+  },
+  {
+    heading: 'Third-Party Websites and External Links',
+    blocks: [
+      p('AllYonoUpdate may link to third-party websites, app pages, public notices, support channels, social-media pages or external information sources.'),
+      p('These websites operate independently.'),
+      p('AllYonoUpdate does not control their:'),
+      ul([
+        'Content',
+        'Availability',
+        'Accuracy',
+        'Security',
+        'Software',
+        'Data collection',
+        'Privacy Policies',
+        'Terms and Conditions',
+        'Payment systems',
+        'Customer support',
+        'Future changes',
+      ]),
+      p('An external link does not constitute endorsement, partnership, certification, approval or guarantee.'),
+      p('Users access external websites at their own discretion and responsibility.'),
+    ],
+  },
+  {
+    heading: 'User Responsibility and Due Diligence',
+    blocks: [
+      p('Users are responsible for deciding whether to access, download, register with or use a third-party application.'),
+      p('Before using a platform, users should independently check:'),
+      ul([
+        "The operator's legal identity",
+        'The official website',
+        'The authorised app-store or download listing',
+        'The Terms and Conditions',
+        'The Privacy Policy',
+        'Requested permissions',
+        'Age requirements',
+        'Geographic restrictions',
+        'Customer-support details',
+        'Payment and withdrawal conditions',
+        'Promotional rules',
+        'Regulatory status',
+        'Applicable Indian law',
+      ]),
+      p('Users should not rely solely on advertisements, screenshots, social-media posts, influencer promotions, referral messages, testimonials or promotional banners.'),
+    ],
+  },
+  {
+    heading: 'Financial Risk',
+    blocks: [
+      p('Some third-party gaming applications may advertise paid features, rewards, prizes, bonuses, purchases, entry payments or withdrawal options.'),
+      p("Any financial transaction made through a third-party platform is undertaken entirely at the user's own discretion and responsibility."),
+      p('AllYonoUpdate does not guarantee:'),
+      ul([
+        'Winnings',
+        'Successful deposits',
+        'Successful withdrawals',
+        'Refunds',
+        'Bonuses',
+        'Cashback',
+        'Referral commissions',
+        'Account balances',
+        'Prizes',
+        'Recovery of funds',
+        'Any other financial result',
+      ]),
+      p('A published update about a payment, withdrawal, reward or promotional feature is not proof that another user will receive the same result.'),
+      p('Users should not spend money needed for food, housing, education, healthcare, bills, debt repayments or other essential needs.'),
+    ],
+  },
+  {
+    heading: 'Compliance With Indian Law',
+    blocks: [
+      p('Users are responsible for ensuring that their access to or use of any third-party application complies with all applicable laws and regulations in India and in their State or Union Territory.'),
+      p('The Promotion and Regulation of Online Gaming Act, 2025 and the Promotion and Regulation of Online Gaming Rules, 2026 establish a national framework for online gaming.'),
+      p('The framework recognises and provides for certain e-sports and online social games while prohibiting online money games and specified activities connected with their offering, facilitation, advertisement, promotion and funding.'),
+      p('The legal treatment of a particular application depends on its actual features, payment model, operating method and official regulatory status.'),
+      p('AllYonoUpdate does not classify any third-party application as an e-sport, an online social game, an online money game, a registered online game, a lawful platform, a licensed service, or a government-approved application, unless that status is supported by reliable official information.'),
+      p('Any category, status label or description published on AllYonoUpdate is an editorial description and not a formal legal determination.'),
+      p('Nothing published on this website should be interpreted as promoting, facilitating or encouraging an online money game or any other activity prohibited under Indian law.'),
+      p('Users requiring legal advice about a particular service should consult an appropriately qualified legal professional.'),
+    ],
+  },
+  {
+    heading: 'Regional Restrictions',
+    blocks: [
+      p('A platform being accessible from a particular location does not necessarily mean that all of its services are legally permitted there.'),
+      p('Users are responsible for checking whether an application, game, event, promotion, payment feature or other activity is permitted in their State or Union Territory.'),
+      p('AllYonoUpdate does not guarantee that every application or feature discussed on the website is legally accessible throughout India.'),
+      p('Users should not attempt to bypass legal, geographic, age or platform restrictions through false information, location masking, VPN services or other circumvention methods.'),
+    ],
+  },
+  {
+    heading: 'Age Restrictions',
+    blocks: [
+      p('AllYonoUpdate is intended for adults aged 18 years and above.'),
+      p('Third-party applications may impose their own minimum-age and eligibility requirements.'),
+      p('Users must comply with the requirements stated by the relevant operator and applicable law.'),
+      p("Parents and guardians should supervise minors' device and internet use and take reasonable steps to prevent access to age-restricted gaming services."),
+    ],
+  },
+  {
+    heading: 'Responsible Gaming',
+    blocks: [
+      p('Gaming should be approached as entertainment and kept within reasonable time and financial limits.'),
+      p('Users should avoid:'),
+      ul([
+        'Spending money required for essential expenses',
+        'Borrowing money to participate',
+        'Chasing losses',
+        'Repeatedly paying after losses',
+        'Hiding gaming-related spending',
+        'Allowing gaming to interfere with work or education',
+        'Allowing gaming to damage relationships',
+        'Continuing when it causes emotional or financial distress',
+      ]),
+      p('If gaming stops being voluntary, enjoyable or controllable, the user should stop using the relevant service.'),
+      p('Anyone experiencing gaming-related harm should consider seeking assistance from an appropriately qualified professional or support organisation.'),
+    ],
+  },
 ];
 
-const notProvided = [
-  'Account login help',
-  'Password recovery',
-  'OTP assistance',
-  'Payment support',
-  'Identity verification help',
-  'Private account troubleshooting',
-  'Installation files',
-  'Personal account review',
+const appNotices: Section[] = [
+  {
+    heading: 'Rummy Applications',
+    blocks: [
+      p('Rummy platforms may differ in their rules, payment models, eligibility requirements, promotional systems, regional availability and legal status.'),
+      p('Any rummy-related update is published for general informational purposes only.'),
+      p("Users should independently review the operator's official documentation and applicable law before using a service."),
+    ],
+  },
+  {
+    heading: 'Teen Patti, Poker and Card Games',
+    blocks: [
+      p('Teen Patti, poker and similar card-game applications may be subject to legal, regional and eligibility restrictions.'),
+      p('Users should independently evaluate the operator, game model, payment structure, promotional terms and regulatory status.'),
+      p('A published update does not constitute endorsement or encouragement to participate.'),
+    ],
+  },
+  {
+    heading: 'Ludo Applications',
+    blocks: [
+      p('Ludo applications may operate as free casual games or may contain advertisements, in-app purchases, contests, rewards or payment-related features.'),
+      p('Users should verify the current platform information before registering or making a payment.'),
+      p('AllYonoUpdate does not guarantee game outcomes, rewards, prizes or withdrawals.'),
+    ],
+  },
+  {
+    heading: 'Arcade, Slot-Style and Spin Applications',
+    blocks: [
+      p('Arcade, slot-style and spin applications may include free entertainment, virtual items, advertisements, paid features, rewards or chance-based mechanics.'),
+      p("Users should examine the platform's official rules, age requirements, payment model and legal status."),
+      p('The inclusion of an update does not mean that an application has been verified as lawful, skill-based or suitable for financial participation.'),
+    ],
+  },
+  {
+    heading: 'Bingo and Club Applications',
+    blocks: [
+      p('Bingo, club and similar applications may include social features, advertisements, purchases, rewards, competitions or payment-related elements.'),
+      p('Users should independently review their terms, privacy practices, eligibility rules and legal availability.'),
+    ],
+  },
+  {
+    heading: 'Fantasy Sports Applications',
+    blocks: [
+      p('Fantasy sports services may be subject to specific legal, geographic and eligibility conditions.'),
+      p('Users are responsible for determining whether the service and its features are permitted in their location.'),
+      p('AllYonoUpdate does not guarantee contest access, rankings, prizes, payments or withdrawals.'),
+    ],
+  },
+  {
+    heading: 'Casual and Social Games',
+    blocks: [
+      p('Casual and social games may contain advertisements, virtual goods, optional purchases, account features, promotional codes or rewards.'),
+      p("Users should review the app's official Terms and Conditions, Privacy Policy and requested permissions."),
+    ],
+  },
+  {
+    heading: 'Other Gaming Applications',
+    blocks: [
+      p('Any other gaming application mentioned on AllYonoUpdate remains under the ownership, operation and responsibility of its respective developer or operator.'),
+      p('Users should conduct their own checks before downloading, registering, providing personal information or making a payment.'),
+    ],
+  },
 ];
 
-const lastUpdated = 'June 21, 2026';
+const sectionsPart2: Section[] = [
+  {
+    heading: 'Privacy and Personal Information',
+    blocks: [
+      p('AllYonoUpdate does not control how third-party applications collect, process, store, use or share personal information.'),
+      p('Before using an application, users should review its Privacy Policy and understand:'),
+      ul([
+        'What information is collected',
+        'Why it is collected',
+        'Which device permissions are requested',
+        'Whether information is shared with third parties',
+        'Where information is stored',
+        'How long it is retained',
+        'How an account may be closed',
+        'How deletion may be requested',
+        'How privacy complaints are handled',
+      ]),
+      p('Information collected directly by AllYonoUpdate is governed by our separate Privacy Policy.'),
+    ],
+  },
+  {
+    heading: 'Intellectual Property',
+    blocks: [
+      p('Third-party app names, game names, trademarks, logos, screenshots, icons and other identifying materials remain the property of their respective owners.'),
+      p('Their use on AllYonoUpdate is intended for identification, reporting, reference, review and informational commentary.'),
+      p('Such use does not imply ownership, sponsorship, partnership, approval or official affiliation.'),
+      p('A rights holder who believes that protected material has been used improperly may contact AllYonoUpdate and provide:'),
+      ul([
+        'Identification of the protected material',
+        'The page where it appears',
+        'Evidence of ownership or authority',
+        'Contact information',
+        'A clear explanation of the concern',
+      ]),
+    ],
+  },
+  {
+    heading: 'No Professional Advice',
+    blocks: [
+      p('Nothing published on AllYonoUpdate constitutes legal, financial, tax, technical, security or other professional advice.'),
+      p('Dates, status labels, platform categories and update descriptions are editorial records, not professional opinions or formal determinations.'),
+      p('Users should consult an appropriately qualified professional where advice is required for their individual circumstances.'),
+    ],
+  },
+  {
+    heading: 'Limitation of Liability',
+    blocks: [
+      p('To the fullest extent permitted by applicable law, AllYonoUpdate and its owners, administrators, writers, editors and contributors will not be liable for any direct, indirect, incidental, consequential, special or punitive loss arising from:'),
+      ul([
+        'Reliance on information published on the website',
+        'Inaccurate, incomplete, delayed or outdated updates',
+        'An event that is postponed, altered or cancelled',
+        'A feature that is unavailable to a particular account',
+        'An expired or invalid promo code',
+        'An unavailable or refused reward',
+        'Use or inability to use a third-party application',
+        'Account registration, suspension, restriction or closure',
+        'Deposits, purchases, withdrawals, refunds or payment disputes',
+        'Loss of money, account access or virtual items',
+        'Misleading third-party claims',
+        'Installation of an APK or other software',
+        'Malware, viruses, device damage or security incidents',
+        'Loss, theft or misuse of personal information',
+        'Interruption, alteration or removal of an external service',
+        'Disputes between users and third-party operators',
+        'Decisions made after reading an update on this website',
+      ]),
+      p('Nothing in this Disclaimer is intended to remove, restrict or exclude any liability, remedy or consumer right that cannot lawfully be excluded under applicable Indian law.'),
+    ],
+  },
+  {
+    heading: 'No Warranty',
+    blocks: [
+      p('AllYonoUpdate and its content are provided on an "as available" and "as published" basis.'),
+      p('We do not warrant that:'),
+      ul([
+        'The website will always be available',
+        'Every update will be accurate or complete',
+        'Information will be published immediately',
+        'External links will remain active',
+        'Promo codes will remain valid',
+        'Event dates will remain unchanged',
+        'Rewards will remain available',
+        'Third-party applications will function as described',
+        'The website or external services will be free from harmful components',
+      ]),
+      p('Users remain responsible for maintaining appropriate device security, account protection and data backups.'),
+    ],
+  },
+  {
+    heading: 'Corrections and Editorial Feedback',
+    blocks: [
+      p('AllYonoUpdate welcomes reasonable requests to correct incomplete, inaccurate or outdated public information.'),
+      p('A correction request should include:'),
+      ul([
+        'The title or URL of the relevant page',
+        'The statement requiring review',
+        'An explanation of the concern',
+        'Any reliable supporting source',
+        "The requester's contact details where necessary",
+      ]),
+      p('Do not submit private account records, passwords, OTPs, banking details, identity documents or confidential screenshots.'),
+      p('Submitting a request does not automatically require AllYonoUpdate to change or remove content.'),
+      p('Requests may be assessed according to the available evidence, applicable law, intellectual-property rights and legitimate editorial considerations.'),
+    ],
+  },
+  {
+    heading: 'Changes to This Disclaimer',
+    blocks: [
+      p('AllYonoUpdate may amend this Disclaimer to reflect changes in the website, editorial process, update categories, third-party applications or applicable law.'),
+      p('A revised version becomes effective when published on this page.'),
+      p('Users are encouraged to review the "Last Updated" date periodically.'),
+    ],
+  },
+  {
+    heading: 'Governing Law and Jurisdiction',
+    blocks: [
+      p('This Disclaimer and the use of AllYonoUpdate are governed by the laws of India.'),
+      p('Subject to any mandatory consumer protections and applicable jurisdictional requirements, disputes relating to this website shall be subject to the exclusive jurisdiction of the competent courts in Bengaluru, Karnataka, India.'),
+    ],
+  },
+];
 ---
 
 <Layout
   title="All Yono Update Disclaimer: Information Use Notice"
-  description="Read the AllYonoUpdate.com disclaimer covering independent update records, dated information, third-party references, and account-safety boundaries."
+  description="Read the AllYonoUpdate.com disclaimer covering independent update records, dated information, third-party references, affiliate disclosure, and account-safety boundaries."
   rawTitle
   ogTitle="All Yono Update Disclaimer and Information Use Notice"
   ogDescription="Read how AllYonoUpdate.com presents dated update records, independent information, third-party references, and account-safety reminders."
@@ -39,19 +729,7 @@ const lastUpdated = 'June 21, 2026';
 >
   <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
     <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Disclaimer</h1>
-    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
-      AllYonoUpdate.com is an independent informational website that records date-stamped updates related to
-      All Yono game listings, event notices, promo-code status, app changes, feature updates, and article
-      revisions.
-    </p>
-    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
-      The website is not presented as an operator, representative, customer-support channel, or account service
-      for any All Yono application, game platform, or related third party.
-    </p>
-    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
-      By using this website, you understand that the information published here is provided for general
-      reference.
-    </p>
+    <p class="mt-3 text-sm font-medium text-gray-400">Last Updated: {lastUpdated}</p>
 
     <div class="mt-8 flex flex-wrap gap-3">
       <a href="/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
@@ -60,182 +738,94 @@ const lastUpdated = 'June 21, 2026';
       <a href="/editorial-policy/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
         Read Editorial Policy
       </a>
-    </div>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
-      <h2 class="text-lg font-bold text-brand-primary">No Bank Affiliation</h2>
-      <p class="mt-3 text-sm leading-6 text-gray-200">
-        AllYonoUpdate.com is not related or affiliated to Yono SBI or any related bank. "All Yono" game and
-        platform names referenced on this website are unrelated third-party products, and any similarity in
-        naming is coincidental.
-      </p>
-    </div>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Independent Information Website</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      AllYonoUpdate.com publishes update records to help readers follow visible changes over time.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      The website does not claim ownership of, control over, or direct involvement in any application, game
-      platform, event, feature, or service mentioned in its content unless clearly stated otherwise.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      References to names, game titles, app features, events, or third-party services are used only to describe
-      the topic of an update or informational record.
-    </p>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Information Can Change</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      Game listings, app layouts, event timing, promo-code status, features, menu paths, and platform notices
-      may change after an update is published. For this reason, readers should review:
-    </p>
-
-    <div class="mt-6 overflow-x-auto rounded-lg border border-gray-800">
-      <table class="w-full text-left text-sm">
-        <thead class="bg-brand-surface/50">
-          <tr>
-            <th class="px-4 py-3 font-semibold text-brand-primary">Detail</th>
-            <th class="px-4 py-3 font-semibold text-brand-primary">Why It Matters</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-800">
-          {changeDetails.map((row) => (
-            <tr>
-              <td class="px-4 py-3 font-medium text-gray-200">{row.detail}</td>
-              <td class="px-4 py-3 text-gray-300">{row.why}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <p class="mt-4 text-base leading-7 text-gray-300">
-      Older information remains available for context, but it should not be treated as current without checking
-      the latest dated update.
-    </p>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">No Guarantee of Availability or Accuracy</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      AllYonoUpdate.com aims to present clear and organised information, but it cannot guarantee that every game
-      listing, event, promo-code notice, feature, menu path, or platform update will remain accurate, available,
-      or applicable after publication.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      Information may vary by application version, device, release timing, location, account status, or later
-      platform changes.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      Readers should use their own judgment and confirm time-sensitive information through appropriate official
-      or verified sources where available.
-    </p>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Promo Code and Event Information</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      Promo-code status, event notices, and temporary platform updates may change quickly.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      A listed code, event period, update status, or feature notice may expire, change, or no longer apply after
-      the post's publication time. Do not assume that an older notice remains active.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      AllYonoUpdate.com does not promise that any code, event, feature, or listing will be available to every
-      user or remain active for a fixed period.
-    </p>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
-      <h2 class="text-lg font-bold text-brand-primary">No Account or Private Support</h2>
-      <p class="mt-3 text-sm leading-6 text-gray-200">AllYonoUpdate.com does not provide:</p>
-      <ul class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {notProvided.map((item) => (
-          <li class="rounded-md border border-amber-500/30 bg-brand-surface px-4 py-2 text-sm text-gray-200">{item}</li>
-        ))}
-      </ul>
-      <p class="mt-4 text-sm font-medium leading-6 text-gray-200">
-        Never share passwords, OTPs, payment details, identity documents, account numbers, or private
-        screenshots through unofficial contact routes.
-      </p>
-      <p class="mt-3 text-sm leading-6 text-gray-200">
-        The Contact section is only for public correction requests, editorial feedback, and general website
-        questions.
-      </p>
-      <a href="/contact/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      <a href="/contact/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
         Contact All Yono Update
       </a>
     </div>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Third-Party Links and References</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      The website may refer to external websites, platforms, guides, or public information sources when they
-      are relevant to a published update.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      External websites operate independently. AllYonoUpdate.com does not control their content, availability,
-      policies, security practices, or future changes.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      A link or reference should not be treated as an endorsement, partnership, guarantee, or confirmation that a
-      third-party service is suitable for every reader.
-    </p>
+  {sectionsPart1.map((section) => (
+    <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+      {section.highlight ? (
+        <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+          <h2 class="text-lg font-bold text-brand-primary">{section.heading}</h2>
+          {section.blocks.map((block) => (
+            block.type === 'p' ? (
+              <p class="mt-3 text-sm leading-6 text-gray-200">{block.text}</p>
+            ) : (
+              <ul class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {block.items.map((item) => (
+                  <li class="rounded-md border border-amber-500/30 bg-brand-surface px-4 py-2 text-sm text-gray-200">{item}</li>
+                ))}
+              </ul>
+            )
+          ))}
+        </div>
+      ) : (
+        <>
+          <h2 class="text-2xl font-bold tracking-tight text-brand-primary">{section.heading}</h2>
+          {section.blocks.map((block) => (
+            block.type === 'p' ? (
+              <p class="mt-3 text-base leading-7 text-gray-300">{block.text}</p>
+            ) : (
+              <ul class="mt-3 list-disc space-y-1.5 pl-5 text-base leading-7 text-gray-300">
+                {block.items.map((item) => <li>{item}</li>)}
+              </ul>
+            )
+          ))}
+        </>
+      )}
+    </section>
+  ))}
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">App-Specific Notices</h2>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      {appNotices.map((notice) => (
+        <div class="rounded-lg border border-gray-800 bg-brand-surface p-5">
+          <h3 class="text-base font-semibold text-brand-primary">{notice.heading}</h3>
+          {notice.blocks.map((block) => (
+            block.type === 'p' && <p class="mt-2 text-sm leading-6 text-gray-300">{block.text}</p>
+          ))}
+        </div>
+      ))}
+    </div>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Update Status Labels</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      AllYonoUpdate.com uses status labels to help readers understand the condition of a notice at the time it
-      was recorded. See the Editorial Policy for the full list of labels and what each one means.
-    </p>
+  {sectionsPart2.map((section) => (
+    <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-brand-primary">{section.heading}</h2>
+      {section.blocks.map((block) => (
+        block.type === 'p' ? (
+          <p class="mt-3 text-base leading-7 text-gray-300">{block.text}</p>
+        ) : (
+          <ul class="mt-3 list-disc space-y-1.5 pl-5 text-base leading-7 text-gray-300">
+            {block.items.map((item) => <li>{item}</li>)}
+          </ul>
+        )
+      ))}
+      {section.heading === 'Intellectual Property' && (
+        <p class="mt-3 text-base leading-7 text-gray-300">
+          Contact: <ProtectedEmail user={DISCLAIMER_EMAIL_USER} domain={DISCLAIMER_EMAIL_DOMAIN} />
+        </p>
+      )}
+      {section.heading === 'Privacy and Personal Information' && (
+        <a href="/privacy-policy/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+          Read Privacy Policy
+        </a>
+      )}
+    </section>
+  ))}
 
-    <a href="/editorial-policy/" class="mt-4 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
-      Read How Updates Are Reviewed
-    </a>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">No Professional Advice</h2>
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact Us</h2>
     <p class="mt-3 text-base leading-7 text-gray-300">
-      The content on AllYonoUpdate.com is not legal, financial, technical, security, or professional advice.
+      Questions, correction requests, legal notices or intellectual-property concerns relating to this Disclaimer may be sent to:
     </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      Readers should seek appropriate independent advice when they need help with legal questions, payments,
-      account security, device issues, or other matters outside the website's informational role.
-    </p>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Changes to This Disclaimer</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      This Disclaimer may be updated when the website structure, content categories, or editorial process
-      changes.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      The latest version should remain available on this page with a visible last-updated date.
-    </p>
-    <p class="mt-4 text-sm font-medium text-gray-400">Last Updated: {lastUpdated}</p>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Contact and Corrections</h2>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      If you believe a public update record is incomplete, inaccurate, or outdated, you may submit a correction
-      request through the Contact section.
-    </p>
-    <p class="mt-3 text-base leading-7 text-gray-300">
-      Please include the relevant update title or URL and a short explanation of the information that needs
-      review. Do not submit private account details.
+    <p class="mt-4 text-base leading-7 text-gray-300">Website: AllYonoUpdate</p>
+    <p class="mt-1 text-base leading-7 text-gray-300">Website Address: <a href="https://allyonoupdate.com/" class="font-semibold text-brand-accent-strong hover:underline">https://allyonoupdate.com/</a></p>
+    <p class="mt-1 text-base leading-7 text-gray-300">
+      Email: <ProtectedEmail user={DISCLAIMER_EMAIL_USER} domain={DISCLAIMER_EMAIL_DOMAIN} />
     </p>
     <a href="/contact/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
       Send Editorial Feedback
@@ -246,9 +836,9 @@ const lastUpdated = 'June 21, 2026';
     <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
       <h2 class="text-lg font-bold text-brand-primary">Important Reminder</h2>
       <p class="mt-3 text-sm leading-6 text-gray-200">
-        AllYonoUpdate.com is an independent information tracker. Review the status label, publication date, and
-        last-reviewed date before relying on any game listing, event notice, promo-code status post, app
-        change, or archived update.
+        By continuing to use AllYonoUpdate, you acknowledge that it is an independent informational update
+        tracker. All third-party games, applications, events, promo codes, rewards, downloads and services
+        remain under the ownership and responsibility of their respective operators.
       </p>
     </div>
   </section>
