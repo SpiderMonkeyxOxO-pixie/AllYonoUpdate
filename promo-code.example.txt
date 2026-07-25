@@ -12,6 +12,11 @@
 #
 # Keep one blank line between platforms.
 
+Win Rummy:
+Code AM:
+Code P.M:
+Code Eve:
+
 DhanGame:
 Code AM:
 Code P.M:

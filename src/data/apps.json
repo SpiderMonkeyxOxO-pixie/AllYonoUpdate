@@ -10,6 +10,38 @@
   },
   "apps": [
     {
+      "id": "win-rummy",
+      "name": "Win Rummy",
+      "slug": "win-rummy",
+      "category": "rummy",
+      "featured": true,
+      "tag": "COMING SOON",
+      "description": "Win Rummy is an upcoming rummy-style app expected to join the All Yono directory. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "win rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-07-25",
+      "icon": "/images/games/win-rummy.webp",
+      "apkUrl": null,
+      "url": "/app/win-rummy/",
+      "faq": [
+        {
+          "q": "Is Win Rummy available to download yet?",
+          "a": "No. Win Rummy is expected to launch between 7:00–8:00 AM IST on July 29, 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the Win Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to Win Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "How can I find out when Win Rummy launches?",
+          "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
+        }
+      ]
+    },
+    {
       "id": "dhan-game",
       "name": "DhanGame",
       "slug": "dhan-game",
