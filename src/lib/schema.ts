@@ -56,6 +56,51 @@ export function buildArticleSchema(options: { headline: string; description: str
   };
 }
 
+export function buildBlogPostingSchema(options: {
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified: string;
+  url: string;
+  image: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: options.headline,
+    description: options.description,
+    datePublished: options.datePublished,
+    dateModified: options.dateModified,
+    mainEntityOfPage: options.url,
+    image: options.image,
+    author: {
+      '@type': 'Organization',
+      name: 'All Yono Update',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'All Yono Update',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${new URL(options.url).origin}/logo.webp`,
+      },
+    },
+  };
+}
+
+export function buildBreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
+
 export function buildSoftwareApplicationSchema(app: AppEntry, baseUrl: string) {
   const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',

@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import FaqAccordion from '../../components/FaqAccordion.astro';
-import { buildFaqSchema } from '../../lib/schema';
+import { buildFaqSchema, buildBlogPostingSchema, buildBreadcrumbSchema } from '../../lib/schema';
 import { blogPosts, type BlogPost } from '../../data/blogPosts';
 
 export function getStaticPaths() {
@@ -13,7 +13,39 @@ interface Props {
 }
 
 const { post } = Astro.props as { post: BlogPost };
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+const canonicalUrl = `${baseUrl}/blog/${post.slug}/`;
+
 const faqSchema = buildFaqSchema(post.faqs);
+const blogPostingSchema = buildBlogPostingSchema({
+  headline: post.h1,
+  description: post.metaDescription,
+  datePublished: post.publishedDate,
+  dateModified: post.lastReviewedDate,
+  url: canonicalUrl,
+  image: `${baseUrl}${post.image.src}`,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Home', url: `${baseUrl}/` },
+  { name: 'Blog Updates', url: `${baseUrl}/blog-updates/` },
+  { name: post.h1, url: canonicalUrl },
+]);
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// Paragraphs may contain simple [label](/path/) links for inline internal linking.
+function renderInline(text: string): string {
+  return escapeHtml(text).replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, url) => (
+    `<a href="${url}" class="font-semibold text-brand-accent-strong hover:underline">${label}</a>`
+  ));
+}
 ---
 
 <Layout
@@ -27,6 +59,8 @@ const faqSchema = buildFaqSchema(post.faqs);
   keywords={post.keywords}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <section class="mx-auto max-w-3xl px-4 pt-16 pb-6 lg:px-8">
     <img
@@ -49,7 +83,7 @@ const faqSchema = buildFaqSchema(post.faqs);
       <div class="mt-6 first:mt-0">
         <h2 class="text-xl font-bold tracking-tight text-brand-primary">{section.heading}</h2>
         {section.paragraphs.map((paragraph) => (
-          <p class="mt-3 text-base leading-7 text-gray-300">{paragraph}</p>
+          <p class="mt-3 text-base leading-7 text-gray-300" set:html={renderInline(paragraph)} />
         ))}
       </div>
     ))}

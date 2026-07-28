@@ -25,6 +25,7 @@ export interface AppEntry {
   apkUrl: string | null;
   url: string;
   faq: AppFaq[];
+  relatedArticle?: { label: string; href: string };
 }
 
 export interface ComplianceMeta {

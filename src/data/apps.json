@@ -39,7 +39,11 @@
           "q": "How can I find out when Win Rummy launches?",
           "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
         }
-      ]
+      ],
+      "relatedArticle": {
+        "label": "Read the Launch Status Report",
+        "href": "/blog/win-rummy-launch-status/"
+      }
     },
     {
       "id": "dhan-game",

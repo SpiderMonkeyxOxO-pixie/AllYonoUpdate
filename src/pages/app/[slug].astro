@@ -111,6 +111,11 @@ const hasSpecs = app.softwareVersion !== null || app.fileSize !== null || app.mi
       <a href="/new-yono-games/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
         See Latest Version Updates
       </a>
+      {app.relatedArticle && (
+        <a href={app.relatedArticle.href} class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+          {app.relatedArticle.label}
+        </a>
+      )}
     </div>
   </section>
 
