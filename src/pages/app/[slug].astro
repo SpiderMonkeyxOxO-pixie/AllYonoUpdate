@@ -2,11 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import FaqAccordion from '../../components/FaqAccordion.astro';
 import ComplianceNotice from '../../components/ComplianceNotice.astro';
-import ComingSoonHighlight from '../../components/ComingSoonHighlight.astro';
 import { buildSoftwareApplicationSchema, buildFaqSchema } from '../../lib/schema';
 import { categories } from '../../data/categories';
 import { apps, type AppEntry } from '../../lib/apps';
-import { telegramUrl } from '../../data/nav';
 
 export function getStaticPaths() {
   return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
@@ -52,22 +50,6 @@ const hasSpecs = app.softwareVersion !== null || app.fileSize !== null || app.mi
       </div>
     </div>
   </section>
-
-  {app.slug === 'win-rummy' && (
-    <section class="mx-auto max-w-3xl px-4 pb-8 lg:px-8">
-      <ComingSoonHighlight
-        name={app.name}
-        image={app.icon}
-        releaseIso="2026-07-29T07:00:00+05:30"
-        releaseDateLabel="July 29, 2026"
-        releaseWindowLabel="7:00–8:00 AM IST"
-        heading={`${app.name} is joining the All Yono directory`}
-        description="This page will be updated with a recorded version, file size, and direct download link once Win Rummy is available and can be independently reviewed."
-        ctaLabel="Join Telegram for Launch Updates"
-        ctaHref={telegramUrl}
-      />
-    </section>
-  )}
 
   <section class="mx-auto max-w-3xl px-4 pb-8 lg:px-8">
     <p class="text-base leading-7 text-gray-300">{app.description}</p>
