@@ -1,5 +1,5 @@
 ---
-import { primaryNav, mobileNav, categoryNav } from '../data/nav';
+import { primaryNav, mobileNav, categoryNav, updateNav } from '../data/nav';
 
 const currentPath = Astro.url.pathname;
 const isActive = (href: string) => currentPath === href;
@@ -25,13 +25,13 @@ const isActive = (href: string) => currentPath === href;
 
       <details class="group relative">
         <summary class="flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-2 text-gray-300 transition hover:text-brand-accent">
-          <span class="text-gray-600" aria-hidden="true">~/</span>Categories
+          <span class="text-gray-600" aria-hidden="true">~/</span>Updates
           <svg class="h-3 w-3 transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </summary>
-        <div class="absolute left-0 top-full z-50 mt-1 flex min-w-[10rem] flex-col gap-1 border border-gray-800 bg-brand-bg p-2 shadow-lg">
-          {categoryNav.map((item) => (
+        <div class="absolute left-0 top-full z-50 mt-1 flex min-w-40 flex-col gap-1 border border-gray-800 bg-brand-bg p-2 shadow-lg">
+          {updateNav.map((item) => (
             <a
               href={item.href}
               class:list={[
@@ -56,6 +56,28 @@ const isActive = (href: string) => currentPath === href;
           <span class="text-gray-600" aria-hidden="true">~/</span>{item.label}
         </a>
       ))}
+
+      <details class="group relative">
+        <summary class="flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-2 text-gray-300 transition hover:text-brand-accent">
+          <span class="text-gray-600" aria-hidden="true">~/</span>Directory
+          <svg class="h-3 w-3 transition group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="absolute right-0 top-full z-50 mt-1 flex min-w-40 flex-col gap-1 border border-gray-800 bg-brand-bg p-2 shadow-lg">
+          {categoryNav.map((item) => (
+            <a
+              href={item.href}
+              class:list={[
+                'rounded-md px-3 py-2 text-gray-300 transition hover:text-brand-accent',
+                { 'text-brand-accent': isActive(item.href) },
+              ]}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </details>
     </nav>
 
     <button
@@ -105,10 +127,12 @@ const isActive = (href: string) => currentPath === href;
     iconClose?.classList.toggle('hidden');
   });
 
-  const categoryDropdown = document.querySelector('nav[aria-label="Primary"] details');
+  const navDropdowns = document.querySelectorAll('nav[aria-label="Primary"] details');
   document.addEventListener('click', (event) => {
-    if (categoryDropdown?.hasAttribute('open') && !categoryDropdown.contains(event.target as Node)) {
-      categoryDropdown.removeAttribute('open');
-    }
+    navDropdowns.forEach((dropdown) => {
+      if (dropdown.hasAttribute('open') && !dropdown.contains(event.target as Node)) {
+        dropdown.removeAttribute('open');
+      }
+    });
   });
 </script>

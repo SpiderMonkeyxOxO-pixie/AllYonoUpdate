@@ -10,7 +10,29 @@ import { externalGuideUrl, externalIndiaUrl, telegramUrl } from '../data/nav';
 import { categories } from '../data/categories';
 import { hubs } from '../data/hubs';
 import { apps, getFeaturedApps } from '../lib/apps';
+import { blogPosts } from '../data/blogPosts';
 import { buildCollectionPageSchema } from '../lib/schema';
+
+const updateCategories = [
+  {
+    heading: 'Game Updates',
+    body: 'New listings, renamed titles, category changes, and availability notices for the All Yono game list.',
+    cta: 'Browse Game Updates',
+    href: '/game-updates/',
+  },
+  {
+    heading: 'App Updates',
+    body: 'Interface changes, new features, and navigation updates inside All Yono applications.',
+    cta: 'Browse App Updates',
+    href: '/app-updates/',
+  },
+  {
+    heading: 'Events & Notices',
+    body: 'Platform announcements and other confirmed or under-review changes.',
+    cta: 'Browse Events & Notices',
+    href: '/events-notices/',
+  },
+];
 
 const topics = [
   {
@@ -33,6 +55,8 @@ const topics = [
   },
 ];
 
+const launchStatusPosts = blogPosts.filter((post) => post.postType === 'launch-status');
+
 const promoCodes = getPromoCodes();
 const promoByPlatform = new Map(promoCodes.map((entry) => [entry.platform, entry]));
 
@@ -41,8 +65,8 @@ const featuredAppsDisplay = featuredApps.map((app, index) => ({ ...app, rank: in
 
 const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
 const collectionSchema = buildCollectionPageSchema(
-  'All Yono Update: Promo Codes, Game List and Blog',
-  'Follow date-stamped All Yono promo-code status, the current game directory, and revised blog articles.',
+  'All Yono Update: Latest Yono Game & Platform Updates',
+  'Follow date-stamped All Yono game, app, and event updates, plus promo-code status and the current game directory.',
   apps,
   baseUrl,
 );
@@ -85,17 +109,18 @@ const faqSchema = {
 ---
 
 <Layout
-  title="All Yono Update: Promo Codes, Game List & Blog"
-  description="Track date-stamped All Yono promo code status, the current game list, and revised blog articles in one organised hub for users."
+  title="All Yono Update: Latest Yono Game & Platform Updates"
+  description="Track date-stamped All Yono game, app, and event updates, plus promo-code status and the current game directory, all reviewed with a clear status label."
   rawTitle
-  ogTitle="All Yono Update: Promo Codes, Game List and Blog"
-  ogDescription="Follow date-stamped All Yono promo-code status, the current game directory, and revised blog articles."
+  ogTitle="All Yono Update: Latest Yono Game and Platform Updates"
+  ogDescription="Follow date-stamped All Yono game, app, and event updates, plus promo-code status and the current game directory."
   robots="index, follow"
   keywords={[
+    'yono game updates',
     'all yono updates',
+    'latest yono games',
+    'new yono games',
     'all yono promo code updates',
-    'all yono new games',
-    'all yono game list',
     'all yono blog updates',
   ]}
 >
@@ -104,11 +129,11 @@ const faqSchema = {
 
   <section class="mx-auto max-w-5xl px-4 pt-8 pb-3 lg:px-8">
     <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">
-      All Yono Update: Promo Codes, Game List and Blog
+      All Yono Update: Latest Yono Game &amp; Platform Updates
     </h1>
     <p class="mt-2 max-w-3xl text-base leading-7 text-gray-300">
-      Find the top All Yono promo codes, the current game list, and the latest blog updates — all date-stamped
-      and reviewed in one place.
+      Track what changed across the All Yono ecosystem — game listings, app changes, and platform notices — each
+      one date-stamped, reviewed, and labelled with a clear status.
     </p>
     <a
       href={telegramUrl}
@@ -118,6 +143,95 @@ const faqSchema = {
     >
       Join the Telegram Channel <Icon name="arrow-up-right" class="h-3.5 w-3.5" />
     </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <div class="flex flex-wrap items-baseline justify-between gap-2">
+      <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Latest Notices</h2>
+      <a href="/latest-updates/" class="text-sm font-semibold text-brand-accent-strong hover:underline">View All Updates →</a>
+    </div>
+    <p class="mt-2 text-base leading-7 text-gray-300">The newest recorded changes appear here first.</p>
+
+    {notices.length > 0 ? (
+      <div class="mt-4 space-y-4">
+        {notices.slice(0, 3).map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-4 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-6 text-center">
+        <p class="text-base font-semibold text-gray-200">No New Confirmed Changes Today</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">
+          No new confirmed All Yono changes have been recorded today. Check back soon for the next update.
+        </p>
+      </div>
+    )}
+
+    <p class="mt-4 text-sm text-gray-400">
+      Notices are reviewed and labelled following our
+      <a href="/editorial-policy/" class="font-medium text-brand-accent-strong hover:underline">editorial policy</a>.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse Update Categories</h2>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      Each category tracks a different kind of change, so you can follow just the updates you care about.
+    </p>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {updateCategories.map((topic) => (
+        <div class="flex flex-col rounded-lg border border-gray-800 bg-brand-surface px-4 py-5">
+          <h3 class="text-base font-semibold text-brand-primary">{topic.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-gray-300">{topic.body}</p>
+          <a href={topic.href} class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-accent-strong hover:underline">{topic.cta} <Icon name="chevron-right" class="h-3.5 w-3.5" /></a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {launchStatusPosts.length > 0 && (
+    <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Launch &amp; Status Updates</h2>
+      <p class="mt-2 text-base leading-7 text-gray-300">
+        Dated reporting on platforms joining or changing status within the All Yono directory.
+      </p>
+      <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {launchStatusPosts.map((post) => (
+          <a href={`/blog/${post.slug}/`} class="flex flex-col rounded-lg border border-gray-800 bg-brand-surface px-4 py-5 transition hover:border-gray-600">
+            <h3 class="text-base font-semibold text-brand-primary">{post.title}</h3>
+            <p class="mt-2 flex-1 text-sm leading-6 text-gray-300">{post.metaDescription}</p>
+            <p class="mt-3 text-xs text-gray-400">Published: {post.publishedDate} · Last reviewed: {post.lastReviewedDate}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Recently Updated Articles</h2>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      Some changes need more context than a short notice can provide. This section highlights recently revised
+      guides and explainer articles related to All Yono games, promo-code status, and user information.
+    </p>
+    <p class="mt-2 text-base leading-7 text-gray-300">
+      For longer evergreen guides, readers may also visit the related references published on
+      <a href={externalGuideUrl} target="_blank" rel="noopener noreferrer" class="font-medium text-brand-accent-strong hover:underline">AllYonoOfficial.com</a> and
+      <a href={externalIndiaUrl} target="_blank" rel="noopener noreferrer" class="font-medium text-brand-accent-strong hover:underline">AllYonoIndia.com</a>.
+    </p>
+    <a href="/blog-updates/" class="mt-3 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+      Read Recently Updated Articles
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Explore by Topic</h2>
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {topics.map((topic) => (
+        <div class="flex flex-col rounded-lg border border-gray-800 bg-brand-surface px-4 py-5">
+          <h3 class="text-base font-semibold text-brand-primary">{topic.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-gray-300">{topic.body}</p>
+          <a href={topic.href} class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-accent-strong hover:underline">{topic.cta} <Icon name="chevron-right" class="h-3.5 w-3.5" /></a>
+        </div>
+      ))}
+    </div>
   </section>
 
   <section class="mx-auto max-w-5xl px-4 pb-8 lg:px-8">
@@ -327,24 +441,6 @@ const faqSchema = {
   </script>
 
   <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Latest Notices</h2>
-    <p class="mt-2 text-base leading-7 text-gray-300">The newest recorded changes appear here first.</p>
-
-    {notices.length > 0 ? (
-      <div class="mt-4 space-y-4">
-        {notices.slice(0, 3).map((notice) => <NoticeCard notice={notice} />)}
-      </div>
-    ) : (
-      <div class="mt-4 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-6 text-center">
-        <p class="text-base font-semibold text-gray-200">No New Confirmed Changes Today</p>
-        <p class="mt-2 text-sm leading-6 text-gray-400">
-          No new confirmed All Yono changes have been recorded today. Check back soon for the next update.
-        </p>
-      </div>
-    )}
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
     <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse All Yono Apps by Category</h2>
     <p class="mt-2 text-base leading-7 text-gray-300">
       Browse the All Yono directory by app type, or jump straight to the latest version updates for a category.
@@ -377,35 +473,6 @@ const faqSchema = {
   </section>
 
   <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Explore by Topic</h2>
-    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
-      {topics.map((topic) => (
-        <div class="flex flex-col rounded-lg border border-gray-800 bg-brand-surface px-4 py-5">
-          <h3 class="text-base font-semibold text-brand-primary">{topic.heading}</h3>
-          <p class="mt-2 flex-1 text-sm leading-6 text-gray-300">{topic.body}</p>
-          <a href={topic.href} class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-accent-strong hover:underline">{topic.cta} <Icon name="chevron-right" class="h-3.5 w-3.5" /></a>
-        </div>
-      ))}
-    </div>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
-    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Recently Updated Articles</h2>
-    <p class="mt-2 text-base leading-7 text-gray-300">
-      Some changes need more context than a short notice can provide. This section highlights recently revised
-      guides and explainer articles related to All Yono games, promo-code status, and user information.
-    </p>
-    <p class="mt-2 text-base leading-7 text-gray-300">
-      For longer evergreen guides, readers may also visit the related references published on
-      <a href={externalGuideUrl} target="_blank" rel="noopener noreferrer" class="font-medium text-brand-accent-strong hover:underline">AllYonoOfficial.com</a> and
-      <a href={externalIndiaUrl} target="_blank" rel="noopener noreferrer" class="font-medium text-brand-accent-strong hover:underline">AllYonoIndia.com</a>.
-    </p>
-    <a href="/blog-updates/" class="mt-3 inline-block rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
-      Read Recently Updated Articles
-    </a>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
     <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
     <FaqAccordion faqs={faqs} />
   </section>
@@ -414,8 +481,8 @@ const faqSchema = {
     <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-5">
       <h2 class="text-lg font-bold text-brand-primary">Important Notice</h2>
       <p class="mt-2 text-sm leading-6 text-gray-200">
-        AllYonoUpdate.com is an independent informational update tracker for All Yono promo-code status, game
-        listing, and blog changes.
+        AllYonoUpdate.com is an independent informational update tracker for All Yono game, app, event, and
+        promo-code changes.
       </p>
       <p class="mt-2 text-sm font-medium leading-6 text-gray-200">
         Never share passwords, OTPs, identity documents, payment details, or private account screenshots through

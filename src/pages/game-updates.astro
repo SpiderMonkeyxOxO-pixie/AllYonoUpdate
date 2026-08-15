@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { notices } from '../data/notices';
+import { buildFaqSchema, buildBreadcrumbSchema } from '../lib/schema';
+
+const gameNotices = notices.filter((notice) => notice.category === 'Game Updates');
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+
+const statusLabels = [
+  { label: 'Confirmed', body: 'The game listing, update, or change has been clearly documented through a reliable published source or direct observation inside the application.' },
+  { label: 'Being Reviewed', body: 'The game has been reported or observed, but the available information is not yet enough to present it as confirmed.' },
+  { label: 'Ended', body: 'A temporary listing status, release window, or previous game-list state is no longer current.' },
+  { label: 'Archived', body: 'The record remains available as a dated reference but should not be treated as the current game list.' },
+];
+
+const relatedCategories = [
+  { label: 'Promo Code Status', body: 'Records dated availability and release-period changes.', href: '/promo-code-updates/' },
+  { label: 'Events & Notices', body: 'Records scheduled events, maintenance, and temporary platform updates.', href: '/events-notices/' },
+  { label: 'App Updates', body: 'Records interface, menu, feature, and navigation changes inside the application.', href: '/app-updates/' },
+  { label: 'Latest Updates', body: 'Brings all update categories together in one chronological feed.', href: '/latest-updates/' },
+];
+
+const faqs = [
+  {
+    question: 'How often is the All Yono game list updated?',
+    answer: 'The list is updated whenever a meaningful game change can be documented. Each update shows a publication date and last-reviewed date.',
+  },
+  {
+    question: 'Does a newly listed game remain available permanently?',
+    answer: 'Not necessarily. A title can be moved, renamed, temporarily unavailable, or removed later. Review the latest update and current game list before relying on an older notice.',
+  },
+  {
+    question: 'What does "Being Reviewed" mean?',
+    answer: 'It means the game has been reported or noticed, but the information still needs verification. Only updates marked Confirmed should be treated as verified records.',
+  },
+  {
+    question: 'Where can I find the current game list, not just what changed?',
+    answer: 'Use the All Yono Game List for the current recorded directory. This page explains what changed and when the change was first noted.',
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Home', url: baseUrl },
+  { name: 'Game Updates', url: `${baseUrl}/game-updates/` },
+]);
+---
+
+<Layout
+  title="All Yono Game Updates: New, Changed & Listed Games"
+  description="Browse dated All Yono game updates, including newly listed titles, renamed games, and availability notices with clear status labels."
+  rawTitle
+  ogTitle="All Yono Game Updates: New Listings and Game Changes"
+  ogDescription="See date-stamped All Yono game updates, including new listings, renamed titles, and game availability notices."
+  robots="index, follow"
+  keywords={[
+    'all yono game updates',
+    'all yono new games',
+    'all yono game list updates',
+    'all yono game changes',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono Game Updates</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      All Yono game updates can include new game listings, renamed titles, category changes, and availability
+      notices. This section records those changes in date order, with clear labels showing whether a listing is
+      confirmed, being reviewed, or no longer current.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      Use this feed when you want to know what changed in the All Yono game list, separate from the current
+      directory itself.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/latest-updates/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Latest Updates
+      </a>
+      <a href="/all-yono-games/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Browse Full All Yono Game List
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Latest Game Updates</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The newest recorded game changes appear here first, each showing its status, headline, summary,
+      publication date, and last-reviewed date.
+    </p>
+
+    {gameNotices.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {gameNotices.map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
+        <p class="text-base font-semibold text-gray-200">No New Game Changes Recorded</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">
+          No confirmed game-list changes have been recorded in this category yet. Browse the full game list or
+          check the latest update feed for other recent changes.
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-3">
+          <a href="/all-yono-games/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+            View All Yono Game List
+          </a>
+          <a href="/latest-updates/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+            View Latest Updates
+          </a>
+        </div>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Game Status Labels Work</h2>
+    <dl class="mt-6 space-y-4">
+      {statusLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-gray-300">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Related Update Categories</h2>
+    <ul class="mt-6 space-y-3">
+      {relatedCategories.map((item) => (
+        <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
+          <a href={item.href} class="text-base font-semibold text-brand-accent-strong hover:underline">{item.label}</a>
+          <span class="text-base leading-7 text-gray-300">{item.body}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com records game-list changes for general information purposes. Listings and availability
+        can change without notice. Read the date and status label before relying on a game update.
+      </p>
+    </div>
+  </section>
+</Layout>

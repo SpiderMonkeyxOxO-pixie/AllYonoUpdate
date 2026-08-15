@@ -1,0 +1,151 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { notices } from '../data/notices';
+import { buildFaqSchema, buildBreadcrumbSchema } from '../lib/schema';
+
+const archivedNotices = notices.filter((notice) => notice.status === 'Ended' || notice.status === 'Archived');
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+
+const statusLabels = [
+  { label: 'Ended', body: 'The event, release period, temporary change, or notice is no longer current.' },
+  { label: 'Archived', body: 'The post remains available as a dated reference but should not be treated as the latest information.' },
+];
+
+const relatedCategories = [
+  { label: 'Latest Updates', body: 'Shows the newest recorded notices first.', href: '/latest-updates/' },
+  { label: 'Game Updates', body: 'Explains newly listed, renamed, or changed game entries.', href: '/game-updates/' },
+  { label: 'App Updates', body: 'Records current UI, menu, and feature changes.', href: '/app-updates/' },
+  { label: 'Events & Notices', body: 'Covers active and upcoming platform notices.', href: '/events-notices/' },
+];
+
+const faqs = [
+  {
+    question: 'Are archived updates still current?',
+    answer: 'No. Archived and Ended updates are kept for reference. Always use the newest dated notice from Latest Updates for current information.',
+  },
+  {
+    question: 'Why is an older post still visible?',
+    answer: 'Older posts help document changes over time, such as an event schedule or a platform notice that has since ended.',
+  },
+  {
+    question: 'Can an archived update be revised?',
+    answer: 'Yes. A correction can be added when older information needs clarification. The original publication date stays visible alongside the correction date.',
+  },
+  {
+    question: 'What happens when a new update replaces an older one?',
+    answer: 'The status of the earlier notice is updated to Ended or Archived, and where practical, the newer post links back to it.',
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Home', url: baseUrl },
+  { name: 'Update Archive', url: `${baseUrl}/update-archive/` },
+]);
+---
+
+<Layout
+  title="All Yono Update Archive: Past Events & Changes"
+  description="Browse dated All Yono updates that are no longer current, including past events and notices, each retaining its original status label and dates."
+  rawTitle
+  ogTitle="All Yono Update Archive: Past Events and Changes"
+  ogDescription="Explore older All Yono updates that are no longer current, kept for dated reference."
+  robots="index, follow"
+  keywords={[
+    'all yono update archive',
+    'all yono past updates',
+    'all yono old updates',
+    'all yono update history',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono Update Archive</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      This archive holds All Yono notices whose status has moved to Ended or Archived, so readers can review past
+      changes without mixing them into the latest feed.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      The newest information always appears in Latest Updates. This archive is for reference and change history.
+      Every archived post retains its original publication date, status label, category, and last-reviewed date.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/latest-updates/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Latest Updates
+      </a>
+      <a href="/all-yono-games/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Browse All Yono Game List
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Archived Notices</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Each archived notice keeps the same core details used in the latest feed: status, category, headline,
+      summary, publication date, and last-reviewed date.
+    </p>
+
+    {archivedNotices.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {archivedNotices.map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
+        <p class="text-base font-semibold text-gray-200">No Archived Notices Yet</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">
+          No notice has moved to Ended or Archived status yet. Once one does, it will appear here with full
+          archive details.
+        </p>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Archived Status Works</h2>
+    <dl class="mt-6 space-y-4">
+      {statusLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-gray-300">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+    <p class="mt-4 text-base leading-7 text-gray-300">
+      A status label remains visible even after a post moves into the archive, so readers can understand the
+      condition of the update at the time it was recorded.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Related Sections</h2>
+    <ul class="mt-6 space-y-3">
+      {relatedCategories.map((item) => (
+        <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
+          <a href={item.href} class="text-base font-semibold text-brand-accent-strong hover:underline">{item.label}</a>
+          <span class="text-base leading-7 text-gray-300">{item.body}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Why Older Updates Matter</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        Older notices can provide useful context — an event schedule that changed, or a platform notice that is
+        no longer active. Always check the status label and dates before relying on an archived record.
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,15 +1,16 @@
 import type { APIRoute } from 'astro';
-import { FALLBACK_BASE_URL } from '../lib/sitemap';
+import { FALLBACK_BASE_URL, lastModified } from '../lib/sitemap';
 import { categories } from '../data/categories';
 import { hubs } from '../data/hubs';
 
 export const GET: APIRoute = ({ site }) => {
   const baseUrl = (site?.toString() ?? FALLBACK_BASE_URL).replace(/\/$/, '');
-  const today = new Date().toISOString().slice(0, 10);
+  const categoriesLastmod = lastModified('src/data/categories.ts');
+  const hubsLastmod = lastModified('src/data/hubs.ts');
 
   const urls = [
-    ...categories.map((category) => ({ path: category.path, lastmod: today })),
-    ...hubs.map((hub) => ({ path: hub.path, lastmod: today })),
+    ...categories.map((category) => ({ path: category.path, lastmod: categoriesLastmod })),
+    ...hubs.map((hub) => ({ path: hub.path, lastmod: hubsLastmod })),
   ]
     .map((page) => `  <url>\n    <loc>${baseUrl}${page.path}</loc>\n    <lastmod>${page.lastmod}</lastmod>\n  </url>`)
     .join('\n');

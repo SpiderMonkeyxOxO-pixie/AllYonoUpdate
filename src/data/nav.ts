@@ -3,7 +3,19 @@ export interface NavItem {
   href: string;
 }
 
+/** Freshness/update routes — this is the domain's primary identity, so this dropdown leads. */
+export const updateNav: NavItem[] = [
+  { label: 'Latest Updates', href: '/latest-updates/' },
+  { label: 'Game Updates', href: '/game-updates/' },
+  { label: 'App Updates', href: '/app-updates/' },
+  { label: 'Events & Notices', href: '/events-notices/' },
+  { label: 'Update Archive', href: '/update-archive/' },
+];
+
+/** Directory/APK/promo-code routes — kept fully reachable, but positioned as supporting nav, not primary identity. */
 export const categoryNav: NavItem[] = [
+  { label: 'All Yono Games', href: '/all-yono-games/' },
+  { label: 'Promo Code Status', href: '/promo-code-updates/' },
   { label: 'All Games APK', href: '/yono-games-apk/' },
   { label: 'Rummy', href: '/yono-rummy/' },
   { label: 'VIP', href: '/yono-vip/' },
@@ -15,12 +27,10 @@ export const categoryNav: NavItem[] = [
 
 export const primaryNav: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Latest Promo Code', href: '/promo-code-updates/' },
-  { label: 'Latest Games', href: '/all-yono-games/' },
-  { label: 'Blogs', href: '/blog-updates/' },
+  { label: 'Blog Updates', href: '/blog-updates/' },
 ];
 
-export const mobileNav: NavItem[] = [...primaryNav.slice(0, 1), ...categoryNav, ...primaryNav.slice(1)];
+export const mobileNav: NavItem[] = [...primaryNav.slice(0, 1), ...updateNav, ...primaryNav.slice(1), ...categoryNav];
 
 export interface FooterColumn {
   heading: string;
@@ -48,9 +58,10 @@ export const footerColumns: FooterColumn[] = [
 
 export const aboutColumnLinks: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Latest Promo Code', href: '/promo-code-updates/' },
-  { label: 'Latest Games', href: '/all-yono-games/' },
-  { label: 'Blogs', href: '/blog-updates/' },
+  { label: 'Latest Updates', href: '/latest-updates/' },
+  { label: 'Blog Updates', href: '/blog-updates/' },
+  { label: 'Promo Code Status', href: '/promo-code-updates/' },
+  { label: 'All Yono Games', href: '/all-yono-games/' },
 ];
 
 export const bottomLinks: NavItem[] = [

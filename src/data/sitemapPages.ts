@@ -5,6 +5,11 @@ export interface SitemapPageEntry {
 
 export const sitemapPages: SitemapPageEntry[] = [
   { path: '/', file: 'src/pages/index.astro' },
+  { path: '/latest-updates/', file: 'src/pages/latest-updates.astro' },
+  { path: '/game-updates/', file: 'src/pages/game-updates.astro' },
+  { path: '/app-updates/', file: 'src/pages/app-updates.astro' },
+  { path: '/events-notices/', file: 'src/pages/events-notices.astro' },
+  { path: '/update-archive/', file: 'src/pages/update-archive.astro' },
   { path: '/promo-code-updates/', file: 'src/pages/promo-code-updates.astro' },
   { path: '/all-yono-games/', file: 'src/pages/all-yono-games.astro' },
   { path: '/blog-updates/', file: 'src/pages/blog-updates.astro' },

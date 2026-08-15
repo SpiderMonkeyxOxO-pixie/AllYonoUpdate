@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { notices } from '../data/notices';
+import { buildFaqSchema, buildBreadcrumbSchema } from '../lib/schema';
+
+const categoryNotices = notices.filter((notice) => notice.category === 'Events & Notices');
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+
+const noticeLabels = [
+  { label: 'Confirmed', body: 'The event, schedule, or temporary platform change has been documented through a reliable source or clear application observation.' },
+  { label: 'Being Reviewed', body: 'Information has been reported or noticed but requires more verification before it is treated as confirmed.' },
+  { label: 'Active', body: 'The notice is currently relevant based on the latest available information.' },
+  { label: 'Ended', body: 'The event, maintenance window, temporary change, or notice is no longer current.' },
+  { label: 'Archived', body: 'The notice remains available as a dated reference but should not be treated as the latest information.' },
+];
+
+const relatedCategories = [
+  { label: 'Latest Updates', body: 'Combines every update category in one chronological feed.', href: '/latest-updates/' },
+  { label: 'Game Updates', body: 'Records new listings, renamed titles, and availability changes.', href: '/game-updates/' },
+  { label: 'App Updates', body: 'Records interface, feature, and navigation changes inside the application.', href: '/app-updates/' },
+  { label: 'Promo Code Status', body: 'Tracks date-stamped release-period status by platform.', href: '/promo-code-updates/' },
+];
+
+const faqs = [
+  {
+    question: 'How often are event notices updated?',
+    answer: 'Notices are published or revised when there is a meaningful, documented change. Each post shows its publication date and last-reviewed date.',
+  },
+  {
+    question: 'Does an event notice stay current after the event ends?',
+    answer: 'No. Once the relevant period has passed, the notice status is updated to Ended so it is not mistaken for current information.',
+  },
+  {
+    question: 'What does "Being Reviewed" mean?',
+    answer: 'It means the information has been reported or observed but is not yet verified enough to be presented as confirmed.',
+  },
+  {
+    question: 'Where can I find app feature updates?',
+    answer: 'Use the App Updates section for interface, menu, setting, and feature changes inside the application.',
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Home', url: baseUrl },
+  { name: 'Events & Notices', url: `${baseUrl}/events-notices/` },
+]);
+---
+
+<Layout
+  title="All Yono Events & Notices: Latest Platform Updates"
+  description="Read date-stamped All Yono event notices and platform announcements, each with a clear status label showing whether it is confirmed, being reviewed, active, or ended."
+  rawTitle
+  ogTitle="All Yono Events, Notices and Platform Updates"
+  ogDescription="Browse dated All Yono event notices and platform announcements with clear review status labels."
+  robots="index, follow"
+  keywords={[
+    'all yono events',
+    'all yono event updates',
+    'all yono notices',
+    'all yono platform notices',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">All Yono Events and Notices</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      This section records date-stamped All Yono event notices and platform announcements — the kind of change
+      that doesn't fit a game listing, an app-interface update, or a promo-code status post.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      Some notices only apply for a limited period. Every update shows its publication date, last-reviewed date,
+      and current status label.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/latest-updates/" class="rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+        View Latest Updates
+      </a>
+      <a href="/game-updates/" class="rounded-md border border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-gray-500 hover:text-gray-100">
+        Browse Game Updates
+      </a>
+    </div>
+
+    <p class="mt-6 max-w-3xl text-sm italic text-gray-400">
+      AllYonoUpdate.com is an independent information tracker. Event schedules and platform notices can change
+      after publication.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Current Events and Notices</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      The most recent notices appear first, each showing its status, category, headline, summary, publication
+      date, and last-reviewed date.
+    </p>
+
+    {categoryNotices.length > 0 ? (
+      <div class="mt-6 space-y-4">
+        {categoryNotices.map((notice) => <NoticeCard notice={notice} />)}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
+        <p class="text-base font-semibold text-gray-200">No Active Notices Right Now</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">
+          No active event or platform notice has been recorded at this time. Browse the latest update feed for
+          other recent changes.
+        </p>
+        <a href="/latest-updates/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+          View Latest Updates
+        </a>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Notice Labels Work</h2>
+    <dl class="mt-6 space-y-4">
+      {noticeLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-gray-300">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Related Update Sections</h2>
+    <ul class="mt-6 space-y-3">
+      {relatedCategories.map((item) => (
+        <li class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-2">
+          <a href={item.href} class="text-base font-semibold text-brand-accent-strong hover:underline">{item.label}</a>
+          <span class="text-base leading-7 text-gray-300">{item.body}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com records event and notice information for general reference. Review the update status,
+        publication date, and last-reviewed date before relying on any listed event or platform notice.
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NoticeCard from '../components/NoticeCard.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { notices } from '../data/notices';
+import { buildFaqSchema, buildBreadcrumbSchema } from '../lib/schema';
+
+const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
+
+const noticeCategories = ['Game Updates', 'App Changes', 'Events & Notices'] as const;
+const categoryCounts = new Map(noticeCategories.map((c) => [c, notices.filter((n) => n.category === c).length]));
+const noticeStatuses = ['Confirmed', 'Being Reviewed', 'Active', 'Ended', 'Archived'] as const;
+
+const moreUpdateTypes = [
+  {
+    heading: 'Promo Code Status',
+    body: 'Morning, afternoon, and evening release-status changes by platform.',
+    cta: 'View Promo Code Status',
+    href: '/promo-code-updates/',
+  },
+  {
+    heading: 'Blog Revisions',
+    body: 'Newly published or substantially revised informational articles.',
+    cta: 'View Blog Updates',
+    href: '/blog-updates/',
+  },
+  {
+    heading: 'All Yono Game List',
+    body: 'The current recorded game directory, not just what changed.',
+    cta: 'Browse Game List',
+    href: '/all-yono-games/',
+  },
+];
+
+const statusLabels = [
+  { label: 'Confirmed', body: 'The change has been documented through a reliable published source or clear observation inside the application.' },
+  { label: 'Being Reviewed', body: 'The information has been reported or noticed but needs further verification before it is treated as confirmed.' },
+  { label: 'Active', body: 'The notice is currently relevant based on the latest available information.' },
+  { label: 'Ended', body: 'An event, temporary notice, or change is no longer current.' },
+  { label: 'Archived', body: 'The post remains available as a dated reference but should not be treated as the latest information.' },
+];
+
+const faqs = [
+  {
+    question: 'How are updates ordered?',
+    answer: 'The newest published or revised notices appear first. Each post shows both its publication date and last-reviewed date.',
+  },
+  {
+    question: 'Are all notices immediately confirmed?',
+    answer: 'No. Notices marked Being Reviewed are still awaiting confirmation. Only posts marked Confirmed should be treated as verified information.',
+  },
+  {
+    question: 'Can an update change after it is published?',
+    answer: 'Yes. When that happens, the post is updated with a visible revision, or a new dated notice follows it.',
+  },
+  {
+    question: 'Where can I find promo-code or blog updates?',
+    answer: 'Those are separate feeds — see Promo Code Status and Blog Updates below — because they track a different kind of change than a game, app, or event notice.',
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: 'Home', url: baseUrl },
+  { name: 'Latest Updates', url: `${baseUrl}/latest-updates/` },
+]);
+---
+
+<Layout
+  title="Latest All Yono Updates: Games, Events & App Changes"
+  description="Read date-stamped All Yono updates covering game changes, events, and app changes in one filterable feed, each with a clear status label."
+  rawTitle
+  ogTitle="Latest All Yono Updates: Games, Events and App Changes"
+  ogDescription="Browse the latest dated notices for All Yono games, events, and app changes."
+  robots="index, follow"
+  keywords={[
+    'latest all yono updates',
+    'all yono game updates',
+    'all yono event updates',
+    'all yono app changes',
+  ]}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <section class="mx-auto max-w-5xl px-4 pt-16 pb-10 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">Latest All Yono Updates</h1>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      Follow the newest recorded changes across All Yono games, the application, and platform events in one
+      chronological feed.
+    </p>
+    <p class="mt-4 max-w-3xl text-base leading-7 text-gray-300">
+      Every notice shows when it was published, when it was last reviewed, and whether the information is
+      confirmed, still being reviewed, active, or no longer current.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <p class="text-sm font-medium text-gray-300">Filter by category:</p>
+    <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter by update category" id="category-filters">
+      <button type="button" data-filter-category="all" class="filter-btn rounded-full border px-4 py-1.5 text-sm font-medium transition bg-brand-accent/10 text-brand-accent border-brand-accent/50">
+        All Updates ({notices.length})
+      </button>
+      {noticeCategories.map((category) => (
+        <button type="button" data-filter-category={category} class="filter-btn rounded-full border border-gray-700 px-4 py-1.5 text-sm font-medium text-gray-300 transition">
+          {category} ({categoryCounts.get(category)})
+        </button>
+      ))}
+    </div>
+
+    <p class="mt-4 text-sm font-medium text-gray-300">Filter by status:</p>
+    <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter by update status" id="status-filters">
+      <button type="button" data-filter-status="all" class="filter-btn rounded-full border px-4 py-1.5 text-sm font-medium transition bg-brand-accent/10 text-brand-accent border-brand-accent/50">
+        All Statuses
+      </button>
+      {noticeStatuses.map((status) => (
+        <button type="button" data-filter-status={status} class="filter-btn rounded-full border border-gray-700 px-4 py-1.5 text-sm font-medium text-gray-300 transition">
+          {status}
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Latest Recorded Notices</h2>
+
+    {notices.length > 0 ? (
+      <div class="mt-6 space-y-4" id="notice-list">
+        {notices.map((notice) => (
+          <div class="notice-item" data-item-category={notice.category} data-item-status={notice.status}>
+            <NoticeCard notice={notice} />
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="mt-6 rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
+        <p class="text-base font-semibold text-gray-200">No Updates Found</p>
+        <p class="mt-2 text-sm leading-6 text-gray-400">There are no recorded updates at the moment. Check back soon.</p>
+      </div>
+    )}
+
+    <div id="no-filter-results" class="mt-6 hidden rounded-lg border border-dashed border-gray-700 bg-brand-surface/50 px-6 py-10 text-center">
+      <p class="text-base font-semibold text-gray-200">No Updates Match This Filter</p>
+      <p class="mt-2 text-sm leading-6 text-gray-400">Try a different category or status filter above.</p>
+    </div>
+  </section>
+
+  <script>
+    const ACTIVE_CLASSES = ['bg-brand-accent/10', 'text-brand-accent', 'border-brand-accent/50'];
+    const INACTIVE_CLASSES = ['border-gray-700', 'text-gray-300'];
+
+    function setActiveButton(buttons: NodeListOf<Element>, activeBtn: Element) {
+      buttons.forEach((btn) => {
+        const isActive = btn === activeBtn;
+        ACTIVE_CLASSES.forEach((c) => btn.classList.toggle(c, isActive));
+        INACTIVE_CLASSES.forEach((c) => btn.classList.toggle(c, !isActive));
+      });
+    }
+
+    const categoryButtons = document.querySelectorAll('#category-filters [data-filter-category]');
+    const statusButtons = document.querySelectorAll('#status-filters [data-filter-status]');
+    const items = document.querySelectorAll('#notice-list .notice-item');
+    const noResults = document.getElementById('no-filter-results');
+
+    let activeCategory = 'all';
+    let activeStatus = 'all';
+
+    function applyFilters() {
+      let visibleCount = 0;
+      items.forEach((item) => {
+        const matchesCategory = activeCategory === 'all' || item.getAttribute('data-item-category') === activeCategory;
+        const matchesStatus = activeStatus === 'all' || item.getAttribute('data-item-status') === activeStatus;
+        const visible = matchesCategory && matchesStatus;
+        item.classList.toggle('hidden', !visible);
+        if (visible) visibleCount += 1;
+      });
+      if (noResults) noResults.classList.toggle('hidden', visibleCount !== 0 || items.length === 0);
+    }
+
+    categoryButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.getAttribute('data-filter-category') ?? 'all';
+        setActiveButton(categoryButtons, btn);
+        applyFilters();
+      });
+    });
+
+    statusButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeStatus = btn.getAttribute('data-filter-status') ?? 'all';
+        setActiveButton(statusButtons, btn);
+        applyFilters();
+      });
+    });
+  </script>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">More Update Types</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Promo-code status and blog revisions are tracked as separate feeds, since they follow a different review
+      process than a game, app, or event notice.
+    </p>
+    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {moreUpdateTypes.map((topic) => (
+        <div class="flex flex-col rounded-lg border border-gray-800 bg-brand-surface px-5 py-6">
+          <h3 class="text-base font-semibold text-brand-primary">{topic.heading}</h3>
+          <p class="mt-2 flex-1 text-sm leading-6 text-gray-300">{topic.body}</p>
+          <a href={topic.href} class="mt-4 text-sm font-semibold text-brand-accent-strong hover:underline">{topic.cta} →</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">How Update Status Labels Work</h2>
+    <dl class="mt-6 space-y-4">
+      {statusLabels.map((item) => (
+        <div>
+          <dt class="text-base font-semibold text-brand-primary">{item.label}</dt>
+          <dd class="mt-1 text-base leading-7 text-gray-300">{item.body}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Browse Earlier Updates</h2>
+    <p class="mt-3 text-base leading-7 text-gray-300">
+      Older updates remain available for reference through the update archive, so you can review earlier notices
+      without mixing them into the latest feed.
+    </p>
+    <a href="/update-archive/" class="mt-4 inline-block rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20">
+      Open Update Archive
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-brand-primary">Frequently Asked Questions</h2>
+    <FaqAccordion faqs={faqs} />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 py-10 lg:px-8">
+    <div class="rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-6">
+      <h2 class="text-lg font-bold text-brand-primary">Important Note</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-200">
+        AllYonoUpdate.com records information for general reference. Review the update status, publication date,
+        and last-reviewed date before relying on any listed notice.
+      </p>
+    </div>
+  </section>
+</Layout>

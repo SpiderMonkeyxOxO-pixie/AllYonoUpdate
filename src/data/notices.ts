@@ -13,6 +13,14 @@ export interface Notice {
   /** 1200x630 banner image. Optional — cards render fine without one. */
   image?: string;
   imageAlt?: string;
+  /** Which Yono-related platform/app this notice is about, if entity-specific. */
+  entity?: string;
+  /** What the situation was before this change. Omit rather than guess. */
+  previousState?: string;
+  /** What the situation is now. Omit rather than guess. */
+  currentState?: string;
+  /** What the reader should know or do as a result. Omit rather than guess. */
+  userAction?: string;
 }
 
 export const notices: Notice[] = [

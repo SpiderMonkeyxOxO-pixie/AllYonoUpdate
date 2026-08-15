@@ -16,6 +16,8 @@ export interface BlogPost {
   relatedCategoryPath: string;
   faqs: { question: string; answer: string }[];
   relatedArticles?: { label: string; href: string }[];
+  /** Dated launch/status reporting, as distinct from an evergreen guide. Used to surface freshness content. */
+  postType?: 'launch-status' | 'guide';
 }
 
 export const blogPosts: BlogPost[] = [
@@ -1361,6 +1363,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['dhan game apk', 'dhan game release date', 'dhan game welcome bonus', 'dhan game promo code', 'dhan game first deposit bonus'],
     publishedDate: '2026-07-18',
     lastReviewedDate: '2026-07-18',
+    postType: 'launch-status',
     image: { src: '/images/blog/dhan-game-launch-guide.webp', alt: 'DhanGame: Release Date, Welcome Bonus and Promo Code — featured guide graphic' },
     relatedCategoryPath: '/yono-slots/',
     sections: [
@@ -1479,6 +1482,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['win rummy launch', 'win rummy launch status', 'win rummy apk', 'win rummy website', 'winrummy.com'],
     publishedDate: '2026-07-28',
     lastReviewedDate: '2026-07-28',
+    postType: 'launch-status',
     image: { src: '/images/blog/win-rummy-launch-status-july-2026.webp', alt: 'Win Rummy launch status showing the live website and pending APK verification' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
