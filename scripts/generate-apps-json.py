@@ -31,7 +31,7 @@ old_apps = [
     ("Maha Games", "maha-games", "/images/games/maha-games.webp", "https://mahagames.store/?code=J245RQFLS2L&t=1761715886", "misc"),
     ("MBM Bet", "mbm-bet", "/images/games/mbm-bet.webp", "https://www.mbmbet14.com/?code=UPHMK55JNJ6&t=1761716008", "misc"),
     ("Neta Vip", "neta-vip", "/images/games/neta-vip.webp", "https://www.neta1.vip/?code=DR0D36UVVZX&t=1761716155", "vip"),
-    ("OK Rummy", "okrummy-e1760950706977-1", "/images/games/okrummy-e1760950706977-1.webp", "https://www.okrummy42.com/?code=H2G24LRWC8L&t=1761728136", "rummy"),
+    ("OK Rummy", "ok-rummy", "/images/games/ok-rummy.webp", "https://www.okrummy42.com/?code=H2G24LRWC8L&t=1761728136", "rummy"),
     ("Rumble Rummy", "rumble-rummy", "/images/games/rumble-rummy.webp", "https://www.rumblerummy1.club/?code=82M21AWEVEV&t=1761716441", "rummy"),
     ("Rummy 91", "rummy-91", "/images/games/rummy-91.webp", "https://rummy91g.com/?code=UXT3ZZWQHX8&t=1761716826", "rummy"),
     ("Rummy Ludo", "rummy-ludo-logo", "/images/games/rummy-ludo-logo.webp", "https://rummyludo.help/?code=UWPKN64A3KD&t=1762838300", "rummy"),
