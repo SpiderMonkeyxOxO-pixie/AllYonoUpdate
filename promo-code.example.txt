@@ -12,6 +12,11 @@
 #
 # Keep one blank line between platforms.
 
+Gold Rummy:
+Code AM:
+Code P.M:
+Code Eve:
+
 Win Rummy:
 Code AM:
 Code P.M:
