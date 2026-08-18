@@ -1682,4 +1682,84 @@ export const blogPosts: BlogPost[] = [
       { label: 'DhanGame: Release Date, Welcome Bonus & Promo Code', href: '/blog/dhan-game-launch-guide/' },
     ],
   },
+  {
+    slug: 'gold-rummy-launch-status',
+    title: 'Gold Rummy Launch Status: What We Know So Far',
+    metaDescription: 'Gold Rummy is scheduled to launch August 19, 2026. Track its confirmed launch window and what\'s still unverified — updated as details are confirmed.',
+    h1: 'Gold Rummy Launch Status: What We Know So Far',
+    keywords: ['gold rummy launch date', 'gold rummy launch status', 'gold rummy apk', 'gold rummy app'],
+    publishedDate: '2026-08-18',
+    lastReviewedDate: '2026-08-18',
+    postType: 'launch-status',
+    image: { src: '/images/blog/gold-rummy-launch-status.jpg', alt: 'Gold Rummy Launch Status: What We Know So Far — featured graphic' },
+    relatedCategoryPath: '/app/gold-rummy/',
+    sections: [
+      {
+        heading: 'What\'s Confirmed Right Now',
+        paragraphs: [
+          'Gold Rummy is the newest title scheduled to join the All Yono network of game listings, with a confirmed launch window of 8:00–9:00 AM IST on August 19, 2026. This page exists to track exactly what\'s been confirmed about the launch and what hasn\'t — nothing here is guessed or filled in ahead of time.',
+          'As of this writing, three things are confirmed about Gold Rummy: its name, its category (rummy), and its scheduled launch window. That\'s it. AllYonoUpdate.com does not have a working download link, a verified welcome bonus figure, or a confirmed promo code for Gold Rummy yet, because none of those exist publicly before the platform actually goes live. Any source claiming otherwise before August 19 should be treated with caution.',
+          'This is consistent with how every other app on this site has been handled at the pre-launch stage — DhanGame and Win Rummy both went through the same "confirmed name and date only" period before their own download links became available, and this record was updated the moment each app actually launched.',
+        ],
+      },
+      {
+        heading: 'What Typically Happens Once a Rummy App Like This Launches',
+        paragraphs: [
+          'Without making any claims specific to Gold Rummy, it\'s worth noting what the launch process usually looks like for apps in this category, based on how DhanGame and Win Rummy\'s own launches played out on this network:',
+          '• A working download link becomes available, usually hosted on the platform\'s own domain rather than an app store listing.',
+          '• An initial promo code or welcome offer is often (though not always) announced at or shortly after launch.',
+          '• Independent reviewers — including this site — typically need a few days after launch to verify claims like bonus amounts, minimum withdrawal thresholds, and whether promo codes actually work, since pre-launch marketing materials aren\'t always accurate once the app is live.',
+          'None of this is a prediction about Gold Rummy specifically. It\'s context for what "launch day" tends to involve for this category of app, so readers know what to watch for once August 19 arrives.',
+        ],
+      },
+      {
+        heading: 'Why There\'s No Download Link on This Page Yet',
+        paragraphs: [
+          'AllYonoUpdate.com\'s policy is to never publish a download link, promo code, or bonus figure that hasn\'t been independently confirmed. Before a platform launches, there is nothing to independently confirm — the app doesn\'t exist as a running product yet, so any "download" link circulating online ahead of the official date is either a placeholder, unrelated software, or something to be skeptical of. This page will be updated with a real download link the moment Gold Rummy is confirmed live and that link has been checked.',
+        ],
+      },
+      {
+        heading: 'How to Track the Launch',
+        paragraphs: [
+          'The most reliable way to know the moment Gold Rummy actually goes live is to check back on this page after 8:00 AM IST on August 19, 2026, or join the AllYonoUpdate.com Telegram channel, where launch-day updates are posted as soon as they\'re confirmed. This page itself will switch from "not yet launched" to a full listing — complete with download link, verified specs, and promo-code status — as soon as that happens.',
+        ],
+      },
+      {
+        heading: 'What This Page Is Not',
+        paragraphs: [
+          'This is not a review of Gold Rummy\'s gameplay, features, or fairness — there\'s nothing to review yet. It\'s also not a promotional page; AllYonoUpdate.com does not host, develop, or operate Gold Rummy or any other app listed in this directory, and this page does not constitute an endorsement. Once the app launches, any review content published here will reflect independent verification, not marketing copy supplied by the platform.',
+          'Some apps listed on this network are not available in every Indian state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This page does not state that Gold Rummy is legal or illegal in any specific location — check your state\'s current regulations once the app is live before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Bottom Line',
+        paragraphs: [
+          'Right now, there is exactly one useful piece of information about Gold Rummy: it\'s expected to launch at 8:00 AM IST on August 19, 2026. Everything else — download link, bonus structure, promo codes, verified reviews — depends on the app actually going live and being checked independently, which hasn\'t happened yet. This page will be the first thing updated once that changes.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'When does Gold Rummy launch?',
+        answer: 'Gold Rummy is scheduled to launch between 8:00 and 9:00 AM IST on August 19, 2026. This page will be updated the moment that\'s confirmed.',
+      },
+      {
+        question: 'Is there a Gold Rummy download link available yet?',
+        answer: 'No. No download link exists for Gold Rummy before its official launch. This page will publish a verified link once the app is live.',
+      },
+      {
+        question: 'Does Gold Rummy have a welcome bonus or promo code?',
+        answer: 'Nothing has been independently confirmed yet. Any bonus or promo code figures circulating before launch should be treated as unverified.',
+      },
+      {
+        question: 'Will AllYonoUpdate.com review Gold Rummy after launch?',
+        answer: 'Yes — this listing will be updated with verified specs, download status, and promo-code information once the app is live and can be independently checked.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Gold Rummy: App Page', href: '/app/gold-rummy/' },
+      { label: 'Win Rummy Launch Status: Live URL, APK & Updates', href: '/blog/win-rummy-launch-status/' },
+      { label: 'DhanGame: Release Date, Welcome Bonus & Promo Code', href: '/blog/dhan-game-launch-guide/' },
+    ],
+  },
 ];
