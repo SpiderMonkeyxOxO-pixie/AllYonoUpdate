@@ -10,6 +10,38 @@
   },
   "apps": [
     {
+      "id": "jeet-spin",
+      "name": "Jeet Spin",
+      "slug": "jeet-spin",
+      "category": "spin",
+      "featured": true,
+      "tag": "NEW",
+      "description": "Jeet Spin is a spin-style app scheduled to launch on 30 September 2026. AllYonoUpdate.com will record its download link and catalog details once the app is available and can be independently reviewed; this page does not host the Jeet Spin APK file.",
+      "targetKeyword": "jeet spin apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-09-29",
+      "icon": "/images/games/jeet-spin.webp",
+      "apkUrl": null,
+      "url": "/app/jeet-spin/",
+      "faq": [
+        {
+          "q": "Is Jeet Spin available to download yet?",
+          "a": "No. Jeet Spin is scheduled to launch on 30 September 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the Jeet Spin APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to Jeet Spin's own website, not to a file stored here."
+        },
+        {
+          "q": "How can I find out when Jeet Spin launches?",
+          "a": "Check back on this page after the scheduled launch date of 30 September 2026, or join the AllYonoUpdate.com Telegram channel for launch updates."
+        }
+      ]
+    },
+    {
       "id": "money-rummy",
       "name": "Money Rummy",
       "slug": "money-rummy",
@@ -1077,38 +1109,6 @@
         {
           "q": "How often is this app record reviewed?",
           "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ]
-    },
-    {
-      "id": "jeet-spin",
-      "name": "Jeet Spin",
-      "slug": "jeet-spin",
-      "category": "spin",
-      "featured": false,
-      "tag": "NEW",
-      "description": "Jeet Spin is a spin-style app scheduled to launch on 30 September 2026. AllYonoUpdate.com will record its download link and catalog details once the app is available and can be independently reviewed; this page does not host the Jeet Spin APK file.",
-      "targetKeyword": "jeet spin apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-09-29",
-      "icon": "/images/games/jeet-spin.webp",
-      "apkUrl": null,
-      "url": "/app/jeet-spin/",
-      "faq": [
-        {
-          "q": "Is Jeet Spin available to download yet?",
-          "a": "No. Jeet Spin is scheduled to launch on 30 September 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
-        },
-        {
-          "q": "Will AllYonoUpdate.com host the Jeet Spin APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to Jeet Spin's own website, not to a file stored here."
-        },
-        {
-          "q": "How can I find out when Jeet Spin launches?",
-          "a": "Check back on this page after the scheduled launch date of 30 September 2026, or join the AllYonoUpdate.com Telegram channel for launch updates."
         }
       ]
     },
