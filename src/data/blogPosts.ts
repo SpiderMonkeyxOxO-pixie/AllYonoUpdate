@@ -22,6 +22,104 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'jeet-spin-app',
+    title: 'Jeet Spin App: Launch Date, Download Status & What We Know So Far',
+    metaDescription: 'Jeet Spin app launches 30 Sep 2026. Current download status, expected features, APK details, and what AllYonoUpdate has tracked so far.',
+    h1: 'Jeet Spin App: Launch Date, Download Status & What We Know So Far',
+    keywords: ['jeet spin app', 'jeet spin app download', 'jeet spin apk', 'jeet spin launch date'],
+    publishedDate: '2026-09-29',
+    lastReviewedDate: '2026-09-30',
+    image: { src: '/images/blog/jeet-spin-app.webp', alt: 'Jeet Spin App: Launch Date, Download Status & What We Know So Far — featured guide graphic' },
+    relatedCategoryPath: '/jeet-spin/',
+    postType: 'launch-status',
+    sections: [
+      {
+        heading: 'What Is the Jeet Spin App?',
+        paragraphs: [
+          'Jeet Spin is a spin-and-win gaming app launching on 30 September 2026 as the newest entry in the Yono network. The name combines "Jeet" (Hindi for victory) with "Spin," pointing to a lucky-wheel or reel-spin mechanic. It follows the green-diamond branding used across Yono-branded apps and is expected to be distributed as a sideloaded APK.',
+          'AllYonoUpdate.com tracks launch dates, version changes and download availability for apps across this network. This page records what has been announced for Jeet Spin so far. It will be updated with verified download links and version details once the app goes live.',
+        ],
+      },
+      {
+        heading: 'Jeet Spin App Launch and Download Status',
+        paragraphs: [
+          'The Jeet Spin app is expected to become available on 30 September 2026. As of this writing, no APK download link has been published and no Google Play listing has been found.',
+        ],
+      },
+      {
+        heading: 'Jeet Spin App Details at a Glance',
+        paragraphs: [
+          'The table below summarises what AllYonoUpdate has recorded so far. Fields marked "not yet available" will be updated as information is confirmed.',
+        ],
+      },
+      {
+        heading: 'How to Download the Jeet Spin App',
+        paragraphs: [
+          'Once the app launches, the download process is expected to follow the standard pattern for apps in this network: visit the platform\'s own website, tap the download button to get the APK file, enable "Install unknown apps" for your browser in Android settings if prompted, open the downloaded file and tap Install, then register with your phone number and OTP.',
+          'Do not trust any "Jeet Spin APK" links circulating before the launch date. Pre-launch APKs are not from the platform\'s source. For a walkthrough of APK installation, see our Yono Rummy APK guide — the same sideloading steps apply to every app in this network.',
+        ],
+      },
+      {
+        heading: 'Expected Features',
+        paragraphs: [
+          'Based on similar spin-category apps already tracked in the AllYonoUpdate directory, Jeet Spin may include a spin-wheel or reel-based main game mechanic, daily login rewards, a referral program with per-invite bonuses, UPI and bank transfer withdrawals, and phone-number registration with OTP login. These are expectations based on established patterns, not confirmed features.',
+        ],
+      },
+      {
+        heading: 'Jeet Spin vs Other Spin Apps in This Network',
+        paragraphs: [
+          'The Yono network already includes several spin-format apps: Jaiho Spin, Spin 101, Spin Gold, Slot Spin, Yes Spin, and Spin Winner. Each has its own accounts, promo codes and update schedule. Installing Jeet Spin will not affect anything on other spin apps.',
+          'What sets Jeet Spin apart from the existing lineup is not yet clear — the distinguishing features (if any) will only become apparent once the app is live and can be compared hands-on.',
+        ],
+      },
+      {
+        heading: 'Promo Code and Welcome Bonus',
+        paragraphs: [
+          'No Jeet Spin promo code or welcome bonus amount has been confirmed. Based on patterns across similar launches, a sign-up reward in the ₹50–₹500 range is typical, and promo codes are usually released inside the app itself at or shortly after launch.',
+          'These are educated guesses, not confirmed offers. Once a Jeet Spin code is verified, it will appear on the relevant category page linked below.',
+        ],
+      },
+      {
+        heading: 'Safety Notes',
+        paragraphs: [
+          'Jeet Spin\'s safety cannot be assessed before launch. Once the APK is available, verify the source (download only from the platform\'s own website), check the permissions the app requests, and read the withdrawal terms and KYC requirements before depositing anything.',
+          'AllYonoUpdate.com does not host, distribute or endorse any gaming APK. This page tracks publicly available information about the Jeet Spin app for reference purposes only.',
+        ],
+      },
+      {
+        heading: 'Legal Note',
+        paragraphs: [
+          'Online money games are prohibited in India since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025. Free spin games that do not involve real money or stakes are not affected. Players should confirm Jeet Spin\'s classification and their state\'s specific regulations before playing.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'When does the Jeet Spin app launch?',
+        answer: 'Jeet Spin is expected to launch on 30 September 2026. This page will be updated with a download link and version details once the app goes live.',
+      },
+      {
+        question: 'Where can I download the Jeet Spin app?',
+        answer: 'The download link is not yet available. Once live, the Jeet Spin listing on AllYonoUpdate.com will carry the current download URL. Do not trust any pre-launch APK link.',
+      },
+      {
+        question: 'Is there a Jeet Spin promo code?',
+        answer: 'No promo code has been announced yet. Check the Jeet Spin category page after launch for verified codes.',
+      },
+      {
+        question: 'Is the Jeet Spin app safe?',
+        answer: 'Safety cannot be assessed before launch. Once the APK is available, this page will be updated with package name, permissions and signer certificate details.',
+      },
+      {
+        question: 'Is Jeet Spin the same as Jaiho Spin?',
+        answer: 'No. They are separate apps with separate accounts, bonuses and promo codes. They share the Spin/Arcade category but have different branding and download URLs.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+    ],
+  },
+  {
     slug: 'yono-777-password',
     title: 'Yono 777 Password: What It Actually Means',
     metaDescription: 'People searching "Yono 777 password" usually mean one of three things. Here is what each one refers to, and what AllYonoUpdate.com never asks for.',
