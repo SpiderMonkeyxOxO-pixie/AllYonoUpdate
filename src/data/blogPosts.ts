@@ -43,19 +43,19 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Jeet Spin App Launch and Download Status',
         paragraphs: [
-          'The Jeet Spin app is expected to become available on 30 September 2026. As of this writing, no APK download link has been published and no Google Play listing has been found.',
+          'The Jeet Spin app launched on 30 September 2026 and is now live. Download it from the platform\'s own website at jeetspin12.com.',
         ],
       },
       {
         heading: 'Jeet Spin App Details at a Glance',
         paragraphs: [
-          'The table below summarises what AllYonoUpdate has recorded so far. Fields marked "not yet available" will be updated as information is confirmed.',
+          'The table below summarises what AllYonoUpdate has recorded so far.',
         ],
       },
       {
         heading: 'How to Download the Jeet Spin App',
         paragraphs: [
-          'Once the app launches, the download process is expected to follow the standard pattern for apps in this network: visit the platform\'s own website, tap the download button to get the APK file, enable "Install unknown apps" for your browser in Android settings if prompted, open the downloaded file and tap Install, then register with your phone number and OTP.',
+          'Jeet Spin is now live. Visit jeetspin12.com to download the APK file, enable "Install unknown apps" for your browser in Android settings if prompted, open the downloaded file and tap Install, then register with your phone number and OTP.',
           'Do not trust any "Jeet Spin APK" links circulating before the launch date. Pre-launch APKs are not from the platform\'s source. For a walkthrough of APK installation, see our Yono Rummy APK guide — the same sideloading steps apply to every app in this network.',
         ],
       },
@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: 'Where can I download the Jeet Spin app?',
-        answer: 'The download link is not yet available. Once live, the Jeet Spin listing on AllYonoUpdate.com will carry the current download URL. Do not trust any pre-launch APK link.',
+        answer: 'Jeet Spin is now live. Download it from jeetspin12.com. Do not trust APK links from unofficial sources.',
       },
       {
         question: 'Is there a Jeet Spin promo code?',
