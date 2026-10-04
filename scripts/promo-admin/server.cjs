@@ -108,7 +108,6 @@ const sessionCookie = (value, maxAgeSec) =>
 // ---------- promo data ----------
 const istDateOf = (d) => new Date(d.getTime() + 330 * 60_000).toISOString().slice(0, 10);
 
-const slugify = (name) => name.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 /**
  * Platforms in the order the site shows them: the names in promo-code.txt (or its tracked example),
@@ -131,14 +130,14 @@ function sitePlatforms() {
     .map((b) => b.split(/\r?\n/)[0].replace(/:\s*$/, "").trim())
     .filter(Boolean);
   const seen = new Set(names);
-  const out = [...new Set(names)].map((name) => ({ slug: slugify(name), name }));
+  const out = [...new Set(names)].map((name) => ({ slug: name, name }));
   try {
     const apps = JSON.parse(read("src/data/apps.json") || "[]");
     const list = Array.isArray(apps) ? apps : apps.apps || Object.values(apps);
     for (const a of list) {
       if (a && a.name && a.apkUrl && !seen.has(a.name)) {
         seen.add(a.name);
-        out.push({ slug: slugify(a.name), name: a.name });
+        out.push({ slug: a.name, name: a.name });
       }
     }
   } catch {
@@ -178,7 +177,7 @@ function readSheet() {
   const stored = readStored();
   const list = sitePlatforms();
   const known = new Set(list.map((p) => p.name));
-  const extras = Object.keys(stored.platforms).filter((n) => !known.has(n)).map((n) => ({ slug: slugify(n), name: n }));
+  const extras = Object.keys(stored.platforms).filter((n) => !known.has(n)).map((n) => ({ slug: n, name: n }));
   const platforms = [...list, ...extras].map((p) => {
     const c = stored.platforms[p.name] || {};
     return { slug: p.slug, name: p.name, hasCard: true, morning: c.morning || "", afternoon: c.afternoon || "", evening: c.evening || "" };
