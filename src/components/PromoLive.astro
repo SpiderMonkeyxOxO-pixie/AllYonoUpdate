@@ -1,0 +1,33 @@
+---
+// Live daily promo codes. The codes in the page HTML are a build-time snapshot of
+// promo-code.txt; the admin panel (code.allyonoupdate.com) publishes today's codes to
+// /promo-live.json and this script applies them on every page load — no rebuild.
+// A missing/invalid file leaves the built-in values untouched. Text is set with
+// textContent only, so a code is always shown as plain text (never a link).
+---
+
+<script>
+  fetch('/promo-live.json', { cache: 'no-store' })
+    .then((res) => (res.ok ? res.json() : null))
+    .then((live) => {
+      if (!live || typeof live !== 'object' || !live.platforms) return;
+      document.querySelectorAll('[data-promo-platform]').forEach((card) => {
+        const codes = live.platforms[card.getAttribute('data-promo-platform') || ''];
+        if (!codes) return;
+        card.querySelectorAll('[data-tab-panel]').forEach((panel) => {
+          const key = panel.getAttribute('data-tab-panel') || '';
+          const code = String(codes[key] || '').trim();
+          const text = panel.querySelector('[data-promo-text]');
+          if (text) text.textContent = code || 'Not released yet';
+          const copy = panel.querySelector('[data-promo-copy]');
+          if (copy) {
+            copy.setAttribute('data-copy-code', code);
+            copy.classList.toggle('hidden', !code);
+          }
+        });
+      });
+    })
+    .catch(() => {
+      /* keep the built-in codes */
+    });
+</script>

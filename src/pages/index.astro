@@ -6,6 +6,7 @@ import Icon from '../components/Icon.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
 import { notices } from '../data/notices';
 import { getPromoCodes } from '../lib/promoCodes';
+import PromoLive from '../components/PromoLive.astro';
 import { externalGuideUrl, externalIndiaUrl, telegramUrl } from '../data/nav';
 import { categories } from '../data/categories';
 import { hubs } from '../data/hubs';
@@ -334,7 +335,7 @@ const faqSchema = {
       {featuredApps.map((app) => {
         const entry = promoByPlatform.get(app.name);
         return (
-          <div class="rounded-lg border border-brand-secondary bg-brand-surface p-2 sm:p-3" data-tab-group>
+          <div class="rounded-lg border border-brand-secondary bg-brand-surface p-2 sm:p-3" data-tab-group data-promo-platform={app.name}>
             <div class="flex flex-col items-center gap-1 text-center sm:flex-row sm:gap-2 sm:text-left">
               <img
                 src={app.icon}
@@ -377,16 +378,15 @@ const faqSchema = {
               ].map((row, i) => (
                 <div data-tab-panel={row.key} class:list={['rounded-md bg-brand-secondary/40 px-1.5 py-1 sm:px-2.5 sm:py-1.5', i !== 0 && 'hidden']}>
                   <p class="text-[8px] font-medium text-gray-400 sm:text-[10px]">{row.label}</p>
-                  <p class="truncate font-mono text-[10px] font-semibold text-brand-accent sm:text-sm">{row.code || 'Not released yet'}</p>
-                  {row.code && (
-                    <button
-                      type="button"
-                      data-copy-code={row.code}
-                      class="copy-btn mt-1 w-full rounded-md bg-brand-accent/10 px-2 py-1 text-[10px] font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20 sm:py-1.5 sm:text-xs"
-                    >
-                      Copy
-                    </button>
-                  )}
+                  <p class="truncate font-mono text-[10px] font-semibold text-brand-accent sm:text-sm" data-promo-text>{row.code || 'Not released yet'}</p>
+                  <button
+                    type="button"
+                    data-copy-code={row.code}
+                    data-promo-copy
+                    class:list={['copy-btn mt-1 w-full rounded-md bg-brand-accent/10 px-2 py-1 text-[10px] font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20 sm:py-1.5 sm:text-xs', !row.code && 'hidden']}
+                  >
+                    Copy
+                  </button>
                 </div>
               ))}
             </div>
@@ -399,6 +399,8 @@ const faqSchema = {
       View All Platforms
     </a>
   </section>
+
+  <PromoLive />
 
   <script>
     document.addEventListener('click', (event) => {
