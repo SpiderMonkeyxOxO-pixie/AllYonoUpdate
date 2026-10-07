@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import NoticeCard from '../components/NoticeCard.astro';
 import AppCard from '../components/AppCard.astro';
+import ComingSoonHighlight from '../components/ComingSoonHighlight.astro';
 import Icon from '../components/Icon.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
 import { notices } from '../data/notices';
@@ -144,6 +145,21 @@ const faqSchema = {
     >
       Join the Telegram Channel <Icon name="arrow-up-right" class="h-3.5 w-3.5" />
     </a>
+  </section>
+
+  <!-- Launch countdown: directly under the intro so a scheduled launch is seen first -->
+  <section class="mx-auto max-w-5xl px-4 py-4 lg:px-8" aria-label="Upcoming launch countdown">
+    <ComingSoonHighlight
+      name="Jaiho Play"
+      image="/images/games/jaiho-play.webp"
+      releaseIso="2026-10-15T12:00:00+05:30"
+      releaseDateLabel="15 October 2026"
+      releaseWindowLabel="12:00 PM IST"
+      heading="Jaiho Play launches on 15 October 2026"
+      description="Jaiho Play is an upcoming platform joining the All Yono directory. No download link, welcome bonus or promo code has been announced yet. We will record its details here once the app is available and can be independently reviewed."
+      ctaLabel="Join Telegram for launch updates"
+      ctaHref={telegramUrl}
+    />
   </section>
 
   <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">
