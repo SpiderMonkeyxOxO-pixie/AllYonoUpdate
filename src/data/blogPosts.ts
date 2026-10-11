@@ -20,7 +20,7 @@ export interface BlogPost {
   postType?: 'launch-status' | 'guide';
 }
 
-export const blogPosts: BlogPost[] = [
+const allBlogPosts: BlogPost[] = [
   {
     slug: 'jeet-spin-app',
     title: 'Jeet Spin App: Launch Date, Download Status & What We Know So Far',
@@ -1956,4 +1956,1018 @@ export const blogPosts: BlogPost[] = [
       { label: 'Win Rummy Launch Status: Live URL, APK & Updates', href: '/blog/win-rummy-launch-status/' },
     ],
   },
+  {
+    slug: "spin-gold-apk-guide",
+    title: "Spin Gold APK: Download Guide, What We Track & Safety Notes",
+    metaDescription: "Spin Gold APK guide: what this spin-style app is, what AllYonoUpdate.com has recorded, how to check a download link and what to verify before installing.",
+    h1: "Spin Gold APK: Download Guide, What We Track & Safety Notes",
+    keywords: ["spin gold","spin gold apk","spin gold all game","spin gold download"],
+    publishedDate: "2026-10-12",
+    lastReviewedDate: "2026-10-12",
+    postType: "guide",
+    image: { src: "/images/blog/spin-gold-apk-guide.webp", alt: "Spin Gold APK: Download Guide — featured guide graphic" },
+    relatedCategoryPath: "/yono-spin/",
+    sections: [
+      {
+        heading: "What Spin Gold Is",
+        paragraphs: [
+          "Spin Gold is a spin-style app tracked in the All Yono directory. It sits in the same category as Spin 101, Yes Spin, Jaiho Spin and Slot Spin, which is why searches for the name often return several different listings at once.",
+          "The name is also used loosely in searches such as \"spin gold all game\" or \"yono spin gold apk\". A matching name does not prove a matching app, so the safest reference point is the address recorded on the listing, not the title of a search result.",
+        ],
+      },
+      {
+        heading: "What AllYonoUpdate.com Has Recorded",
+        paragraphs: [
+          "The Spin Gold record holds its category and a link to the platform's own website, as last checked in October 2026. Its software version, file size and minimum Android requirement are not recorded yet. Rather than estimating those values, they are left blank until they can be confirmed directly.",
+          "Because so little is recorded, this guide does not describe features, rewards or payout behaviour. Anything of that kind is the publisher's own description and has not been independently reviewed here.",
+        ],
+      },
+      {
+        heading: "Before You Download",
+        paragraphs: [
+          "Compare the address you are on with the one recorded on the Spin Gold app page, and treat any difference as a reason to stop and re-check. A page that asks for an OTP, a payment, or a social-media share before it shows a download is not the platform.",
+          "At install time, read the permissions requested. A game does not need access to your contacts or SMS. Declining a permission that has no clear reason is a reasonable default.",
+        ],
+      },
+      {
+        heading: "Names That Get Mixed Up",
+        paragraphs: [
+          "Several spin-style apps use \"gold\" or \"101\" in their names and some listings bundle them together. In this directory they are separate entries, each with its own link, so a code, account or download for one does not carry to another.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Spin Gold or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Spin Gold app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+          "The current record, including its link and last-checked date, is kept on its dedicated app page and reviewed whenever a meaningful change can be confirmed.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is Spin Gold the same as Spin 101?", answer: "No. They are separate listings in this directory, each with its own platform link. A similar name does not mean shared operation." },
+      { question: "What version of Spin Gold is current?", answer: "Not recorded yet. The version field on the app page stays blank until it can be confirmed." },
+      { question: "Does AllYonoUpdate.com host the Spin Gold APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Spin Gold?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Spin Gold: App Page", href: "/app/spin-gold/" },
+      { label: "Spin 101 APK Guide", href: "/blog/spin-101-apk-guide/" },
+      { label: "Yes Spin APK Guide", href: "/blog/yes-spin-apk-guide/" },
+    ],
+  },
+  {
+    slug: "yes-spin-apk-guide",
+    title: "Yes Spin APK: What It Is, Download Status & What to Check",
+    metaDescription: "Yes Spin APK guide: how this spin-style app is listed, what AllYonoUpdate.com has recorded, and how to tell the platform's link from a look-alike page.",
+    h1: "Yes Spin APK: What It Is, Download Status & What to Check",
+    keywords: ["yes spin","yes spin apk","yes spin game","yes spin yono"],
+    publishedDate: "2026-10-13",
+    lastReviewedDate: "2026-10-13",
+    postType: "guide",
+    image: { src: "/images/blog/yes-spin-apk-guide.webp", alt: "Yes Spin APK: What to Check — featured guide graphic" },
+    relatedCategoryPath: "/yono-spin/",
+    sections: [
+      {
+        heading: "What People Mean by Yes Spin",
+        paragraphs: [
+          "Searches for \"yes spin\", \"yes spin apk\", \"yes spin game\" and \"yes spin yono\" mostly point to one spin-style listing. This directory records it as a single entry, not as separate apps for each phrase.",
+          "\"Yono\" in the phrase is a grouping people use for apps in this wider network. It is not a statement about who operates the app, and AllYonoUpdate.com does not state an operator.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "The Yes Spin listing holds its category and the link to the platform's own website. Version, file size and minimum Android requirement are not recorded. The record will change as details are confirmed, and the last-checked date on the app page shows when it was most recently reviewed.",
+        ],
+      },
+      {
+        heading: "Look-Alike Pages",
+        paragraphs: [
+          "A name this widely searched attracts copies. Warning signs include a page that asks for an OTP or payment before showing a download, one that tells you to share a link to unlock the file, and a download that arrives as a file with a different name from the app.",
+          "If you are unsure, go back to the Yes Spin app page and use the link recorded there rather than a link from a message or an unfamiliar site.",
+        ],
+      },
+      {
+        heading: "Checks Worth Making",
+        paragraphs: [
+          "Look at the publisher shown on the install screen, confirm a privacy policy and terms are available, and read the permissions. These checks apply to every app in this directory, not only Yes Spin.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Yes Spin or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Yes Spin app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is \"Yes Spin Yono\" a different app?", answer: "Not in this directory. It is a search phrase for the same listing, grouped under the Yono network label." },
+      { question: "Where is the Yes Spin download link?", answer: "On the Yes Spin app page, which shows the recorded link and its last-checked date." },
+      { question: "Does AllYonoUpdate.com host the Yes Spin APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Yes Spin?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Yes Spin: App Page", href: "/app/yes-spin/" },
+      { label: "Spin Gold APK Guide", href: "/blog/spin-gold-apk-guide/" },
+      { label: "Yono Spin Category", href: "/yono-spin/" },
+    ],
+  },
+  {
+    slug: "rumble-rummy-apk-guide",
+    title: "Rumble Rummy APK: Download Guide, \"Yono\" Label & Safety Check",
+    metaDescription: "Rumble Rummy and \"Rumble Rummy Yono\" explained: what is recorded for this rummy-style app, why the Yono label appears, and what to check before downloading.",
+    h1: "Rumble Rummy APK: Download Guide, \"Yono\" Label & Safety Check",
+    keywords: ["rumble rummy","rumble rummy yono","rummy rumble apk","rumble rummy download"],
+    publishedDate: "2026-10-14",
+    lastReviewedDate: "2026-10-14",
+    postType: "guide",
+    image: { src: "/images/blog/rumble-rummy-apk-guide.webp", alt: "Rumble Rummy APK Guide — featured guide graphic" },
+    relatedCategoryPath: "/yono-rummy/",
+    sections: [
+      {
+        heading: "What Rumble Rummy Is",
+        paragraphs: [
+          "Rumble Rummy is a rummy-style app tracked in this directory, in the same category as Boss Rummy, ABC Rummy and Max Rummy. It has its own listing and its own platform link.",
+          "People search the name in several orders, including \"rummy rumble\" and \"rumble rummy game\". These are the same listing here, though unrelated apps elsewhere may use a similar name.",
+        ],
+      },
+      {
+        heading: "Why \"Yono\" Appears in the Search",
+        paragraphs: [
+          "\"Rumble Rummy Yono\" is a common phrase because apps like this are grouped with the Yono network in how people search. The label is a grouping. It does not say that the app is run by, or affiliated with, any Yono-branded company, and nothing recorded here establishes that.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "The record holds category and the platform's link. Software version, file size and minimum Android requirement are blank. Where a value is unknown it is left blank rather than estimated.",
+        ],
+      },
+      {
+        heading: "Checks Before Installing",
+        paragraphs: [
+          "Check the publisher named on the install screen, confirm that terms and a privacy policy exist, and read the permissions. Be cautious of any rummy page that promises a fixed bonus figure in its title. A headline figure is marketing, not terms.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Rumble Rummy or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Rumble Rummy app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is Rumble Rummy a Yono app?", answer: "It is grouped with the Yono network in this directory. That is a category label, not a statement about who operates it." },
+      { question: "Are \"rummy rumble\" and \"rumble rummy\" different?", answer: "In this directory they refer to one listing. Other sites may use the names for different apps." },
+      { question: "Does AllYonoUpdate.com host the Rumble Rummy APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Rumble Rummy?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Rumble Rummy: App Page", href: "/app/rumble-rummy/" },
+      { label: "Boss Rummy APK Guide", href: "/blog/boss-rummy-apk-guide/" },
+      { label: "Yono Rummy APK Guide", href: "/blog/yono-rummy-apk-guide/" },
+    ],
+  },
+  {
+    slug: "jaiho-play-launch-status",
+    title: "Jaiho Play: Launch Status, What Is Announced and What Is Not",
+    metaDescription: "Jaiho Play is listed to launch on 15 October 2026. What has been announced, what has not (download link, bonus, promo code) and how this page will be updated.",
+    h1: "Jaiho Play: Launch Status, What Is Announced and What Is Not",
+    keywords: ["jaiho play","jaiho play launch","jaiho play apk","jaiho play download"],
+    publishedDate: "2026-10-15",
+    lastReviewedDate: "2026-10-15",
+    postType: "launch-status",
+    image: { src: "/images/blog/jaiho-play-launch-status.webp", alt: "Jaiho Play: Launch Status — featured guide graphic" },
+    relatedCategoryPath: "/latest-updates/",
+    sections: [
+      {
+        heading: "Launch Status at a Glance",
+        paragraphs: [
+          "Jaiho Play is listed to launch on 15 October 2026 at 8:00 AM IST. A live countdown is shown on the AllYonoUpdate.com homepage.",
+          "At the time of this review, no download link, welcome bonus or promo code has been announced. This page records the status and will be revised when something can be independently reviewed.",
+        ],
+      },
+      {
+        heading: "What Is Announced",
+        paragraphs: [
+          "Only the launch date and time are recorded. Nothing else about the app, including its category, features or operator, has been confirmed in this directory.",
+        ],
+      },
+      {
+        heading: "What Is Not Announced",
+        paragraphs: [
+          "No download link, no welcome bonus, no promo code, no software version and no file size have been announced. If you see any of these presented as confirmed on another page, treat it as unconfirmed.",
+        ],
+      },
+      {
+        heading: "Pre-Launch Links",
+        paragraphs: [
+          "An APK that circulates before a launch is not from the platform's source. The same applies to \"early access\" files and to pages that ask for an OTP or a payment to reserve a download. Wait for a link that appears on the app's own website and is recorded here.",
+        ],
+      },
+      {
+        heading: "How This Page Will Be Updated",
+        paragraphs: [
+          "If the launch time moves, this page will say so and keep the previous status visible. Once the app is available and can be independently reviewed, its record, download link and last-checked date will be added to its app page. This page is reviewed on the same basis.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Jaiho Play or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Jaiho Play app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "When does Jaiho Play launch?", answer: "It is listed to launch on 15 October 2026 at 8:00 AM IST. Release times can shift without notice, so this page will be updated if the date changes." },
+      { question: "Is there a Jaiho Play download link yet?", answer: "None is recorded. This page will be updated when a link appears on the app's own website and can be reviewed." },
+      { question: "Is there a Jaiho Play promo code or welcome bonus?", answer: "None has been announced. Treat any claimed code or bonus before launch as unconfirmed." },
+      { question: "Does AllYonoUpdate.com host the Jaiho Play APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Jaiho Play?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Latest Updates", href: "/latest-updates/" },
+      { label: "Promo Code Updates", href: "/promo-code-updates/" },
+      { label: "Jeet Spin App: Launch Date & Status", href: "/blog/jeet-spin-app/" },
+    ],
+  },
+  {
+    slug: "boss-rummy-apk-guide",
+    title: "Boss Rummy APK: Download Guide, \"Rummy Boss\" Names & Safety Check",
+    metaDescription: "Boss Rummy APK explained: how \"boss rummy\", \"rummy boss\" and \"boss rummy yono\" relate, what is recorded, and what to check before installing.",
+    h1: "Boss Rummy APK: Download Guide, \"Rummy Boss\" Names & Safety Check",
+    keywords: ["boss rummy","boss rummy apk","boss rummy yono","rummy boss"],
+    publishedDate: "2026-10-16",
+    lastReviewedDate: "2026-10-16",
+    postType: "guide",
+    image: { src: "/images/blog/boss-rummy-apk-guide.webp", alt: "Boss Rummy APK Guide — featured guide graphic" },
+    relatedCategoryPath: "/yono-rummy/",
+    sections: [
+      {
+        heading: "What Boss Rummy Is",
+        paragraphs: [
+          "Boss Rummy is a rummy-style app tracked in this directory. It has its own listing and platform link, alongside other rummy-style entries such as Rumble Rummy and ABC Rummy.",
+        ],
+      },
+      {
+        heading: "Name Variants",
+        paragraphs: [
+          "People search it as \"boss rummy\", \"rummy boss\", \"boss rummy game\" and \"boss rummy yono\". In this directory these point to one listing, but other apps elsewhere use similar names, so the word order alone does not tell you which app a page is about.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "The record holds category and the platform's link. Version, file size and minimum Android requirement are not recorded, and are left blank until they can be confirmed.",
+        ],
+      },
+      {
+        heading: "About Bonus Searches",
+        paragraphs: [
+          "Searches such as \"rummy boss 51 bonus\" describe a headline figure, not terms. A figure with no dated source cannot be verified, and AllYonoUpdate.com has not verified any bonus claim for Boss Rummy. Read the terms inside the app before treating any figure as an offer.",
+        ],
+      },
+      {
+        heading: "How to Check",
+        paragraphs: [
+          "Compare the address you were sent to with the link on the Boss Rummy app page, check the publisher on the install screen, and read the permissions requested.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Boss Rummy or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Boss Rummy app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is \"Rummy Boss\" the same as Boss Rummy?", answer: "In this directory they refer to one listing. The phrase order is just how people type it." },
+      { question: "Is there a Boss Rummy bonus?", answer: "Any bonus is the publisher's own claim and has not been verified here." },
+      { question: "Does AllYonoUpdate.com host the Boss Rummy APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Boss Rummy?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Boss Rummy: App Page", href: "/app/boss-rummy/" },
+      { label: "Rumble Rummy APK Guide", href: "/blog/rumble-rummy-apk-guide/" },
+      { label: "ABC Rummy APK Guide", href: "/blog/abc-rummy-apk-guide/" },
+    ],
+  },
+  {
+    slug: "rummy-888-apk-guide",
+    title: "Rummy 888 APK: What It Is, Download Status & What to Check",
+    metaDescription: "Rummy 888 and Yono Rummy 888 explained: what is recorded, why several pages share the name, and how to check a download before installing.",
+    h1: "Rummy 888 APK: What It Is, Download Status & What to Check",
+    keywords: ["rummy 888","rummy 888 apk","yono rummy 888","888 rummy"],
+    publishedDate: "2026-10-17",
+    lastReviewedDate: "2026-10-17",
+    postType: "guide",
+    image: { src: "/images/blog/rummy-888-apk-guide.webp", alt: "Rummy 888 APK Guide — featured guide graphic" },
+    relatedCategoryPath: "/yono-rummy/",
+    sections: [
+      {
+        heading: "What Rummy 888 Is",
+        paragraphs: [
+          "Rummy888 is a rummy-style app tracked in this directory. It is listed as one entry with a platform link, in the same category as Rummy 91, Boss Rummy and Rumble Rummy.",
+        ],
+      },
+      {
+        heading: "Why Numbers in Names Confuse",
+        paragraphs: [
+          "Numbers such as 777, 888, 91 and 101 repeat across many unrelated apps. A shared number does not mean a shared publisher or a shared account system. The same is true of \"Rummy 888\", \"888 Rummy\" and \"Rummy888\", which are spellings of the same phrase rather than proof of the same app.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "The record holds category and the platform's link. Version, file size and minimum Android requirement are blank. Nothing about rewards, withdrawals or terms is stated here.",
+        ],
+      },
+      {
+        heading: "About \"Yono Rummy 888\"",
+        paragraphs: [
+          "\"Yono Rummy 888\" is a search phrase that groups the app with the Yono network. It does not state who operates the app.",
+        ],
+      },
+      {
+        heading: "Checks Before Installing",
+        paragraphs: [
+          "Check the publisher named at install, confirm that terms and a privacy policy are available, and read permissions. Be cautious of any page that makes an \"888\" bonus figure the headline.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Rummy888 or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Rummy888 app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is Rummy 888 the same as Rummy 91?", answer: "No. They are separate listings with separate links. A similar style of name does not mean shared operation." },
+      { question: "What does \"888\" mean in the name?", answer: "It is part of the app's name. It carries no meaning about rewards or odds." },
+      { question: "Does AllYonoUpdate.com host the Rummy888 APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Rummy888?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Rummy888: App Page", href: "/app/rummy888/" },
+      { label: "Rummy 91 APK Guide", href: "/blog/rummy-91-apk-guide/" },
+      { label: "Yono 777 APK Guide", href: "/blog/yono-777-apk-guide/" },
+    ],
+  },
+  {
+    slug: "spin-101-z-vs-spin-101",
+    title: "Spin 101 Z vs Spin 101: Which Name Is Which?",
+    metaDescription: "Spin 101 and Spin 101 Z compared: how the names are used, what this directory records for each, and what to check before downloading either.",
+    h1: "Spin 101 Z vs Spin 101: Which Name Is Which?",
+    keywords: ["spin 101 z apk","spin 101 z","spin 101 z apk old version","spin 101 vs spin 101 z"],
+    publishedDate: "2026-10-18",
+    lastReviewedDate: "2026-10-18",
+    postType: "guide",
+    image: { src: "/images/blog/spin-101-z-vs-spin-101.webp", alt: "Spin 101 Z vs Spin 101 — featured guide graphic" },
+    relatedCategoryPath: "/yono-spin/",
+    sections: [
+      {
+        heading: "The Short Answer",
+        paragraphs: [
+          "Spin 101 is a listing in this directory. \"Spin 101 Z\" is a name that appears in searches and on other sites. AllYonoUpdate.com cannot say that they are the same app, or that they are different ones. Check the address and publisher of whichever you have.",
+        ],
+      },
+      {
+        heading: "What Is Recorded for Spin 101",
+        paragraphs: [
+          "The Spin 101 record holds its category and platform link. Version, file size and minimum Android requirement are blank. A separate \"101Z\" entry also exists in the directory under its own name, with its own link, and is not merged with Spin 101.",
+        ],
+      },
+      {
+        heading: "Why Letters Get Added to Names",
+        paragraphs: [
+          "Adding a letter or a number to an app name is common. It may mark a regional version, a rebrand or a copy, but nothing recorded here confirms which. A longer name is not a newer or safer version of a shorter one.",
+        ],
+      },
+      {
+        heading: "About \"Old Version\" Searches",
+        paragraphs: [
+          "Searches for an old Spin 101 Z file usually lead to third-party pages. Older files cannot be verified and may lack fixes. If a newer version changed something you relied on, use the link recorded on the app page instead of an archived copy.",
+        ],
+      },
+      {
+        heading: "How to Tell Which One You Have",
+        paragraphs: [
+          "Open the app info on your phone and read the publisher and package name, then compare the address of the site you downloaded from with the link on the app page. If they do not match, treat the download as unverified.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Spin 101 or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Spin 101 app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is Spin 101 Z a newer version of Spin 101?", answer: "Nothing recorded here confirms that. It may be a separate app." },
+      { question: "Is there a separate Spin 101 Z record?", answer: "The directory has a 101Z entry under its own name. It is not merged with Spin 101." },
+      { question: "Does AllYonoUpdate.com host the Spin 101 APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Spin 101?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Spin 101: App Page", href: "/app/spin-101/" },
+      { label: "Spin 101 APK Guide", href: "/blog/spin-101-apk-guide/" },
+      { label: "Bingo 101 APK Guide", href: "/blog/bingo-101-apk-guide/" },
+    ],
+  },
+  {
+    slug: "jaiho-spin-apk-guide",
+    title: "Jaiho Spin APK: What It Is, Related Jaiho Names & Safety Check",
+    metaDescription: "Jaiho Spin and the other \"Jaiho\" names (Jaiho Slot, Jaiho Rummy, Jaiho Win, Jaiho Arcade) explained: what is recorded and what to check.",
+    h1: "Jaiho Spin APK: What It Is, Related Jaiho Names & Safety Check",
+    keywords: ["jaiho spin","jaiho spin apk","jaiho slot","jaiho apps"],
+    publishedDate: "2026-10-19",
+    lastReviewedDate: "2026-10-19",
+    postType: "guide",
+    image: { src: "/images/blog/jaiho-spin-apk-guide.webp", alt: "Jaiho Spin APK Guide — featured guide graphic" },
+    relatedCategoryPath: "/yono-spin/",
+    sections: [
+      {
+        heading: "What Jaiho Spin Is",
+        paragraphs: [
+          "Jaiho Spin is a spin-style app tracked in this directory. It is one of several apps whose names begin with \"Jaiho\", which is why searches for the name return a mix of listings.",
+        ],
+      },
+      {
+        heading: "The Jaiho Names Recorded Here",
+        paragraphs: [
+          "The directory holds separate entries for Jaiho Spin (spin), Jaiho Slot (slots), Jaiho Rummy (rummy), Jaiho Win (spin) and Jaiho Arcade (arcade). Each has its own record and its own platform link.",
+          "A shared word in the name does not establish shared operation. A code, an account or a download for one of these does not carry to another.",
+        ],
+      },
+      {
+        heading: "What Is Recorded for Jaiho Spin",
+        paragraphs: [
+          "The Jaiho Spin record holds category and the platform's link. Version, file size and minimum Android requirement are not recorded and are left blank.",
+        ],
+      },
+      {
+        heading: "A Related Launch",
+        paragraphs: [
+          "A separate listing, Jaiho Play, is scheduled to launch on 15 October 2026. It has its own status page. Nothing about it should be assumed from the Jaiho Spin record.",
+        ],
+      },
+      {
+        heading: "Checks Before Installing",
+        paragraphs: [
+          "Match the address to the app page, read the publisher on the install screen and review permissions. Do not enter a code from one Jaiho app into another.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Jaiho Spin or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Jaiho Spin app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Are all Jaiho apps the same?", answer: "No. Each is a separate listing with its own link. A shared word in the name does not mean shared operation." },
+      { question: "Does a Jaiho Spin code work in Jaiho Slot?", answer: "Not as far as this directory records. Codes belong to the app they were made for." },
+      { question: "Does AllYonoUpdate.com host the Jaiho Spin APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Jaiho Spin?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Jaiho Spin: App Page", href: "/app/jaiho-spin/" },
+      { label: "Jaiho Slot: App Page", href: "/app/jaiho-slot/" },
+      { label: "Jaiho Play: Launch Status", href: "/blog/jaiho-play-launch-status/" },
+    ],
+  },
+  {
+    slug: "rummy-91-apk-guide",
+    title: "Rummy 91 APK: Which One Is Which? A \"Same Name\" Guide",
+    metaDescription: "Rummy 91 APK explained: why several apps use the name, what this directory records, and how to tell them apart before downloading.",
+    h1: "Rummy 91 APK: Which One Is Which? A \"Same Name\" Guide",
+    keywords: ["rummy 91 apk","rummy 91","rummy 91 download","rummy 91 app"],
+    publishedDate: "2026-10-20",
+    lastReviewedDate: "2026-10-20",
+    postType: "guide",
+    image: { src: "/images/blog/rummy-91-apk-guide.webp", alt: "Rummy 91 APK: Which One? — featured guide graphic" },
+    relatedCategoryPath: "/yono-rummy/",
+    sections: [
+      {
+        heading: "The Short Answer",
+        paragraphs: [
+          "More than one app is called Rummy 91, from different publishers. This directory lists one Rummy 91 entry with its platform link. AllYonoUpdate.com cannot say which of the other apps with the same name, if any, is related to it.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "The Rummy 91 record holds its category (rummy) and the link to the platform's own website. Version, file size and minimum Android requirement are not recorded. No claims about rewards, withdrawals or terms are made here.",
+        ],
+      },
+      {
+        heading: "Why the Name Repeats",
+        paragraphs: [
+          "A short numeric name is easy to copy. A listing store can show several apps with the same title from different publishers, and a search engine will show pages for all of them. A page that ranks well for \"Rummy 91\" is not necessarily about the app you have in mind.",
+        ],
+      },
+      {
+        heading: "How to Tell Them Apart",
+        paragraphs: [
+          "Compare the publisher name and package name shown after install, the privacy policy and terms the app links to, and the address of the site you downloaded from. A mismatch between any of these and the listing you expected is a reason to stop.",
+        ],
+      },
+      {
+        heading: "Withdrawal and Code Searches",
+        paragraphs: [
+          "Searches such as \"rummy 91 withdrawal\" or \"rummy 91 promo code\" depend on the specific operator's terms, not on the shared name. A page that answers them without naming an operator cannot be relied on.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Rummy 91 or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Rummy 91 app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is there one official Rummy 91?", answer: "This directory does not state an official app. Several apps share the name, and a listing here is not an endorsement." },
+      { question: "Is Rummy 91 the same as Rummy 888?", answer: "No. They are separate listings." },
+      { question: "Does AllYonoUpdate.com host the Rummy 91 APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Rummy 91?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Rummy 91: App Page", href: "/app/rummy-91/" },
+      { label: "Rummy 888 APK Guide", href: "/blog/rummy-888-apk-guide/" },
+      { label: "Ind Club APK Guide", href: "/blog/ind-club-apk-guide/" },
+    ],
+  },
+  {
+    slug: "slot-spin-apk-guide",
+    title: "Slot Spin APK: What the Name Means & What Is Recorded",
+    metaDescription: "Slot Spin APK explained: why \"slot spin\" is also a generic phrase, what this directory records, and what to verify before downloading.",
+    h1: "Slot Spin APK: What the Name Means & What Is Recorded",
+    keywords: ["slot spin","slot spin apk","slots spin","slot spin download"],
+    publishedDate: "2026-10-21",
+    lastReviewedDate: "2026-10-21",
+    postType: "guide",
+    image: { src: "/images/blog/slot-spin-apk-guide.webp", alt: "Slot Spin APK Guide — featured guide graphic" },
+    relatedCategoryPath: "/yono-slots/",
+    sections: [
+      {
+        heading: "A Name and a Phrase",
+        paragraphs: [
+          "\"Slot spin\" is both a phrase describing a feature of many games and the name of one app listing. Most searches for it are not about this listing, so a page that ranks for \"slot spin\" may be about something else.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "The Slot Spin record holds its category and the platform's link. Version, file size and minimum Android requirement are blank. This guide does not describe outcomes, rewards or odds.",
+        ],
+      },
+      {
+        heading: "How to Be Sure You Have the Right One",
+        paragraphs: [
+          "Compare the address of the page you are on with the link on the Slot Spin app page, and check the publisher on the install screen. If a page calls any slot or spin game \"Slot Spin\", treat the title as a description, not as an identity.",
+        ],
+      },
+      {
+        heading: "About Randomised Outcomes",
+        paragraphs: [
+          "Apps of this kind use outcomes generated by the publisher's own system. AllYonoUpdate.com does not verify or endorse how any individual app generates outcomes.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Slot Spin or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Slot Spin app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is \"slot spin\" one app?", answer: "It is a generic phrase and also the name of one listing here." },
+      { question: "Is Slot Spin the same as Yono Slots?", answer: "No. Yono Slots is a separate category page and Slot Spin is its own listing." },
+      { question: "Does AllYonoUpdate.com host the Slot Spin APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Slot Spin?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Slot Spin: App Page", href: "/app/slot-spin/" },
+      { label: "Yono Slots APK Guide", href: "/blog/yono-slots-apk-guide/" },
+      { label: "Spin Gold APK Guide", href: "/blog/spin-gold-apk-guide/" },
+    ],
+  },
+  {
+    slug: "bet-213-and-mbm-bet-guide",
+    title: "Bet 213 and MBM Bet: What Is Recorded for Each",
+    metaDescription: "Bet 213 and MBM Bet explained: what each listing records, why \"bet\" names need extra care, and what to check before downloading.",
+    h1: "Bet 213 and MBM Bet: What Is Recorded for Each",
+    keywords: ["bet 213","bet 213 slots","mbm bet","mbm bet download"],
+    publishedDate: "2026-10-22",
+    lastReviewedDate: "2026-10-22",
+    postType: "guide",
+    image: { src: "/images/blog/bet-213-and-mbm-bet-guide.webp", alt: "Bet 213 and MBM Bet — featured guide graphic" },
+    relatedCategoryPath: "/yono-rummy/",
+    sections: [
+      {
+        heading: "Two Separate Listings",
+        paragraphs: [
+          "Bet 213 and MBM Bet are two separate listings in this directory, each with its own record and platform link. Both are filed under the rummy-style category. They are covered together here because searches often mix the two.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "For each, the record holds its category and the platform's link. Version, file size and minimum Android requirement are not recorded and are left blank. Nothing here describes how either app works, pays or rewards.",
+        ],
+      },
+      {
+        heading: "Why Names With \"Bet\" Need Extra Care",
+        paragraphs: [
+          "The word \"bet\" in an app name can signal a wagering-style product. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. A listing here is for reference only and is not an invitation to deposit or play for money.",
+        ],
+      },
+      {
+        heading: "Checks Before Installing",
+        paragraphs: [
+          "Look for a named operator, working terms and a privacy policy, and read permissions. A page that asks for payment or an OTP before showing a download is not the platform. If a search for either name returns a page that says \"slots\" for Bet 213, remember that the directory files it under rummy.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate any of the apps listed here, and no APK file is stored on this website. The Download button on each app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Are Bet 213 and MBM Bet the same app?", answer: "No. They are separate listings with separate links." },
+      { question: "Is Bet 213 a slots app?", answer: "It is filed under the rummy-style category in this directory, though some pages describe it differently." },
+      { question: "Does AllYonoUpdate.com host the Bet 213 APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Bet 213?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Bet 213: App Page", href: "/app/bet-213/" },
+      { label: "MBM Bet: App Page", href: "/app/mbm-bet/" },
+      { label: "All Yono Games", href: "/all-yono-games/" },
+    ],
+  },
+  {
+    slug: "new-yono-apps-october-2026",
+    title: "New Yono Apps, October 2026: What Was Added and What to Check",
+    metaDescription: "New Yono apps in October 2026: what was added or changed in this directory this month, what is recorded for each and what a \"new app\" claim does not tell you.",
+    h1: "New Yono Apps, October 2026: What Was Added and What to Check",
+    keywords: ["yono new app","new yono app","new yono games 2026","new yono all games 2026"],
+    publishedDate: "2026-10-23",
+    lastReviewedDate: "2026-10-23",
+    postType: "launch-status",
+    image: { src: "/images/blog/new-yono-apps-october-2026.webp", alt: "New Yono Apps: October 2026 — featured guide graphic" },
+    relatedCategoryPath: "/new-yono-games/",
+    sections: [
+      {
+        heading: "What This List Is",
+        paragraphs: [
+          "This is a dated record of what was added or changed in this directory in October 2026. \"New\" here means newly listed or newly updated in the directory, not new to the market. A new listing is not an endorsement and does not confirm any bonus.",
+        ],
+      },
+      {
+        heading: "Added or Changed This Month",
+        paragraphs: [
+          "Jeet Spin went live on 30 September 2026, and its record now carries a download link to the platform's own website. Jaiho Play is listed to launch on 15 October 2026 at 8:00 AM IST, with no download link, bonus or code announced.",
+          "Guides were added this month for Spin Gold, Yes Spin, Rumble Rummy, Boss Rummy, Rummy 888, Spin 101 Z, Jaiho Spin, Rummy 91, Slot Spin, Bet 213 and MBM Bet, Jaiho Slot and Saga Slots, and Yono Arcade version checks.",
+        ],
+      },
+      {
+        heading: "What a New Listing Lacks",
+        paragraphs: [
+          "A new listing has a shorter track record, less independent observation and often blank fields such as version and file size. Those fields are left blank rather than estimated until they can be confirmed.",
+        ],
+      },
+      {
+        heading: "About \"51 Bonus\" and Similar Figures",
+        paragraphs: [
+          "Headlines such as \"51 bonus\" or \"1000 bonus\" are marketing figures, not terms. A figure with no dated source cannot be verified, and AllYonoUpdate.com has not verified any bonus or reward claim shown on a platform's own website.",
+        ],
+      },
+      {
+        heading: "How to Check a New App",
+        paragraphs: [
+          "Find a named operator, confirm terms and a privacy policy exist, compare the download address with the app page, and read permissions. A new name is a reason to look closer, not a reason to download faster.",
+        ],
+      },
+      {
+        heading: "About This Record",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate any of the apps listed here, and no APK file is stored on this website. The Download button on each app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+          "This list is reviewed whenever a meaningful change can be confirmed.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Which Yono app launched most recently?", answer: "Jeet Spin went live on 30 September 2026, and Jaiho Play is listed to launch on 15 October 2026." },
+      { question: "Does \"new\" mean safe?", answer: "No. A new listing has a shorter track record and has not been independently verified." },
+      { question: "Where can I see all recorded apps?", answer: "On the All Yono Games page, which lists every recorded app and its last-checked date." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for a new app?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "New Yono Games", href: "/new-yono-games/" },
+      { label: "Latest Updates", href: "/latest-updates/" },
+      { label: "Jaiho Play: Launch Status", href: "/blog/jaiho-play-launch-status/" },
+    ],
+  },
+  {
+    slug: "yono-games-apk-old-version-risks",
+    title: "Yono Games APK Old Version: Why Old Files Are Risky",
+    metaDescription: "Looking for an old version of a Yono games APK? Why older files are riskier, what an update changes, and how to check the current link instead.",
+    h1: "Yono Games APK Old Version: Why Old Files Are Risky",
+    keywords: ["yono games apk download old version","yono games old version","old apk version risks","yono games apk"],
+    publishedDate: "2026-10-24",
+    lastReviewedDate: "2026-10-24",
+    postType: "guide",
+    image: { src: "/images/blog/yono-games-apk-old-version-risks.webp", alt: "Old APK Versions: Risks — featured guide graphic" },
+    relatedCategoryPath: "/yono-games-apk/",
+    sections: [
+      {
+        heading: "What an Old APK Is",
+        paragraphs: [
+          "An old APK is a copy of an app file from a past date, usually hosted on a third-party page. It is not an official archive. Nothing about the file can be verified from the page that offers it.",
+        ],
+      },
+      {
+        heading: "Why People Look for Them",
+        paragraphs: [
+          "The usual reasons are that an update changed a screen, that the app stopped working on an older phone, or that a feature a reader remembers has disappeared. These are reasonable frustrations, but an old file is rarely a safe answer to them.",
+        ],
+      },
+      {
+        heading: "The Risks",
+        paragraphs: [
+          "Older files can lack security fixes. A file hosted by a third party may have been modified or bundled with extra installers. There is also no publisher to contact if something goes wrong, and platforms can refuse or ban old clients.",
+          "A page that asks for an OTP, a payment, or a social share before giving an old file is a scam pattern, not a download service.",
+        ],
+      },
+      {
+        heading: "What an Update Usually Changes",
+        paragraphs: [
+          "Updates usually change compatibility, fix bugs and adjust server-side checks. A feature or reward you remember is not guaranteed to be present in any version, and an old file will not restore it.",
+        ],
+      },
+      {
+        heading: "What to Do Instead",
+        paragraphs: [
+          "Use the link recorded on the app page, compare it with the platform's own site, and read permissions at install. If the current version does not run on your phone, the platform's own support channel is the right place to ask, not an archive page.",
+        ],
+      },
+      {
+        heading: "About This Guide",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate any of the apps listed here, and no APK file is stored on this website. The Download button on each app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Is an old version of an APK safe?", answer: "AllYonoUpdate.com cannot verify any old file. Older files lack fixes and can be modified." },
+      { question: "Where is the current download link?", answer: "On each app's page in this directory, with its last-checked date." },
+      { question: "Why does the app not run on my old phone?", answer: "Newer versions may need a newer Android. The minimum is recorded on the app page when it can be confirmed." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for a listed app?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Yono Games APK", href: "/yono-games-apk/" },
+      { label: "Yono Rummy APK Guide", href: "/blog/yono-rummy-apk-guide/" },
+      { label: "Spin 101 Z vs Spin 101", href: "/blog/spin-101-z-vs-spin-101/" },
+    ],
+  },
+  {
+    slug: "jaiho-slot-and-saga-slots-guide",
+    title: "Jaiho Slot and Saga Slots: What Is Recorded for Each",
+    metaDescription: "Jaiho Slot and Saga Slots explained: what each slot-style listing records, how the slots category works here and what to verify before downloading.",
+    h1: "Jaiho Slot and Saga Slots: What Is Recorded for Each",
+    keywords: ["jaiho slot","saga slots","saga slots apk","jaiho slots"],
+    publishedDate: "2026-10-25",
+    lastReviewedDate: "2026-10-25",
+    postType: "guide",
+    image: { src: "/images/blog/jaiho-slot-and-saga-slots-guide.webp", alt: "Jaiho Slot and Saga Slots — featured guide graphic" },
+    relatedCategoryPath: "/yono-slots/",
+    sections: [
+      {
+        heading: "Two Separate Listings",
+        paragraphs: [
+          "Jaiho Slot and Saga Slots are two slot-style listings in this directory. Each has its own record and platform link. They are covered together because they share the Slots category, not because they share an operator.",
+        ],
+      },
+      {
+        heading: "What Is Recorded",
+        paragraphs: [
+          "For each, the record holds its category and the platform's link. Version, file size and minimum Android requirement are not recorded. The records change as details are confirmed.",
+        ],
+      },
+      {
+        heading: "What \"Slots\" Means Here",
+        paragraphs: [
+          "In this directory, Slots is a category label. It is not a recommendation to play. Apps of this kind use randomised outcomes generated by the publisher's own system, and AllYonoUpdate.com does not verify how any app produces them.",
+        ],
+      },
+      {
+        heading: "Related Jaiho Names",
+        paragraphs: [
+          "Jaiho Slot is one of several apps with \"Jaiho\" in the name. See the Jaiho Spin guide for how the Jaiho listings differ, and do not assume a code or account carries between them.",
+        ],
+      },
+      {
+        heading: "Checks Before Installing",
+        paragraphs: [
+          "Look for a named operator, available terms and a privacy policy, and read permissions. Do not pay a fee or share an OTP to \"unlock\" a download.",
+        ],
+      },
+      {
+        heading: "About This Listing",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate any of the apps listed here, and no APK file is stored on this website. The Download button on each app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Are Jaiho Slot and Saga Slots related?", answer: "Nothing recorded here establishes that. They are separate listings." },
+      { question: "Does Saga Slots have a recorded version?", answer: "Not yet. The version field stays blank until it can be confirmed." },
+      { question: "Does AllYonoUpdate.com host the Jaiho Slot APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Jaiho Slot?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Jaiho Slot: App Page", href: "/app/jaiho-slot/" },
+      { label: "Saga Slots: App Page", href: "/app/saga-slots/" },
+      { label: "Jaiho Spin APK Guide", href: "/blog/jaiho-spin-apk-guide/" },
+    ],
+  },
+  {
+    slug: "yono-arcade-latest-version-check",
+    title: "Yono Arcade Latest Version: How to Check Before You Install",
+    metaDescription: "How to check the latest Yono Arcade version: what a version number tells you, where it is recorded here and how to compare it with what you have.",
+    h1: "Yono Arcade Latest Version: How to Check Before You Install",
+    keywords: ["yono arcade all apk latest version","yono arcade latest version","yono arcade apk version","yono arcade update"],
+    publishedDate: "2026-10-26",
+    lastReviewedDate: "2026-10-26",
+    postType: "guide",
+    image: { src: "/images/blog/yono-arcade-latest-version-check.webp", alt: "Yono Arcade Latest Version Check — featured guide graphic" },
+    relatedCategoryPath: "/yono-arcade/",
+    sections: [
+      {
+        heading: "What \"Latest Version\" Means",
+        paragraphs: [
+          "The latest version is the one the platform's own website currently offers. A third-party page that says \"latest\" is describing its own copy, which may be older or modified.",
+        ],
+      },
+      {
+        heading: "Where the Version Is Recorded",
+        paragraphs: [
+          "This directory records a version only when it can be confirmed, and shows the last-checked date beside it. Where it is not recorded, the field is left blank rather than estimated. The Yono Arcade app page holds the current record.",
+        ],
+      },
+      {
+        heading: "How to Compare Versions",
+        paragraphs: [
+          "Open your phone's app info for the app and read the version shown there. Then compare it with the version recorded on the app page. If the recorded field is blank, the comparison cannot be made from this site and the platform's own website is the source to check.",
+        ],
+      },
+      {
+        heading: "If the Versions Differ",
+        paragraphs: [
+          "Do not install from a message or an unfamiliar page. Use the link recorded on the app page, and re-check the address against the platform's own site. A version number does not tell you whether a file is genuine, only that it is labelled as that version.",
+        ],
+      },
+      {
+        heading: "What a Version Number Does Not Tell You",
+        paragraphs: [
+          "It does not tell you whether rewards or features are present, whether the file is unmodified, or whether the publisher is who a page says it is. For those, check the publisher, terms and permissions.",
+        ],
+      },
+      {
+        heading: "About This Guide",
+        paragraphs: [
+          "AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate Yono Arcade or any other app listed here, and the APK file itself is never stored on this website. The Download button on the Yono Arcade app page leads directly to the platform's own website. Being listed here is not an endorsement.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform's own website.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "What is the latest Yono Arcade version?", answer: "The recorded version, if any, is shown on the Yono Arcade app page with its last-checked date. If it is blank, it has not been confirmed." },
+      { question: "Is a higher version number safer?", answer: "Not by itself. A version number does not show whether a file is genuine." },
+      { question: "Does AllYonoUpdate.com host the Yono Arcade APK file?", answer: "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to the platform's own website." },
+      { question: "Has AllYonoUpdate.com verified any bonus or reward claim for Yono Arcade?", answer: "No. Any bonus, reward or code shown on a platform's own website is the publisher's own marketing, not an assessment made here." },
+      { question: "How often is this guide reviewed?", answer: "This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed." },
+    ],
+    relatedArticles: [
+      { label: "Yono Arcade: App Page", href: "/app/yono-arcade/" },
+      { label: "Yono Arcade APK Guide", href: "/blog/yono-arcade-apk-guide/" },
+      { label: "Old APK Versions: Risks", href: "/blog/yono-games-apk-old-version-risks/" },
+    ],
+  },
 ];
+
+// Posts dated in the future stay hidden until 07:00 IST on their publish date.
+// A daily rebuild (cron) makes each scheduled post appear automatically.
+export function isPublished(
+  datePublished: string,
+  now: Date = new Date(process.env.PUBLISH_NOW || Date.now()),
+): boolean {
+  return now.getTime() >= new Date(`${datePublished}T07:00:00+05:30`).getTime();
+}
+
+export const blogPosts: BlogPost[] = allBlogPosts.filter((p) => isPublished(p.publishedDate));
