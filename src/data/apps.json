@@ -10,6 +10,38 @@
   },
   "apps": [
     {
+      "id": "jaiho-play",
+      "name": "Jaiho Play",
+      "slug": "jaiho-play",
+      "category": "rummy",
+      "featured": true,
+      "tag": "LIVE",
+      "description": "Jaiho Play is a rummy and Teen Patti platform that launched on 15 October 2026. Download it from jaihogo.com. AllYonoUpdate.com does not host the Jaiho Play APK file — the download button links to the platform's own website.",
+      "targetKeyword": "jaiho play apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-10-15",
+      "icon": "/images/games/jaiho-play.webp",
+      "apkUrl": "https://jaihogo.com/?code=E4VW58CDZFY&t=1792035058",
+      "url": "/app/jaiho-play/",
+      "faq": [
+        {
+          "q": "Is Jaiho Play available to download?",
+          "a": "Yes. Jaiho Play launched on 15 October 2026 and is now available at jaihogo.com."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the Jaiho Play APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Jaiho Play's own website, not to a file stored here."
+        },
+        {
+          "q": "Where can I download Jaiho Play?",
+          "a": "Download Jaiho Play from jaihogo.com. AllYonoUpdate.com does not host APK files — the download button links directly to the platform's own website."
+        }
+      ]
+    },
+    {
       "id": "jeet-spin",
       "name": "Jeet Spin",
       "slug": "jeet-spin",

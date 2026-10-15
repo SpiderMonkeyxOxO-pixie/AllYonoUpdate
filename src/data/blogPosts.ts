@@ -2220,6 +2220,135 @@ const allBlogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: "jaiho-play-launch-date",
+    title: "Jaiho Play Launch Date: Launched 15 Oct 2026, Status Report",
+    metaDescription: "Jaiho Play launched 15 Oct 2026 from 8:00 AM IST. Read the launch status: what is confirmed, what is not, and what we will update next.",
+    h1: "Jaiho Play Launch Date: Launched 15 Oct 2026, Status Report",
+    keywords: ["jaiho play launch date", "jaiho play release date", "jaiho play launch time"],
+    publishedDate: "2026-10-15",
+    lastReviewedDate: "2026-10-15",
+    postType: "launch-status",
+    image: { src: "/images/blog/jaiho-play-launch-status.webp", alt: "Jaiho Play Launch Date: Launched 15 Oct 2026 — featured guide graphic" },
+    relatedCategoryPath: "/latest-updates/",
+    sections: [
+      {
+        heading: "Launch Details at a Glance",
+        paragraphs: [
+          "Jaiho Play launched on 15 October 2026 from 8:00 AM IST: version 1.0.0 from Yonotech Pvt. Ltd., with rummy, Teen Patti, a ₹50–₹500 welcome bonus and UPI, Paytm and BHIM payments. Bonus conditions, payment tests and an official website are not confirmed yet, so this report marks them as pending.",
+          "• App: Jaiho Play",
+          "• Launch date: 15 October 2026",
+          "• Release time: From 8:00 AM IST",
+          "• Version: 1.0.0",
+          "• Operator shown in the app: Yonotech Pvt. Ltd. (not independently verified)",
+          "• Status: Launched",
+          "• Last checked: 15 October 2026",
+        ],
+      },
+      {
+        heading: "What We Confirmed at Launch",
+        paragraphs: [
+          "These items were observed in the app itself. We have not independently verified the operator, and we have not tested payments or withdrawals.",
+          "• Games: Rummy and Teen Patti",
+          "• Minimum deposit: About ₹50–₹100",
+          "• Minimum withdrawal: ₹100",
+          "• Welcome bonus: A range of ₹50–₹500 shown",
+          "• Payment methods shown: UPI, Paytm and BHIM",
+          "• Sign-up step: Phone-number binding",
+          "• Support: Contact inside the app and live chat",
+          "• Promo codes: Released daily",
+        ],
+      },
+      {
+        heading: "What Is Still Pending",
+        paragraphs: [
+          "Each of these stays labelled pending until we have seen the evidence. If we cannot confirm one, we will keep saying so.",
+          "• Welcome bonus conditions. A ₹50–₹500 range was shown; the exact amount and terms are not recorded.",
+          "• Payment tests. UPI, Paytm and BHIM are shown, but we have not tested a payment.",
+          "• Official website or store listing. None yet.",
+          "• Terms and privacy policy. Not yet reviewed.",
+          "• India availability and legal status. Not yet reviewed.",
+        ],
+      },
+      {
+        heading: "Launch Timeline",
+        paragraphs: [
+          "1. Before launch. The release date was announced for 15 October 2026. A countdown ran on this site.",
+          "2. 15 October, from 8:00 AM IST. The app opened. We checked that it was reachable and recorded the name, operator and version.",
+          "3. First hours. We recorded the games, the minimum deposit and withdrawal, and the sign-up step.",
+          "4. After launch. We are tracking the items above. Each update on this page will carry a date.",
+          "If the launch details change, such as a new version or a different operator name, we will note what changed and when.",
+        ],
+      },
+      {
+        heading: "Daily Promo Codes",
+        paragraphs: [
+          "Jaiho Play promo codes are released daily, so there is no single code to publish here. Follow the status on our [promo code updates](/promo-code-updates/) page, and verify any code inside the app before relying on it.",
+        ],
+      },
+      {
+        heading: "How to Read This Report",
+        paragraphs: [
+          "Each line in the lists above falls into one of two groups. Items marked as confirmed were observed in the app on launch day, which is the strongest evidence we use. Items marked pending are things we could not check yet, or did not see. We do not treat a missing item as a negative answer: a blank bonus condition, for example, means we have not recorded one, not that none exists. When an item is confirmed, it moves up with a date, so you can see exactly what changed since launch and when we noticed it.",
+        ],
+      },
+      {
+        heading: "What to Do Now",
+        paragraphs: [
+          "• Check that the app's name, operator and version match this report.",
+          "• Read the permissions before you install anything.",
+          "• Do not share an OTP or pay anyone for \"early access\" or a \"bonus unlock.\"",
+          "• Treat bonus and code claims as unverified until the app itself shows them.",
+          "• Decide in advance how much you can afford to lose, and keep to it.",
+        ],
+      },
+      {
+        heading: "How Earlier Launches Compare",
+        paragraphs: [
+          "For how we recorded other launches, see our [Win Rummy launch status](/blog/win-rummy-launch-status/) and the [Dhan Game launch guide](/blog/dhan-game-launch-guide/). The method is the same each time: record what the app shows, date it, and mark the rest as pending.",
+        ],
+      },
+      {
+        heading: "If You Decide to Look at the App",
+        paragraphs: [
+          "Our sponsored referral link is below. It is not an official store link, and we may earn a commission if you use it.",
+          "[Download Jaiho Play (sponsored link)](https://jaihogo.com/?code=E4VW58CDZFY&t=1792035058)",
+        ],
+      },
+      {
+        heading: "How We Will Update This Report",
+        paragraphs: [
+          "We will edit this page when something changes and update the \"last checked\" date each time. Earlier versions of notices like this stay in the [update archive](/update-archive/). For other changes, see the [latest updates](/latest-updates/) and the [game updates](/game-updates/).",
+        ],
+      },
+      {
+        heading: "Legal and Safety Context",
+        paragraphs: [
+          "India's 2026 rules, in force since 1 May 2026, distinguish prohibited online money games from permissible social games, and an app that takes deposits and pays withdrawals raises that question. A launch date says nothing about which side an app falls on, and it is not permission to play.",
+        ],
+      },
+      {
+        heading: "Notice",
+        paragraphs: [
+          "18+ only. Online games involving money carry financial risk and may be restricted where you live. Play responsibly. AllYonoUpdate.com is an independent tracker and is not affiliated with Jaiho Play or any app listed here. Download links on this page are referral links and may earn a commission.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "When did Jaiho Play launch?", answer: "On 15 October 2026, with release from 8:00 AM IST." },
+      { question: "What version is Jaiho Play?", answer: "1.0.0 at launch." },
+      { question: "What games does Jaiho Play have?", answer: "Rummy and Teen Patti, as seen at launch." },
+      { question: "Is there a Jaiho Play promo code?", answer: "Codes are released daily, so there is no fixed code. See our promo code updates page for today's status and verify any code inside the app." },
+      { question: "Does AllYonoUpdate run Jaiho Play?", answer: "No. AllYonoUpdate is an independent tracker of Yono updates. It does not operate any app." },
+    ],
+    relatedArticles: [
+      { label: "Latest Updates", href: "/latest-updates/" },
+      { label: "Promo Code Updates", href: "/promo-code-updates/" },
+      { label: "Win Rummy Launch Status", href: "/blog/win-rummy-launch-status/" },
+      { label: "Dhan Game Launch Guide", href: "/blog/dhan-game-launch-guide/" },
+      { label: "Jaiho Play: App Page", href: "/app/jaiho-play/" },
+    ],
+  },
+  {
     slug: "boss-rummy-apk-guide",
     title: "Boss Rummy APK: Download Guide, \"Rummy Boss\" Names & Safety Check",
     metaDescription: "Boss Rummy APK explained: how \"boss rummy\", \"rummy boss\" and \"boss rummy yono\" relate, what is recorded, and what to check before installing.",

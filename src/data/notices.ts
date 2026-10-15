@@ -25,6 +25,24 @@ export interface Notice {
 
 export const notices: Notice[] = [
   {
+    slug: 'jaiho-play-is-now-live',
+    status: 'Confirmed',
+    category: 'Game Updates',
+    updateType: 'Platform Launch',
+    publishedDate: 'October 15, 2026',
+    lastReviewedDate: 'October 15, 2026',
+    headline: 'Jaiho Play Is Now Live',
+    summary:
+      "Jaiho Play launched on 15 October 2026 from 8:00 AM IST and has joined the All Yono directory with a recorded download link at jaihogo.com. The homepage launch countdown has been removed now that the app is available. AllYonoUpdate.com has not independently verified any bonus, welcome offer, or promo code shown on the platform's own website, and does not host the Jaiho Play APK file.",
+    sourceLabel: 'jaihogo.com',
+    sourceUrl: 'https://jaihogo.com/?code=E4VW58CDZFY&t=1792035058',
+    sourceVerified: false,
+    entity: 'Jaiho Play',
+    previousState: 'Scheduled to launch on 15 October 2026 at 8:00 AM IST, with no download link, welcome bonus, or promo code recorded.',
+    currentState: 'Live, with a recorded download link at jaihogo.com. Its app page and directory record have been updated accordingly.',
+    userAction: "Review the Jaiho Play app page for the current download link, and treat any bonus, welcome offer, or promo-code claim on the platform's own website as unverified.",
+  },
+  {
     slug: 'yono-777-launches-dedicated-events-site',
     status: 'Confirmed',
     category: 'Events & Notices',
