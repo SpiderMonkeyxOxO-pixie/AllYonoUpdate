@@ -3103,8 +3103,8 @@ const allBlogPosts: BlogPost[] = [
       {
         heading: 'Launch Summary',
         paragraphs: [
-          'VIP Rummy is scheduled to launch on 20 October 2026 at 8:00 AM IST, joining the growing list of real-money rummy-format apps released this year in the Yono network. This page is a plain summary of what\'s confirmed so far, updated as more details become verifiable.',
-          'Category: rummy-format real-money game. Branding: "VIP Rummy." Launch time: 8:00 AM IST, 20 October 2026. Download link: not yet confirmed. Welcome bonus: not yet announced. Promo code: not yet issued. APK technical details (package name, permissions, signing certificate): not yet inspected, pending an official download source.',
+          'VIP Rummy launched on 20 October 2026 at 8:00 AM IST, joining the growing list of real-money rummy-format apps released this year in the Yono network. This page is a plain summary of what\'s confirmed so far, updated as more details become verifiable.',
+          'Category: rummy-format real-money game. Branding: "VIP Rummy." Launch time: 8:00 AM IST, 20 October 2026. Download link: confirmed, available at viprummy6.com (see this platform\'s app page). Welcome bonus: not yet announced. Promo code: not yet issued. APK technical details (package name, permissions, signing certificate): not yet inspected.',
         ],
       },
       {

@@ -10,6 +10,38 @@
   },
   "apps": [
     {
+      "id": "vip-rummy",
+      "name": "VIP Rummy",
+      "slug": "vip-rummy",
+      "category": "rummy",
+      "featured": true,
+      "tag": "LIVE",
+      "description": "VIP Rummy is a rummy platform that launched on 20 October 2026. Download it from viprummy6.com. AllYonoUpdate.com does not host the VIP Rummy APK file — the download button links to the platform's own website.",
+      "targetKeyword": "vip rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-10-20",
+      "icon": "/images/games/vip-rummy.webp",
+      "apkUrl": "https://viprummy6.com/?code=XSDWNSC153Q&t=1792476153",
+      "url": "/app/vip-rummy/",
+      "faq": [
+        {
+          "q": "Is VIP Rummy available to download?",
+          "a": "Yes. VIP Rummy launched on 20 October 2026 and is now available at viprummy6.com."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the VIP Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to VIP Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Where can I download VIP Rummy?",
+          "a": "Download VIP Rummy from viprummy6.com. AllYonoUpdate.com does not host APK files — the download button links directly to the platform's own website."
+        }
+      ]
+    },
+    {
       "id": "jaiho-play",
       "name": "Jaiho Play",
       "slug": "jaiho-play",
