@@ -103,7 +103,11 @@
           "q": "Where can I download Jeet Spin?",
           "a": "Download Jeet Spin from jeetspin12.com. AllYonoUpdate.com does not host APK files — the download button links directly to the platform's own website."
         }
-      ]
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Guide",
+        "href": "/blog/jeet-spin-app/"
+      }
     },
     {
       "id": "money-rummy",
@@ -139,7 +143,11 @@
           "q": "How can I find out when Money Rummy launches?",
           "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
         }
-      ]
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Status Report",
+        "href": "/blog/money-rummy-launch-status/"
+      }
     },
     {
       "id": "gold-rummy",
@@ -306,7 +314,11 @@
           "q": "How often is this app record reviewed?",
           "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
         }
-      ]
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Download Guide",
+        "href": "/blog/max-rummy-apk-guide/"
+      }
     },
     {
       "id": "yono-rummy",
@@ -616,7 +628,11 @@
           "q": "How often is this app record reviewed?",
           "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
         }
-      ]
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Download Guide",
+        "href": "/blog/bingo-101-apk-guide/"
+      }
     },
     {
       "id": "boss-rummy",
