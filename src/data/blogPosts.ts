@@ -3152,6 +3152,1322 @@ const allBlogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: '101z-apk-guide',
+    title: '101Z APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the 101Z APK — what it is, how multi-game arcade bundles typically work, similar apps, and safety notes before downloading.',
+    h1: '101Z APK: Download Guide, Safety Check & FAQ',
+    keywords: ['101z apk', '101z', '101z download', '101z new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/101z.webp', alt: '101Z app icon' },
+    relatedCategoryPath: '/yono-arcade/',
+    sections: [
+      {
+        heading: 'What Is 101Z',
+        paragraphs: [
+          '101Z is an arcade-style app tracked in the All Yono directory, presented by its publisher as a multi-game lobby bundling several lightweight casual formats — spin rounds, simple card modes, and quick mini-games — behind a single login, rather than focusing on one game type the way the rummy or slots clusters elsewhere in this directory do. It is one of five arcade-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate 101Z or any other app listed here. The APK file itself is never stored on this website, and the Download button on the 101Z app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where 101Z Fits Among Other Arcade-Style Apps',
+        paragraphs: [
+          '101Z is tracked alongside four other multi-game apps in this directory: Yono Games, Yono Arcade, Jaiho Arcade, and Maha Games. Each has its own separate publisher, download link, and recorded version — the shared arcade framing describes the bundled-game format, not a common owner.',
+        ],
+      },
+      {
+        heading: 'How Multi-Game Arcade Lobbies Typically Work',
+        paragraphs: [
+          'Rather than one fixed game, arcade-style apps like 101Z typically open to a lobby screen listing several playable modes under a single account, so a user can switch between a spin round, a card mode, or a mini-game without signing in separately for each. The specific lineup of modes, how often it changes, and any shared rewards balance are all set by 101Z\'s own publisher and can change without notice.',
+          'This guide does not verify or endorse any specific mode, reward, or "winning" claim shown on 101Z\'s own website, and does not use that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Like other apps in this directory, 101Z typically distributes its APK directly from the publisher\'s own website rather than a conventional app store, often alongside a referral or promo code field shown during sign-up. That code is separate from any account password — it is a shareable string, not a private credential — and it can change on the publisher\'s own schedule. AllYonoUpdate.com records the current download link and last-checked date for this listing but does not generate, issue, or guarantee any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money apps in this category are regulated differently across Indian states, and some apps listed in this directory — including some bundled inside multi-game arcade apps like 101Z — are not available in every state, among them Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that 101Z is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Before installing an APK from outside an app store, confirm a few basics: that the download link came from 101Z\'s own official website rather than a forwarded message or unfamiliar link shortener, that no page inside the lobby is asking for your existing account password to "unlock" an additional mode, and that you are comfortable with the permissions the APK requests during installation. None of these steps are unique to 101Z — they apply to any APK downloaded outside a conventional app store.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing 101Z against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Games — the most-searched title in this directory\'s arcade cluster.',
+          '• Yono Arcade — another multi-game bundle tracked alongside 101Z.',
+          '• Jaiho Arcade — a further arcade-style listing in the same category.',
+          '• Maha Games — rounding out the five apps currently tracked in this category.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'A common point of confusion across this entire directory is the difference between a referral or promo code and an account password. A referral code is a shareable string entered during sign-up; an account password is created privately and is never meant to be shared. The linked Yono 777 Password guide breaks this distinction down in more detail, since the same confusion shows up across multiple All Yono apps, not just 101Z.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The current 101Z record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the 101Z APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the 101Z app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is 101Z legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified any mode, reward, or winning claim for 101Z?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any mode, bonus, or winning claim shown on 101Z\'s own website, and does not use this type of promotional language itself.',
+      },
+      {
+        question: 'Is 101Z the same company as Yono Arcade or Jaiho Arcade?',
+        answer: 'No. Each arcade-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to 101Z?',
+        answer: 'Yono Games, Yono Arcade, Jaiho Arcade, and Maha Games are the other arcade-style listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: '101Z: App Page & Download Link', href: '/app/101z/' },
+      { label: 'Yono Arcade: App Page & Download Link', href: '/app/yono-arcade/' },
+      { label: 'Jaiho Arcade: App Page & Download Link', href: '/app/jaiho-arcade/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: '567-slots-apk-guide',
+    title: '567 Slots APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the 567 Slots APK — what it is, how randomized reel outcomes typically work, similar apps, and safety notes before downloading.',
+    h1: '567 Slots APK: Download Guide, Safety Check & FAQ',
+    keywords: ['567 slots apk', '567 slots', '567 slots download', '567 slots new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/567-slots.webp', alt: '567 Slots app icon' },
+    relatedCategoryPath: '/yono-slots/',
+    sections: [
+      {
+        heading: 'What Is 567 Slots',
+        paragraphs: [
+          '567 Slots is a slot-style app tracked in the All Yono directory, presented by its publisher as a themed reel game built around randomized spins rather than the sequence-and-set card rules used in the rummy category tracked elsewhere on this site. It is one of nine slot-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate 567 Slots or any other app listed here. The APK file itself is never stored on this website, and the Download button on the 567 Slots app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where 567 Slots Fits Among Other Slot-Style Apps',
+        paragraphs: [
+          '567 Slots is tracked alongside eight other slot-style apps in this directory, including Yono Slots, DhanGame, and Saga Slots. Each has its own separate publisher, download link, and recorded version — the shared "slots" framing describes the game format, not a common owner.',
+        ],
+      },
+      {
+        heading: 'How Randomized Reel Outcomes Typically Work',
+        paragraphs: [
+          'Slot-style apps like 567 Slots typically present a themed reel layout with randomized outcomes generated by the publisher\'s own backend, distinct from the sequence-and-set rules used in the rummy category or the multi-game lobbies found in the arcade cluster tracked elsewhere in this directory. The specific reel theme, payline structure, and any bonus round are set entirely by 567 Slots\'s own publisher and can change without notice.',
+          'This guide does not verify or endorse any specific reward or "winning" claim shown on 567 Slots\'s own website, and does not use that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          '567 Slots follows the same distribution pattern as most apps in this directory: the APK is downloaded directly from the publisher\'s own website instead of a conventional app store, with a referral or promo code field typically shown during sign-up. That code is a shareable string, not a private credential, and the publisher can change it on its own schedule. AllYonoUpdate.com records the current download link and last-checked date for this listing without generating, issuing, or guaranteeing any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'State-level rules for real-money apps in this category vary across India, and some listings tracked here — not available in states such as Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim — reflect that. This guide takes no position on whether 567 Slots is legal where you live; confirm your state\'s current regulations first.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'A few checks are worth running before any APK install outside an app store: make sure the link traces back to 567 Slots\'s own official website rather than a forwarded message, that nothing on the page is requesting your existing account password to "unlock" a download, and that the install permissions look reasonable for a game of this type. None of this is specific to 567 Slots — the same checks apply across every app tracked in this directory.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing 567 Slots against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Slots — the lead title in this site\'s slots category.',
+          '• DhanGame — another slot-style app tracked in the same cluster.',
+          '• Saga Slots — a further reel-based listing worth comparing.',
+          '• Ind Slots — one more option in the same category.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'People searching for 567 Slots often mix up a referral code with an account password, but the two are not the same thing. A referral code is shareable and entered at sign-up; a password is private and created by the user. The Yono 777 Password guide linked below covers this mix-up in more detail, since it comes up across many apps in this directory, not just 567 Slots.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          '567 Slots\'s dedicated app page holds the current download link and last-checked date, and is reviewed whenever a meaningful change can be confirmed. This guide follows the same review schedule, so the date above reflects the most recent check rather than a continuously live feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the 567 Slots APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the 567 Slots app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is 567 Slots legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are spin outcomes generated in slot-style apps like 567 Slots?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes are generated.',
+      },
+      {
+        question: 'Is 567 Slots the same company as Yono Slots or DhanGame?',
+        answer: 'No. Each slot-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to 567 Slots?',
+        answer: 'Yono Slots, DhanGame, Saga Slots, and Ind Slots are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: '567 Slots: App Page & Download Link', href: '/app/567-slots/' },
+      { label: 'Yono Slots: App Page & Download Link', href: '/app/yono-slots/' },
+      { label: 'DhanGame: App Page & Launch Countdown', href: '/app/dhan-game/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: '789-jackpot-apk-guide',
+    title: '789 Jackpot APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the 789 Jackpot APK — what it is, how randomized reel outcomes typically work, similar apps, and safety notes before downloading.',
+    h1: '789 Jackpot APK: Download Guide, Safety Check & FAQ',
+    keywords: ['789 jackpot apk', '789 jackpot', '789 jackpot download', '789 jackpot new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/789-jackpot.webp', alt: '789 Jackpot app icon' },
+    relatedCategoryPath: '/yono-slots/',
+    sections: [
+      {
+        heading: 'What Is 789 Jackpot',
+        paragraphs: [
+          '789 Jackpot is a slot-style app tracked in the All Yono directory, presented by its publisher as a jackpot-themed reel game built around randomized spin outcomes rather than the card-based rummy format tracked elsewhere on this site. It is one of nine slot-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory and does not develop, host, or operate 789 Jackpot or any other app listed here. The APK file is never stored on this website, and the Download button on the 789 Jackpot app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where 789 Jackpot Fits Among Other Slot-Style Apps',
+        paragraphs: [
+          '789 Jackpot sits alongside eight other slot-style apps tracked in this directory, among them Yono Slots, Ind Slots, and Jaiho Slot. Each operates under its own separate publisher and download link — the shared slots category groups these apps by format, not by ownership.',
+        ],
+      },
+      {
+        heading: 'How Randomized Reel Outcomes Typically Work',
+        paragraphs: [
+          '789 Jackpot follows the same general format as other slot-style apps in this directory: a themed reel set with randomized outcomes generated by the publisher\'s own system, built around quick spin rounds rather than the card-based rummy format or the lobby-style arcade apps tracked elsewhere here. The exact jackpot structure, bonus triggers, and payout tiers are controlled entirely by 789 Jackpot\'s own publisher and are subject to change.',
+          'AllYonoUpdate.com has not verified any jackpot, bonus, or winning claim shown on 789 Jackpot\'s own website, and does not repeat that kind of promotional language itself.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'As with most apps tracked here, 789 Jackpot\'s APK is typically distributed straight from the publisher\'s own website rather than through a conventional app store, with a referral or promo code field commonly appearing during sign-up. The code is a shareable sign-up string, not a private credential, and the publisher sets its own schedule for changing it. AllYonoUpdate.com records 789 Jackpot\'s current download link and last-checked date here but does not generate, issue, or guarantee any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Apps in this category are subject to different real-money gaming rules state by state in India, and this directory already tracks apps that are restricted in Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. Nothing here should be read as a claim that 789 Jackpot is legal or illegal in your state — that is for you to confirm locally before downloading.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Three checks matter most before installing 789 Jackpot outside a conventional app store: the download link should trace back to the platform\'s own official website, no page should ask for an existing account password to "unlock" anything, and the permissions requested at install time should look reasonable for the type of game being installed. These checks apply to any sideloaded APK, not only 789 Jackpot.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing 789 Jackpot against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Slots — the lead title in this directory\'s slots category.',
+          '• Ind Slots — another slot-style app tracked alongside 789 Jackpot.',
+          '• Jaiho Slot — a further reel-based listing in the same cluster.',
+          '• Slots Winner — one more slots-category option to compare.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          '789 Jackpot\'s sign-up flow, like most apps in this directory, uses a referral or promo code field that gets confused for an account password fairly often. They are different: a referral code is meant to be shared, while a password is private and chosen by the account holder. See the linked Yono 777 Password guide for a fuller breakdown of this recurring mix-up.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Any change to 789 Jackpot\'s download link or catalog details is reflected first on its dedicated app page, which is reviewed whenever a meaningful update can be confirmed. This guide is kept on the same schedule — the last-reviewed date above is the most recent check, not a real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the 789 Jackpot APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the 789 Jackpot app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is 789 Jackpot legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are spin and jackpot outcomes generated in apps like 789 Jackpot?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes or jackpot triggers are generated.',
+      },
+      {
+        question: 'Is 789 Jackpot the same company as Yono Slots or Ind Slots?',
+        answer: 'No. Each slot-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to 789 Jackpot?',
+        answer: 'Yono Slots, Ind Slots, Jaiho Slot, and Slots Winner are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: '789 Jackpot: App Page & Download Link', href: '/app/789-jackpot/' },
+      { label: 'Yono Slots: App Page & Download Link', href: '/app/yono-slots/' },
+      { label: 'Ind Slots: App Page & Download Link', href: '/app/ind-slots/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'hindi777-apk-guide',
+    title: 'Hindi 777 APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Hindi 777 APK — what it is, how reel-and-number "777" apps typically work, similar apps, and safety notes before downloading.',
+    h1: 'Hindi 777 APK: Download Guide, Safety Check & FAQ',
+    keywords: ['hindi 777 apk', 'hindi777', 'hindi 777 download', 'hindi 777 new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/hindi777.webp', alt: 'Hindi 777 app icon' },
+    relatedCategoryPath: '/yono-777/',
+    sections: [
+      {
+        heading: 'What Is Hindi 777',
+        paragraphs: [
+          'Hindi 777 is a "777"-style app tracked in the All Yono directory, presented by its publisher as a reel-and-number casino-style game styled after classic slot-machine layouts, distinct from the sequence-and-set rummy format tracked elsewhere on this site. It is one of five "777"-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Hindi 777 or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Hindi 777 app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Hindi 777 Fits Among Other "777"-Style Apps',
+        paragraphs: [
+          'Hindi 777 is tracked alongside four other "777"-style apps in this directory: Yono 777, 777 Game, Jahio 777, and Yn 777. Each has its own separate publisher, download link, and recorded version — the shared "777" naming reflects a style choice, not a common owner.',
+        ],
+      },
+      {
+        heading: 'How Reel-and-Number "777" Apps Typically Work',
+        paragraphs: [
+          'Hindi 777 follows the reel-and-number format common to "777"-style apps in this directory: randomized outcomes generated by the publisher\'s own system, often paired with number- or symbol-matching rounds styled after classic slot-machine layouts, rather than the sequence-and-set rules used in the rummy category tracked elsewhere here. The exact round structure and any bonus feature are set by Hindi 777\'s own publisher and can change without notice.',
+          'This guide does not verify or endorse how Hindi 777\'s outcomes are generated, and does not use winning or earning language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Hindi 777 is distributed the way most apps in this directory are: directly from the publisher\'s own website rather than a conventional app store, usually with a referral or promo code field appearing at sign-up. That code is shareable, not a private credential, and can change whenever the publisher updates it. AllYonoUpdate.com keeps the current download link and last-checked date on file for this listing but does not generate, issue, or guarantee any code, bonus, or reward tied to it.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Indian states regulate real-money apps in this category inconsistently, and a number of apps listed on this site are unavailable in at least Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide makes no claim about Hindi 777\'s legal status in your location — check your own state\'s rules before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Confirm the basics before sideloading Hindi 777: the link should come from the platform\'s own official website rather than a forwarded copy or shortened URL, no step should ask for your existing account password to unlock the file, and the permissions requested during installation should look proportionate to a casual game app. The same checklist applies to every APK tracked in this directory, not just Hindi 777.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Hindi 777 against other options in this directory, these are related listings worth knowing about:',
+          '• Yono 777 — the lead title in this directory\'s "777" cluster.',
+          '• 777 Game — another reel-and-number app tracked in the same category.',
+          '• Jahio 777 — a further "777"-style listing worth comparing.',
+          '• Yn 777 — rounding out the five apps tracked in this category.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'One recurring source of confusion across this directory, Hindi 777 included, is treating a referral or promo code as if it were an account password. It isn\'t — a referral code is a shareable sign-up string, while a password is private and never meant to be shared. The Yono 777 Password guide linked below unpacks this distinction in more detail.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The current Hindi 777 record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Hindi 777 APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Hindi 777 app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Hindi 777 legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are outcomes generated in "777"-style apps like Hindi 777?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes are generated.',
+      },
+      {
+        question: 'Is Hindi 777 the same company as Yono 777 or Jahio 777?',
+        answer: 'No. Each "777"-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Hindi 777?',
+        answer: 'Yono 777, 777 Game, Jahio 777, and Yn 777 are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Hindi 777: App Page & Download Link', href: '/app/hindi777/' },
+      { label: 'Yono 777 APK: Download Guide & What "777" Apps Are', href: '/blog/yono-777-apk-guide/' },
+      { label: 'Jahio 777: App Page & Download Link', href: '/app/jahio-777/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'ind-slots-apk-guide',
+    title: 'Ind Slots APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Ind Slots APK — what it is, how randomized reel outcomes typically work, similar apps, and safety notes before downloading.',
+    h1: 'Ind Slots APK: Download Guide, Safety Check & FAQ',
+    keywords: ['ind slots apk', 'ind slots', 'ind slots download', 'ind slots new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/ind-slots.webp', alt: 'Ind Slots app icon' },
+    relatedCategoryPath: '/yono-slots/',
+    sections: [
+      {
+        heading: 'What Is Ind Slots',
+        paragraphs: [
+          'Ind Slots is a slot-style app tracked in the All Yono directory, presented by its publisher as a reel-based game built around randomized spins rather than the sequence-and-set rules used in the rummy category tracked elsewhere on this site. It is one of nine slot-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Ind Slots or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Ind Slots app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Ind Slots Fits Among Other Slot-Style Apps',
+        paragraphs: [
+          'Ind Slots is one of nine slot-style apps tracked in this directory, alongside Yono Slots, 789 Jackpot, and Share Slots. Each has its own separate publisher, download link, and recorded version — grouped here by category, not by common ownership.',
+        ],
+      },
+      {
+        heading: 'How Randomized Reel Outcomes Typically Work',
+        paragraphs: [
+          'Like other slot-style apps tracked here, Ind Slots is built around randomized reel spins rather than the sequence-and-set rummy format or the bundled mini-games found in the arcade cluster elsewhere in this directory. Reel themes, spin speed, and any bonus feature are set by Ind Slots\'s own publisher and can be changed at any time without notice.',
+          'This guide does not verify or endorse any reward, bonus, or "winning" figure shown on Ind Slots\'s own website, and avoids that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Ind Slots follows the same distribution pattern as most apps in this directory: the APK is downloaded directly from the publisher\'s own website instead of a conventional app store, with a referral or promo code field typically shown during sign-up. That code is a shareable string, not a private credential, and the publisher can change it on its own schedule. AllYonoUpdate.com records the current download link and last-checked date for this listing without generating, issuing, or guaranteeing any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money apps in this category are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Ind Slots is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'A few checks are worth running before any APK install outside an app store: make sure the link traces back to Ind Slots\'s own official website rather than a forwarded message, that nothing on the page is requesting your existing account password to "unlock" a download, and that the install permissions look reasonable for a game of this type. None of this is specific to Ind Slots — the same checks apply across every app tracked in this directory.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Ind Slots against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Slots — the lead title in this directory\'s slots cluster.',
+          '• 789 Jackpot — another slot-style app tracked alongside Ind Slots.',
+          '• Share Slots — a further reel-based listing worth comparing.',
+          '• Saga Slots — one more option in the same category.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'A common point of confusion across this entire directory is the difference between a referral or promo code and an account password. A referral code is a shareable string entered during sign-up; an account password is created privately and is never meant to be shared. The linked Yono 777 Password guide breaks this distinction down in more detail, since the same confusion shows up across multiple All Yono apps, not just Ind Slots.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Ind Slots\'s dedicated app page holds the current download link and last-checked date, and is reviewed whenever a meaningful change can be confirmed. This guide follows the same review schedule, so the date above reflects the most recent check rather than a continuously live feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Ind Slots APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Ind Slots app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Ind Slots legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are spin outcomes generated in slot-style apps like Ind Slots?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes are generated.',
+      },
+      {
+        question: 'Is Ind Slots the same company as Yono Slots or 789 Jackpot?',
+        answer: 'No. Each slot-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Ind Slots?',
+        answer: 'Yono Slots, 789 Jackpot, Share Slots, and Saga Slots are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Ind Slots: App Page & Download Link', href: '/app/ind-slots/' },
+      { label: 'Yono Slots: App Page & Download Link', href: '/app/yono-slots/' },
+      { label: '789 Jackpot: App Page & Download Link', href: '/app/789-jackpot/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'inr-rummy-apk-guide',
+    title: 'INR Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the INR Rummy APK — what it is, how sequence-and-set rummy rules typically work, similar apps, and safety notes before downloading.',
+    h1: 'INR Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['inr rummy apk', 'inr rummy', 'inr rummy download', 'inr rummy new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/inr-rummy.webp', alt: 'INR Rummy app icon' },
+    relatedCategoryPath: '/yono-rummy/',
+    sections: [
+      {
+        heading: 'What Is INR Rummy',
+        paragraphs: [
+          'INR Rummy is a rummy-style app tracked in the All Yono directory, presented by its publisher as a skill-based card game built around standard sequence-and-set rummy rules rather than the reel-based formats used in the slots or sevens categories tracked elsewhere on this site. It is one of 27 rummy-style apps currently tracked here — by far the largest category in this directory.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate INR Rummy or any other app listed here. The APK file itself is never stored on this website, and the Download button on the INR Rummy app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where INR Rummy Fits Among Other Rummy-Style Apps',
+        paragraphs: [
+          'INR Rummy is one of 27 rummy-style apps tracked in this directory — by far the largest category here. Well-known names in the same cluster include Yono Rummy, Gold Rummy, and Win Rummy. Each has its own separate publisher and download link; this directory groups them by category only, not by ownership.',
+        ],
+      },
+      {
+        heading: 'How Sequence-and-Set Rummy Rules Typically Work',
+        paragraphs: [
+          'INR Rummy is presented by its publisher as a skill-based card game built around standard rummy sequence-and-set rules — forming valid runs and sets from a dealt hand — rather than the reel-based mechanics used in the slots or sevens categories tracked elsewhere in this directory. The specific table variants, scoring rules, and any bonus feature are set entirely by INR Rummy\'s own publisher and can change without notice.',
+          'This guide does not verify or endorse any reward or "winning" claim shown on INR Rummy\'s own website, and does not use that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'As with most apps tracked here, INR Rummy\'s APK is typically distributed straight from the publisher\'s own website rather than through a conventional app store, with a referral or promo code field commonly appearing during sign-up. The code is a shareable sign-up string, not a private credential, and the publisher sets its own schedule for changing it. AllYonoUpdate.com records INR Rummy\'s current download link and last-checked date here but does not generate, issue, or guarantee any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'State-level rules for real-money rummy apps vary across India, and some listings tracked here — not available in states such as Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim — reflect that. This guide takes no position on whether INR Rummy is legal where you live; confirm your state\'s current regulations first.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Three checks matter most before installing INR Rummy outside a conventional app store: the download link should trace back to the platform\'s own official website, no page should ask for an existing account password to "unlock" anything, and the permissions requested at install time should look reasonable for a card game. These checks apply to any sideloaded APK, not only INR Rummy.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing INR Rummy against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Rummy — the most-searched title in this directory\'s rummy category.',
+          '• Gold Rummy — a well-known name in the same cluster.',
+          '• Win Rummy — another established rummy-style listing worth comparing.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'INR Rummy\'s sign-up flow, like most apps in this directory, uses a referral or promo code field that gets confused for an account password fairly often. They are different: a referral code is meant to be shared, while a password is private and chosen by the account holder. See the linked Yono 777 Password guide for a fuller breakdown of this recurring mix-up.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Any change to INR Rummy\'s download link or catalog details is reflected first on its dedicated app page, which is reviewed whenever a meaningful update can be confirmed. This guide is kept on the same schedule — the last-reviewed date above is the most recent check, not a real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the INR Rummy APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the INR Rummy app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is INR Rummy legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified any bonus or winning claim for INR Rummy?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any bonus, reward, or winning claim shown on INR Rummy\'s own website, and does not use this type of promotional language itself.',
+      },
+      {
+        question: 'Is INR Rummy the same company as Yono Rummy or Gold Rummy?',
+        answer: 'No. Each rummy-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to INR Rummy?',
+        answer: 'Yono Rummy, Gold Rummy, and Win Rummy are well-known related listings in this directory\'s rummy category — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'INR Rummy: App Page & Download Link', href: '/app/inr-rummy/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'Gold Rummy: App Page & Download Link', href: '/app/gold-rummy/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'jahio-777-apk-guide',
+    title: 'Jahio 777 APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Jahio 777 APK — what it is, how reel-and-number "777" apps typically work, similar apps, and safety notes before downloading.',
+    h1: 'Jahio 777 APK: Download Guide, Safety Check & FAQ',
+    keywords: ['jahio 777 apk', 'jahio 777', 'jahio 777 download', 'jahio 777 new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/jahio-777.webp', alt: 'Jahio 777 app icon' },
+    relatedCategoryPath: '/yono-777/',
+    sections: [
+      {
+        heading: 'What Is Jahio 777',
+        paragraphs: [
+          'Jahio 777 is a "777"-style app tracked in the All Yono directory, presented by its publisher as a reel-and-number casino-style game in the classic slot-machine mold, distinct from the sequence-and-set rummy format tracked elsewhere on this site. It is one of five "777"-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Jahio 777 or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Jahio 777 app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Jahio 777 Fits Among Other "777"-Style Apps',
+        paragraphs: [
+          'Jahio 777 is one of five "777"-style apps tracked in this directory, alongside Yono 777, 777 Game, Hindi 777, and Yn 777. Each operates under its own separate publisher — the shared naming pattern groups these apps by style, not by ownership.',
+        ],
+      },
+      {
+        heading: 'How Reel-and-Number "777" Apps Typically Work',
+        paragraphs: [
+          'Jahio 777 is built around the same reel-and-number format as other "777"-style apps tracked in this directory — randomized spin outcomes from the publisher\'s own system, often combined with number-matching rounds in a classic slot-machine style, distinct from the card-based rummy format used elsewhere on this site. Round structure, bonus triggers, and payout tiers are controlled entirely by Jahio 777\'s own publisher and are subject to change without notice.',
+          'AllYonoUpdate.com has not verified how Jahio 777\'s outcomes are generated and does not repeat any winning or earning claim from its own marketing.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Jahio 777 is distributed the way most apps in this directory are: directly from the publisher\'s own website rather than a conventional app store, usually with a referral or promo code field appearing at sign-up. That code is shareable, not a private credential, and can change whenever the publisher updates it. AllYonoUpdate.com keeps the current download link and last-checked date on file for this listing but does not generate, issue, or guarantee any code, bonus, or reward tied to it.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Apps in this category are subject to different real-money gaming rules state by state in India, and this directory already tracks apps that are restricted in Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. Nothing here should be read as a claim that Jahio 777 is legal or illegal in your state — that is for you to confirm locally before downloading.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Confirm the basics before sideloading Jahio 777: the link should come from the platform\'s own official website rather than a forwarded copy or shortened URL, no step should ask for your existing account password to unlock the file, and the permissions requested during installation should look proportionate to a casual game app. The same checklist applies to every APK tracked in this directory, not just Jahio 777.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Jahio 777 against other options in this directory, these are related listings worth knowing about:',
+          '• Yono 777 — the lead title in this directory\'s "777" cluster.',
+          '• 777 Game — another reel-and-number app tracked alongside Jahio 777.',
+          '• Hindi 777 — a further "777"-style listing in the same category.',
+          '• Yn 777 — one more option tracked in this category.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'One recurring source of confusion across this directory, Jahio 777 included, is treating a referral or promo code as if it were an account password. It isn\'t — a referral code is a shareable sign-up string, while a password is private and never meant to be shared. The Yono 777 Password guide linked below unpacks this distinction in more detail.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The current Jahio 777 record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Jahio 777 APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Jahio 777 app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Jahio 777 legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are outcomes generated in "777"-style apps like Jahio 777?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes are generated.',
+      },
+      {
+        question: 'Is Jahio 777 the same company as Yono 777 or Hindi 777?',
+        answer: 'No. Each "777"-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Jahio 777?',
+        answer: 'Yono 777, 777 Game, Hindi 777, and Yn 777 are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Jahio 777: App Page & Download Link', href: '/app/jahio-777/' },
+      { label: 'Yono 777 APK: Download Guide & What "777" Apps Are', href: '/blog/yono-777-apk-guide/' },
+      { label: 'Hindi 777: App Page & Download Link', href: '/app/hindi777/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'jaiho91-apk-guide',
+    title: 'Jaiho91 APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Jaiho91 APK — what it is, how sequence-and-set rummy rules typically work, similar apps, and safety notes before downloading.',
+    h1: 'Jaiho91 APK: Download Guide, Safety Check & FAQ',
+    keywords: ['jaiho91 apk', 'jaiho91', 'jaiho91 download', 'jaiho91 new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/jaiho91.webp', alt: 'Jaiho91 app icon' },
+    relatedCategoryPath: '/yono-rummy/',
+    sections: [
+      {
+        heading: 'What Is Jaiho91',
+        paragraphs: [
+          'Jaiho91 is a rummy-style app tracked in the All Yono directory, presented by its publisher as a skill-based card game built around standard sequence-and-set rummy rules rather than the reel-based formats used in the slots or sevens categories tracked elsewhere on this site. It is one of 27 rummy-style apps currently tracked here — by far the largest category in this directory.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Jaiho91 or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Jaiho91 app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Jaiho91 Fits Among Other Rummy-Style Apps',
+        paragraphs: [
+          'Jaiho91 sits in this directory\'s largest category, alongside 26 other rummy-style apps including Yono Rummy, Jaiho Rummy, and Boss Rummy. Despite the similar "Jaiho" branding shared with Jaiho Rummy, the two are separately operated listings — grouped here by category, not ownership.',
+        ],
+      },
+      {
+        heading: 'How Sequence-and-Set Rummy Rules Typically Work',
+        paragraphs: [
+          'Jaiho91 follows the same sequence-and-set rummy format used across most of this directory\'s largest category: a skill-based card game where valid runs and sets are formed from a dealt hand, distinct from the reel-based slots and sevens clusters tracked elsewhere here. Table variants, scoring, and any bonus structure are controlled by Jaiho91\'s own publisher and are subject to change without notice.',
+          'AllYonoUpdate.com has not independently verified any bonus or winning claim shown on Jaiho91\'s own website, and does not use that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Jaiho91 is distributed the way most apps in this directory are: directly from the publisher\'s own website rather than a conventional app store, usually with a referral or promo code field appearing at sign-up. That code is shareable, not a private credential, and can change whenever the publisher updates it. AllYonoUpdate.com keeps the current download link and last-checked date on file for this listing but does not generate, issue, or guarantee any code, bonus, or reward tied to it.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Indian states regulate real-money rummy apps inconsistently, and a number of apps listed on this site are unavailable in at least Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide makes no claim about Jaiho91\'s legal status in your location — check your own state\'s rules before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Before installing an APK from outside an app store, confirm a few basics: that the download link came from Jaiho91\'s own official website rather than a forwarded message or unfamiliar link shortener, that no page is asking for your existing account password to "unlock" the file, and that you are comfortable with the permissions the APK requests during installation. None of these steps are unique to Jaiho91 — they apply to any APK downloaded outside a conventional app store.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Jaiho91 against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Rummy — the most-searched title in this directory\'s rummy category.',
+          '• Jaiho Rummy — a separately operated app with similar branding.',
+          '• Boss Rummy — another established listing in the same cluster.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'One recurring source of confusion across this directory, Jaiho91 included, is treating a referral or promo code as if it were an account password. It isn\'t — a referral code is a shareable sign-up string, while a password is private and never meant to be shared. The Yono 777 Password guide linked below unpacks this distinction in more detail.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Jaiho91\'s dedicated app page holds the current download link and last-checked date, and is reviewed whenever a meaningful change can be confirmed. This guide follows the same review schedule, so the date above reflects the most recent check rather than a continuously live feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Jaiho91 APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Jaiho91 app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Jaiho91 legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified any bonus or winning claim for Jaiho91?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any bonus, reward, or winning claim shown on Jaiho91\'s own website, and does not use this type of promotional language itself.',
+      },
+      {
+        question: 'Is Jaiho91 the same company as Jaiho Rummy?',
+        answer: 'No. Despite the similar branding, Jaiho91 and Jaiho Rummy are separately operated apps with their own publishers. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Jaiho91?',
+        answer: 'Yono Rummy, Jaiho Rummy, and Boss Rummy are related listings in this directory\'s rummy category — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Jaiho91: App Page & Download Link', href: '/app/jaiho91/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'Jaiho Rummy: App Page & Download Link', href: '/app/jaiho-rummy/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'ok-rummy-apk-guide',
+    title: 'OK Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the OK Rummy APK — what it is, how sequence-and-set rummy rules typically work, similar apps, and safety notes before downloading.',
+    h1: 'OK Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['ok rummy apk', 'ok rummy', 'ok rummy download', 'ok rummy new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/ok-rummy.webp', alt: 'OK Rummy app icon' },
+    relatedCategoryPath: '/yono-rummy/',
+    sections: [
+      {
+        heading: 'What Is OK Rummy',
+        paragraphs: [
+          'OK Rummy is a rummy-style app tracked in the All Yono directory, presented by its publisher as a skill-based card game built around standard sequence-and-set rummy rules rather than the reel-based formats used elsewhere in this directory. It is one of 27 rummy-style apps currently tracked here — by far the largest category in this directory.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate OK Rummy or any other app listed here. The APK file itself is never stored on this website, and the Download button on the OK Rummy app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where OK Rummy Fits Among Other Rummy-Style Apps',
+        paragraphs: [
+          'OK Rummy is tracked among 27 rummy-style apps in this directory, the largest category here, alongside recognizable names such as Yono Rummy, ABC Rummy, and Joy Rummy. Each has a separate publisher and download link — the category grouping does not imply shared ownership.',
+        ],
+      },
+      {
+        heading: 'How Sequence-and-Set Rummy Rules Typically Work',
+        paragraphs: [
+          'OK Rummy, like the rest of the rummy category tracked here, is built around standard sequence-and-set card rules rather than the reel-based formats used in the slots or sevens clusters elsewhere in this directory. The exact table formats, scoring system, and any promotional feature are set by OK Rummy\'s own publisher and can change without notice.',
+          'This guide does not verify or endorse any reward, bonus, or winning claim shown on OK Rummy\'s own website, and avoids that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'OK Rummy follows the same distribution pattern as most apps in this directory: the APK is downloaded directly from the publisher\'s own website instead of a conventional app store, with a referral or promo code field typically shown during sign-up. That code is a shareable string, not a private credential, and the publisher can change it on its own schedule. AllYonoUpdate.com records the current download link and last-checked date for this listing without generating, issuing, or guaranteeing any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'State-level rules for real-money rummy apps vary across India, and some listings tracked here — not available in states such as Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim — reflect that. This guide takes no position on whether OK Rummy is legal where you live; confirm your state\'s current regulations first.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'A few checks are worth running before any APK install outside an app store: make sure the link traces back to OK Rummy\'s own official website rather than a forwarded message, that nothing on the page is requesting your existing account password to "unlock" a download, and that the install permissions look reasonable for a card game. None of this is specific to OK Rummy — the same checks apply across every app tracked in this directory.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing OK Rummy against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Rummy — the most-searched title in this directory\'s rummy category.',
+          '• ABC Rummy — a well-known name in the same cluster.',
+          '• Joy Rummy — another established rummy-style listing worth comparing.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'A common point of confusion across this entire directory is the difference between a referral or promo code and an account password. A referral code is a shareable string entered during sign-up; an account password is created privately and is never meant to be shared. The linked Yono 777 Password guide breaks this distinction down in more detail, since the same confusion shows up across multiple All Yono apps, not just OK Rummy.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Any change to OK Rummy\'s download link or catalog details is reflected first on its dedicated app page, which is reviewed whenever a meaningful update can be confirmed. This guide is kept on the same schedule — the last-reviewed date above is the most recent check, not a real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the OK Rummy APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the OK Rummy app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is OK Rummy legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified any bonus or winning claim for OK Rummy?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any bonus, reward, or winning claim shown on OK Rummy\'s own website, and does not use this type of promotional language itself.',
+      },
+      {
+        question: 'Is OK Rummy the same company as Yono Rummy or ABC Rummy?',
+        answer: 'No. Each rummy-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to OK Rummy?',
+        answer: 'Yono Rummy, ABC Rummy, and Joy Rummy are well-known related listings in this directory\'s rummy category — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'OK Rummy: App Page & Download Link', href: '/app/ok-rummy/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'ABC Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/abc-rummy-apk-guide/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'share-slots-apk-guide',
+    title: 'Share Slots APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Share Slots APK — what it is, how randomized reel outcomes typically work, similar apps, and safety notes before downloading.',
+    h1: 'Share Slots APK: Download Guide, Safety Check & FAQ',
+    keywords: ['share slots apk', 'share slots', 'share slots download', 'share slots new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/share-slots.webp', alt: 'Share Slots app icon' },
+    relatedCategoryPath: '/yono-slots/',
+    sections: [
+      {
+        heading: 'What Is Share Slots',
+        paragraphs: [
+          'Share Slots is a slot-style app tracked in the All Yono directory, presented by its publisher as a reel-based game built around randomized spins rather than the sequence-and-set rules used in the rummy category tracked elsewhere on this site. It is one of nine slot-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Share Slots or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Share Slots app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Share Slots Fits Among Other Slot-Style Apps',
+        paragraphs: [
+          'Share Slots is tracked alongside eight other slot-style apps in this directory, including Yono Slots, Slots Winner, and Saga Slots. Each has its own separate publisher and download link — the shared slots framing is a category grouping, not a sign of common ownership.',
+        ],
+      },
+      {
+        heading: 'How Randomized Reel Outcomes Typically Work',
+        paragraphs: [
+          'Share Slots uses the same basic reel-spin format common to this category: randomized outcomes generated by the publisher\'s own system, organized around one or more visual themes rather than the card-matching rules of rummy or the multi-mode lobby of arcade-style apps tracked elsewhere here. How often themes rotate, and whether any bonus round applies, is entirely at Share Slots\'s own publisher\'s discretion and can change without warning.',
+          'AllYonoUpdate.com has not independently verified any reward or winning claim shown on Share Slots\'s own website, and does not use that kind of promotional language itself.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'As with most apps tracked here, Share Slots\'s APK is typically distributed straight from the publisher\'s own website rather than through a conventional app store, with a referral or promo code field commonly appearing during sign-up. The code is a shareable sign-up string, not a private credential, and the publisher sets its own schedule for changing it. AllYonoUpdate.com records Share Slots\'s current download link and last-checked date here but does not generate, issue, or guarantee any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money apps in this category are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Share Slots is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Three checks matter most before installing Share Slots outside a conventional app store: the download link should trace back to the platform\'s own official website, no page should ask for an existing account password to "unlock" anything, and the permissions requested at install time should look reasonable for the type of game being installed. These checks apply to any sideloaded APK, not only Share Slots.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Share Slots against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Slots — the lead title in this site\'s slots category.',
+          '• Slots Winner — another slot-style app tracked in the same cluster.',
+          '• Saga Slots — a further reel-based listing worth comparing.',
+          '• 567 Slots — one more option in the same category.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'Share Slots\'s sign-up flow, like most apps in this directory, uses a referral or promo code field that gets confused for an account password fairly often. They are different: a referral code is meant to be shared, while a password is private and chosen by the account holder. See the linked Yono 777 Password guide for a fuller breakdown of this recurring mix-up.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The current Share Slots record, including its download link and last-checked date, is kept on its dedicated app page, reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Share Slots APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Share Slots app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Share Slots legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are spin outcomes generated in slot-style apps like Share Slots?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes are generated.',
+      },
+      {
+        question: 'Is Share Slots the same company as Yono Slots or Slots Winner?',
+        answer: 'No. Each slot-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Share Slots?',
+        answer: 'Yono Slots, Slots Winner, Saga Slots, and 567 Slots are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Share Slots: App Page & Download Link', href: '/app/share-slots/' },
+      { label: 'Yono Slots: App Page & Download Link', href: '/app/yono-slots/' },
+      { label: 'Slots Winner: App Page & Download Link', href: '/app/slots-winner/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'slots-winner-apk-guide',
+    title: 'Slots Winner APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Slots Winner APK — what it is, how randomized reel outcomes typically work, similar apps, and safety notes before downloading.',
+    h1: 'Slots Winner APK: Download Guide, Safety Check & FAQ',
+    keywords: ['slots winner apk', 'slots winner', 'slots winner download', 'slots winner new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/slots-winner.webp', alt: 'Slots Winner app icon' },
+    relatedCategoryPath: '/yono-slots/',
+    sections: [
+      {
+        heading: 'What Is Slots Winner',
+        paragraphs: [
+          'Slots Winner is a slot-style app tracked in the All Yono directory, presented by its publisher as a reel-based game built around randomized spins rather than the sequence-and-set card rules used elsewhere in this directory. It is one of nine slot-style apps currently tracked here.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Slots Winner or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Slots Winner app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Slots Winner Fits Among Other Slot-Style Apps',
+        paragraphs: [
+          'Slots Winner sits in the same slots category as eight other apps tracked here, including Yono Slots, 567 Slots, and Share Slots. Each is run by its own separate publisher with its own download link — this directory groups them by format only.',
+        ],
+      },
+      {
+        heading: 'How Randomized Reel Outcomes Typically Work',
+        paragraphs: [
+          'Slots Winner, like the rest of this category, is centered on randomized reel spins rather than rummy\'s sequence-and-set card rules or the bundled game lobbies tracked under the arcade category elsewhere in this directory. The specific reel design, spin mechanics, and any bonus structure are controlled by Slots Winner\'s own publisher and may change without notice.',
+          'This guide does not verify or endorse any reward, prize, or "winning" claim shown on Slots Winner\'s own website, and does not use that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Slots Winner is distributed the way most apps in this directory are: directly from the publisher\'s own website rather than a conventional app store, usually with a referral or promo code field appearing at sign-up. That code is shareable, not a private credential, and can change whenever the publisher updates it. AllYonoUpdate.com keeps the current download link and last-checked date on file for this listing but does not generate, issue, or guarantee any code, bonus, or reward tied to it.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Apps in this category are subject to different real-money gaming rules state by state in India, and this directory already tracks apps that are restricted in Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. Nothing here should be read as a claim that Slots Winner is legal or illegal in your state — that is for you to confirm locally before downloading.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Confirm the basics before sideloading Slots Winner: the link should come from the platform\'s own official website rather than a forwarded copy or shortened URL, no step should ask for your existing account password to unlock the file, and the permissions requested during installation should look proportionate to a casual game app. The same checklist applies to every APK tracked in this directory, not just Slots Winner.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Slots Winner against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Slots — the lead title in this directory\'s slots category.',
+          '• 567 Slots — another slot-style app tracked alongside Slots Winner.',
+          '• Share Slots — a further reel-based listing in the same cluster.',
+          '• Jaiho Slot — one more slots-category option to compare.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'One recurring source of confusion across this directory, Slots Winner included, is treating a referral or promo code as if it were an account password. It isn\'t — a referral code is a shareable sign-up string, while a password is private and never meant to be shared. The Yono 777 Password guide linked below unpacks this distinction in more detail.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Slots Winner\'s dedicated app page holds the current download link and last-checked date, and is reviewed whenever a meaningful change can be confirmed. This guide follows the same review schedule, so the date above reflects the most recent check rather than a continuously live feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Slots Winner APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Slots Winner app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Slots Winner legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money apps in this category. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'How are spin outcomes generated in slot-style apps like Slots Winner?',
+        answer: 'Apps in this category typically use randomized outcomes generated by each publisher\'s own system. AllYonoUpdate.com does not verify or endorse how any individual app\'s outcomes are generated.',
+      },
+      {
+        question: 'Is Slots Winner the same company as Yono Slots or 567 Slots?',
+        answer: 'No. Each slot-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Slots Winner?',
+        answer: 'Yono Slots, 567 Slots, Share Slots, and Jaiho Slot are close related listings in this directory — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Slots Winner: App Page & Download Link', href: '/app/slots-winner/' },
+      { label: 'Yono Slots: App Page & Download Link', href: '/app/yono-slots/' },
+      { label: '567 Slots: App Page & Download Link', href: '/app/567-slots/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'top-rummy-apk-guide',
+    title: 'Top Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Top Rummy APK — what it is, how sequence-and-set rummy rules typically work, similar apps, and safety notes before downloading.',
+    h1: 'Top Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['top rummy apk', 'top rummy', 'top rummy download', 'top rummy new version'],
+    publishedDate: '2026-10-23',
+    lastReviewedDate: '2026-10-23',
+    image: { src: '/images/games/top-rummy.webp', alt: 'Top Rummy app icon' },
+    relatedCategoryPath: '/yono-rummy/',
+    sections: [
+      {
+        heading: 'What Is Top Rummy',
+        paragraphs: [
+          'Top Rummy is a rummy-style app tracked in the All Yono directory, presented by its publisher as a skill-based card game built around standard sequence-and-set rummy rules rather than the reel-based formats used in the slots or sevens categories tracked elsewhere on this site. It is one of 27 rummy-style apps currently tracked here — by far the largest category in this directory.',
+          'AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Top Rummy or any other app listed here. The APK file itself is never stored on this website, and the Download button on the Top Rummy app page leads directly to the platform\'s own website, not to a file hosted here.',
+        ],
+      },
+      {
+        heading: 'Where Top Rummy Fits Among Other Rummy-Style Apps',
+        paragraphs: [
+          'Top Rummy is one of 27 apps tracked in this directory\'s rummy category, alongside well-known names like Yono Rummy, Rummy888, and Gold Rummy. Each operates independently with its own publisher and download link; the grouping here reflects category only.',
+        ],
+      },
+      {
+        heading: 'How Sequence-and-Set Rummy Rules Typically Work',
+        paragraphs: [
+          'Top Rummy follows the sequence-and-set card rules common to this directory\'s largest category, forming valid runs and sets from a dealt hand rather than relying on the reel-based mechanics used in the slots or sevens categories tracked elsewhere here. Table variants, scoring rules, and any bonus feature are controlled entirely by Top Rummy\'s own publisher and are subject to change without notice.',
+          'AllYonoUpdate.com has not verified any reward or winning claim shown on Top Rummy\'s own website, and does not use that kind of promotional language of its own.',
+        ],
+      },
+      {
+        heading: 'How the Download and Referral-Code System Works',
+        paragraphs: [
+          'Top Rummy follows the same distribution pattern as most apps in this directory: the APK is downloaded directly from the publisher\'s own website instead of a conventional app store, with a referral or promo code field typically shown during sign-up. That code is a shareable string, not a private credential, and the publisher can change it on its own schedule. AllYonoUpdate.com records the current download link and last-checked date for this listing without generating, issuing, or guaranteeing any code, bonus, or reward.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Indian states regulate real-money rummy apps inconsistently, and a number of apps listed on this site are unavailable in at least Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide makes no claim about Top Rummy\'s legal status in your location — check your own state\'s rules before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Before installing an APK from outside an app store, confirm a few basics: that the download link came from Top Rummy\'s own official website rather than a forwarded message or unfamiliar link shortener, that no page is asking for your existing account password to "unlock" the file, and that you are comfortable with the permissions the APK requests during installation. None of these steps are unique to Top Rummy — they apply to any APK downloaded outside a conventional app store.',
+        ],
+      },
+      {
+        heading: 'Similar Apps You Might Like',
+        paragraphs: [
+          'If you are comparing Top Rummy against other options in this directory, these are related listings worth knowing about:',
+          '• Yono Rummy — the most-searched title in this directory\'s rummy category.',
+          '• Rummy888 — a well-known name in the same cluster.',
+          '• Gold Rummy — another established rummy-style listing worth comparing.',
+          'Each has its own separate publisher and download link — AllYonoUpdate.com does not rank them by quality, only by category.',
+        ],
+      },
+      {
+        heading: 'Referral Code vs Account Password',
+        paragraphs: [
+          'One recurring source of confusion across this directory, Top Rummy included, is treating a referral or promo code as if it were an account password. It isn\'t — a referral code is a shareable sign-up string, while a password is private and never meant to be shared. The Yono 777 Password guide linked below unpacks this distinction in more detail.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'Any change to Top Rummy\'s download link or catalog details is reflected first on its dedicated app page, which is reviewed whenever a meaningful update can be confirmed. This guide is kept on the same schedule — the last-reviewed date above is the most recent check, not a real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Top Rummy APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Top Rummy app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Top Rummy legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money rummy apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'Has AllYonoUpdate.com verified any bonus or winning claim for Top Rummy?',
+        answer: 'No. AllYonoUpdate.com has not independently verified any bonus, reward, or winning claim shown on Top Rummy\'s own website, and does not use this type of promotional language itself.',
+      },
+      {
+        question: 'Is Top Rummy the same company as Yono Rummy or Rummy888?',
+        answer: 'No. Each rummy-style app tracked in this directory has its own separate publisher. They are grouped together here by category only, not by ownership.',
+      },
+      {
+        question: 'What other apps are similar to Top Rummy?',
+        answer: 'Yono Rummy, Rummy888, and Gold Rummy are well-known related listings in this directory\'s rummy category — see the Similar Apps section above for a short breakdown of each.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password — see the Yono 777 Password guide for a fuller breakdown.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Top Rummy: App Page & Download Link', href: '/app/top-rummy/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+      { label: 'Gold Rummy: App Page & Download Link', href: '/app/gold-rummy/' },
+      { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.
