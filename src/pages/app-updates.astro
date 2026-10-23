@@ -8,6 +8,12 @@ import { buildFaqSchema, buildBreadcrumbSchema } from '../lib/schema';
 const appNotices = notices.filter((notice) => notice.category === 'App Changes');
 const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
 
+// Noindex while this category has zero entries — an empty shell page has no
+// unique content for Google to index, and Search Console was flagging it as
+// "Discovered - currently not indexed". Reverts to indexable automatically
+// the moment a real "App Changes" notice is published.
+const robotsDirective = appNotices.length > 0 ? 'index, follow' : 'noindex, follow';
+
 const statusLabels = [
   { label: 'Confirmed', body: 'The app change has been clearly documented through a reliable published source or direct observation inside the application.' },
   { label: 'Being Reviewed', body: 'A feature, layout change, or menu update has been reported or observed but still needs further verification.' },
@@ -54,7 +60,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   rawTitle
   ogTitle="All Yono App Updates: UI, Features and Navigation Changes"
   ogDescription="Browse dated All Yono app updates covering interface changes, features, menus, and navigation notices."
-  robots="index, follow"
+  robots={robotsDirective}
   keywords={[
     'all yono app updates',
     'all yono app changes',

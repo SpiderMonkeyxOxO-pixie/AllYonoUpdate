@@ -8,6 +8,12 @@ import { buildFaqSchema, buildBreadcrumbSchema } from '../lib/schema';
 const archivedNotices = notices.filter((notice) => notice.status === 'Ended' || notice.status === 'Archived');
 const baseUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://allyonoupdate.com';
 
+// Noindex while this status has zero entries — an empty shell page has no
+// unique content for Google to index, and Search Console was flagging it as
+// "Discovered - currently not indexed". Reverts to indexable automatically
+// the moment a notice is actually archived.
+const robotsDirective = archivedNotices.length > 0 ? 'index, follow' : 'noindex, follow';
+
 const statusLabels = [
   { label: 'Ended', body: 'The event, release period, temporary change, or notice is no longer current.' },
   { label: 'Archived', body: 'The post remains available as a dated reference but should not be treated as the latest information.' },
@@ -52,7 +58,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   rawTitle
   ogTitle="All Yono Update Archive: Past Events and Changes"
   ogDescription="Explore older All Yono updates that are no longer current, kept for dated reference."
-  robots="index, follow"
+  robots={robotsDirective}
   keywords={[
     'all yono update archive',
     'all yono past updates',
