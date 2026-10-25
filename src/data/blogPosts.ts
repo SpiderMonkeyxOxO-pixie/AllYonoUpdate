@@ -4478,7 +4478,7 @@ const allBlogPosts: BlogPost[] = [
     publishedDate: '2026-10-25',
     lastReviewedDate: '2026-10-25',
     postType: 'launch-status',
-    image: { src: '/images/games/spin-rummy.webp', alt: 'Spin Rummy logo, a rummy-category app scheduled to launch 30 October 2026' },
+    image: { src: '/images/blog/spin-rummy-launch-status.webp', alt: 'Spin Rummy logo beside a countdown hourglass, launching 30 October 2026' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
       {
