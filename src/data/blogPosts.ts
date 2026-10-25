@@ -1954,6 +1954,7 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Money Rummy: App Page', href: '/app/money-rummy/' },
       { label: 'Gold Rummy Launch Status: Live Download Link & Updates', href: '/blog/gold-rummy-launch-status/' },
       { label: 'Win Rummy Launch Status: Live URL, APK & Updates', href: '/blog/win-rummy-launch-status/' },
+      { label: 'Spin Rummy Launch Status: Date, Time & What to Expect', href: '/blog/spin-rummy-launch-status/' },
     ],
   },
   {
@@ -4466,6 +4467,111 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
       { label: 'Gold Rummy: App Page & Download Link', href: '/app/gold-rummy/' },
       { label: 'Yono 777 Password: What It Actually Means', href: '/blog/yono-777-password/' },
+    ],
+  },
+  {
+    slug: 'spin-rummy-launch-status',
+    title: 'Spin Rummy Launch Status: Date, Time & What to Expect',
+    metaDescription: 'Spin Rummy is scheduled to launch 30 October 2026 at 8:00 AM IST. Here is what has been announced, what has not, and what AllYonoUpdate.com will check once it is live.',
+    h1: 'Spin Rummy Launch Status: Date, Time and What to Expect',
+    keywords: ['spin rummy launch', 'spin rummy launch date', 'spin rummy apk', 'spin rummy app', 'when does spin rummy launch'],
+    publishedDate: '2026-10-25',
+    lastReviewedDate: '2026-10-25',
+    postType: 'launch-status',
+    image: { src: '/images/games/spin-rummy.webp', alt: 'Spin Rummy logo, a rummy-category app scheduled to launch 30 October 2026' },
+    relatedCategoryPath: '/yono-rummy/',
+    sections: [
+      {
+        heading: 'Spin Rummy Launch Status at a Glance',
+        paragraphs: [
+          'Spin Rummy is an upcoming platform scheduled to join the All Yono directory on 30 October 2026, between 8:00 and 9:00 AM IST.',
+          'As of this report, nothing about Spin Rummy has been independently verified. No website, download link, welcome bonus or promo code has been confirmed.',
+          'Recorded details so far:',
+          '• Platform name: Spin Rummy',
+          '• Scheduled launch: 30 October 2026',
+          '• Expected window: 8:00–9:00 AM IST',
+          '• Website status: Not yet confirmed',
+          '• Android APK: Not available',
+          '• Promo code: Not yet available',
+          '• Platform category: Rummy, based on the name alone',
+          '• Age requirement: Expected 18+, matching every other platform in this directory',
+          '• Last checked: 25 October 2026',
+          'This article will be updated once a website, APK or official announcement can be independently checked.',
+        ],
+      },
+      {
+        heading: 'What Is Known About Spin Rummy So Far?',
+        paragraphs: [
+          'Very little. "Spin Rummy" pairs a spin-wheel visual with the rummy format, a naming pattern already used elsewhere in this directory (Slot Spin, Jaiho Spin). That naming similarity does not establish any relationship between Spin Rummy and those other platforms.',
+          'No operator name, company registration, website domain or app package has been published or confirmed as of this report.',
+          'AllYonoUpdate.com will not publish estimated APK specifications, bonus figures or promo codes as confirmed facts before the platform is independently reviewed.',
+        ],
+      },
+      {
+        heading: 'Is the Spin Rummy APK Available Yet?',
+        paragraphs: [
+          'No. There is currently no verified download link for Spin Rummy. Any APK file circulating under the Spin Rummy name before the 30 October launch window should be treated as unverified and not downloaded from this site.',
+          'Once the platform is live, AllYonoUpdate.com will record the package ID, version, file size and signing publisher the same way it does for every other listing, as covered in the general [APK safety checklist](/yono-games-apk/) for this directory.',
+        ],
+      },
+      {
+        heading: 'What Will Be Checked at Launch?',
+        paragraphs: [
+          'After the scheduled 30 October window, AllYonoUpdate.com will review the following before adding a direct download button.',
+          'Website and domain — the final destination of any download link will be checked, including whether it matches a consistent, dedicated Spin Rummy domain.',
+          'APK identity — the downloaded filename, package ID, version, size and publisher will be recorded where technically available.',
+          'Bonus and promo code — any welcome bonus or promo code will be added to the [latest promo-code status page](/promo-code-updates/) only after it appears through a traceable platform source, not a third-party claim.',
+          'Directory placement — Spin Rummy will be reviewed against the [All Yono games list](/all-yono-games/) and categorised there once confirmed.',
+        ],
+      },
+      {
+        heading: 'Safety Checks Before Spin Rummy Launches',
+        paragraphs: [
+          'Because no official Spin Rummy source exists yet, the safest action before 30 October is to wait. Treat any of the following as a warning sign:',
+          '• A download link shared before an official launch is confirmed.',
+          '• A request for an OTP, password or bank detail in exchange for "early access."',
+          '• A bonus or promo code claimed before this directory has confirmed one.',
+          '• A website using the Spin Rummy name that does not match the domain eventually linked from this page.',
+          'AllYonoUpdate.com does not provide account recovery, payment assistance, OTP support or private account services, for Spin Rummy or any other listing.',
+        ],
+      },
+      {
+        heading: 'Spin Rummy Launch Update Policy',
+        paragraphs: [
+          'This article is a date-stamped report, not a permanent guarantee. It will be revised when the launch time changes, a website or APK becomes available, a promo code is published, or an earlier detail is found to be inaccurate.',
+          'Every revision carries a new "Last reviewed" date. Readers can check the [latest blog updates](/blog-updates/) for other recently revised guides, or the site\'s [editorial policy](/editorial-policy/) for how listings and corrections are handled.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'When does Spin Rummy launch?',
+        answer: 'Spin Rummy is scheduled to launch 30 October 2026, between 8:00 and 9:00 AM IST. The time may change without notice.',
+      },
+      {
+        question: 'Is the Spin Rummy APK available to download?',
+        answer: 'No. No verified download link exists yet. This page will be updated once the app is independently confirmed as live.',
+      },
+      {
+        question: 'Is there a Spin Rummy promo code yet?',
+        answer: 'No. No promo code has been announced or confirmed. Treat any code shared before launch as unverified.',
+      },
+      {
+        question: 'Who operates Spin Rummy?',
+        answer: 'Not yet confirmed. No operator name or company registration has been independently verified as of this report.',
+      },
+      {
+        question: 'Is Spin Rummy related to Slot Spin or Jaiho Spin?',
+        answer: 'Not confirmed either way. The shared "Spin" naming pattern is common across this app category and does not by itself establish any relationship between platforms.',
+      },
+      {
+        question: 'How will I know when Spin Rummy actually launches?',
+        answer: 'This page will be updated with a confirmed download link, and the platform will be added to the All Yono games list once its launch is independently verified.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'All Yono Games List', href: '/all-yono-games/' },
+      { label: 'Money Rummy Launch Status: What We Know So Far', href: '/blog/money-rummy-launch-status/' },
     ],
   },
 ];
