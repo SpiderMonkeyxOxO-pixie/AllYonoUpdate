@@ -25,6 +25,24 @@ export interface Notice {
 
 export const notices: Notice[] = [
   {
+    slug: 'spin-rummy-is-now-live',
+    status: 'Confirmed',
+    category: 'Game Updates',
+    updateType: 'Platform Launch',
+    publishedDate: 'October 30, 2026',
+    lastReviewedDate: 'October 30, 2026',
+    headline: 'Spin Rummy Is Now Live',
+    summary:
+      "Spin Rummy launched on 30 October 2026 at 8:00 AM IST and has joined the All Yono directory with a recorded download link at spinrummy.cx. The homepage launch countdown has been removed now that the app is available. AllYonoUpdate.com has not independently verified any bonus, welcome offer, or promo code for the platform, and does not host the Spin Rummy APK file.",
+    sourceLabel: 'spinrummy.cx',
+    sourceUrl: 'https://spinrummy.cx/?code=31X42Q6DH9P&t=1793332810',
+    sourceVerified: false,
+    entity: 'Spin Rummy',
+    previousState: 'Scheduled to launch on 30 October 2026 at 8:00 AM IST, with no download link, welcome bonus, or promo code recorded.',
+    currentState: 'Live, with a recorded download link at spinrummy.cx. Its launch-status and promo-code pages have been updated accordingly.',
+    userAction: "Review the Spin Rummy launch status page for the current download link, and treat any bonus, welcome offer, or promo-code claim outside this site as unverified.",
+  },
+  {
     slug: 'vip-rummy-is-now-live',
     status: 'Confirmed',
     category: 'Game Updates',
