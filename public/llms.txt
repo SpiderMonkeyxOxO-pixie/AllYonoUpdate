@@ -1,0 +1,30 @@
+# AllYonoUpdate
+
+> AllYonoUpdate (allyonoupdate.com) is an independent information website that records date-stamped changes across the All Yono game ecosystem: new game listings, event notices, promo-code status, app interface changes, feature updates, and revised articles. It does not operate or represent any All Yono platform.
+
+Every notice shows what changed, when it was published, and when it was last reviewed, so dated updates stay clearly separated from evergreen guides rather than mixed together.
+
+## Updates
+
+- [Latest updates](https://allyonoupdate.com/latest-updates/): the current feed of dated changes across the ecosystem
+- [Update archive](https://allyonoupdate.com/update-archive/): past notices, kept for record even after superseded
+- [Events and notices](https://allyonoupdate.com/events-notices/): time-bound announcements
+- [Promo-code updates](https://allyonoupdate.com/promo-code-updates/): changes to promo-code status over time
+- [App updates](https://allyonoupdate.com/app-updates/): interface and feature changes per app
+- [Game updates](https://allyonoupdate.com/game-updates/): new listings and changes to tracked games
+- [Blog updates](https://allyonoupdate.com/blog-updates/): revised-article tracking
+- [New Yono games](https://allyonoupdate.com/new-yono-games/): recently added platforms
+- [New Yono Rummy](https://allyonoupdate.com/new-yono-rummy/): recently added Rummy-specific platforms
+
+## Directory
+
+- [All Yono games](https://allyonoupdate.com/all-yono-games/): the full tracked directory
+
+## About
+
+- [About AllYonoUpdate](https://allyonoupdate.com/about/)
+- [Editorial policy](https://allyonoupdate.com/editorial-policy/)
+- [Disclaimer](https://allyonoupdate.com/disclaimer/)
+- [Privacy policy](https://allyonoupdate.com/privacy-policy/)
+- [Terms of use](https://allyonoupdate.com/terms-of-use/)
+- [Contact](https://allyonoupdate.com/contact/)
