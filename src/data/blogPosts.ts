@@ -409,8 +409,8 @@ const allBlogPosts: BlogPost[] = [
     metaDescription: 'A plain-language guide to the Joy Rummy APK — what it is, how the download link works, and answers to common safety questions.',
     h1: 'Joy Rummy APK: Download Guide, Safety Check & FAQ',
     keywords: ['joy rummy apk', 'joy rummy', 'joy rummy download', 'joy rummy app'],
-    publishedDate: '2026-11-01',
-    lastReviewedDate: '2026-11-01',
+    publishedDate: '2026-11-02',
+    lastReviewedDate: '2026-11-02',
     image: { src: '/images/blog/joy-rummy-apk-guide.webp', alt: 'Joy Rummy APK download illustration with a phone and app icons' },
     relatedCategoryPath: '/yono-rummy/',
     sections: [
