@@ -5000,6 +5000,153 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Latest Promo Code Status', href: '/promo-code-updates/' },
     ],
   },
+  {
+    slug: 'new-yono-apps-november-2026',
+    title: 'New Yono Apps, November 2026: What Was Added and What to Check',
+    metaDescription: 'New Yono apps in November 2026: what was added or changed in this directory this month, what is recorded for each and what a "new app" claim does not tell you.',
+    h1: 'New Yono Apps, November 2026: What Was Added and What to Check',
+    keywords: ['yono new app', 'new yono app', 'new yono games 2026', 'new yono all games 2026 november'],
+    publishedDate: '2026-11-02',
+    lastReviewedDate: '2026-11-02',
+    postType: 'launch-status',
+    image: { src: '/images/blog/new-yono-apps-november-2026.webp', alt: 'New Yono Apps: November 2026 — featured guide graphic' },
+    relatedCategoryPath: '/new-yono-games/',
+    sections: [
+      {
+        heading: 'What This List Is',
+        paragraphs: [
+          'This is a dated record of what was added or changed in this directory heading into November 2026. "New" here means newly listed or newly updated in the directory, not new to the market. A new listing is not an endorsement and does not confirm any bonus.',
+        ],
+      },
+      {
+        heading: 'Added or Changed This Month',
+        paragraphs: [
+          'Guides were added for Hi Rummy (28 October) and Rummy Ludo (29 October), both covering download, safety checks and FAQs. Promo-code status pages were added for Spin Rummy (30 October) and 567 Slots (31 October), tracking whether a code has been confirmed rather than assuming one. A full download guide for Joy Rummy was published on 2 November, replacing the shorter disambiguation note this directory carried previously.',
+        ],
+      },
+      {
+        heading: 'What a New Listing Lacks',
+        paragraphs: [
+          'A new listing has a shorter track record, less independent observation and often blank fields such as version and file size. Those fields are left blank rather than estimated until they can be confirmed.',
+        ],
+      },
+      {
+        heading: 'About "51 Bonus" and Similar Figures',
+        paragraphs: [
+          'Headlines such as "51 bonus" or "1000 bonus" are marketing figures, not terms. A figure with no dated source cannot be verified, and AllYonoUpdate.com has not verified any bonus or reward claim shown on a platform\'s own website.',
+        ],
+      },
+      {
+        heading: 'How to Check a New App',
+        paragraphs: [
+          'Find a named operator, confirm terms and a privacy policy exist, compare the download address with the app page, and read permissions. A new name is a reason to look closer, not a reason to download faster.',
+        ],
+      },
+      {
+        heading: 'About This Record',
+        paragraphs: [
+          'AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate any of the apps listed here, and no APK file is stored on this website. The Download button on each app page leads directly to the platform\'s own website. Being listed here is not an endorsement.',
+          'This list is reviewed whenever a meaningful change can be confirmed.',
+        ],
+      },
+      {
+        heading: 'Notice',
+        paragraphs: [
+          '18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform\'s own website.',
+        ],
+      },
+    ],
+    faqs: [
+      { question: 'What was added to this directory in November 2026?', answer: 'Download guides for Hi Rummy and Rummy Ludo, promo-code status pages for Spin Rummy and 567 Slots, and a full download guide for Joy Rummy.' },
+      { question: 'Does "new" mean safe?', answer: 'No. A new listing has a shorter track record and has not been independently verified.' },
+      { question: 'Where can I see all recorded apps?', answer: 'On the All Yono Games page, which lists every recorded app and its last-checked date.' },
+      { question: 'Has AllYonoUpdate.com verified any bonus or reward claim for a new app?', answer: 'No. Any bonus, reward or code shown on a platform\'s own website is the publisher\'s own marketing, not an assessment made here.' },
+      { question: 'How often is this guide reviewed?', answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.' },
+    ],
+    relatedArticles: [
+      { label: 'New Yono Games', href: '/new-yono-games/' },
+      { label: 'Latest Updates', href: '/latest-updates/' },
+      { label: 'New Yono Apps, October 2026', href: '/blog/new-yono-apps-october-2026/' },
+    ],
+  },
+  {
+    slug: 'neta-vip-apk-guide',
+    title: 'Neta Vip APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'A plain-language guide to the Neta Vip APK — what it is, how the download link works, and answers to common safety questions.',
+    h1: 'Neta Vip APK: Download Guide, Safety Check & FAQ',
+    keywords: ['neta vip apk', 'neta vip', 'neta vip download', 'neta vip app'],
+    publishedDate: '2026-11-03',
+    lastReviewedDate: '2026-11-03',
+    image: { src: '/images/blog/neta-vip-apk-guide.webp', alt: 'Neta Vip APK download illustration with a phone and app icons' },
+    relatedCategoryPath: '/yono-vip/',
+    sections: [
+      {
+        heading: 'What Is Neta Vip',
+        paragraphs: [
+          'Neta Vip is a VIP-tier app tracked in the All Yono directory, listed here in the same category cluster as Yono Vip and other VIP-branded entries. Its own listing states it runs on reel-based spin rounds, symbol matching, and multiplier rounds.',
+          'AllYonoUpdate.com does not develop, host, or operate Neta Vip or any other app in this directory. The APK file itself is never stored on this website, and the Download button on the Neta Vip app page leads directly to the platform\'s own website.',
+        ],
+      },
+      {
+        heading: 'How to Download Neta Vip Safely',
+        paragraphs: [
+          'The current download link for Neta Vip is kept on its dedicated app page, linked below, rather than duplicated inside this guide — that way there is a single, up-to-date source rather than two links that can drift out of sync. Before installing any APK downloaded outside a conventional app store, it is worth confirming the link matches the one recorded on this site and that you are comfortable with the permissions requested during installation.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money gaming apps are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Neta Vip is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+        ],
+      },
+      {
+        heading: 'What to Expect After You Tap Download',
+        paragraphs: [
+          'Because Neta Vip is distributed outside the Google Play Store, Android will typically show an "install blocked" or "unknown sources" prompt the first time you open the downloaded file, and Google Play Protect may flag the APK for a manual scan before allowing the install to continue. This is standard behavior for any APK installed outside an app store, not a sign specific to this listing — but it is a reasonable moment to pause and double-check the file before proceeding.',
+          'Confirm that the requested permissions look reasonable for this type of app and that you downloaded the file from the link recorded on the Neta Vip app page rather than a forwarded copy.',
+        ],
+      },
+      {
+        heading: 'Bonus and Referral Terms',
+        paragraphs: [
+          'Neta Vip\'s own listing elsewhere on the wider All Yono network states a ₹150 sign-up bonus and ₹100 minimum withdrawal — figures set by the app itself, not independently verified by AllYonoUpdate.com, the same as with every other listing in this directory. A referral code is a shareable string entered during sign-up; it is never the same as an account password, which is created privately and never meant to be shared.',
+        ],
+      },
+      {
+        heading: 'How This Listing Will Be Updated',
+        paragraphs: [
+          'The current Neta Vip record, including its download link and last-checked date, is kept on its dedicated app page and reviewed whenever a meaningful change can be confirmed — a version number, a file-size figure, a broken link, or a change in category. This guide is reviewed on the same schedule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Neta Vip APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Neta Vip app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Neta Vip legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money gaming apps. Check your local rules before downloading or using any app in this category.',
+      },
+      {
+        question: 'What is Neta Vip\'s sign-up bonus?',
+        answer: '₹150, per the app\'s own stated listing elsewhere on the network, with a ₹100 minimum withdrawal. This is the operator\'s figure, not independently verified by AllYonoUpdate.com.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Neta Vip: App Page & Download Link', href: '/app/neta-vip/' },
+      { label: 'Yono Vip APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-vip-apk-guide/' },
+      { label: 'Ind Club APK: Download Guide, Safety Check & FAQ', href: '/blog/ind-club-apk-guide/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.
