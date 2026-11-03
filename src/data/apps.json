@@ -115,33 +115,37 @@
       "slug": "money-rummy",
       "category": "rummy",
       "featured": true,
-      "tag": "COMING SOON",
-      "description": "Money Rummy is an upcoming rummy-style app reported to be the 57th platform on the Yono network, expected to join the All Yono directory. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "tag": "LIVE",
+      "description": "Money Rummy is a rummy-style app that launched on 9 September 2026, reported to be the 57th platform on the Yono network. Download it from moneyrummyff.com. AllYonoUpdate.com does not host the Money Rummy APK file — the download button links to the platform's own website.",
       "targetKeyword": "money rummy apk",
       "softwareVersion": null,
       "fileSize": null,
       "minAndroid": null,
       "rating": null,
-      "updated": "2026-09-08",
+      "updated": "2026-11-04",
       "icon": "/images/games/money-rummy.jpg",
-      "apkUrl": null,
+      "apkUrl": "https://moneyrummyff.com/?code=T1XR7S7YJ9T&t=1788922546",
       "url": "/app/money-rummy/",
       "faq": [
         {
           "q": "Is Money Rummy available to download yet?",
-          "a": "No. Money Rummy is expected to launch between 8:00–9:00 AM IST on September 9, 2026. This page will be updated with a direct download link once the app is available and can be independently reviewed."
+          "a": "Yes. Money Rummy launched on 9 September 2026 and is available for download from moneyrummyff.com."
         },
         {
           "q": "Will AllYonoUpdate.com host the Money Rummy APK file?",
-          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once available, the Download button will lead directly to Money Rummy's own website, not to a file stored here."
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. The Download button leads directly to Money Rummy's own website, not to a file stored here."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Money Rummy's bonus or referral terms?",
+          "a": "No. AllYonoUpdate.com has not independently verified the bonus, code, or referral terms shown on Money Rummy's own website."
         },
         {
           "q": "Is Money Rummy part of the Yono network?",
-          "a": "It has been reported to be the 57th platform on the Yono network, a claim made by the app's own operator during pre-launch development of its official tracking site. This has not been independently verified by AllYonoUpdate.com."
+          "a": "It has been reported to be the 57th platform on the Yono network, a claim made by the app's own operator. This has not been independently verified by AllYonoUpdate.com."
         },
         {
-          "q": "How can I find out when Money Rummy launches?",
-          "a": "Join the AllYonoUpdate.com Telegram channel for launch updates, or check back on this page after the scheduled release window."
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
         }
       ],
       "relatedArticle": {
