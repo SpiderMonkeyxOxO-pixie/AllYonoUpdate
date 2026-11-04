@@ -5159,6 +5159,84 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Ind Club APK: Download Guide, Safety Check & FAQ', href: '/blog/ind-club-apk-guide/' },
     ],
   },
+  {
+    slug: 'cash-rummy-launch-status',
+    title: 'Cash Rummy Launch Status: 5 Nov 2026, 8:00 AM IST',
+    metaDescription: 'Cash Rummy launches 5 November 2026 at 8:00 AM IST. Track its launch status, what\'s confirmed so far, and what\'s still unverified — updated as details come in.',
+    h1: 'Cash Rummy Launch Status: What We Know Ahead of 5 November 2026',
+    keywords: ['cash rummy launch', 'cash rummy launch status', 'cash rummy apk'],
+    publishedDate: '2026-11-04',
+    lastReviewedDate: '2026-11-04',
+    postType: 'launch-status',
+    image: { src: '/images/blog/cash-rummy-launch-status.jpg', alt: 'Cash Rummy launch status showing the countdown to its 5 November 2026 launch' },
+    relatedCategoryPath: '/app/cash-rummy/',
+    sections: [
+      {
+        heading: 'Cash Rummy Launch Status at a Glance',
+        paragraphs: [
+          'Cash Rummy is scheduled to launch on 5 November 2026 at 8:00 AM IST as a new real-money rummy app on the Yono-style network. No download link is live yet.',
+          'Recorded details so far:',
+          '• Platform name: Cash Rummy',
+          '• Expected launch: 5 November 2026, 8:00 AM IST',
+          '• Download link: Not yet available',
+          '• Welcome bonus: Not yet announced',
+          '• Promo code: Not yet available',
+          '• App version, package ID, file size: Not yet confirmed',
+          '• Platform category: Rummy',
+          '• Last checked: 4 November 2026',
+          'This report reflects what could be confirmed at time of review. It will be updated the moment the app goes live and a working download link can be independently checked.',
+        ],
+      },
+      {
+        heading: 'Is the Cash Rummy Download Link Working Yet?',
+        paragraphs: [
+          'No. As of 4 November 2026, Cash Rummy has not launched and no download link has been published. Once it goes live, this page and its [app page](/app/cash-rummy/) will carry the verified download link.',
+        ],
+      },
+      {
+        heading: 'Has a Welcome Bonus or Promo Code Been Announced?',
+        paragraphs: [
+          'No. Nothing has been confirmed for Cash Rummy yet — no bonus figure, no promo code. Any such claim circulating before launch is not confirmed and should be treated as unverified.',
+        ],
+      },
+      {
+        heading: 'What This Page Is Not',
+        paragraphs: [
+          'This is not a review of Cash Rummy\'s gameplay or feature set — that requires the app to actually be live and independently tested. It\'s also not a promotional page; AllYonoUpdate.com does not host, develop, or operate Cash Rummy.',
+          'Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025, in force since 1 May 2026. This page records information for reference and is not an invitation to play for money.',
+        ],
+      },
+      {
+        heading: 'Bottom Line',
+        paragraphs: [
+          'Cash Rummy has not launched yet. This report will be updated with a verified download link, bonus terms, and app specs as soon as they can be independently confirmed after the 5 November 2026, 8:00 AM IST launch.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Has Cash Rummy officially launched?',
+        answer: 'Not yet. It is scheduled to launch on 5 November 2026 at 8:00 AM IST.',
+      },
+      {
+        question: 'Is there a working Cash Rummy download link right now?',
+        answer: 'No. No download link has been published as of 4 November 2026.',
+      },
+      {
+        question: 'Does Cash Rummy have a welcome bonus or promo code?',
+        answer: 'Not yet confirmed. This report will be updated once a real figure is confirmed.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Cash Rummy: App Page & Download Link', href: '/app/cash-rummy/' },
+      { label: 'Money Rummy Launch Status: Live Download Link & Updates', href: '/blog/money-rummy-launch-status/' },
+      { label: 'Gold Rummy Launch Status: Live Download Link & Updates', href: '/blog/gold-rummy-launch-status/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.

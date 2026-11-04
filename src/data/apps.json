@@ -154,6 +154,46 @@
       }
     },
     {
+      "id": "cash-rummy",
+      "name": "Cash Rummy",
+      "slug": "cash-rummy",
+      "category": "rummy",
+      "featured": true,
+      "tag": "COMING SOON",
+      "description": "Cash Rummy is an upcoming real-money rummy app scheduled to launch on 5 November 2026 at 8:00 AM IST. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "cash rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-11-04",
+      "icon": "/images/games/cash-rummy.jpg",
+      "apkUrl": null,
+      "url": "/app/cash-rummy/",
+      "faq": [
+        {
+          "q": "Is Cash Rummy available to download yet?",
+          "a": "No. Cash Rummy is scheduled to launch on 5 November 2026 at 8:00 AM IST. This page will be updated with a download link once the app goes live."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the Cash Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once live, the Download button will lead directly to Cash Rummy's own website."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Cash Rummy's bonus or referral terms?",
+          "a": "No. Nothing has been confirmed yet — no bonus, promo code, or referral terms exist to verify before launch."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Status Report",
+        "href": "/blog/cash-rummy-launch-status/"
+      }
+    },
+    {
       "id": "gold-rummy",
       "name": "Gold Rummy",
       "slug": "gold-rummy",
