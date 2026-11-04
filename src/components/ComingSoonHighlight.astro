@@ -12,6 +12,7 @@ interface Props {
   description: string;
   ctaLabel: string;
   ctaHref: string;
+  ctaExternal?: boolean;
   status?: string;
   detailsHref?: string;
 }
@@ -27,6 +28,7 @@ const {
   description,
   ctaLabel,
   ctaHref,
+  ctaExternal = true,
   status = 'Scheduled',
   detailsHref,
 } = Astro.props;
@@ -76,8 +78,8 @@ const countdownUnits = [
   <div class="mt-4 flex flex-wrap gap-3">
     <a
       href={ctaHref}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={ctaExternal ? '_blank' : undefined}
+      rel={ctaExternal ? 'noopener noreferrer' : undefined}
       class="inline-flex items-center gap-1.5 rounded-md bg-brand-accent/10 px-5 py-2.5 text-sm font-semibold text-brand-accent border border-brand-accent/50 transition hover:bg-brand-accent/20"
     >
       {ctaLabel} <Icon name="arrow-up-right" class="h-3.5 w-3.5" />
