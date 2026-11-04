@@ -5237,6 +5237,98 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Gold Rummy Launch Status: Live Download Link & Updates', href: '/blog/gold-rummy-launch-status/' },
     ],
   },
+  {
+    slug: 'maha-games-apk-guide',
+    title: 'Maha Games APK: Welcome Bonus, Minimum Withdrawal & Download Guide',
+    metaDescription: 'Maha Games welcome bonus is ₹150 and minimum withdrawal is ₹100. Current download link, how the arcade-category app works, and safety notes before installing.',
+    h1: 'Maha Games APK: Welcome Bonus, Minimum Withdrawal and Download Guide',
+    keywords: ['maha games apk', 'maha games app', 'maha games download', 'maha games bonus', 'maha games minimum withdrawal'],
+    publishedDate: '2026-11-04',
+    lastReviewedDate: '2026-11-04',
+    image: { src: '/images/blog/maha-games-apk-guide.webp', alt: 'Maha Games APK: Welcome Bonus, Minimum Withdrawal and Download Guide — featured guide graphic' },
+    relatedCategoryPath: '/yono-arcade/',
+    postType: 'guide',
+    sections: [
+      {
+        heading: 'What Is Maha Games',
+        paragraphs: [
+          'Maha Games is an arcade-category real-money app tracked in the All Yono directory. Its confirmed welcome bonus is ₹150 and its minimum withdrawal is ₹100, based on the figures published on the platform\'s own listing in this network. AllYonoUpdate.com is an independent directory: it does not develop, host, or operate Maha Games, and the APK file itself is never stored on this website.',
+          'The Download button on the Maha Games app page leads directly to the platform\'s own website, not to a file hosted here. This guide exists to answer the two questions people most often search before installing: how much the welcome bonus actually is, and what the minimum withdrawal threshold is, alongside the standard download and safety notes AllYonoUpdate.com applies to every listing in this directory.',
+        ],
+      },
+      {
+        heading: 'Maha Games Welcome Bonus and Minimum Withdrawal',
+        paragraphs: [
+          'Maha Games offers a ₹150 welcome bonus to new sign-ups and sets a ₹100 minimum withdrawal threshold. These two figures are the ones most frequently searched for this app, and they are recorded here as published by the platform rather than estimated from similar apps in the category.',
+          'As with every listing in this directory, AllYonoUpdate.com has not independently audited Maha Games\'s internal wagering or eligibility rules beyond these two headline figures. Read the platform\'s own terms inside the app before depositing or attempting a withdrawal, since bonus eligibility conditions (such as minimum play-through) are set and changed by the publisher, not by this site.',
+        ],
+      },
+      {
+        heading: 'How to Download and Install Maha Games',
+        paragraphs: [
+          'The current download link for Maha Games is kept on its dedicated app page rather than duplicated inside this guide, so there is a single up-to-date source rather than two links that can drift out of sync. Visit the Maha Games app page, tap Download, and — because this is an APK distributed outside the Google Play Store — Android will typically show an "install blocked" or "unknown sources" prompt the first time you open the file.',
+          'This prompt is standard behavior for any APK installed outside an app store; it does not by itself mean a specific file is unsafe, but it does mean the usual app-store review process has not applied to it. Check that the requested permissions look reasonable for an arcade-style game, approve the single installation, then register with your phone number and OTP as the app requires.',
+        ],
+      },
+      {
+        heading: 'Where Maha Games Fits Among Other Arcade Apps',
+        paragraphs: [
+          'Maha Games is grouped in this directory\'s arcade category alongside other multi-game and bundled-lobby apps tracked on this site. Each has its own separate publisher, its own download link, and its own recorded bonus and withdrawal terms — grouping by category here means similar game format, not shared ownership. For a broader look at how this category\'s bundled-lobby apps work, see the Yono Arcade APK guide linked below.',
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before You Download',
+        paragraphs: [
+          'Before installing any APK from outside an app store, confirm the download link came from the Maha Games app page on this site (or the platform\'s own official website) rather than a forwarded message or unfamiliar link shortener, that no page is asking for your existing account password to "unlock" the file, and that you are comfortable with the permissions requested during installation.',
+          'A referral or promo code entered during sign-up is a separate, shareable string — it is not the same as a private account login password. That distinction causes confusion across this entire network of apps, not just Maha Games.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Notes',
+        paragraphs: [
+          'Real-money gaming apps are regulated differently across Indian states, and some apps listed in this directory are not available in every state, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state that Maha Games is legal or illegal in your specific location — check your state\'s current regulations before downloading or using it.',
+          'Online money games have also been prohibited in India since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025. Confirm Maha Games\'s current classification and your state\'s specific rules before depositing or playing.',
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          'The Maha Games welcome bonus, minimum withdrawal, download link, and catalog details are kept on its app page and reviewed whenever a meaningful change can be confirmed. This guide is reviewed on the same basis — the last-reviewed date above reflects the most recent check, not a live, real-time feed.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the Maha Games welcome bonus?',
+        answer: 'Maha Games offers a ₹150 welcome bonus to new sign-ups, as published on the platform\'s own listing.',
+      },
+      {
+        question: 'What is the minimum withdrawal for Maha Games?',
+        answer: 'The minimum withdrawal for Maha Games is ₹100.',
+      },
+      {
+        question: 'Does AllYonoUpdate.com host the Maha Games APK file?',
+        answer: 'No. AllYonoUpdate.com does not host or operate any APK files. The Download button on the Maha Games app page leads directly to the platform\'s own website.',
+      },
+      {
+        question: 'Is Maha Games legal to download in my state?',
+        answer: 'This depends on your state\'s current regulations for real-money gaming apps. Check your local rules before downloading or using Maha Games.',
+      },
+      {
+        question: 'Is a referral or bonus code the same as my account password?',
+        answer: 'No. A referral or promo code is a separate, shareable code used during sign-up. It is not the same as your private account login password.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Maha Games: App Page & Download Link', href: '/app/maha-games/' },
+      { label: 'Yono Arcade APK Guide', href: '/blog/yono-arcade-apk-guide/' },
+      { label: 'Yono Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/yono-rummy-apk-guide/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.
