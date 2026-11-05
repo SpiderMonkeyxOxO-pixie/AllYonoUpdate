@@ -7,7 +7,6 @@ import FaqAccordion from '../components/FaqAccordion.astro';
 import { notices } from '../data/notices';
 import { getPromoCodes } from '../lib/promoCodes';
 import PromoLive from '../components/PromoLive.astro';
-import ComingSoonHighlight from '../components/ComingSoonHighlight.astro';
 import { externalGuideUrl, externalIndiaUrl, telegramUrl } from '../data/nav';
 import { categories } from '../data/categories';
 import { hubs } from '../data/hubs';
@@ -145,22 +144,6 @@ const faqSchema = {
     >
       Join the Telegram Channel <Icon name="arrow-up-right" class="h-3.5 w-3.5" />
     </a>
-  </section>
-
-  <section class="mx-auto max-w-5xl px-4 pb-3 lg:px-8">
-    <ComingSoonHighlight
-      name="Cash Rummy"
-      image="/images/games/cash-rummy.jpg"
-      releaseIso="2026-11-05T08:00:00+05:30"
-      releaseDateLabel="5 November 2026"
-      releaseWindowLabel="8:00 AM IST"
-      heading="Cash Rummy is launching soon"
-      description="Cash Rummy is scheduled to join the Yono network on 5 November 2026. No download link, welcome bonus, or promo code has been confirmed yet — this card will update once the app goes live."
-      ctaLabel="Read Launch Coverage"
-      ctaHref="/blog/cash-rummy-launch-status/"
-      ctaExternal={false}
-      status="Launching Soon"
-    />
   </section>
 
   <section class="mx-auto max-w-5xl px-4 py-6 lg:px-8">

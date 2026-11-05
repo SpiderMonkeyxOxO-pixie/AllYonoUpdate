@@ -5161,74 +5161,69 @@ const allBlogPosts: BlogPost[] = [
   },
   {
     slug: 'cash-rummy-launch-status',
-    title: 'Cash Rummy Launch Status: 5 Nov 2026, 8:00 AM IST',
-    metaDescription: 'Cash Rummy launches 5 November 2026 at 8:00 AM IST. Track its launch status, what\'s confirmed so far, and what\'s still unverified — updated as details come in.',
-    h1: 'Cash Rummy Launch Status: What We Know Ahead of 5 November 2026',
-    keywords: ['cash rummy launch', 'cash rummy launch status', 'cash rummy apk'],
-    publishedDate: '2026-11-04',
-    lastReviewedDate: '2026-11-04',
+    title: 'Cash Rummy APK: Download Guide, Safety Check & FAQ',
+    metaDescription: 'Cash Rummy launched 5 Nov 2026 as a 10-game platform on the Yono network. Download status, bonus terms, and safety checklist.',
+    h1: 'Cash Rummy APK: Download Guide, Safety Check & FAQ',
+    keywords: ['cash rummy apk', 'cash rummy download', 'cash rummy app', 'cash rummy bonus'],
+    publishedDate: '2026-11-05',
+    lastReviewedDate: '2026-11-05',
     postType: 'launch-status',
-    image: { src: '/images/blog/cash-rummy-launch-status.jpg', alt: 'Cash Rummy launch status showing the countdown to its 5 November 2026 launch' },
+    image: { src: '/images/blog/cash-rummy-launch-status.webp', alt: 'Cash Rummy APK: Download Guide, Safety Check and FAQ — featured guide graphic' },
     relatedCategoryPath: '/app/cash-rummy/',
     sections: [
       {
-        heading: 'Cash Rummy Launch Status at a Glance',
+        heading: 'Cash Rummy Is Now Live',
         paragraphs: [
-          'Cash Rummy is scheduled to launch on 5 November 2026 at 8:00 AM IST as a new real-money rummy app on the Yono-style network. No download link is live yet.',
-          'Recorded details so far:',
-          '• Platform name: Cash Rummy',
-          '• Expected launch: 5 November 2026, 8:00 AM IST',
-          '• Download link: Not yet available',
-          '• Welcome bonus: Not yet announced',
-          '• Promo code: Not yet available',
-          '• App version, package ID, file size: Not yet confirmed',
-          '• Platform category: Rummy',
-          '• Last checked: 4 November 2026',
-          'This report reflects what could be confirmed at time of review. It will be updated the moment the app goes live and a working download link can be independently checked.',
+          'Cash Rummy launched 5 November 2026 at 8:00 AM IST as a 10-game platform — Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette. The app\'s own listing states a ₹50–500 welcome bonus and ₹100 minimum withdrawal, neither independently verified by AllYonoUpdate.com.',
         ],
       },
       {
-        heading: 'Is the Cash Rummy Download Link Working Yet?',
+        heading: 'How to Download Cash Rummy Safely',
         paragraphs: [
-          'No. As of 4 November 2026, Cash Rummy has not launched and no download link has been published. Once it goes live, this page and its [app page](/app/cash-rummy/) will carry the verified download link.',
+          'Download here: [Cash Rummy official link](https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345). Confirm the link matches the one recorded on this site and that permissions requested look reasonable.',
         ],
       },
       {
-        heading: 'Has a Welcome Bonus or Promo Code Been Announced?',
+        heading: 'State-by-State Legality Notes',
         paragraphs: [
-          'No. Nothing has been confirmed for Cash Rummy yet — no bonus figure, no promo code. Any such claim circulating before launch is not confirmed and should be treated as unverified.',
+          'Real-money gaming apps are regulated differently across states, including Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland, and Sikkim. This guide does not state Cash Rummy is legal or illegal in your location.',
         ],
       },
       {
-        heading: 'What This Page Is Not',
+        heading: 'Bonus and Referral Terms',
         paragraphs: [
-          'This is not a review of Cash Rummy\'s gameplay or feature set — that requires the app to actually be live and independently tested. It\'s also not a promotional page; AllYonoUpdate.com does not host, develop, or operate Cash Rummy.',
-          'Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025, in force since 1 May 2026. This page records information for reference and is not an invitation to play for money.',
+          '₹50–500 welcome bonus (range), ₹100 minimum withdrawal — the operator\'s own stated figures, not independently verified by AllYonoUpdate.com. A referral code is never the same as your account password.',
         ],
       },
       {
-        heading: 'Bottom Line',
+        heading: 'How This Listing Will Be Updated',
         paragraphs: [
-          'Cash Rummy has not launched yet. This report will be updated with a verified download link, bonus terms, and app specs as soon as they can be independently confirmed after the 5 November 2026, 8:00 AM IST launch.',
+          'The current record is reviewed whenever a meaningful change can be confirmed.',
+        ],
+      },
+      {
+        heading: "What's Inside the App",
+        paragraphs: [
+          'Ten games are bundled in: Rummy (Skill), Poker (Skill), Ludo (Skill and chance), Crash (Chance), Andar Bahar (Chance), Wingo Lottery (Chance), 7 Up Down (Chance), Dragon & Tiger (Chance), Jhandi Munda (Chance), Roulette (Chance).',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Has Cash Rummy officially launched?',
-        answer: 'Not yet. It is scheduled to launch on 5 November 2026 at 8:00 AM IST.',
+        question: 'Does AllYonoUpdate.com host the Cash Rummy APK file?',
+        answer: 'No. The Download button leads directly to the platform\'s own website.',
       },
       {
-        question: 'Is there a working Cash Rummy download link right now?',
-        answer: 'No. No download link has been published as of 4 November 2026.',
+        question: 'What games does Cash Rummy include?',
+        answer: 'Ten: Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette — not just rummy.',
       },
       {
-        question: 'Does Cash Rummy have a welcome bonus or promo code?',
-        answer: 'Not yet confirmed. This report will be updated once a real figure is confirmed.',
+        question: "What is Cash Rummy's sign-up bonus?",
+        answer: '₹50–500, a range per the app\'s own listing, not independently verified.',
       },
       {
         question: 'How often is this guide reviewed?',
-        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+        answer: 'Whenever a meaningful change can be confirmed.',
       },
     ],
     relatedArticles: [
