@@ -45,6 +45,11 @@ interface AppsJson {
 
 const data = appsData as AppsJson;
 
+// apps.json's `apps` array order IS the display order: the homepage "Top N
+// Best Choices" rank grid and the "All Yono App Directory" list both just
+// map over this array in order (see src/pages/index.astro). Owner rule:
+// when a new platform launches, move its entry to the very top of the
+// array so it becomes rank #1 and the rest shift down (2026-11-05).
 export const apps: AppEntry[] = data.apps;
 export const compliance: ComplianceMeta = data._meta.compliance;
 export const siteMeta = data._meta;

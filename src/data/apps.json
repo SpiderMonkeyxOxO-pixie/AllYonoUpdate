@@ -10,6 +10,46 @@
   },
   "apps": [
     {
+      "id": "cash-rummy",
+      "name": "Cash Rummy",
+      "slug": "cash-rummy",
+      "category": "rummy",
+      "featured": true,
+      "tag": "LIVE",
+      "description": "Cash Rummy launched 5 November 2026 at 8:00 AM IST as a 10-game platform on the Yono network. The app's own listing states a ₹50–500 welcome bonus and ₹100 minimum withdrawal, neither independently verified by AllYonoUpdate.com.",
+      "targetKeyword": "cash rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-11-05",
+      "icon": "/images/games/cash-rummy.jpg",
+      "apkUrl": "https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345",
+      "url": "/app/cash-rummy/",
+      "faq": [
+        {
+          "q": "Does AllYonoUpdate.com host the Cash Rummy APK file?",
+          "a": "No. The Download button leads directly to the platform's own website."
+        },
+        {
+          "q": "What games does Cash Rummy include?",
+          "a": "Ten: Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette — not just rummy."
+        },
+        {
+          "q": "What is Cash Rummy's sign-up bonus?",
+          "a": "₹50–500, a range per the app's own listing, not independently verified."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Status Report",
+        "href": "/blog/cash-rummy-launch-status/"
+      }
+    },
+    {
       "id": "vip-rummy",
       "name": "VIP Rummy",
       "slug": "vip-rummy",
@@ -151,46 +191,6 @@
       "relatedArticle": {
         "label": "Read the Full Launch Status Report",
         "href": "/blog/money-rummy-launch-status/"
-      }
-    },
-    {
-      "id": "cash-rummy",
-      "name": "Cash Rummy",
-      "slug": "cash-rummy",
-      "category": "rummy",
-      "featured": true,
-      "tag": "LIVE",
-      "description": "Cash Rummy launched 5 November 2026 at 8:00 AM IST as a 10-game platform on the Yono network. The app's own listing states a ₹50–500 welcome bonus and ₹100 minimum withdrawal, neither independently verified by AllYonoUpdate.com.",
-      "targetKeyword": "cash rummy apk",
-      "softwareVersion": null,
-      "fileSize": null,
-      "minAndroid": null,
-      "rating": null,
-      "updated": "2026-11-05",
-      "icon": "/images/games/cash-rummy.jpg",
-      "apkUrl": "https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345",
-      "url": "/app/cash-rummy/",
-      "faq": [
-        {
-          "q": "Does AllYonoUpdate.com host the Cash Rummy APK file?",
-          "a": "No. The Download button leads directly to the platform's own website."
-        },
-        {
-          "q": "What games does Cash Rummy include?",
-          "a": "Ten: Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette — not just rummy."
-        },
-        {
-          "q": "What is Cash Rummy's sign-up bonus?",
-          "a": "₹50–500, a range per the app's own listing, not independently verified."
-        },
-        {
-          "q": "How often is this app record reviewed?",
-          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
-        }
-      ],
-      "relatedArticle": {
-        "label": "Read the Full Launch Status Report",
-        "href": "/blog/cash-rummy-launch-status/"
       }
     },
     {
