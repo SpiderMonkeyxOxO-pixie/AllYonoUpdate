@@ -25,6 +25,38 @@ export interface Notice {
 
 export const notices: Notice[] = [
   {
+    slug: '101z-download-link-unreachable',
+    status: 'Confirmed',
+    category: 'App Changes',
+    updateType: 'Broken Link',
+    publishedDate: 'November 7, 2026',
+    lastReviewedDate: 'November 7, 2026',
+    headline: '101Z Download Link No Longer Resolves',
+    summary:
+      "The recorded 101Z download link (101zvip2.com) no longer resolves — the domain fails DNS lookup entirely, not just a slow or error response. This record has been updated to reflect the broken link rather than silently showing an outdated URL as current.",
+    sourceVerified: false,
+    entity: '101Z',
+    previousState: 'Download link recorded and presumed working, last checked 25 June 2026.',
+    currentState: 'Download domain (101zvip2.com) fails to resolve as of 7 November 2026. No replacement link has been confirmed yet.',
+    userAction: "Do not rely on the 101Z link currently shown on this site's app page until this notice is updated with a working replacement. If you have a current, working 101Z link, it has not been independently verified by AllYonoUpdate.com.",
+  },
+  {
+    slug: 'bet-213-download-link-unreachable',
+    status: 'Confirmed',
+    category: 'App Changes',
+    updateType: 'Broken Link',
+    publishedDate: 'November 7, 2026',
+    lastReviewedDate: 'November 7, 2026',
+    headline: 'Bet 213 Download Link No Longer Resolves',
+    summary:
+      "The recorded Bet 213 download link (bet213.cc) no longer resolves — the domain fails DNS lookup entirely. This record has been updated to reflect the broken link rather than silently showing an outdated URL as current.",
+    sourceVerified: false,
+    entity: 'Bet 213',
+    previousState: 'Download link recorded and presumed working, last checked 25 June 2026.',
+    currentState: 'Download domain (bet213.cc) fails to resolve as of 7 November 2026. No replacement link has been confirmed yet.',
+    userAction: "Do not rely on the Bet 213 link currently shown on this site's app page until this notice is updated with a working replacement. If you have a current, working Bet 213 link, it has not been independently verified by AllYonoUpdate.com.",
+  },
+  {
     slug: 'cash-rummy-is-now-live',
     status: 'Confirmed',
     category: 'Game Updates',
