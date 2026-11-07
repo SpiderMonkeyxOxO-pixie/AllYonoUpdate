@@ -25,6 +25,24 @@ export interface Notice {
 
 export const notices: Notice[] = [
   {
+    slug: 'cash-rummy-is-now-live',
+    status: 'Confirmed',
+    category: 'Game Updates',
+    updateType: 'Platform Launch',
+    publishedDate: 'November 5, 2026',
+    lastReviewedDate: 'November 5, 2026',
+    headline: 'Cash Rummy Is Now Live',
+    summary:
+      "Cash Rummy launched on 5 November 2026 at 8:00 AM IST as a 10-game platform on the Yono network (Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette) and has joined the All Yono directory with a recorded download link at cashrummy99.com. The app's own listing states a ₹50-500 welcome bonus and ₹100 minimum withdrawal, neither independently verified by AllYonoUpdate.com.",
+    sourceLabel: 'cashrummy99.com',
+    sourceUrl: 'https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345',
+    sourceVerified: false,
+    entity: 'Cash Rummy',
+    previousState: 'Not yet listed in the All Yono directory.',
+    currentState: 'Live, with a recorded download link at cashrummy99.com. Its app page and directory record have been updated accordingly, and it now leads the Featured Promo Codes preview on the homepage.',
+    userAction: "Review the Cash Rummy app page for the current download link, and treat the welcome-bonus and minimum-withdrawal figures on the platform's own listing as unverified.",
+  },
+  {
     slug: 'spin-rummy-is-now-live',
     status: 'Confirmed',
     category: 'Game Updates',
