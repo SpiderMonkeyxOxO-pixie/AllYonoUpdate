@@ -5404,6 +5404,84 @@ const allBlogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: '123-rummy-launch-status',
+    title: '123 Rummy Launch Status: 16 Nov 2026, 8:00 AM IST',
+    metaDescription: '123 Rummy launches 16 November 2026 at 8:00 AM IST. Track its launch status, what\'s confirmed so far, and what\'s still unverified — updated as details come in.',
+    h1: '123 Rummy Launch Status: What We Know Ahead of 16 November 2026',
+    keywords: ['123 rummy launch', '123 rummy launch status', '123 rummy apk'],
+    publishedDate: '2026-11-10',
+    lastReviewedDate: '2026-11-10',
+    postType: 'launch-status',
+    image: { src: '/images/blog/123-rummy-launch-status.jpg', alt: '123 Rummy launch status showing the countdown to its 16 November 2026 launch' },
+    relatedCategoryPath: '/app/123-rummy/',
+    sections: [
+      {
+        heading: '123 Rummy Launch Status at a Glance',
+        paragraphs: [
+          '123 Rummy is scheduled to launch on 16 November 2026 at 8:00 AM IST as a new real-money rummy app on the Yono-style network. No download link is live yet.',
+          'Recorded details so far:',
+          '• Platform name: 123 Rummy',
+          '• Expected launch: 16 November 2026, 8:00 AM IST',
+          '• Download link: Not yet available',
+          '• Welcome bonus: Not yet announced',
+          '• Promo code: Not yet available',
+          '• App version, package ID, file size: Not yet confirmed',
+          '• Platform category: Rummy',
+          '• Last checked: 10 November 2026',
+          'This report reflects what could be confirmed at time of review. It will be updated the moment the app goes live and a working download link can be independently checked.',
+        ],
+      },
+      {
+        heading: 'Is the 123 Rummy Download Link Working Yet?',
+        paragraphs: [
+          'No. As of 10 November 2026, 123 Rummy has not launched and no download link has been published. Once it goes live, this page and its [app page](/app/123-rummy/) will carry the verified download link.',
+        ],
+      },
+      {
+        heading: 'Has a Welcome Bonus or Promo Code Been Announced?',
+        paragraphs: [
+          'No. Nothing has been confirmed for 123 Rummy yet — no bonus figure, no promo code. Any such claim circulating before launch is not confirmed and should be treated as unverified.',
+        ],
+      },
+      {
+        heading: 'What This Page Is Not',
+        paragraphs: [
+          'This is not a review of 123 Rummy\'s gameplay or feature set — that requires the app to actually be live and independently tested. It\'s also not a promotional page; AllYonoUpdate.com does not host, develop, or operate 123 Rummy.',
+          'Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025, in force since 1 May 2026. This page records information for reference and is not an invitation to play for money.',
+        ],
+      },
+      {
+        heading: 'Bottom Line',
+        paragraphs: [
+          '123 Rummy has not launched yet. This report will be updated with a verified download link, bonus terms, and app specs as soon as they can be independently confirmed after the 16 November 2026, 8:00 AM IST launch.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Has 123 Rummy officially launched?',
+        answer: 'Not yet. It is scheduled to launch on 16 November 2026 at 8:00 AM IST.',
+      },
+      {
+        question: 'Is there a working 123 Rummy download link right now?',
+        answer: 'No. No download link has been published as of 10 November 2026.',
+      },
+      {
+        question: 'Does 123 Rummy have a welcome bonus or promo code?',
+        answer: 'Not yet confirmed. This report will be updated once a real figure is confirmed.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: '123 Rummy: App Page & Download Link', href: '/app/123-rummy/' },
+      { label: 'Cash Rummy: App Page & Download Link', href: '/app/cash-rummy/' },
+      { label: 'Money Rummy Launch Status: Live Download Link & Updates', href: '/blog/money-rummy-launch-status/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.

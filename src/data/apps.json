@@ -10,6 +10,46 @@
   },
   "apps": [
     {
+      "id": "123-rummy",
+      "name": "123 Rummy",
+      "slug": "123-rummy",
+      "category": "rummy",
+      "featured": true,
+      "tag": "COMING SOON",
+      "description": "123 Rummy is an upcoming real-money rummy app scheduled to launch on 16 November 2026 at 8:00 AM IST. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "123 rummy apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-11-10",
+      "icon": "/images/games/123-rummy.jpg",
+      "apkUrl": null,
+      "url": "/app/123-rummy/",
+      "faq": [
+        {
+          "q": "Is 123 Rummy available to download yet?",
+          "a": "No. 123 Rummy is scheduled to launch on 16 November 2026 at 8:00 AM IST. This page will be updated with a download link once the app goes live."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the 123 Rummy APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once live, the Download button will lead directly to 123 Rummy's own website."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified 123 Rummy's bonus or referral terms?",
+          "a": "No. Nothing has been confirmed yet — no bonus, promo code, or referral terms exist to verify before launch."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Status Report",
+        "href": "/blog/123-rummy-launch-status/"
+      }
+    },
+    {
       "id": "cash-rummy",
       "name": "Cash Rummy",
       "slug": "cash-rummy",
