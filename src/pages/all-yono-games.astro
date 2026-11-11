@@ -85,15 +85,17 @@ const faqSchema = {
     <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
       {apps.map((game) => (
         <div class="flex flex-col items-center rounded-lg border border-brand-secondary bg-brand-surface px-3 py-4 text-center">
-          <img
-            src={game.icon}
-            alt={`${game.name} logo`}
-            width="96"
-            height="96"
-            loading="lazy"
-            class="h-16 w-16 rounded-md object-contain sm:h-20 sm:w-20"
-          />
-          <p class="mt-3 text-sm font-medium text-gray-200">{game.name}</p>
+          <a href={`/app/${game.slug}/`} class="flex flex-col items-center">
+            <img
+              src={game.icon}
+              alt={`${game.name} logo`}
+              width="96"
+              height="96"
+              loading="lazy"
+              class="h-16 w-16 rounded-md object-contain sm:h-20 sm:w-20"
+            />
+            <p class="mt-3 text-sm font-medium text-gray-200">{game.name}</p>
+          </a>
           {game.apkUrl && (
             <a
               href={game.apkUrl}
