@@ -1748,7 +1748,11 @@
           "q": "How often is this app record reviewed?",
           "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
         }
-      ]
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Download Guide",
+        "href": "/blog/slot-spin-apk-guide/"
+      }
     },
     {
       "id": "slots-winner",
