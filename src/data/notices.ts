@@ -25,6 +25,24 @@ export interface Notice {
 
 export const notices: Notice[] = [
   {
+    slug: '123-rummy-is-now-live',
+    status: 'Confirmed',
+    category: 'Game Updates',
+    updateType: 'Platform Launch',
+    publishedDate: 'November 16, 2026',
+    lastReviewedDate: 'November 16, 2026',
+    headline: '123 Rummy Is Now Live',
+    summary:
+      "123 Rummy launched on 16 November 2026 at 8:00 AM IST as a new real-money rummy app on the Yono network and has joined the All Yono directory with a recorded download link. No welcome bonus or promo code has been announced at launch, and AllYonoUpdate.com has not independently verified any bonus or referral terms.",
+    sourceLabel: '123rummy2.com',
+    sourceUrl: 'https://www.123rummy2.com/?code=HT9PS5WTMED&t=1794797556',
+    sourceVerified: false,
+    entity: '123 Rummy',
+    previousState: 'Scheduled to launch 16 November 2026; not yet listed with a working download link.',
+    currentState: 'Live, with a recorded download link. Its app page and directory record have been updated accordingly, and it now leads the Featured Promo Codes preview on the homepage.',
+    userAction: "Review the 123 Rummy app page for the current download link, and treat any welcome-bonus or promo-code claim as unverified until confirmed.",
+  },
+  {
     slug: '101z-download-link-unreachable',
     status: 'Confirmed',
     category: 'App Changes',
