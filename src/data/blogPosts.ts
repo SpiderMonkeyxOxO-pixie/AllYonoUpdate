@@ -5082,6 +5082,76 @@ const allBlogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: 'new-diwa-apps-november-2026',
+    title: 'New Diwa Apps, November 2026: What Was Added and What to Check',
+    metaDescription: 'New Diwa apps in November 2026: 17 apps in one family added to the AllYonoArcade.com directory on 15 November, what is recorded for each and what a "new app" claim does not tell you.',
+    h1: 'New Diwa Apps, November 2026: What Was Added and What to Check',
+    keywords: ['diwa apps', 'new diwa apps', 'diwa network apps 2026', 'diwa apps november 2026'],
+    publishedDate: '2026-11-17',
+    lastReviewedDate: '2026-11-17',
+    postType: 'launch-status',
+    image: { src: '/images/blog/new-diwa-apps-november-2026.webp', alt: 'New Diwa Apps: November 2026 — featured guide graphic' },
+    relatedCategoryPath: '/latest-updates/',
+    sections: [
+      {
+        heading: 'What This List Is',
+        paragraphs: [
+          'This is a dated record of what was added to the wider All Yono network directory in November 2026. Diwa is a separate, independently branded family from the Yono-named apps this site tracks directly — it shares the same hosting network and listing pattern used across these sites, but it is not a "Yono" app and is not re-profiled here. A new listing is not an endorsement and does not confirm any bonus.',
+        ],
+      },
+      {
+        heading: 'Added or Changed This Month',
+        paragraphs: [
+          'On 15 November 2026, AllYonoArcade.com\'s directory added 17 entries in a single family: Diwa777, DiwaAce, DiwaBonus, DiwaFun, DiwaGame, DiwaKing, DiwaLucky, DiwaPlay, DiwaRummy, DiwaSlot, DiwaSpin, DiwaTop, DiwaVIP, DiwaWin, DiwaWow, DiwaX, and Goodslots. Goodslots uses a different name and color scheme from the rest of the family, but its package name ties it to the same Diwa network, per AllYonoArcade\'s own listing.',
+          'A dedicated guide for each one already exists on AllYonoArcade.com, with a download link, description and promo-code status recorded there rather than duplicated on this site: [Diwa777](https://allyonoarcade.com/blog/diwa777-apk-download), [DiwaAce](https://allyonoarcade.com/blog/diwaace-apk-download), [DiwaBonus](https://allyonoarcade.com/blog/diwabonus-apk-download), [DiwaFun](https://allyonoarcade.com/blog/diwafun-apk-download), [DiwaGame](https://allyonoarcade.com/blog/diwagame-apk-download), [DiwaKing](https://allyonoarcade.com/blog/diwaking-apk-download), [DiwaLucky](https://allyonoarcade.com/blog/diwalucky-apk-download), [DiwaPlay](https://allyonoarcade.com/blog/diwaplay-apk-download), [DiwaRummy](https://allyonoarcade.com/blog/diwarummy-apk-download), [DiwaSlot](https://allyonoarcade.com/blog/diwaslot-apk-download), [DiwaSpin](https://allyonoarcade.com/blog/diwaspin-apk-download), [DiwaTop](https://allyonoarcade.com/blog/diwatop-apk-download), [DiwaVIP](https://allyonoarcade.com/blog/diwavip-apk-download), [DiwaWin](https://allyonoarcade.com/blog/diwawin-apk-download), [DiwaWow](https://allyonoarcade.com/blog/diwawow-apk-download), [DiwaX](https://allyonoarcade.com/blog/diwax-apk-download), and [Goodslots](https://allyonoarcade.com/blog/goodslots-apk-download).',
+        ],
+      },
+      {
+        heading: 'What a New Listing Lacks',
+        paragraphs: [
+          'A new listing has a shorter track record, less independent observation and often blank fields such as version and file size. Those fields are left blank rather than estimated until they can be confirmed.',
+        ],
+      },
+      {
+        heading: 'About Bonus, Referral and Reward Figures',
+        paragraphs: [
+          'Diwa-branded pages advertise their own bonus, referral and reward figures, the same as other apps across this wider network. A figure with no dated, independent source cannot be verified, and AllYonoUpdate.com has not verified any bonus or reward claim shown on a platform\'s own website or on AllYonoArcade\'s listing for it.',
+        ],
+      },
+      {
+        heading: 'How to Check a New App',
+        paragraphs: [
+          'Find a named operator, confirm terms and a privacy policy exist, compare the download address with the app\'s own page, and read permissions. A new name is a reason to look closer, not a reason to download faster.',
+        ],
+      },
+      {
+        heading: 'About This Record',
+        paragraphs: [
+          'AllYonoUpdate.com is an independent directory and update tracker: it does not develop, host, or operate any of the apps named here, Diwa-branded or otherwise, and no APK file is stored on this website. Full entity profiles for the Diwa family — download links, screenshots and feature breakdowns — are maintained on AllYonoArcade.com, not here; this page records only that the listing happened and when. Being named here is not an endorsement.',
+          'This list is reviewed whenever a meaningful change can be confirmed.',
+        ],
+      },
+      {
+        heading: 'Notice',
+        paragraphs: [
+          '18+ only. Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025. This page records information for reference and is not an invitation to play for money. AllYonoUpdate.com has not independently verified any bonus, referral or reward claim shown on a platform\'s own website.',
+        ],
+      },
+    ],
+    faqs: [
+      { question: 'What are the Diwa apps?', answer: 'Diwa is a family of 17 similarly branded apps — Diwa777, DiwaAce, DiwaBonus, DiwaFun, DiwaGame, DiwaKing, DiwaLucky, DiwaPlay, DiwaRummy, DiwaSlot, DiwaSpin, DiwaTop, DiwaVIP, DiwaWin, DiwaWow, DiwaX, and Goodslots — added to the AllYonoArcade.com directory on 15 November 2026. It is a separate network from the Yono-named apps this site tracks directly.' },
+      { question: 'Does "new" mean safe?', answer: 'No. A new listing has a shorter track record and has not been independently verified.' },
+      { question: 'Where can I find details on a specific Diwa app?', answer: 'On AllYonoArcade.com, which hosts a dedicated guide for each one with its own download link and promo-code status. AllYonoUpdate.com records only that the listing happened, not the full profile.' },
+      { question: 'Has AllYonoUpdate.com verified any bonus or reward claim for a Diwa app?', answer: 'No. Any bonus, reward or code shown on a platform\'s own website is the publisher\'s own marketing, not an assessment made here.' },
+      { question: 'How often is this guide reviewed?', answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.' },
+    ],
+    relatedArticles: [
+      { label: 'New Yono Apps, November 2026', href: '/blog/new-yono-apps-november-2026/' },
+      { label: 'Latest Updates', href: '/latest-updates/' },
+      { label: 'All Yono Games', href: '/all-yono-games/' },
+    ],
+  },
+  {
     slug: 'neta-vip-apk-guide',
     title: 'Neta Vip APK: Download Guide, Safety Check & FAQ',
     metaDescription: 'A plain-language guide to the Neta Vip APK — what it is, how the download link works, and answers to common safety questions.',
