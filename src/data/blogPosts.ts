@@ -5726,6 +5726,108 @@ const allBlogPosts: BlogPost[] = [
       { label: 'App Updates', href: '/app-updates/' },
     ],
   },
+  {
+    slug: 'app-freshness-audit-final-results-november-2026',
+    title: 'AllYonoUpdate Freshness Audit: Final Results — 62 of 64 Apps Reconfirmed, 2 Never Had a Confirmed Link',
+    metaDescription: 'The freshness audit is closed: 62 of 64 catalog apps were reconfirmed in a full November re-check. Two links broke (101Z, Bet 213) and two — Ind Bingo and Spin Lucky — never had a confirmed download link to begin with.',
+    h1: 'AllYonoUpdate Freshness Audit: Final Results — 62 of 64 Apps Reconfirmed, 2 Never Had a Confirmed Link',
+    keywords: ['yono apps freshness audit results', 'all yono update tracker final', 'yono app verification status november 2026'],
+    publishedDate: '2026-11-18',
+    lastReviewedDate: '2026-11-18',
+    image: { src: '/images/blog/app-freshness-audit-final-results-november-2026.webp', alt: 'AllYonoUpdate freshness audit final results — 62 of 64 apps reconfirmed graphic' },
+    relatedCategoryPath: '/update-archive/',
+    postType: 'launch-status',
+    sections: [
+      {
+        heading: "The Audit Is Closed — Here's the Final Tally",
+        paragraphs: [
+          "On 6 November 2026, this site published a piece pointing out that 54 of our own 64 catalog apps carried the exact same 25 June 2026 last-updated date — a batch-pass timestamp, not a confirmed-current one. The honest problem then was simple: we couldn't tell readers whether those apps were actually fine, only that we hadn't individually rechecked them in months.",
+          "The day after that piece went up, we ran a full re-verification of all 64 apps in the catalog. That work is done. Final tally: 62 of 64 apps were confirmed working. Two download links had broken outright — 101Z and Bet 213 — and both were already reported separately. Two more apps turned out to have a different, quieter problem: they never had a confirmed download link in the first place.",
+          "This page is the closing entry on that audit — what got checked, what was found, and the one gap that's been sitting unreported until now.",
+        ],
+      },
+      {
+        heading: "What 'Checked' Actually Meant",
+        paragraphs: [
+          "The 7 November re-verification pass went through all 64 catalog entries and attempted to confirm, for each one, whether its recorded download domain actually resolved and served a link. That's a narrower check than a full safety or fairness review — it answers one question (does the recorded link work right now) rather than everything a fuller app profile might cover.",
+          "62 apps passed that check cleanly: their recorded domains resolved, consistent with — or better than — what was on file. Two did not, in the ordinary sense of a link going dead. Two more sat in a third category this audit didn't originally flag clearly enough: apps that were never confirmed to have a working link at all, broken or otherwise.",
+        ],
+      },
+      {
+        heading: 'Two Links Broke: 101Z and Bet 213 — Already Reported',
+        paragraphs: [
+          "101Z's recorded download domain (101zvip2.com) and Bet 213's recorded domain (bet213.cc) both failed DNS lookup entirely during the 7 November check — not a slow response or an error page, but domains that don't resolve. Both had previously been recorded and presumed working as of the 25 June 2026 batch date.",
+          "Both were already written up at the time: dated notices for each app went live on 7 November on the [App Updates](/app-updates/) page, and a dedicated [101Z and Bet 213 status-check post](/blog/101z-bet-213-link-status-november-2026/) followed on 16 November covering both in detail. Nothing new to add here — this section exists only to place them correctly inside the final tally, not to re-report them.",
+        ],
+      },
+      {
+        heading: 'Two Apps Never Had a Confirmed Link — Ind Bingo and Spin Lucky',
+        paragraphs: [
+          "This is the part of the audit that hadn't been written up anywhere until now. Ind Bingo and Spin Lucky are a different case from 101Z and Bet 213, and the distinction matters: 101Z and Bet 213 had working links that broke. Ind Bingo and Spin Lucky never had a confirmed link to break — as of the same 7 November check, neither had a public download link that could be verified at all.",
+          'That fact has been sitting in the catalog data itself since 7 November, just not surfaced anywhere a reader would see it. Both app entries currently record `apkUrl: null`, and each carries this line in its own description field: "No public download link has been confirmed for this app as of 7 November 2026 — AllYonoUpdate.com records catalog details for reference, but will not display an unverified link." No notice was published, and no post mentioned either app. This page closes that gap.',
+          'Re-checked again today, 18 November 2026, both records are unchanged: Ind Bingo and Spin Lucky still show no confirmed download link, eleven days after that line was first written.',
+        ],
+      },
+      {
+        heading: 'Why This Didn\'t Get a Broken-Link Notice Like 101Z and Bet 213',
+        paragraphs: [
+          "Our notice format on the [App Updates](/app-updates/) page is built around state changes — a 'previous state' and a 'current state,' the way 101Z's notice reads 'link recorded and presumed working' moving to 'domain fails to resolve.' Ind Bingo and Spin Lucky don't fit that shape cleanly: there's no earlier 'working' state to record as having changed. The honest description isn't 'this broke,' it's 'this was never confirmed in the first place' — and that distinction got lost rather than written up as its own item. That's the gap, plainly stated.",
+        ],
+      },
+      {
+        heading: 'Where Fuller Detail on These Two Apps May Exist',
+        paragraphs: [
+          "AllYonoUpdate.com doesn't maintain full entity profiles for every app in its catalog, and this page isn't building one for Ind Bingo or Spin Lucky now. A sibling site in this network, AllYonoGuru, does carry its own profile pages for both — [Ind Bingo](https://allyonoguru.com/ind-bingo) and [Spin Lucky](https://allyonoguru.com/spin-lucky) — with more specs listed, including a version number and package size.",
+          "That's worth knowing about, but it's not the same as a confirmation. AllYonoUpdate.com has not independently verified the specs shown on those Guru profile pages, and AllYonoGuru has open content-integrity questions of its own elsewhere in its catalog. Treat those pages as a place where more detail may exist, not as a second source confirming what this page could not.",
+        ],
+      },
+      {
+        heading: "What This Means If You're Looking at Ind Bingo or Spin Lucky Here",
+        paragraphs: [
+          "Don't expect a download button to work on either app's AllYonoUpdate.com page right now — there isn't a confirmed link to show, and this site does not display an unverified one. If a link for either app surfaces somewhere else, AllYonoUpdate.com has not checked it, and the same caution that applies to any unconfirmed source applies here.",
+        ],
+      },
+      {
+        heading: 'The Honest Bottom Line',
+        paragraphs: [
+          "The freshness audit that started on 6 November is finished: 62 of 64 apps reconfirmed, 2 links broken and already reported (101Z, Bet 213), and 2 apps — Ind Bingo and Spin Lucky — that simply never had a confirmed link, a fact that's been true and unreported since 7 November. It still is, as of today, 18 November 2026. This page is that report.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What were the final results of AllYonoUpdate's freshness audit?",
+        answer: '62 of the 64 catalog apps were reconfirmed working in a full 7 November 2026 re-verification. Two apps had broken download links (101Z, Bet 213), and two more — Ind Bingo and Spin Lucky — never had a confirmed link in the first place.',
+      },
+      {
+        question: "What's the difference between 101Z/Bet 213 and Ind Bingo/Spin Lucky?",
+        answer: "101Z and Bet 213 had working download links that broke — their domains stopped resolving. Ind Bingo and Spin Lucky never had a confirmed link to begin with; there's no 'it broke' moment for either, just an ongoing unconfirmed status.",
+      },
+      {
+        question: 'Is there a working download link for Ind Bingo?',
+        answer: 'No. As of 18 November 2026, Ind Bingo\'s catalog record still shows no confirmed public download link, a status unchanged since 7 November 2026.',
+      },
+      {
+        question: 'Is there a working download link for Spin Lucky?',
+        answer: 'No. As of 18 November 2026, Spin Lucky\'s catalog record still shows no confirmed public download link, a status unchanged since 7 November 2026.',
+      },
+      {
+        question: 'Where can I find more details on Ind Bingo or Spin Lucky?',
+        answer: 'AllYonoGuru, a sibling site in this network, carries its own profile pages for both apps. AllYonoUpdate.com has not independently verified the specs shown there, so treat those pages as a place fuller detail may exist, not as a confirmed source.',
+      },
+      {
+        question: 'Were 101Z and Bet 213 covered elsewhere?',
+        answer: 'Yes — both got dated notices on the App Updates page on 7 November 2026 and a dedicated status-check post on 16 November 2026. This page doesn\'t re-report them, only places them correctly in the final tally.',
+      },
+    ],
+    relatedArticles: [
+      { label: "Which Yono Apps Haven't Been Rechecked Since June? A Freshness Audit", href: '/blog/app-freshness-audit-november-2026/' },
+      { label: '101Z and Bet 213: Download Links Still Down — Status Check', href: '/blog/101z-bet-213-link-status-november-2026/' },
+      { label: 'App Updates', href: '/app-updates/' },
+      { label: 'Ind Bingo: App Page & Download Link', href: '/app/ind-bingo/' },
+      { label: 'Spin Lucky: App Page & Download Link', href: '/app/spin-lucky/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.
