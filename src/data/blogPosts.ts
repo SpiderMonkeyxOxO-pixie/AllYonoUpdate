@@ -3191,7 +3191,7 @@ const allBlogPosts: BlogPost[] = [
     publishedDate: '2026-10-20',
     lastReviewedDate: '2026-10-20',
     image: { src: '/blogs-img/vip-rummy-new-game-update.webp', alt: 'VIP Rummy: New Game Launch, 20 October 2026 — featured guide graphic' },
-    relatedCategoryPath: '/vip-rummy/',
+    relatedCategoryPath: '/app/vip-rummy/',
     postType: 'launch-status',
     sections: [
       {
@@ -3244,6 +3244,79 @@ const allBlogPosts: BlogPost[] = [
         question: 'Is there anything to be cautious about at launch?',
         answer: 'Yes — unverified download links, bonus claims, and promo codes commonly circulate around new launches. Wait for confirmation before trusting any of them.',
       },
+    ],
+  },
+  {
+    slug: 'vip-rummy-one-month-status-check',
+    title: "VIP Rummy, One Month Later: The Bonus and Promo Code Still Aren't Confirmed",
+    metaDescription: "One month after VIP Rummy's 20 October launch post promised updates, its welcome bonus and promo code remain unconfirmed. A field-by-field status check.",
+    h1: "VIP Rummy, One Month Later: The Bonus and Promo Code Still Aren't Confirmed",
+    keywords: ['vip rummy bonus', 'vip rummy promo code', 'vip rummy welcome bonus', 'is vip rummy bonus confirmed', 'vip rummy update'],
+    publishedDate: '2026-11-19',
+    lastReviewedDate: '2026-11-19',
+    postType: 'launch-status',
+    image: { src: '/images/blog/vip-rummy-one-month-status-check.webp', alt: 'VIP Rummy one month status check — bonus and promo code still unconfirmed graphic' },
+    relatedCategoryPath: '/app/vip-rummy/',
+    sections: [
+      {
+        heading: 'One Month In, the Bonus Field Is Still Blank',
+        paragraphs: [
+          "On 20 October 2026, when VIP Rummy launched, this site published a running status log flagging two specific unknowns: \"Welcome bonus: not yet announced\" and \"Promo code: not yet issued.\" That post promised the page would be \"updated directly\" as those details firmed up, treating it as an ongoing record rather than a one-time announcement.",
+          "One month later, as of today, 19 November 2026, neither has happened. VIP Rummy's catalog entry carries no bonus figure and no promo code anywhere — not in its description, not in its three FAQ entries. The entry was last touched on 7 November 2026, but that update was a portfolio-wide recheck of download links across the catalog, not a bonus-specific revision; the blank field predates that check and survived it unchanged.",
+        ],
+      },
+      {
+        heading: "What Was Promised vs. What's Confirmed Today",
+        paragraphs: [
+          "Download link — 20 October: confirmed, live at viprummy6.com. 19 November: unchanged, still live at viprummy6.com.",
+          "Welcome bonus — 20 October: not yet announced. 19 November: still not announced. No figure, range, or percentage appears anywhere in the current listing.",
+          "Promo code — 20 October: not yet issued. 19 November: still not issued. The current download link carries a referral-style tracking parameter in its URL, but that is a link parameter, not a published promo code with its own disclosed terms.",
+          "APK technical details (package name, permissions, signing certificate) — 20 October: not yet inspected. 19 November: still not inspected; no update has been made to this field.",
+          "Four fields were tracked at launch. One has stayed the same because it was already settled. Three have stayed the same because nothing has moved in a month.",
+        ],
+      },
+      {
+        heading: "Why This Is Worth Flagging: Cash Rummy Got the Same Field Filled In",
+        paragraphs: [
+          "VIP Rummy isn't being held to an unreasonable standard here. Cash Rummy, a sibling LIVE-tagged app in this same catalog that launched more recently, on 5 November 2026, already has its welcome bonus disclosed in its listing: \"a ₹50–500 welcome bonus and ₹100 minimum withdrawal\" (per the app's own listing, not independently verified by AllYonoUpdate.com, but present). That's the same field VIP Rummy's entry still leaves blank, a full month after launch.",
+          "That contrast is the point of this page. The welcome-bonus field on a LIVE app's listing does get populated once a publisher confirms it — Cash Rummy is proof that happens in this network, and quickly. VIP Rummy's continued blank field a month in reads as a freshness gap on the publisher's side, not a limitation of how this directory records bonus information.",
+        ],
+      },
+      {
+        heading: 'This Page Will Keep Tracking It',
+        paragraphs: [
+          "Consistent with how the original 20 October post described itself, this is also a running record rather than a one-time note. If VIP Rummy's welcome bonus or promo code is ever confirmed and added to the live catalog entry, this page will be updated to reflect it, with the date of that change noted here. Until then, the honest answer to \"what's VIP Rummy's bonus\" is that there isn't a confirmed one yet.",
+        ],
+      },
+      {
+        heading: 'Safety and Legal Note',
+        paragraphs: [
+          "AllYonoUpdate.com does not host, distribute, or endorse the VIP Rummy APK, and has not verified any bonus or promo-code claim appearing outside its own catalog entry. Online money games are prohibited in India since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025. Confirm VIP Rummy's classification and your state's specific rules before playing. This is 18+ content.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does VIP Rummy have a welcome bonus?',
+        answer: "Not a confirmed one, as of 19 November 2026. VIP Rummy's catalog listing has not published a bonus figure since its 20 October 2026 launch, one month ago.",
+      },
+      {
+        question: 'Does VIP Rummy have a promo code?',
+        answer: 'No published promo code has been issued as of 19 November 2026. The download link carries a referral-style tracking parameter, but that is not the same as a confirmed promo code with its own disclosed terms.',
+      },
+      {
+        question: 'Is VIP Rummy live in India?',
+        answer: 'Yes — VIP Rummy is tagged LIVE in this catalog and its download link at viprummy6.com is active as of this check. Live availability is separate from whether its bonus or promo code has been confirmed, which they have not.',
+      },
+      {
+        question: "Why does Cash Rummy show a bonus but VIP Rummy doesn't?",
+        answer: "Cash Rummy's publisher disclosed a ₹50–500 welcome bonus in its own listing; VIP Rummy's publisher has not disclosed an equivalent figure, even though VIP Rummy has been live a month longer. That's a difference in what each publisher has confirmed, not a difference in site policy.",
+      },
+    ],
+    relatedArticles: [
+      { label: 'VIP Rummy: New Game Launch, 20 October 2026', href: '/blog/vip-rummy-new-game-update/' },
+      { label: 'Cash Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/cash-rummy-launch-status/' },
+      { label: 'VIP Rummy: App Page & Download Link', href: '/app/vip-rummy/' },
     ],
   },
   {
