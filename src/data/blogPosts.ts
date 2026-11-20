@@ -5376,6 +5376,67 @@ const allBlogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: 'cash-rummy-two-weeks-status-check',
+    title: 'Cash Rummy, Two Weeks Later: Is the Bonus Still ₹50–500?',
+    metaDescription: "Two weeks after Cash Rummy's 5 Nov launch, its ₹50–500 welcome bonus, ₹100 minimum withdrawal, and download link remain exactly as first recorded. A field-by-field status check.",
+    h1: 'Cash Rummy, Two Weeks Later: Is the Bonus Still ₹50–500?',
+    keywords: ['cash rummy bonus', 'cash rummy welcome bonus', 'is cash rummy still live', 'cash rummy minimum withdrawal', 'cash rummy update'],
+    publishedDate: '2026-11-20',
+    lastReviewedDate: '2026-11-20',
+    postType: 'launch-status',
+    image: { src: '/images/blog/cash-rummy-two-weeks-status-check.webp', alt: 'Cash Rummy two-week status check — bonus and withdrawal terms unchanged since launch graphic' },
+    relatedCategoryPath: '/app/cash-rummy/',
+    sections: [
+      {
+        heading: "Two Weeks In, the Listing Hasn't Moved",
+        paragraphs: [
+          "On 5 November 2026, at 8:00 AM IST, Cash Rummy launched as a 10-game platform on the Yono network — Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette. That launch post recorded the app's own listed welcome bonus (₹50–500) and minimum withdrawal (₹100) exactly as the platform stated them, flagging both as unverified by AllYonoUpdate.com.",
+          "Today, 20 November 2026 — two weeks and a few days past launch — Cash Rummy's catalog entry carries the same figures. The entry's own updated field still reads 7 November 2026, meaning the record hasn't been touched in 13 days despite Cash Rummy remaining one of this directory's featured LIVE apps.",
+        ],
+      },
+      {
+        heading: "What Was Stated at Launch vs. What's Confirmed Today",
+        paragraphs: [
+          "Download link — 5 November: confirmed, live at cashrummy99.com with the referral-tracking link https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345. 20 November: unchanged, the same URL is still the catalog's recorded apkUrl.",
+          "Welcome bonus — 5 November: ₹50–500, per the app's own listing, not independently verified. 20 November: identical figure, still unverified — no new disclosure, no revision.",
+          "Minimum withdrawal — 5 November: ₹100, per the app's own listing. 20 November: unchanged, same figure.",
+          "Last-updated date — The catalog entry was touched once after launch, on 7 November, during a portfolio-wide recheck of download links across the catalog, not a Cash Rummy-specific revision. As of 20 November, that's 13 days with no further check recorded.",
+          "Four fields tracked at launch. All four are identical today. Nothing has been revised, nothing has been newly disclosed, and nothing has gone stale enough to break — it has simply not been rechecked.",
+        ],
+      },
+      {
+        heading: "Why This Is Worth Flagging: Stable Isn't the Same as Reviewed",
+        paragraphs: [
+          "This isn't the same situation as VIP Rummy, whose welcome-bonus field has stayed blank for a month because the publisher never disclosed a figure. Cash Rummy's fields are all filled in and have been since launch — the bonus range, the minimum withdrawal, and the working download link were all present from day one. What hasn't happened is a recheck: nobody has gone back to confirm whether ₹50–500 or ₹100 still holds, or whether anything else about the listing needs revising.",
+          "That distinction matters for how to read a 13-day-silent entry on a flagship LIVE app. It isn't necessarily a problem — a correct listing that hasn't changed doesn't need editing just to look busy. But a catalog entry's last-updated date is supposed to mean something, and right now it means \"last touched during an unrelated portfolio-wide check,\" not \"rechecked because of anything specific to Cash Rummy.\" Surfacing that gap is this page's job — a real recheck of the live bonus and withdrawal terms is still owed before that date should move again.",
+        ],
+      },
+      {
+        heading: 'This Page Will Keep Tracking It',
+        paragraphs: [
+          "Consistent with how this site tracks every LIVE app, this is a running record, not a one-time note. If Cash Rummy's welcome bonus, minimum withdrawal, or download link changes — or if a fresh recheck confirms the current figures are still accurate — this page and the catalog entry will be updated, with the date of that change noted here. Until then, the honest status on Cash Rummy is: live, unchanged, and not independently re-verified since 7 November.",
+        ],
+      },
+      {
+        heading: 'Safety and Legal Note',
+        paragraphs: [
+          "AllYonoUpdate.com does not host, distribute, or endorse the Cash Rummy APK, and has not independently verified any bonus, minimum-withdrawal, or referral claim appearing outside its own catalog entry. Online money games are prohibited in India since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025. Confirm Cash Rummy's classification and your state's specific rules before playing. This is 18+ content.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: 'Is Cash Rummy still live?', answer: 'Yes. Cash Rummy is tagged LIVE in this catalog and its download link at cashrummy99.com is active as of 20 November 2026, two weeks after its 5 November launch.' },
+      { question: "Has Cash Rummy's welcome bonus changed?", answer: "No. The ₹50–500 welcome bonus range first recorded at launch on 5 November 2026 is the same figure shown today. It remains the app's own stated figure, not independently verified by AllYonoUpdate.com." },
+      { question: "When was Cash Rummy's catalog listing last updated?", answer: "7 November 2026 — two days after launch, during a portfolio-wide recheck of download links. As of 20 November 2026, that's 13 days with no further change recorded." },
+      { question: "Is Cash Rummy's minimum withdrawal still ₹100?", answer: "Yes, per the app's own listing, unchanged since launch. AllYonoUpdate.com has not independently verified this figure." },
+    ],
+    relatedArticles: [
+      { label: 'Cash Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/cash-rummy-launch-status/' },
+      { label: "VIP Rummy, One Month Later: The Bonus and Promo Code Still Aren't Confirmed", href: '/blog/vip-rummy-one-month-status-check/' },
+      { label: 'Cash Rummy: App Page & Download Link', href: '/app/cash-rummy/' },
+    ],
+  },
+  {
     slug: 'maha-games-apk-guide',
     title: 'Maha Games APK: Welcome Bonus, Minimum Withdrawal & Download Guide',
     metaDescription: 'Maha Games welcome bonus is ₹150 and minimum withdrawal is ₹100. Current download link, how the arcade-category app works, and safety notes before installing.',
