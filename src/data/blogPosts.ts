@@ -6052,6 +6052,84 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Spin Lucky: App Page & Download Link', href: '/app/spin-lucky/' },
     ],
   },
+  {
+    slug: 'rush-gala-launch-status',
+    title: 'Rush Gala Launch Status: 23 Nov 2026, 8:00 AM IST',
+    metaDescription: 'Rush Gala launches 23 November 2026 at 8:00 AM IST. Track its launch status, what\'s confirmed so far, and what\'s still unverified — updated as details come in.',
+    h1: 'Rush Gala Launch Status: What We Know Ahead of 23 November 2026',
+    keywords: ['rush gala launch', 'rush gala launch status', 'rush gala apk'],
+    publishedDate: '2026-11-22',
+    lastReviewedDate: '2026-11-22',
+    postType: 'launch-status',
+    image: { src: '/images/blog/rush-gala-launch-status.jpg', alt: 'Rush Gala launch status showing the countdown to its 23 November 2026 launch' },
+    relatedCategoryPath: '/app/rush-gala/',
+    sections: [
+      {
+        heading: 'Rush Gala Launch Status at a Glance',
+        paragraphs: [
+          'Rush Gala is scheduled to launch on 23 November 2026 at 8:00 AM IST as a new real-money gaming app on the Yono-style network. No download link is live yet.',
+          'Recorded details so far:',
+          '• Platform name: Rush Gala',
+          '• Expected launch: 23 November 2026, 8:00 AM IST',
+          '• Download link: Not yet available',
+          '• Welcome bonus: Not yet announced',
+          '• Promo code: Not yet available',
+          '• App version, package ID, file size: Not yet confirmed',
+          '• Platform category: Slots',
+          '• Last checked: 22 November 2026',
+          'This report reflects what could be confirmed at time of review. It will be updated the moment the app goes live and a working download link can be independently checked.',
+        ],
+      },
+      {
+        heading: 'Is the Rush Gala Download Link Working Yet?',
+        paragraphs: [
+          'No. As of 22 November 2026, Rush Gala has not launched and no download link has been published. Once it goes live, this page and its [app page](/app/rush-gala/) will carry the verified download link.',
+        ],
+      },
+      {
+        heading: 'Has a Welcome Bonus or Promo Code Been Announced?',
+        paragraphs: [
+          'No. Nothing has been confirmed for Rush Gala yet — no bonus figure, no promo code. Any such claim circulating before launch is not confirmed and should be treated as unverified.',
+        ],
+      },
+      {
+        heading: 'What This Page Is Not',
+        paragraphs: [
+          'This is not a review of Rush Gala\'s gameplay or feature set — that requires the app to actually be live and independently tested. It\'s also not a promotional page; AllYonoUpdate.com does not host, develop, or operate Rush Gala.',
+          'Online money games are prohibited in India under the Promotion and Regulation of Online Gaming Act, 2025, in force since 1 May 2026. This page records information for reference and is not an invitation to play for money.',
+        ],
+      },
+      {
+        heading: 'Bottom Line',
+        paragraphs: [
+          'Rush Gala has not launched yet. This report will be updated with a verified download link, bonus terms, and app specs as soon as they can be independently confirmed after the 23 November 2026, 8:00 AM IST launch.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Has Rush Gala officially launched?',
+        answer: 'Not yet. It is scheduled to launch on 23 November 2026 at 8:00 AM IST.',
+      },
+      {
+        question: 'Is there a working Rush Gala download link right now?',
+        answer: 'No. No download link has been published as of 22 November 2026.',
+      },
+      {
+        question: 'Does Rush Gala have a welcome bonus or promo code?',
+        answer: 'Not yet confirmed. This report will be updated once a real figure is confirmed.',
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'This guide is reviewed whenever a meaningful change can be confirmed, so the last-reviewed date reflects the most recent check, not a live, real-time feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Rush Gala: App Page & Download Link', href: '/app/rush-gala/' },
+      { label: '123 Rummy: App Page & Download Link', href: '/app/123-rummy/' },
+      { label: 'Cash Rummy: App Page & Download Link', href: '/app/cash-rummy/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.

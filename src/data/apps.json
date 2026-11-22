@@ -10,6 +10,46 @@
   },
   "apps": [
     {
+      "id": "rush-gala",
+      "name": "Rush Gala",
+      "slug": "rush-gala",
+      "category": "slots",
+      "featured": true,
+      "tag": "COMING SOON",
+      "description": "Rush Gala is an upcoming real-money slots app scheduled to launch on 23 November 2026 at 8:00 AM IST. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "rush gala apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-11-22",
+      "icon": "/images/games/rush-gala.jpg",
+      "apkUrl": null,
+      "url": "/app/rush-gala/",
+      "faq": [
+        {
+          "q": "Is Rush Gala available to download yet?",
+          "a": "No. Rush Gala is scheduled to launch on 23 November 2026 at 8:00 AM IST. This page will be updated with a download link once the app goes live."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the Rush Gala APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once live, the Download button will lead directly to Rush Gala's own website."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Rush Gala's bonus or referral terms?",
+          "a": "No. Nothing has been confirmed yet — no bonus, promo code, or referral terms exist to verify before launch."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Status Report",
+        "href": "/blog/rush-gala-launch-status/"
+      }
+    },
+    {
       "id": "123-rummy",
       "name": "123 Rummy",
       "slug": "123-rummy",
