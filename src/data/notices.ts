@@ -25,6 +25,24 @@ export interface Notice {
 
 export const notices: Notice[] = [
   {
+    slug: 'rush-gala-is-now-live',
+    status: 'Confirmed',
+    category: 'Game Updates',
+    updateType: 'Platform Launch',
+    publishedDate: 'November 23, 2026',
+    lastReviewedDate: 'November 23, 2026',
+    headline: 'Rush Gala Is Now Live',
+    summary:
+      "Rush Gala launched on 23 November 2026 at 8:00 AM IST as a new real-money multi-game casino-style app (slots, fishing, fly, and roulette) on the Yono network and has joined the All Yono directory with a recorded download link. The operator's own listing cites a Rs.50-500 random welcome bonus, a Rs.50-100 minimum deposit, and a Rs.100 minimum withdrawal; AllYonoUpdate.com has not independently verified any of these figures.",
+    sourceLabel: 'rushgala.club',
+    sourceUrl: 'https://rushgala.club/?code=MBZQC5NXWUP&t=1795408331',
+    sourceVerified: false,
+    entity: 'Rush Gala',
+    previousState: 'Scheduled to launch 23 November 2026; not yet listed with a working download link.',
+    currentState: 'Live, with a recorded download link. Its app page and directory record have been updated accordingly, and it now leads the Featured Promo Codes preview on the homepage.',
+    userAction: "Review the Rush Gala app page for the current download link, and treat the welcome-bonus, deposit, and withdrawal figures as unverified until independently confirmed.",
+  },
+  {
     slug: '123-rummy-is-now-live',
     status: 'Confirmed',
     category: 'Game Updates',
