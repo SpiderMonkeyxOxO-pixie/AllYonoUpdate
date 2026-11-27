@@ -6469,6 +6469,116 @@ const allBlogPosts: BlogPost[] = [
       { label: 'Jaiho Arcade: App Page & Download Link', href: '/app/jaiho-arcade/' },
     ],
   },
+  {
+    slug: 'love-rummy-apk-guide',
+    title: 'Love Rummy APK: Download Status, Features & Safety Check | AllYonoUpdate',
+    metaDescription: "Love Rummy app details from the All Yono directory — current download link, what's confirmed, what isn't, and how it compares to other rummy apps listed.",
+    h1: 'Love Rummy APK: What It Is, Download Status & Safety Check',
+    keywords: ['love rummy apk', 'love rummy apk download', 'love rummy app', 'loverummy7.com'],
+    publishedDate: '2026-11-27',
+    lastReviewedDate: '2026-11-27',
+    image: { src: '/images/blog/love-rummy-apk-guide.webp', alt: 'Playing cards icon with a loading checkmark badge representing a verified live download link for Love Rummy' },
+    relatedCategoryPath: '/yono-rummy/',
+    postType: 'guide',
+    sections: [
+      {
+        heading: 'What Is Love Rummy',
+        paragraphs: [
+          "Love Rummy is one of the rummy-category apps tracked in the All Yono directory, distributed from loverummy7.com rather than a conventional app store. It sits alongside more than a dozen other separately listed rummy apps in this directory — Yono Rummy, Max Rummy, Joy Rummy, ABC Rummy, Gogo Rummy, Ok Rummy, Top Rummy, Hi Rummy, Ind Rummy, Game Rummy, Jaiho Rummy and Rummy77 among them — and nothing recorded here ties Love Rummy's ownership to any of those other listings.",
+          "AllYonoUpdate.com is an independent directory and update tracker. It does not develop, host or operate Love Rummy, and the APK file is never stored on this website. The Download button on Love Rummy's app page leads straight to the platform's own site.",
+        ],
+      },
+      {
+        heading: 'Love Rummy App Details at a Glance',
+        paragraphs: [
+          'Recorded details so far:',
+          '• App name: Love Rummy',
+          '• Directory category: Rummy',
+          '• Current download source: loverummy7.com',
+          '• Software version: Not recorded',
+          '• File size: Not recorded',
+          '• Minimum Android version: Not recorded',
+          '• Rating: Not recorded',
+          '• Catalog last-checked date: 7 November 2026',
+          'This guide was independently checked on 27 November 2026: the loverummy7.com link returned a normal response and loaded its page, and a plain http:// request to the same address resolved through to https:// without error. Version numbers, permissions and bonus terms were not part of that check and remain unconfirmed.',
+        ],
+      },
+      {
+        heading: 'Love Rummy Compared With Other Rummy Apps in This Directory',
+        paragraphs: [
+          'The All Yono directory currently lists well over a dozen separately filed rummy-category apps, Love Rummy among them. A shared category — or, for some pairs, a shared word like "Rummy" — does not mean shared ownership, a shared account system, or a shared bonus ledger. Each entry, including Love Rummy, is catalogued as its own platform unless the publisher states otherwise.',
+          'Nothing recorded in this directory suggests a code, login or deposit from Love Rummy carries over to any other rummy app listed here, or the reverse.',
+        ],
+      },
+      {
+        heading: 'Is the Love Rummy Download Link Live?',
+        paragraphs: [
+          "Yes. loverummy7.com loaded without error during this check. AllYonoUpdate.com does not host or mirror the APK file — the Download button on Love Rummy's app page routes to that address directly. What the file actually installs, which permissions it requests, and its real in-app feature set are outside what this check covered; that kind of inspection happens after personally installing an app, not before.",
+        ],
+      },
+      {
+        heading: "What Hasn't Been Verified",
+        paragraphs: [
+          "No software version, file size, Android compatibility figure or rating has been recorded for Love Rummy. No welcome bonus, promo code or minimum withdrawal figure appears in this directory's data either. Any such figure found elsewhere for Love Rummy hasn't been checked here and shouldn't be assumed accurate on this page's authority.",
+          "This isn't a sign anything is wrong with Love Rummy specifically. It reflects what this directory has actually confirmed, rather than filling the gaps with the kind of specifics that are typical for apps in this category.",
+        ],
+      },
+      {
+        heading: 'Safety Checklist Before Installing',
+        paragraphs: [
+          'Before installing an APK from outside an app store: confirm the address matches loverummy7.com exactly, rather than a forwarded link or a shortened URL. Read which permissions the installer asks for. Check that no page is demanding an existing account password to "unlock" anything. None of these steps are specific to Love Rummy — they apply to every APK listed in this directory.',
+        ],
+      },
+      {
+        heading: 'State-by-State Legality Note',
+        paragraphs: [
+          "A number of apps in this directory, Love Rummy included, are not available in every Indian state. Andhra Pradesh, Telangana, Tamil Nadu, Odisha, Assam, Nagaland and Sikkim restrict real-money gaming apps more heavily than other states do. This guide makes no claim about Love Rummy's legal status where you live, so check your own state's current rules first. Online money games have been prohibited nationwide in India since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025, a restriction that applies regardless of which app is involved.",
+        ],
+      },
+      {
+        heading: 'How This Listing Is Reviewed',
+        paragraphs: [
+          "Love Rummy's app page carries the current download link and a last-checked date, updated whenever a change can be confirmed. This guide follows the same schedule, so the review date above reflects the most recent check rather than a continuously live feed.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does AllYonoUpdate.com host the Love Rummy APK file?',
+        answer: "No. The Download button on Love Rummy's app page leads directly to loverummy7.com. No file is stored on this site.",
+      },
+      {
+        question: 'Is the Love Rummy download link currently working?',
+        answer: 'Yes, confirmed on 27 November 2026 — the link returned a normal response and loaded its page. AllYonoUpdate.com has not installed or reviewed the file itself.',
+      },
+      {
+        question: 'Is Love Rummy the same app as other rummy apps in this directory?',
+        answer: "No. Love Rummy is a separately listed platform. A shared category, or in some cases a shared word in the name, doesn't mean shared ownership, login or bonus terms.",
+      },
+      {
+        question: 'What software version of Love Rummy is available?',
+        answer: "Not recorded. The All Yono directory doesn't have a confirmed software version, file size or minimum Android requirement on file for this app.",
+      },
+      {
+        question: 'Has any Love Rummy bonus or promo code been verified?',
+        answer: "No. No bonus, reward or promo-code figure for Love Rummy appears in this directory's records, so any figure seen elsewhere hasn't been checked here.",
+      },
+      {
+        question: 'Is Love Rummy legal to download in my state?',
+        answer: "That depends on your state's current rules. Several Indian states restrict real-money gaming apps more than others, and online money games have been nationally prohibited since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025.",
+      },
+      {
+        question: 'How often is this guide reviewed?',
+        answer: 'Whenever a meaningful change can be confirmed — the last-reviewed date above reflects the most recent check, not a continuously live feed.',
+      },
+    ],
+    relatedArticles: [
+      { label: 'Love Rummy: App Page & Download Link', href: '/app/love-rummy/' },
+      { label: 'OK Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/ok-rummy-apk-guide/' },
+      { label: 'Top Rummy APK: Download Guide, Safety Check & FAQ', href: '/blog/top-rummy-apk-guide/' },
+      { label: 'Jaiho Win APK: What It Is, Download Status & Safety Check', href: '/blog/jaiho-win-apk-guide/' },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until 07:00 IST on their publish date.
