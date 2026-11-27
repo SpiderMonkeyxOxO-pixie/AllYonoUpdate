@@ -10,6 +10,46 @@
   },
   "apps": [
     {
+      "id": "spin-dost",
+      "name": "Spin Dost",
+      "slug": "spin-dost",
+      "category": "spin",
+      "featured": true,
+      "tag": "COMING SOON",
+      "description": "Spin Dost is an upcoming real-money gaming app scheduled to launch on 1 December 2026 at 8:00 AM IST. AllYonoUpdate.com will record its category, promo-code, and download details once the app is available and can be independently reviewed.",
+      "targetKeyword": "spin dost apk",
+      "softwareVersion": null,
+      "fileSize": null,
+      "minAndroid": null,
+      "rating": null,
+      "updated": "2026-11-27",
+      "icon": "/images/games/spin-dost.jpg",
+      "apkUrl": null,
+      "url": "/app/spin-dost/",
+      "faq": [
+        {
+          "q": "Is Spin Dost available to download yet?",
+          "a": "No. Spin Dost is scheduled to launch on 1 December 2026 at 8:00 AM IST. This page will be updated with a download link once the app goes live."
+        },
+        {
+          "q": "Will AllYonoUpdate.com host the Spin Dost APK file?",
+          "a": "No. AllYonoUpdate.com does not host or operate any APK files. Once live, the Download button will lead directly to Spin Dost's own website."
+        },
+        {
+          "q": "Has AllYonoUpdate.com verified Spin Dost's bonus or referral terms?",
+          "a": "No. Nothing has been confirmed yet — no bonus, promo code, or referral terms exist to verify before launch."
+        },
+        {
+          "q": "How often is this app record reviewed?",
+          "a": "This record is reviewed whenever a meaningful change can be confirmed, so the last-checked date reflects the most recent catalog check, not a live, real-time feed."
+        }
+      ],
+      "relatedArticle": {
+        "label": "Read the Full Launch Status Report",
+        "href": "/blog/spin-dost-launch-status/"
+      }
+    },
+    {
       "id": "rush-gala",
       "name": "Rush Gala",
       "slug": "rush-gala",
